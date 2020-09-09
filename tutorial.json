@@ -11,7 +11,7 @@
         "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
       ],
       "commits": [
-        "a5afc7e9392c22338fc076c0c9374e67fb76866b"
+        "ca10a636ccc113889429879c348b03758537d7b9"
       ]
     },
     "testRunner": {
@@ -46,7 +46,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a5e455674b1b9d54b060b3d330034954eae54193"
+              "d259f90bc081e444b9ae3fbb198240b0345ac54a"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello terminal` into the terminal and press enter.",
