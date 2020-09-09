@@ -3,7 +3,7 @@ config:
   setup:
     commands:
       - cd .freeCodeCamp && npm install
-      - sudo cp ~/project/freeCodeCamp/.bashrc ~
+      - sudo cp ~/project/.freeCodeCamp/.bashrc ~
   testRunner:
     command: ./node_modules/.bin/mocha
     args:
