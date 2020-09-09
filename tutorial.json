@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "summary": {
+    "title": "Learn Bash Scripting by Building Five Programs",
+    "description": "> Welcome to the Bash Scripting lessons!"
+  },
+  "config": {
+    "setup": {
+      "commands": [
+        "cd .freeCodeCamp && npm install",
+        "sudo cp ~/project/freeCodeCamp/.bashrc ~"
+      ],
+      "commits": [
+        "7cf4ebd0c6b49b1f2b771f6743d450f5b4d5d914"
+      ]
+    },
+    "testRunner": {
+      "command": "./node_modules/.bin/mocha",
+      "args": {
+        "tap": "--reporter=mocha-tap-reporter"
+      },
+      "directory": ".freeCodeCamp"
+    },
+    "repo": {
+      "uri": "https://github.com/moT01/learn-bash-scripting-by-building-five-programs",
+      "branch": "v0.1.0"
+    },
+    "dependencies": [
+      {
+        "name": "node",
+        "version": ">=10"
+      }
+    ]
+  },
+  "levels": [
+    {
+      "id": "10",
+      "title": "Start the Terminal",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "10.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b9bb342367b4e0f79cb70c2f5d7870d15bf9c347"
+            ]
+          },
+          "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello terminal` into the terminal and press enter.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, try typing `exit` into the terminal and redoing the instructions"
+          ]
+        }
+      ]
+    }
+  ]
+}
