@@ -22,7 +22,7 @@
       "directory": ".freeCodeCamp"
     },
     "repo": {
-      "uri": "https://github.com/moT01/learn-bash-scripting-by-building-five-programs",
+      "uri": "https://github.com/moT01/.learn-bash-scripting-by-building-five-programs",
       "branch": "v0.1.0"
     },
     "dependencies": [
