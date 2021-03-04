@@ -13,31 +13,31 @@
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 20. touch questionnaire.sh
 
-### 10.1
+### 20.1
 
-You can run commands in the terminal or put them into a `.sh` file to be run as a script. You will be making five little scripts to learn some scripting. The first one will be a small "questionnaire". Use the `touch` command to create a `questionnaire.sh` file in the `project` folder.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
-
-Echo "hello questionnaire"
+You can run commands in the terminal or put them in a file to be run as a script. You will be making five small programs to learn some scripting. The first one will be a "questionnaire". Use the `touch` command to create `questionnaire.sh` in the `project` folder.
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 30. Add echo questionnaire
 
-### 10.1
+### 30.1
+
+echo "hello questionnaire"
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 40. bash questionnaire.sh
+
+### 40.1
 
 run the file with `bash questionnaire.sh`
 
@@ -46,9 +46,9 @@ run the file with `bash questionnaire.sh`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 50. run ./questionnaire
 
-### 10.1
+### 50.1
 
 Try running the file directly with `./questionnaire.sh`. You will get a permission denied message.
 
@@ -57,9 +57,9 @@ Try running the file directly with `./questionnaire.sh`. You will get a permissi
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 60. ls -l
 
-### 10.1
+### 60.1
 
 View the `ls -l`
 
@@ -68,32 +68,33 @@ View the `ls -l`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 70. chmod +x questionnaire.sh
 
-### 10.1
+### 70.1
 
-The categories on the left describe what permissions different users have for the files. Currently the file has read only permissions. Use `chmod +x questionnnaire.sh` to give the file executable permissions.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
-
-ls -l again to see the new permissions
+The categories on the left describe what permissions different users have for the files. Currently the file has read-only permissions. Use `chmod +x questionnnaire.sh` to give the file executable permissions.
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 80. ls -l
 
-### 10.1
+### 80.1
 
+ls -l again to see the new permissions.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 90. run ./questionnaire
+
+### 90.1
+
+The x was added by each group. r stands for `read`, `write`, `execute` etc...
 run the file again with `./questionnaire.sh`
 
 #### HINTS
@@ -101,9 +102,9 @@ run the file again with `./questionnaire.sh`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 100. which bash
 
-### 10.1
+### 100.1
 
 There are various shells that can interpret your script. You want to make sure to use the bash interpreter. Find out where it's located by typing `which bash` in the terminal.
 
@@ -112,42 +113,97 @@ There are various shells that can interpret your script. You want to make sure t
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 110. Add shebang
 
-### 10.1
+### 110.1
 
-That's the location of the program that you want to use with your script. You can tell your script to use it with a "shebang". They are placed at the very top of a script and the one you want looks like this, `#! /bin/bash`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
-
-Bash has variables, functions, and many other things you might be familiar with from other languages. You can declare a variable like this: `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If the value of your variable has any spaces in it, you can put it in double quotes. Create a variable named `QUESTION1` and set it's value to `"What's your name?"`.
+That's the location of the shell interpreter that you want to use. You can tell your program to use it by placing a "shebang" at the very top of the file with `#! <path_to_interpreter>`. Add a "shebang" at the top of your file, the one you want looks like this: `#!/bin/bash`.
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 120. Add which bash
 
-### 10.1
+### 120.1
 
-To use a variable, just place a `$` in front of it like this, `$VARIABLE_NAME`. Instead of echoing `hello questionnaire`, echo the value of your variable. Scripts run from top to bottom, so you need to make sure to place the command below where you set the variable.
+Any commands you can use in the terminal can go in your script and they will be executed one by one. You just used `which bash` in the terminal. Test it out by adding that below your shebang.
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 130. run ./questionnaire
 
-### 10.1
+### 130.1
+
+Run the script again.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 140. Add ls
+
+### 140.1
+
+Add an `ls` command below the `which bash` command you just added.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 150. run ./questionnaire
+
+### 150.1
+
+Run the script again.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 160. Delete all
+
+### 160.1
+
+You can see the one file you create was printed to the terminal when you ran your script. Delete everything but the "shebang" from your file so you can start making the questionnaire.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 170. Add QUESTION1 variable
+
+### 170.1
+
+Bash has variables, functions, and other things you might be familiar with from other languages. You can declare a variable like this: `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `"What's your name?"`.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 180. Add echo $QUESTION1
+
+### 180.1
+
+To use a variable, place a `$` in front of it like this, `$VARIABLE_NAME`. Instead of echoing `hello questionnaire`, echo the value of your variable. Shell scripts run from top to bottom, so you need to place the command below where you set the variable.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 190. run ./questionnaire
+
+### 190.1
 
 run the file again with `./questionnaire.sh`
 
@@ -156,9 +212,9 @@ run the file again with `./questionnaire.sh`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 200. Add read NAME
 
-### 10.1
+### 200.1
 
 You are using your variable to print that to the screen. Next, you want to be able to accept input from a user. You can do that with the `read` command like this: `read VARIABLE_NAME`. This will take what is entered by a user and put it into a new variable. Use `read` to get input and store it in a value named `NAME`.
 
@@ -167,31 +223,31 @@ You are using your variable to print that to the screen. Next, you want to be ab
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 210. Add echo Your name is $NAME
 
-### 10.1
+### 210.1
 
-`echo "Your name is $NAME"`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
-
-run the file again with `./questionnaire.sh` and enter your name when it is waiting for input.
+`echo "Your name is $NAME."`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 220. run ./questionnaire
 
-### 10.1
+### 220.1
+
+run the file again with `./questionnaire.sh` and enter your name and press enter after it asks for it.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 230. Add QUESTION2 variable
+
+### 230.1
 
 Remove the echo command you just added and create a new variable named `QUESTION2`. Set the value to a new question that asks, `Where are you from, $NAME?`. Make sure you put it in double quotes.
 
@@ -200,9 +256,9 @@ Remove the echo command you just added and create a new variable named `QUESTION
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 240. Add echo $QUESTION2
 
-### 10.1
+### 240.1
 
 use your new variable to echo the next question to the screen.
 
@@ -211,9 +267,9 @@ use your new variable to echo the next question to the screen.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 250. Add read LOCATION
 
-### 10.1
+### 250.1
 
 Use `read` to get input from the user into a variable named `LOCATION`.
 
@@ -222,9 +278,20 @@ Use `read` to get input from the user into a variable named `LOCATION`.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 260. Add echo Hello $NAME from $LOCATION
 
-### 10.1
+### 260.1
+
+`echo "Hello $NAME from $LOCATION."`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 270. run ./questionnaire
+
+### 270.1
 
 Run the script and enter values when it is waiting for input.
 
@@ -233,9 +300,75 @@ Run the script and enter values when it is waiting for input.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 280. Add echo "~~ Questionnaire ~~"
 
-### 10.1
+### 280.1
+
+Add echo "~~ Questionnaire ~~"
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 290. run ./questionnaire
+
+### 290.1
+
+run script
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 300. echo --help
+
+### 300.1
+
+echo --help in terminal
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 310. man echo
+
+### 310.1
+
+man echo
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 320. Add echo -e "\n~~ Questionnaire ~~\n"
+
+### 320.1
+
+Add echo -e "\n~~ Questionnaire ~~\n"
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 330. run ./questionnaire
+
+### 330.1
+
+run script
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 340. Add QUESTION3 variable
+
+### 340.1
 
 Create a `QUESTION3` variable and set the value to "And what's your favorite food?"
 
@@ -244,9 +377,9 @@ Create a `QUESTION3` variable and set the value to "And what's your favorite foo
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 350. read FOOD
 
-### 10.1
+### 350.1
 
 read FOOD
 
@@ -255,9 +388,9 @@ read FOOD
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 360. echo a sentence with all read variables
 
-### 10.1
+### 360.1
 
 Use the `echo` command and your variables to print this line to the terminal, `I found out that your name is <name>, you are from <location>, and your favorite food is <food>`. Use your three variables in place of `<name>`, `<location>`, and `<food>`.
 
@@ -266,9 +399,9 @@ Use the `echo` command and your variables to print this line to the terminal, `I
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 370. run ./questionnaire
 
-### 10.1
+### 370.1
 
 Run the script and enter values when asked.
 
@@ -277,9 +410,9 @@ Run the script and enter values when asked.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 380. touch countdown.sh
 
-### 10.1
+### 380.1
 
 Use the touch command to create a new file named `countdown.sh`
 
@@ -288,9 +421,9 @@ Use the touch command to create a new file named `countdown.sh`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 390. chmod +x countdown.sh
 
-### 10.1
+### 390.1
 
 Give executable permissions to your file
 
@@ -299,9 +432,9 @@ Give executable permissions to your file
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 400. Add shebang
 
-### 10.1
+### 400.1
 
 Add a shebang
 
@@ -310,9 +443,9 @@ Add a shebang
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 410. Add a comment
 
-### 10.1
+### 410.1
 
 Add a comment `# Program that counts down from a given argument`
 
@@ -321,9 +454,9 @@ Add a comment `# Program that counts down from a given argument`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 420. Add echo $*
 
-### 10.1
+### 420.1
 
 Programs can take arguments, that can be accessed with a `$`. echo $*
 
@@ -332,9 +465,9 @@ Programs can take arguments, that can be accessed with a `$`. echo $*
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 430. run ./countdown.sh arg1 arg2 arg3
 
-### 10.1
+### 430.1
 
 run your file with `./countdown.sh arg1 arg2 arg3`
 
@@ -343,9 +476,9 @@ run your file with `./countdown.sh arg1 arg2 arg3`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 440. echo $1
 
-### 10.1
+### 440.1
 
 You can see the arguments that have been passed to your script. `$*` gets all the arguments, you can access any one of them with `$#`. `$1` would give you `arg1`. Change your script to echo the first argument instead of all the arguments.
 
@@ -354,9 +487,9 @@ You can see the arguments that have been passed to your script. `$*` gets all th
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 450. run ./countdown.sh arg1 arg2 arg3
 
-### 10.1
+### 450.1
 
 run your file with `./countdown.sh arg1 arg2 arg3` again
 
@@ -365,9 +498,42 @@ run your file with `./countdown.sh arg1 arg2 arg3` again
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 460. help
 
-### 10.1
+### 460.1
+
+help in terminal
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 470. man if
+
+### 470.1
+
+man if
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 480. help if
+
+### 480.1
+
+help if in terminal
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 490. Add if arg1 print true
+
+### 490.1
 
 Now, only `arg1` is printed to the screen. You can create an `if` condition like this:
 
@@ -385,9 +551,9 @@ Create an `if` condition that checks `if [[ $1 == "arg1" ]]`. Use `echo` to prin
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 500. run ./countdown arg1
 
-### 10.1
+### 500.1
 
 Run the script again with the `arg1` as your first argument.
 
@@ -396,9 +562,9 @@ Run the script again with the `arg1` as your first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 510. Add else print false
 
-### 10.1
+### 510.1
 
 You can add an else to your `if` condition like this:
 
@@ -418,9 +584,9 @@ Add an `else` to your existing `if` condition that uses `echo` to print `false` 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 520. run ./countdown !arg1
 
-### 10.1
+### 520.1
 
 Run the script again and use anything except `arg1` as a first argument.
 
@@ -429,9 +595,9 @@ Run the script again and use anything except `arg1` as a first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 530. Change if condition -lt 5
 
-### 10.1
+### 530.1
 
 Your countdown timer is expecting an integer as a first argument. You can compare numbers with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your if condition to check if your first argument is less than `5`.
 
@@ -440,9 +606,9 @@ Your countdown timer is expecting an integer as a first argument. You can compar
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 540. run ./countdown 4
 
-### 10.1
+### 540.1
 
 Run the script again and use `4` as a first argument.
 
@@ -451,9 +617,9 @@ Run the script again and use `4` as a first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 550. run ./countdown 5
 
-### 10.1
+### 550.1
 
 Run the script again and use `5` as a first argument.
 
@@ -462,9 +628,9 @@ Run the script again and use `5` as a first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 560. Change condition to -le
 
-### 10.1
+### 560.1
 
 Change your if condition to use less than or equal.
 
@@ -473,20 +639,9 @@ Change your if condition to use less than or equal.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 570. run ./countdown 5
 
-### 10.1
-
-Run the script again and use `5` as a first argument. Now it should be true.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
+### 570.1
 
 Run the script again and use `5` as a first argument. Now it should be true.
 
@@ -495,9 +650,9 @@ Run the script again and use `5` as a first argument. Now it should be true.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 580. Change if to regex
 
-### 10.1
+### 580.1
 
 You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [[ $1 =~ ^[0-9]+$ ]]`. This regular expression checks that an integer is the first argument.
 
@@ -506,9 +661,9 @@ You really want to be able to accept any interger as a first argument. You can c
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 590. Change if !# message
 
-### 10.1
+### 590.1
 
 Change the message in the else area to "Expected an integer as first argument."
 
@@ -517,9 +672,9 @@ Change the message in the else area to "Expected an integer as first argument."
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 600. run ./countdown 1
 
-### 10.1
+### 600.1
 
 Run the script again and use `1` as a first argument.
 
@@ -528,9 +683,9 @@ Run the script again and use `1` as a first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 610. run ./countdown a
 
-### 10.1
+### 610.1
 
 Run the script again and use `a` as a first argument.
 
@@ -539,13 +694,13 @@ Run the script again and use `a` as a first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 620. Add for loop for countdown
 
-### 10.1
+### 620.1
 
 Looks like it's working. Next, you want to make your timer count down so you need to finish the `then` area. You can create a `for` loop like this:
 
-```
+```sh
   for (( i = 1; i <= 10; i++ ))
   do
     echo $i
@@ -559,9 +714,9 @@ The above would print 1 through 10 to the screen. Create a for loop that prints 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 630. run ./countdown 3
 
-### 10.1
+### 630.1
 
 The double brackets (`[[ ]]`) you used on your if condition are used more for conditions like that, and the double parenthesis (`(( ))`) are used for mathematical operations and these for loops. Run your script and use `3` and the first argument.
 
@@ -570,9 +725,53 @@ The double brackets (`[[ ]]`) you used on your if condition are used more for co
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 640. help
 
-### 10.1
+### 640.1
+
+help
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 650. ls /
+
+### 650.1
+
+ls /
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 660. ls /bin
+
+### 660.1
+
+ls /bin
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 670. man sleep
+
+### 670.1
+
+man sleep
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 680. Add sleep to for loop
+
+### 680.1
 
 It works, but it all prints instantly. I want it to wait a second between printing. You can pause your script with the `sleep` command like this: `sleep seconds` where `seconds` is the number of second to wait. Make your script wait for one second after printing each number.
 
@@ -581,20 +780,9 @@ It works, but it all prints instantly. I want it to wait a second between printi
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 690. run ./countdown 3
 
-### 10.1
-
-Run your script and use `3` and the first argument again.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
+### 690.1
 
 Run your script and use `3` and the first argument again.
 
@@ -603,9 +791,9 @@ Run your script and use `3` and the first argument again.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 700. Add Multiline comment
 
-### 10.1
+### 700.1
 
 Now it works, you can create a multiline comment like this:
 
@@ -623,9 +811,9 @@ Comment out your `for` loop with a multiline comment. I want to try to make this
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 710. Add I variable
 
-### 10.1
+### 710.1
 
 Below your comment, create a variable named `I` that is set to the value of your first argument.
 
@@ -634,9 +822,31 @@ Below your comment, create a variable named `I` that is set to the value of your
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 720. help
 
-### 10.1
+### 720.1
+
+help
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 730. help while
+
+### 730.1
+
+help while
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 740. Add while loop
+
+### 740.1
 
 You can make a `while` loop like this:
 
@@ -654,9 +864,9 @@ Echo your `I` variable to the screen while `I` is greater than zero.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 750. Add sleep 1
 
-### 10.1
+### 750.1
 
 Add `sleep 1`
 
@@ -665,9 +875,9 @@ Add `sleep 1`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 760. Add I--
 
-### 10.1
+### 760.1
 
 add `((I--))`
 
@@ -676,20 +886,9 @@ add `((I--))`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 770. run ./countdown.sh 3
 
-### 10.1
-
-Run the script and use 3 as the first argument.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
+### 770.1
 
 Run the script and use 3 as the first argument.
 
@@ -698,9 +897,9 @@ Run the script and use 3 as the first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 780. touch bingo.sh
 
-### 10.1
+### 780.1
 
 I think the countdown clock is looking good. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.
 
@@ -709,9 +908,9 @@ I think the countdown clock is looking good. The next one is a bingo number gene
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 790. Add shebang
 
-### 10.1
+### 790.1
 
 Add a "shebang" at the top. It's the same as the other two files.
 
@@ -720,9 +919,9 @@ Add a "shebang" at the top. It's the same as the other two files.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 800. chmod +x bingo.sh
 
-### 10.1
+### 800.1
 
 Give your file executable permissions.
 
@@ -731,9 +930,9 @@ Give your file executable permissions.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 810. Add comment
 
-### 10.1
+### 810.1
 
 Add a comment that says, `Bingo Number Generator`
 
@@ -742,9 +941,9 @@ Add a comment that says, `Bingo Number Generator`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 820. Add NUMBER=5 variable
 
-### 10.1
+### 820.1
 
 NUMBER=5
 
@@ -753,9 +952,9 @@ NUMBER=5
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 830. echo $NUMBER
 
-### 10.1
+### 830.1
 
 echo (($NUMBER))
 
@@ -764,9 +963,9 @@ echo (($NUMBER))
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 840. run ./bingo.sh
 
-### 10.1
+### 840.1
 
 Run the script
 
@@ -775,9 +974,9 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 850. echo $NUMBER + 1
 
-### 10.1
+### 850.1
 
 echo (($NUMBER + 1))
 
@@ -786,9 +985,9 @@ echo (($NUMBER + 1))
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 860. run ./bingo.sh
 
-### 10.1
+### 860.1
 
 Run the script
 
@@ -797,9 +996,9 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 870. change to subshell
 
-### 10.1
+### 870.1
 
 change to echo $((NUMBER + 1))
 
@@ -808,9 +1007,9 @@ change to echo $((NUMBER + 1))
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 880. run ./bingo.sh
 
-### 10.1
+### 880.1
 
 Run the script
 
@@ -819,9 +1018,9 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 890. echo $RANDOM
 
-### 10.1
+### 890.1
 
 echo $RANDOM
 
@@ -830,9 +1029,9 @@ echo $RANDOM
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 900. echo $RANDOM%75
 
-### 10.1
+### 900.1
 
 echo $RANDOM%75
 
@@ -841,9 +1040,9 @@ echo $RANDOM%75
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 910. Change to subshell
 
-### 10.1
+### 910.1
 
 echo $((RANDOM%75))
 
@@ -852,9 +1051,9 @@ echo $((RANDOM%75))
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 920. Set NUMBER to random%75
 
-### 10.1
+### 920.1
 
 Change your number variable to $(($RANDOM % 75 + 1)) and your echo statement to just echo $NUMBER again.
 
@@ -863,9 +1062,9 @@ Change your number variable to $(($RANDOM % 75 + 1)) and your echo statement to 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 930. run ./bingo.sh
 
-### 10.1
+### 930.1
 
 Run the script to make sure it's working
 
@@ -874,9 +1073,9 @@ Run the script to make sure it's working
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 940. Add TEXT variable
 
-### 10.1
+### 940.1
 
 Create `TEXT="The next number is, "`
 
@@ -885,9 +1084,9 @@ Create `TEXT="The next number is, "`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 950. Add first if <= 15
 
-### 10.1
+### 950.1
 
 Create `if (( $NUMBER <= 15 )) then echo $TEXT B:$NUMBER fi`
 
@@ -896,9 +1095,9 @@ Create `if (( $NUMBER <= 15 )) then echo $TEXT B:$NUMBER fi`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 960. Add elif < 31
 
-### 10.1
+### 960.1
 
 Add elif (( $NUMBER < 31 )) then
 
@@ -907,9 +1106,9 @@ Add elif (( $NUMBER < 31 )) then
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 970. Add elif -le 45
 
-### 10.1
+### 970.1
 
 Add elif [[ number -le 45 ]]
 
@@ -918,9 +1117,9 @@ Add elif [[ number -le 45 ]]
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 980. Add elif -lt 61
 
-### 10.1
+### 980.1
 
 elif [[ number -lt 61 ]]
 
@@ -929,9 +1128,9 @@ elif [[ number -lt 61 ]]
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 990. else echo G:#
 
-### 10.1
+### 990.1
 
 elso echo $TEXT G:$NUMBER
 
@@ -940,9 +1139,9 @@ elso echo $TEXT G:$NUMBER
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 1000. run .bingo.sh
 
-### 10.1
+### 1000.1
 
 Run your script a few times and make sure it's working.
 
@@ -951,31 +1150,20 @@ Run your script a few times and make sure it's working.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 1010. touch fortune.sh
 
-### 10.1
+### 1010.1
 
-Looks like it's working :smile: Next project is a fortune teller.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 10. Start the Terminal
-
-### 10.1
-
-Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.
+Looks like it's working :smile: Next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 1020. add shebang
 
-### 10.1
+### 1020.1
 
 Add a shebang
 
@@ -984,9 +1172,9 @@ Add a shebang
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 1030. chmod +x fortune.sh
 
-### 10.1
+### 1030.1
 
 Change the permissions
 
@@ -995,9 +1183,9 @@ Change the permissions
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 1040. Add RESPONSES array
 
-### 10.1
+### 1040.1
 
 Create the array `RESPONSES=("Yes" "No" "Maybe")`
 
@@ -1006,9 +1194,9 @@ Create the array `RESPONSES=("Yes" "No" "Maybe")`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 10. Start the Terminal
+## 1050. echo ${RESPONSES[0]}
 
-### 10.1
+### 1050.1
 
 echo ${RESPONSES[0]}
 
