@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('You', () => {
@@ -10,4 +10,4 @@ describe('You', () => {
 
     assert(lC[0] === '[[' && lC[1] === '!' && lC[2] === '-x' && lC3 && lC[4] === ']];' && lC[5] === 'echo' && correctLastArg);
   });
-});
+});*/
