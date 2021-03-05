@@ -13,6 +13,8 @@ then
     sleep 1
   done
   '
+
+  I=$1
 else
   echo Include a positive integer as the first argument.
 fi
