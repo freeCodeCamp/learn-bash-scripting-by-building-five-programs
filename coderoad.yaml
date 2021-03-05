@@ -603,7 +603,7 @@ levels:
       - id: '980.1'
         setup:
           watchers:
-            - ./sql_reference/sql_reference.json
+            - ../.bash_history
   - id: '990'
     steps:
       - id: '990.1'
