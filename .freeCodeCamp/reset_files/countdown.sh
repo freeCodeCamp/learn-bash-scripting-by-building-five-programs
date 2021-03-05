@@ -2,4 +2,4 @@
 
 # Program that counts down to zero from a given argument
 
-echo $*
+echo $1
