@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { canExecute } = require('./utils');
 
 describe('Your script file', () => {
@@ -7,4 +7,4 @@ describe('Your script file', () => {
 
     assert(fileIsExecutable);
   });
-});
+});*/
