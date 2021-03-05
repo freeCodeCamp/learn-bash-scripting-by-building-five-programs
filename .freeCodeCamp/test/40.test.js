@@ -1,4 +1,4 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getLastCommand, getCwd } = require('./utils');
 
 describe('You', () => {
@@ -6,6 +6,6 @@ describe('You', () => {
     const cwd = await getCwd();
     const lastCommand = await getLastCommand();
 
-    assert(lastCommand[0] === 'sh' && /^(\.\/)?questionnaire\.sh$/gm.test(lastCommand[1]) && cwd === '/home/strove/project');
+    assert(lastCommand[0] === 'bash' && /^(\.\/)?questionnaire\.sh$/gm.test(lastCommand[1]) && cwd === '/home/strove/project');
   });
-});*/
+});
