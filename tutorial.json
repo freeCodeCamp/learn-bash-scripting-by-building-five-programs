@@ -1009,7 +1009,7 @@
               "7b7406fe355c6501cc0cc743b633aff14e290370"
             ]
           },
-          "content": "",
+          "content": "Add a comment `Program that counts down from a given argument`",
           "hints": [
             "Capitalization matters",
             "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
