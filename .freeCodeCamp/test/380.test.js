@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand, getDirectoryContents } = require('./utils');
 
 describe('You', () => {
@@ -8,4 +8,4 @@ describe('You', () => {
 
     assert(directoryContents.includes('countdown.sh') && lastCommand[0] === 'touch' && /countdown.sh/g.test(lastCommand[1]));
   });
-});
+});*/
