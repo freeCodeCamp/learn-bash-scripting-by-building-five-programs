@@ -2,7 +2,7 @@
 
 # Program that counts down to zero from a given argument
 
-if [[ $1 == arg1 ]]
+if [[ $1 -lt 5 ]]
 then
   echo true
 else
