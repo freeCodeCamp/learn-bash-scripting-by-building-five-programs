@@ -1,10 +1,10 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getFileContents } = require('./utils');
 
 describe('Your script', () => {
-  it('should "echo" the suggested variable correctly', async () => {
+  it('should use "read" to get input into the correct variable', async () => {
     const scriptFile = await getFileContents('../questionnaire.sh');
 
     assert(false);
   });
-});*/
+});
