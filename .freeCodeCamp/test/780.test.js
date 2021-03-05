@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand, getDirectoryContents, getCwd } = require('./utils');
 
 describe('You', () => {
@@ -9,4 +9,4 @@ describe('You', () => {
 
     assert(directoryContents.includes('bingo.sh') && lastCommand[0] === 'touch' && /bingo.sh/g.test(lastCommand[1]) && cwd === '/home/strove/project');
   });
-});
+});*/
