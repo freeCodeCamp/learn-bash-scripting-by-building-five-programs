@@ -7,5 +7,6 @@ echo $QUESTION1
 read NAME
 
 echo $QUESTION2
+read LOCATION
 
 echo Hello $NAME.
