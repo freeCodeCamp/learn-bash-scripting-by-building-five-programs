@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": {
     "title": "Learn Bash Scripting by Building Five Programs",
     "description": "> Welcome to the Bash Scripting lessons!"
@@ -11,7 +11,7 @@
         "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
       ],
       "commits": [
-        "62cbaa38872533c4a0fc747b12c032a1ba3c3f0a"
+        "84471ce9c56d39e06828b5faec2efac3860a1a8b"
       ]
     },
     "testRunner": {
@@ -23,7 +23,7 @@
     },
     "repo": {
       "uri": "https://github.com/moT01/.learn-bash-scripting-by-building-five-programs",
-      "branch": "v0.1.0"
+      "branch": "v0.1.1"
     },
     "dependencies": [
       {
@@ -46,13 +46,2533 @@
               "../.bash_history"
             ],
             "commits": [
-              "da50ef2937cbe53e6a3cfc23d6728255a7b74a6b"
+              "327b33ca7ab8f750d64537ecbe176427128d64f3"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello terminal` into the terminal and press enter.",
           "hints": [
             "Capitalization matters",
-            "If the tests don't run automatically, try typing `exit` into the terminal and redoing the instructions"
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "touch questionnaire.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "20.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a31a491b219d0f11e6cb6b691a2de5ccdd7a33b9"
+            ]
+          },
+          "content": "You can run commands in the terminal or put them in a file to be run as a script. You will be making five small programs to learn some scripting. The first one will be a \"questionnaire\". Use the `touch` command to create `questionnaire.sh` in the `project` folder.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "Add echo questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "30.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "65d6856484cf30ecfa2cded8d9d4bb2e67e9cf28"
+            ]
+          },
+          "content": "echo \"hello questionnaire\"",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "bash questionnaire.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "40.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7b177f1486f0f4dd3922638a7bdaa681289464d1"
+            ]
+          },
+          "content": "run the file with `bash questionnaire.sh`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "50.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b81dfc4afa40ceec80d99ccc7a4b91fccb5d5158"
+            ]
+          },
+          "content": "Try running the file directly with `./questionnaire.sh`. You will get a permission denied message.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60",
+      "title": "ls -l",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "60.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3dfcae44634b21a85ba7bb9dcd5001826ccd4f47"
+            ]
+          },
+          "content": "View the `ls -l`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70",
+      "title": "chmod +x questionnaire.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "70.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6124e86e652b61d41b3132347fed9525866bcd8e"
+            ]
+          },
+          "content": "The categories on the left describe what permissions different users have for the files. Currently the file has read-only permissions. Use `chmod +x questionnnaire.sh` to give the file executable permissions.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "80",
+      "title": "ls -l",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "80.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9782f93c90ec61676de19f322bba2e2b6ef49168"
+            ]
+          },
+          "content": "ls -l again to see the new permissions.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "90.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6f17c9de2737fb7dec554b5b341cf4643ddcdbbb"
+            ]
+          },
+          "content": "The x was added by each group. r stands for `read`, `write`, `execute` etc...\nrun the file again with `./questionnaire.sh`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "title": "which bash",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "100.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e3ac03a2e77141f18e82b55a6f710afc56aea552"
+            ]
+          },
+          "content": "There are various shells that can interpret your script. You want to make sure to use the bash interpreter. Find out where it's located by typing `which bash` in the terminal.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "title": "Add shebang",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "110.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "27d6c77fb8dcc429d7e890b9762be944f522938e"
+            ]
+          },
+          "content": "That's the location of the shell interpreter that you want to use. You can tell your program to use it by placing a \"shebang\" at the very top of the file with `#! <path_to_interpreter>`. Add a \"shebang\" at the top of your file, the one you want looks like this: `#!/bin/bash`.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "Add which bash",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "120.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "85d62ac793eb897d951d65df682bc65559b34110"
+            ]
+          },
+          "content": "Any commands you can use in the terminal can go in your script and they will be executed one by one. You just used `which bash` in the terminal. Test it out by adding that below your shebang.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "130.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8fa28f30e6f3aa4b4c3afb575e7d7e615f8ae90b"
+            ]
+          },
+          "content": "Run the script again.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "140",
+      "title": "Add ls",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "140.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2d3fbff7f3ce34f6f1cfe236bbc2de99f428afe9"
+            ]
+          },
+          "content": "Add an `ls` command below the `which bash` command you just added.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "150.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a6d6657fc1da7dd111b0eaabcf294dddba7ad8f6"
+            ]
+          },
+          "content": "Run the script again.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "160",
+      "title": "Delete all",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "160.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "47258908d906f9c79bdfc8a1e44dded0ee86481a"
+            ]
+          },
+          "content": "You can see the one file you create was printed to the terminal when you ran your script. Delete everything but the \"shebang\" from your file so you can start making the questionnaire.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "170",
+      "title": "Add QUESTION1 variable",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "170.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "dd8b8e9f63b03722c873daf8bc18d688c4551572"
+            ]
+          },
+          "content": "Bash has variables, functions, and other things you might be familiar with from other languages. You can declare a variable like this: `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `\"What's your name?\"`.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "180",
+      "title": "Add echo $QUESTION1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "180.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5706f596a0388eaf6fbfa4685bf2d099f916bb4c"
+            ]
+          },
+          "content": "To use a variable, place a `$` in front of it like this, `$VARIABLE_NAME`. Instead of echoing `hello questionnaire`, echo the value of your variable. Shell scripts run from top to bottom, so you need to place the command below where you set the variable.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "190",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "190.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6fcc6fd3fef7f11b6547da65cf29d620cf412705"
+            ]
+          },
+          "content": "run the file again with `./questionnaire.sh`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200",
+      "title": "Add read NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "200.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "026e70e52b849d4a38fa5aa92e3b0e433a366049"
+            ]
+          },
+          "content": "You are using your variable to print that to the screen. Next, you want to be able to accept input from a user. You can do that with the `read` command like this: `read VARIABLE_NAME`. This will take what is entered by a user and put it into a new variable. Use `read` to get input and store it in a value named `NAME`.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "210",
+      "title": "Add echo Your name is $NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "210.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5bacbd003b8c1c524446014b278bd917a672c920"
+            ]
+          },
+          "content": "`echo \"Your name is $NAME.\"`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "220",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "220.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9e8c056a6381bfdfc72c91ea046cb76431da0fbc"
+            ]
+          },
+          "content": "run the file again with `./questionnaire.sh` and enter your name and press enter after it asks for it.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "230",
+      "title": "Add QUESTION2 variable",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "230.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "39b446825ed9c3f3a9a6e63783f87bc046570884"
+            ]
+          },
+          "content": "Remove the echo command you just added and create a new variable named `QUESTION2`. Set the value to a new question that asks, `Where are you from, $NAME?`. Make sure you put it in double quotes.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "240",
+      "title": "Add echo $QUESTION2",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "240.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bb74c38c3fd510395682ec1b22b0ad8d2f3c48e1"
+            ]
+          },
+          "content": "use your new variable to echo the next question to the screen.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "250",
+      "title": "Add read LOCATION",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "250.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "65bb26f685c82b8e86cac2367731929c8c3f34a5"
+            ]
+          },
+          "content": "Use `read` to get input from the user into a variable named `LOCATION`.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "260",
+      "title": "Add echo Hello $NAME from $LOCATION",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "260.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ccff2187020e5da08d08aa5d4461ed0f17950725"
+            ]
+          },
+          "content": "`echo \"Hello $NAME from $LOCATION.\"`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "270",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "270.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "99e31003123cddfdf6871dc6ad8c1bc44f0a2bca"
+            ]
+          },
+          "content": "Run the script and enter values when it is waiting for input.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "280",
+      "title": "Add echo \"~~ Questionnaire ~~\"",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "280.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ca40d975e81cf96509d23dfe4bdd76dc670968e7"
+            ]
+          },
+          "content": "Add echo \"~~ Questionnaire ~~\"",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "290",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "290.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4def606f476ddd61e2ccd8c51ab1146668670d38"
+            ]
+          },
+          "content": "run script",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300",
+      "title": "echo --help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "300.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7d31a580a173d9575a5e311b10096ea71daf1024"
+            ]
+          },
+          "content": "echo --help in terminal",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "310",
+      "title": "man echo",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "310.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "06b5392c877327ef35bf0bc159b4f0c460b940b5"
+            ]
+          },
+          "content": "man echo",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "320",
+      "title": "Add echo -e \"\\n~~ Questionnaire ~~\\n\"",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "320.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "36cbf9ee8c260e19b2a5d622cedbdfd21aa69e37"
+            ]
+          },
+          "content": "Add echo -e \"\\n~~ Questionnaire ~~\\n\"",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "330",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "330.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "74a007e593981e13a5e2aade20ef0b07f8459ded"
+            ]
+          },
+          "content": "run script",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "340",
+      "title": "Add QUESTION3 variable",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "340.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0fb557bbccc1978fe37ba182be8a6b1eea92fb3c"
+            ]
+          },
+          "content": "Create a `QUESTION3` variable and set the value to \"And what's your favorite food?\"",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "350",
+      "title": "read FOOD",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "350.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cd07b4c9d6ffdbf216fed5205887bf64894dcb4a"
+            ]
+          },
+          "content": "read FOOD",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "360",
+      "title": "echo a sentence with all read variables",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "360.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b2f1b3d651126a4b7e03a12913ee9f3daeb577d4"
+            ]
+          },
+          "content": "Use the `echo` command and your variables to print this line to the terminal, `I found out that your name is <name>, you are from <location>, and your favorite food is <food>`. Use your three variables in place of `<name>`, `<location>`, and `<food>`.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "370",
+      "title": "run ./questionnaire",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "370.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "67945d38b742d72a187d3f8cf6d28331960f23c8"
+            ]
+          },
+          "content": "Run the script and enter values when asked.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "380",
+      "title": "touch countdown.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "380.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5a126c7001717aa78d0d4e17c06062df485afd41"
+            ]
+          },
+          "content": "Use the touch command to create a new file named `countdown.sh`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "390",
+      "title": "chmod +x countdown.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "390.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "45e1cf053f5a7dab3bd7b52b0f1a067b0b42a211"
+            ]
+          },
+          "content": "Give executable permissions to your file",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400",
+      "title": "Add shebang",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "400.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8c86a1fcb9faf80811cda93704ccea1c5a698840"
+            ]
+          },
+          "content": "Add a shebang",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "410",
+      "title": "Add a comment",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "410.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7b7406fe355c6501cc0cc743b633aff14e290370"
+            ]
+          },
+          "content": "",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "420",
+      "title": "Add echo $*",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "420.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5d607c81ab0d3b9a24b5bc0f90f434f8c692b5ed"
+            ]
+          },
+          "content": "Programs can take arguments, that can be accessed with a `$`. echo $*",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "425",
+      "title": "run ./countdown.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "425.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e8d194ced92eb71dcefa06f376ec5223d088fce0"
+            ]
+          },
+          "content": "run `./countdown.sh`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "430",
+      "title": "run ./countdown.sh arg1 arg2 arg3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "430.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "315c45edf64037f3f20798d881d3bbd3336dd6d1"
+            ]
+          },
+          "content": "run your file with `./countdown.sh arg1 arg2 arg3`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "440",
+      "title": "echo $1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "440.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3e1a0ef2fcffe75944b227442cf45edc0f3417d7"
+            ]
+          },
+          "content": "You can see the arguments that have been passed to your script. `$*` gets all the arguments, you can access any one of them with `$#`. `$1` would give you `arg1`. Change your script to echo the first argument instead of all the arguments.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "450",
+      "title": "run ./countdown.sh arg1 arg2 arg3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "450.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "905a07c1dd77d85851604f394b8c6dfb363073e0"
+            ]
+          },
+          "content": "run your file with `./countdown.sh arg1 arg2 arg3` again",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "460",
+      "title": "help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "460.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "860180d240b80a93e2cc7cffff0168a187f9a2ba"
+            ]
+          },
+          "content": "help in terminal",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "470",
+      "title": "man if",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "470.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "efb1584bf4ff2d74ad70fd373489afa8986dee82"
+            ]
+          },
+          "content": "man if",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "480",
+      "title": "help if",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "480.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1334544071c442458e3db5dce965267fb8b1d1a0"
+            ]
+          },
+          "content": "help if in terminal",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "490",
+      "title": "Add if arg1 print true",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "490.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "aab450c743e6243d0ad54faac739efd592832b8e"
+            ]
+          },
+          "content": "Now, only `arg1` is printed to the screen. You can create an `if` condition like this:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nCreate an `if` condition that checks `if [[ $1 == \"arg1\" ]]`. Use `echo` to print `true` to the screen if it's true.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "title": "run ./countdown arg1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "500.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f02dcc04037d4a93f04f6e2c6aa48f0fe11f7c33"
+            ]
+          },
+          "content": "Run the script again with the `arg1` as your first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "510",
+      "title": "Add else print false",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "510.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8a849a818aa0c9ff77205e8295823dcaccbe9d44"
+            ]
+          },
+          "content": "You can add an else to your `if` condition like this:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nelse\n  STATEMENTS\nfi\n```\n\nAdd an `else` to your existing `if` condition that uses `echo` to print `false` to the terminal.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "520",
+      "title": "run ./countdown !arg1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "520.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "356132a00208407bee24227949f4e8a5309aacb2"
+            ]
+          },
+          "content": "Run the script again and use anything except `arg1` as a first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "530",
+      "title": "Change if condition -lt 5",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "530.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "626b46fad802bbdf9e8038224a752a708abf359b"
+            ]
+          },
+          "content": "Your countdown timer is expecting an integer as a first argument. You can compare numbers with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your if condition to check if your first argument is less than `5`.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "540",
+      "title": "run ./countdown 4",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "540.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1750a1b0f44096e636fc4f8de55d9db79cd0ffaa"
+            ]
+          },
+          "content": "Run the script again and use `4` as a first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "550",
+      "title": "run ./countdown 5",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "550.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9630f1cd881eb5d17c3c843605b14bf6d267845f"
+            ]
+          },
+          "content": "Run the script again and use `5` as a first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "560",
+      "title": "Change condition to -le",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "560.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "df2dfc17479b55d91b0b5c41298c419f299c4a88"
+            ]
+          },
+          "content": "Change your if condition to use less than or equal.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "570",
+      "title": "run ./countdown 5",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "570.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "26eb21b1e21ee57961bd88b334d20e9fb7cab116"
+            ]
+          },
+          "content": "Run the script again and use `5` as a first argument. Now it should be true.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "580",
+      "title": "Change if to regex",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "580.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "556fc2a14f8c85ddf16ce59b8a95c84408f7c0de"
+            ]
+          },
+          "content": "You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [[ $1 =~ ^[0-9]+$ ]]`. This regular expression checks that an integer is the first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "590",
+      "title": "Change if !# message",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "590.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "dc447818e6b4bab7cafca4e39e44fd94827b8389"
+            ]
+          },
+          "content": "Change the message in the else area to \"Expected an integer as first argument.\"",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "600",
+      "title": "run ./countdown 1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "600.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6bebae28d61513817970dc1b5bb8947833154774"
+            ]
+          },
+          "content": "Run the script again and use `1` as a first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "610",
+      "title": "run ./countdown a",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "610.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "90f9966a71d46c6b7b293e56b2cf399b66beaf1b"
+            ]
+          },
+          "content": "Run the script again and use `a` as a first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "620",
+      "title": "Add for loop for countdown",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "620.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "793289b7d862b5736d70c22248f809ff02053794"
+            ]
+          },
+          "content": "Looks like it's working. Next, you want to make your timer count down so you need to finish the `then` area. You can create a `for` loop like this:\n\n```sh\n  for (( i = 1; i <= 10; i++ ))\n  do\n    echo $i\n  done\n```\n\nThe above would print 1 through 10 to the screen. Create a for loop that prints from your `$1` argument to zero (inclusive) to the screen.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "630",
+      "title": "run ./countdown 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "630.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c83461f3bebe9470febdfc61bb29ea816604ce6a"
+            ]
+          },
+          "content": "The double brackets (`[[ ]]`) you used on your if condition are used more for conditions like that, and the double parenthesis (`(( ))`) are used for mathematical operations and these for loops. Run your script and use `3` and the first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "640",
+      "title": "help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "640.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cac7ed19ac2223316a0c75964b07213e962d88ed"
+            ]
+          },
+          "content": "help",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "650",
+      "title": "ls /",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "650.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "14fb346264e72fd3c2e20571f6a3d39d84323b80"
+            ]
+          },
+          "content": "ls /",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "660",
+      "title": "ls /bin",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "660.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "71914f9e591b248c22c56baf5f18bed581c01e19"
+            ]
+          },
+          "content": "ls /bin",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "670",
+      "title": "man sleep",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "670.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2055dc90c1677d32c711dd98f4e20763f95a66b7"
+            ]
+          },
+          "content": "man sleep",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "680",
+      "title": "Add sleep to for loop",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "680.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2b458a5e87a963f9304ec4e26c303a8076422734"
+            ]
+          },
+          "content": "It works, but it all prints instantly. I want it to wait a second between printing. You can pause your script with the `sleep` command like this: `sleep seconds` where `seconds` is the number of second to wait. Make your script wait for one second after printing each number.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "690",
+      "title": "run ./countdown 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "690.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6c0bfd42e8e33878c3f283e65217c1605327c666"
+            ]
+          },
+          "content": "Run your script and use `3` and the first argument again.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "700",
+      "title": "Add Multiline comment",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "700.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9fe7a0a16b727a4d89d869ca3cd302900b116610"
+            ]
+          },
+          "content": "Now it works, you can create a multiline comment like this:\n\n```sh\n: '\n  comment here\n  comment here\n'\n```\n\nComment out your `for` loop with a multiline comment. I want to try to make this program in a different way.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "710",
+      "title": "Add I variable",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "710.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3b009df252c5e49eaaf9cc8eab0a0f727964cbb3"
+            ]
+          },
+          "content": "Below your comment, create a variable named `I` that is set to the value of your first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "720",
+      "title": "help",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "720.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8e28db101c9ee07272a2fcca7c46aaaa04f5f636"
+            ]
+          },
+          "content": "help",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "730",
+      "title": "help while",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "730.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "04f96fd43132cf4208abe901022e92ce1356d992"
+            ]
+          },
+          "content": "help while",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "740",
+      "title": "Add while loop",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "740.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b67415633b5ccf8588117a40a3c223e16c113535"
+            ]
+          },
+          "content": "You can make a `while` loop like this:\n\n```sh\nwhile [[ CONDITION ]]\ndo\n  STATEMENTS\ndone\n```\n\nEcho your `I` variable to the screen while `I` is greater than zero.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "750",
+      "title": "Add sleep 1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "750.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7c6967c7b4af4beb060ab463e229d3fc1245b87b"
+            ]
+          },
+          "content": "Add `sleep 1`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "760",
+      "title": "Add I--",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "760.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b4c18596f95193bdab76a380190741358dac675d"
+            ]
+          },
+          "content": "add `((I--))`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "770",
+      "title": "run ./countdown.sh 3",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "770.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9a07f325c5142967a9eac98dffee152209320671"
+            ]
+          },
+          "content": "Run the script and use 3 as the first argument.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "780",
+      "title": "touch bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "780.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "49ee6eed97894bccf4e8cd136aa0c1bb68659d60"
+            ]
+          },
+          "content": "I think the countdown clock is looking good. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "790",
+      "title": "Add shebang",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "790.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5ead2b9f3e5a19211dd4b946e386eaf88bbebe08"
+            ]
+          },
+          "content": "Add a \"shebang\" at the top. It's the same as the other two files.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "800",
+      "title": "chmod +x bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "800.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f71161a3bc72d530756361a12905611594208ba7"
+            ]
+          },
+          "content": "Give your file executable permissions.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "810",
+      "title": "Add comment",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "810.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "8c9990edab15067708c90a8b0052de844cddf0b4"
+            ]
+          },
+          "content": "Add a comment that says, `Bingo Number Generator`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "820",
+      "title": "Add NUMBER=5 variable",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "820.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "da45bdda76a2b0b0e46252d28c6e5eb3e4cbdf5e"
+            ]
+          },
+          "content": "NUMBER=5",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "830",
+      "title": "echo $NUMBER",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "830.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cd7401eac637a2f0bc1cb5e7f17dc678bd8dc0fb"
+            ]
+          },
+          "content": "echo (($NUMBER))",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "840",
+      "title": "run ./bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "840.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ac6b6cf3fec70d78432aba3db8f187da64e78085"
+            ]
+          },
+          "content": "Run the script",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "850",
+      "title": "echo $NUMBER + 1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "850.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "29bab355d6e89a2c5f99ac4c5233b29ceaf6d2f2"
+            ]
+          },
+          "content": "echo (($NUMBER + 1))",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "860",
+      "title": "run ./bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "860.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d897666f4626cbf68b351bfe662d8976ef086fde"
+            ]
+          },
+          "content": "Run the script",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "870",
+      "title": "change to subshell",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "870.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a3236f3cd65818fef342bba9eca08c50497a880f"
+            ]
+          },
+          "content": "change to echo $((NUMBER + 1))",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "880",
+      "title": "run ./bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "880.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e7011938c002a4587ea399c249368a5ac30eab7a"
+            ]
+          },
+          "content": "Run the script",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "890",
+      "title": "echo $RANDOM",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "890.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f28145ba9cc306c232cccc3ee6ceb96599b9b655"
+            ]
+          },
+          "content": "echo $RANDOM",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "900",
+      "title": "echo $RANDOM%75",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "900.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "94bf2033fab429ba7f45203487c6f38a528cf052"
+            ]
+          },
+          "content": "echo $RANDOM%75",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "910",
+      "title": "Change to subshell",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "910.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0fd2f3edeea12131180b08ec873bc073380db267"
+            ]
+          },
+          "content": "echo $((RANDOM%75))",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "920",
+      "title": "Set NUMBER to random%75",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "920.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "19d53d9bfb510348eb607bced8062e5ac300cfae"
+            ]
+          },
+          "content": "Change your number variable to $(($RANDOM % 75 + 1)) and your echo statement to just echo $NUMBER again.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "930",
+      "title": "run ./bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "930.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "5488798df971291a75e144df00fb585b76545db7"
+            ]
+          },
+          "content": "Run the script to make sure it's working",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "940",
+      "title": "Add TEXT variable",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "940.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "13441fc35689f4267edafab4adcc0306abdd74c8"
+            ]
+          },
+          "content": "Create `TEXT=\"The next number is, \"`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "950",
+      "title": "Add first if <= 15",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "950.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "798ff62558ad123f7ac572e0d8fdf3610e036502"
+            ]
+          },
+          "content": "Create `if (( $NUMBER <= 15 )) then echo $TEXT B:$NUMBER fi`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "960",
+      "title": "Add elif < 31",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "960.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "30466a1e0a6d7347540525607c4f1d251a943f14"
+            ]
+          },
+          "content": "Add elif (( $NUMBER < 31 )) then",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "970",
+      "title": "Add elif -le 45",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "970.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c22552bd1be7124f2973dd47dcbe9814bf18453f"
+            ]
+          },
+          "content": "Add elif [[ number -le 45 ]]",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "980",
+      "title": "Add elif -lt 61",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "980.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e931115e41f570f2572732ae70f4f783541c7835"
+            ]
+          },
+          "content": "elif [[ number -lt 61 ]]",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "990",
+      "title": "else echo G:#",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "990.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3eff7713e49a2d7aad42cb77da1e163471205220"
+            ]
+          },
+          "content": "elso echo $TEXT G:$NUMBER",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000",
+      "title": "run .bingo.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1000.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "300b8b794eaad934c4aa0ba7fdf64161bdbf7c5a"
+            ]
+          },
+          "content": "Run your script a few times and make sure it's working.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1010",
+      "title": "touch fortune.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1010.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "6a6cc2547ee9fd9873f6aa31fd90fbccd99f2a52"
+            ]
+          },
+          "content": "Looks like it's working :smile: Next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1020",
+      "title": "add shebang",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1020.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bb66554030bb59babdf472a068d5a9a14609bad3"
+            ]
+          },
+          "content": "Add a shebang",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1030",
+      "title": "chmod +x fortune.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1030.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9d0dbf9e05f7b89cd8ed92858c97a2a98edcbb64"
+            ]
+          },
+          "content": "Change the permissions",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1040",
+      "title": "Add RESPONSES array",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1040.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "dc3cd1e930244fa7f8f60ada016a39668c85bbc1"
+            ]
+          },
+          "content": "Create the array `RESPONSES=(\"Yes\" \"No\" \"Maybe\")`",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1050",
+      "title": "echo ${RESPONSES[0]}",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1050.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "76b7c7f1b40ee6b87160cc409a411294724fa85e"
+            ]
+          },
+          "content": "echo ${RESPONSES[0]}",
+          "hints": [
+            "Capitalization matters",
+            "If the tests don't run automatically, \"trash\" all the terminals and try the instructions again"
           ]
         }
       ]
