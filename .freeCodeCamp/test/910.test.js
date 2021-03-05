@@ -1,4 +1,4 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('You', () => {
@@ -6,6 +6,6 @@ describe('You', () => {
     const lastCommand = await getLastCommand();
     const args = lastCommand.slice(1).join();
 
-    assert(lastCommand[0] === 'echo' && args === '$RANDOM%75');
+    assert(lastCommand[0] === 'echo' && args === '$((RANDOM%75))');
   });
-});*/
+});
