@@ -465,6 +465,17 @@ Programs can take arguments, that can be accessed with a `$`. echo $*
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
+## 425. run ./countdown.sh
+
+### 425.1
+
+run `./countdown.sh`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
 ## 430. run ./countdown.sh arg1 arg2 arg3
 
 ### 430.1
