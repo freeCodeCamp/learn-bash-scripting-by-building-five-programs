@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('You', () => {
@@ -10,4 +10,4 @@ describe('You', () => {
 
     assert(/echo[ \t]+\$\?[ \t]*;?[ \t]*$/.test(lastCommand) && slcTest);
   });
-});
+});*/
