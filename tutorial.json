@@ -995,7 +995,10 @@
               "7ed02d0fd706f2fd92e31fbe35ee5a908026c823"
             ]
           },
-          "content": ""
+          "content": "Comments in `bash` start with `&#35;`. Here's an example: `&#35; <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does.",
+          "hints": [
+            "Add `&#35; Program that counts down to zero from a given argument` to your `countdown.sh` file"
+          ]
         }
       ]
     },
