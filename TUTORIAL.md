@@ -445,11 +445,11 @@ You want to use the `bash` interpreter again. Add a `shebang` at the top of your
 
 ### 410.1
 
-Comments in `bash` start with `\#`. Here's an example: `\# <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does.
+Comments in `bash` start with `&#35;`. Here's an example: `&#35; <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does.
 
 #### HINTS
 
-- Add `\# Program that counts down to zero from a given argument` to your `countdown.sh` file
+- Add `&#35; Program that counts down to zero from a given argument` to your `countdown.sh` file
 
 ## 420. Add echo $*
 
