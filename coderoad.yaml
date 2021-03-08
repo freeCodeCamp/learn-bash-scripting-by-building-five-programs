@@ -316,6 +316,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '505'
+    steps:
+      - id: '505.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '510'
     steps:
       - id: '510.1'
@@ -340,9 +346,57 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '542'
+    steps:
+      - id: '542.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '544'
+    steps:
+      - id: '544.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '546'
+    steps:
+      - id: '546.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '548'
+    steps:
+      - id: '548.1'
+        setup:
+          watchers:
+            - ../.bash_history            
   - id: '550'
     steps:
       - id: '550.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '552'
+    steps:
+      - id: '552.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '554'
+    steps:
+      - id: '554.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '556'
+    steps:
+      - id: '556.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '558'
+    steps:
+      - id: '558.1'
         setup:
           watchers:
             - ../.bash_history
@@ -352,15 +406,87 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '562'
+    steps:
+      - id: '562.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '564'
+    steps:
+      - id: '564.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '566'
+    steps:
+      - id: '566.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '568'
+    steps:
+      - id: '568.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '570'
     steps:
       - id: '570.1'
         setup:
           watchers:
             - ../.bash_history
+  - id: '572'
+    steps:
+      - id: '572.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '574'
+    steps:
+      - id: '574.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '576'
+    steps:
+      - id: '576.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '578'
+    steps:
+      - id: '578.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '580'
     steps:
       - id: '580.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '582'
+    steps:
+      - id: '582.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '584'
+    steps:
+      - id: '584.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '586'
+    steps:
+      - id: '586.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '588'
+    steps:
+      - id: '588.1'
         setup:
           watchers:
             - ../.bash_history
@@ -379,6 +505,12 @@ levels:
   - id: '610'
     steps:
       - id: '610.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '615'
+    steps:
+      - id: '615.1'
         setup:
           watchers:
             - ../.bash_history

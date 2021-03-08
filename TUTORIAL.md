@@ -43,7 +43,7 @@ Your script has one command. Run it with `sh questionnaire.sh` to see what happe
 
 #### HINTS
 
-- Type `bash questionnaire.sh` in the terminal and press enter
+- Type `sh questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -79,7 +79,7 @@ That's the absolute path the `bash` interpreter on this file system. You can tel
 
 - Add `#!/bin/bash` at the top of your `questionnaire.sh` file
 
-## 70. run ./questionnaire
+## 70. ./questionnaire
 
 ### 70.1
 
@@ -127,7 +127,7 @@ List what's in the folder again with `ls -l` to see the new permissions.
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 110. run ./questionnaire
+## 110. ./questionnaire
 
 ### 110.1
 
@@ -139,7 +139,7 @@ The `x` was added by each type of user to denote that anyone can execute the fil
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 140. Add ls
+## 140. Add ls -l
 
 ### 140.1
 
@@ -149,7 +149,7 @@ Now it works. In your script, you can add any commands that you would be able to
 
 - Add `ls -l` at the bottom of your `questionnaire.sh` file
 
-## 150. run ./questionnaire
+## 150. ./questionnaire
 
 ### 150.1
 
@@ -161,7 +161,7 @@ Run the script by executing it again.
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 160. Delete all
+## 160. Delete all - shebang
 
 ### 160.1
 
@@ -191,7 +191,7 @@ To use a variable, place `$` in front of it like this, `$VARIABLE_NAME`. Shell s
 
 - Add `echo $QUESTION1` at the bottom of your `questionnaire.sh` file
 
-## 190. run ./questionnaire
+## 190. ./questionnaire
 
 ### 190.1
 
@@ -225,7 +225,7 @@ At the bottom of your script, use `echo` to print `Hello, <name>.` to the termin
 - Use your `$NAME` variable in place of `<name>`
 - Add `echo Hello, $NAME.` at the bottom of your script
 
-## 220. run ./questionnaire
+## 220. ./questionnaire
 
 ### 220.1
 
@@ -281,7 +281,7 @@ Use `read` to get input from the user into a variable named `LOCATION`.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 270. run ./questionnaire
+## 270. ./questionnaire
 
 ### 270.1
 
@@ -303,7 +303,7 @@ Add echo "~~ Questionnaire ~~"
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 290. run ./questionnaire
+## 290. ./questionnaire
 
 ### 290.1
 
@@ -347,7 +347,7 @@ Add echo -e "\n~~ Questionnaire ~~\n"
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 330. run ./questionnaire
+## 330. ./questionnaire
 
 ### 330.1
 
@@ -391,7 +391,7 @@ Use the `echo` command and your variables to print this line to the terminal, `I
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 370. run ./questionnaire
+## 370. ./questionnaire
 
 ### 370.1
 
@@ -441,7 +441,7 @@ You want to use the `bash` interpreter again. Add a `shebang` at the top of your
 - It should look like this: `#!/bin/bash`
 - Add `#!/bin/bash` at the top of your `countdown.sh` file
 
-## 410. Add a comment
+## 410. Add comment
 
 ### 410.1
 
@@ -461,7 +461,7 @@ Programs can take arguments. You can access them a few different ways with `$`. 
 
 - Add `echo $*` at the bottom of the `countdown.sh` file
 
-## 425. run ./countdown.sh
+## 425. ./countdown.sh
 
 ### 425.1
 
@@ -473,11 +473,11 @@ Execute your script with `./countdown.sh`.
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 430. run ./countdown.sh arg1 arg2 arg3
+## 430. ./countdown.sh arg1 arg2 arg3
 
 ### 430.1
 
-Run your script again, but this time add three arguments to the command; `arg1`, `arg2`, and `arg3`. Just place them after the command with a space before each one.
+Nothing was printed. Run your script again, but this time add three arguments to the command; `arg1`, `arg2`, and `arg3`. Just place them after the command with a space before each one.
 
 #### HINTS
 
@@ -485,7 +485,7 @@ Run your script again, but this time add three arguments to the command; `arg1`,
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 440. echo $1
+## 440. Change to echo $2
 
 ### 440.1
 
@@ -494,9 +494,9 @@ Run your script again, but this time add three arguments to the command; `arg1`,
 #### HINTS
 
 - Use `echo $2` to print the second argument
-- Change `echo $*` to `echo $2`
+- Change `echo $*` to `echo $2` in your `countdown.sh` file
 
-## 450. run ./countdown.sh arg1 arg2 arg3
+## 450. ./countdown.sh arg1 arg2 arg3
 
 ### 450.1
 
@@ -563,11 +563,23 @@ then
 fi
 ```
 
-## 500. run ./countdown arg1
+## 500. ./countdown arg1
 
 ### 500.1
 
-The `if` statement will print `true` if you pass it `arg1`. Run the script again with `arg1` as the only argument.
+The `if` statement will print `true` if you pass `arg1`. Run the script again with `arg1` as the only argument.
+
+#### HINTS
+
+- Type `./countdown.sh arg1` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
+
+## 505. ./countdown test
+
+### 505.1
+
+Run `.countdown.sh test`
 
 #### HINTS
 
@@ -604,7 +616,7 @@ else
 fi
 ```
 
-## 520. run ./countdown !arg1
+## 520. ./countdown !arg1
 
 ### 520.1
 
@@ -627,7 +639,7 @@ Your program is expecting an integer as a first argument. You can compare intege
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 540. run ./countdown 4
+## 540. ./countdown 4
 
 ### 540.1
 
@@ -635,12 +647,68 @@ Run the script again and use `4` as a first argument.
 
 #### HINTS
 
+- Type `./countdown.sh 4` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
+
+## 542. ./countdown 5
+
+### 542.1
+
+Run the script again and use `5` as a first argument.
+
+#### HINTS
+
+- Type `./countdown.sh 5` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
+
+## 544. help
+
+### 544.1
+
+help
+
+#### HINTS
+
+- Type `help` in the terminal and press enter
+
+## 546. help [[ expression ]]
+
+### 546.1
+
+help [[ expression ]]
+
+#### HINTS
+
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 550. run ./countdown 5
+## 548. help test
+
+### 548.1
+
+help test
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 550. Change if to [[ $1 -le 5 ]]
 
 ### 550.1
+
+Change if to `[[ $1 -le 5 ]]`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 552. ./countdown 5
+
+### 552.1
 
 Run the script again and use `5` as a first argument.
 
@@ -649,33 +717,198 @@ Run the script again and use `5` as a first argument.
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 560. Change condition to -le
+## 554. [[ 0 -le 5 ]]
+
+### 554.1
+
+Remember I said... run `[[ 0 -le 5 ]]`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 556. echo $?
+
+### 556.1
+
+Remember I said... run `[[ 0 -le 5 ]]`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 558. [[ 5 -lt 0 ]]
+
+### 558.1
+
+`[[ 5 -lt 0 ]]`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 560. echo $?
 
 ### 560.1
 
-Change your if condition to use less than or equal.
+Remember I said... run `[[ 0 -le 5 ]]`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 570. run ./countdown 5
+## 562. [[ 5 -lt 0 ]]; echo $?
+
+### 562.1
+
+`[[ 5 -lt 0 ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 564. [[ 10 -gt 1 ]]; echo $?
+
+### 564.1
+
+`[[ 10 -gt 1 ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 566. bad_command; echo $?
+
+### 566.1
+
+`bad_command; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 568. ls; echo $?
+
+### 568.1
+
+`ls; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 570. ls -y; echo $?
 
 ### 570.1
 
-Run the script again and use `5` as a first argument. Now it should be true.
+`ls -y; echo $?`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 580. Change if to regex
+## 572. help test
+
+### 572.1
+
+`help test`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 574. [[ -a countdown.sh ]]; echo $?
+
+### 574.1
+
+`[[ -a countdown.sh ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 576. [[ -x countdown.sh ]]; echo $?
+
+### 576.1
+
+`[[ -x countdown.sh ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 578. [[ ! -x countdown.sh ]]; echo $?
+
+### 578.1
+
+`[[ ! -x countdown.sh ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 580. help test
 
 ### 580.1
 
-You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [[ $1 =~ ^[0-9]+$ ]]`. This regular expression checks that an integer is the first argument.
+help test
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 582. help [[ expression ]]
+
+### 582.1
+
+`help [[ expression ]]`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 584. [[ -x countdown.sh ]] && [[ 5 -lt 0 ]]; echo $?
+
+### 584.1
+
+`[[ -x countdown.sh ]] && [[ 5 -lt 0 ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 586. [[ -x countdown.sh ]] || [[ 5 -lt 0 ]]; echo $?
+
+### 586.1
+
+`[[ -x countdown.sh ]] || [[ 5 -lt 0 ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 588. Change if to [[ $1 -gt 0 ]]
+
+### 588.1
+
+Change if to `[[ $1 -gt 0 ]]`
 
 #### HINTS
 
@@ -709,6 +942,17 @@ Run the script again and use `1` as a first argument.
 ### 610.1
 
 Run the script again and use `a` as a first argument.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 615. help
+
+### 615.1
+
+`help`
 
 #### HINTS
 
