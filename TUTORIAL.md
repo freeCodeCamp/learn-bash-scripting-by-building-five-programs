@@ -545,7 +545,7 @@ I guess there isn't a `man` page for it. At the top of the `help` screen, I noti
 The syntax is at the top, not all of it is required. Here's another example:
 
 ```sh
-if [ CONDITION ]
+if [[ CONDITION ]]
 then
   STATEMENTS
 fi
@@ -557,7 +557,7 @@ Remove the `echo $2` and replace it with an `if` condition that checks `if [[ $1
 
 - Add the following to your script:
 ```sh
-if [ $1 == "arg1" ]
+if [[ $1 == "arg1" ]]
 then
   echo true
 fi
@@ -582,7 +582,7 @@ The `if` statement will print `true` if you pass it `arg1`. Run the script again
 One of the optional parts of `if` was an `else` area. You can use it like this:
 
 ```sh
-if [ CONDITION ]
+if [[ CONDITION ]]
 then
   STATEMENTS
 else
@@ -596,7 +596,7 @@ Add an `else` to your existing `if` condition. Use `echo` to print `false` to th
 
 - Add the following to your script:
 ```sh
-if [ $1 == "arg1" ]
+if [[ $1 == "arg1" ]]
 then
   echo true
 else
@@ -675,7 +675,7 @@ Run the script again and use `5` as a first argument. Now it should be true.
 
 ### 580.1
 
-You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [ $1 =~ ^[0-9]+$ ]`. This regular expression checks that an integer is the first argument.
+You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [[ $1 =~ ^[0-9]+$ ]]`. This regular expression checks that an integer is the first argument.
 
 #### HINTS
 
