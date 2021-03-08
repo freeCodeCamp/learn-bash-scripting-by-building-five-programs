@@ -6,7 +6,7 @@
 
 ### 10.1
 
-**The first thing you need to do is start the terminal.** Do that by clicking the "hamburger" menu at the top left of the screen, going to the "terminal" section, and clicking "new terminal". Once you open a new one, type `echo hello terminal` into the terminal and press enter.
+**The first thing you need to do is start the terminal.** Do that by clicking the "hamburger" menu at the top left of the screen, going to the "terminal" section, and clicking "new terminal". Once you open a new one, type `echo hello bash` into the terminal and press enter.
 
 #### HINTS
 
@@ -21,251 +21,244 @@ You can run commands in the terminal or put them in a file to be run as a script
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `touch questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 30. Add echo questionnaire
 
 ### 30.1
 
-echo "hello questionnaire"
+To start, just add `echo Hello Questionnaire` at the top of the file you just created.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add the suggested text to the `questionnaire.sh` file
+
+## 35. sh questionnaire.sh
+
+### 35.1
+
+Your script has one command. Run it with `sh questionnaire.sh` to see what happens. `sh` stands for `shell`.
+
+#### HINTS
+
+- Type `bash questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 40. bash questionnaire.sh
 
 ### 40.1
 
-run the file with `bash questionnaire.sh`
+When you ran the script, the `shell` interpreter was used. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `bash questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 50. run ./questionnaire
+## 50. which bash
 
 ### 50.1
 
-Try running the file directly with `./questionnaire.sh`. You will get a permission denied message.
+The output was the same, but there are other interpreters along with those. You may not get the expected output with some. What you want to do is define which one to use in your script. You want to use `bash`, find out where it's located by entering `which bash` in the terminal.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `which bash` in the terminal and press enter
 
-## 60. ls -l
+## 60. Add shebang
 
 ### 60.1
 
-View the `ls -l`
+That's the absolute path the `bash` interpreter on this file system. You can tell your program to use it by placing a "shebang" at the very top of the file like this: `#! <path_to_interpreter>`. Add a "shebang" at the top of your file, the one you want looks like this: `#!/bin/bash`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `#!/bin/bash` at the top of your `questionnaire.sh` file
 
-## 70. chmod +x questionnaire.sh
+## 70. run ./questionnaire
 
 ### 70.1
 
-The categories on the left describe what permissions different users have for the files. Currently the file has read-only permissions. Use `chmod +x questionnnaire.sh` to give the file executable permissions.
+Now, instead of using `sh` or `bash` to run your script. You can run it be executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 80. ls -l
 
 ### 80.1
 
-ls -l again to see the new permissions.
+You should have got a permission denied message. List what's in the `project` folder in long list format with `ls -l`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `ls -l` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 90. run ./questionnaire
+## 90. chmod +x questionnaire.sh
 
 ### 90.1
 
-The x was added by each group. r stands for `read`, `write`, `execute` etc...
-run the file again with `./questionnaire.sh`
+You should see `-rw-r--r--` next to your file. The first `-` is nothing, the rest describe the permissions certain users have with it. Enter `chmod +x questionnnaire.sh` in the terminal to give the file executable permissions.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `chmod +x questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 100. which bash
+## 100. ls -l
 
 ### 100.1
 
-There are various shells that can interpret your script. You want to make sure to use the bash interpreter. Find out where it's located by typing `which bash` in the terminal.
+List what's in the folder again with `ls -l` to see the new permissions.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `ls -l` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 110. Add shebang
+## 110. run ./questionnaire
 
 ### 110.1
 
-That's the location of the shell interpreter that you want to use. You can tell your program to use it by placing a "shebang" at the very top of the file with `#! <path_to_interpreter>`. Add a "shebang" at the top of your file, the one you want looks like this: `#!/bin/bash`.
+The `x` was added by each type of user to denote that anyone can execute the file. Run your file by executing it again with `./questionnaire.sh`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 120. Add which bash
-
-### 120.1
-
-Any commands you can use in the terminal can go in your script and they will be executed one by one. You just used `which bash` in the terminal. Test it out by adding that below your shebang.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 130. run ./questionnaire
-
-### 130.1
-
-Run the script again.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 140. Add ls
 
 ### 140.1
 
-Add an `ls` command below the `which bash` command you just added.
+Now it works. In your script, you can add any commands that you would be able to enter in the terminal. Test this by adding the `ls -l` command below your other command.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `ls -l` at the bottom of your `questionnaire.sh` file
 
 ## 150. run ./questionnaire
 
 ### 150.1
 
-Run the script again.
+Run the script by executing it again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 160. Delete all
 
 ### 160.1
 
-You can see the one file you create was printed to the terminal when you ran your script. Delete everything but the "shebang" from your file so you can start making the questionnaire.
+Your script printed the one file as if you entered the `ls -l` in the terminal. Delete everything but the "shebang" from your file so you can start making the questionnaire.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Only `#!/bin/bash` should remain in your `questionnaire.sh` file
 
 ## 170. Add QUESTION1 variable
 
 ### 170.1
 
-Bash has variables, functions, and other things you might be familiar with from other languages. You can declare a variable like this: `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `"What's your name?"`.
+Bash has variables, functions, and other things you might be familiar with. You can declare a variable like this: `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `"What's your name?"`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `QUESTION1="What's your name?"` at the bottom of your `questionnaire.sh` file
 
 ## 180. Add echo $QUESTION1
 
 ### 180.1
 
-To use a variable, place a `$` in front of it like this, `$VARIABLE_NAME`. Instead of echoing `hello questionnaire`, echo the value of your variable. Shell scripts run from top to bottom, so you need to place the command below where you set the variable.
+To use a variable, place `$` in front of it like this, `$VARIABLE_NAME`. Shell scripts run from top to bottom, so you can only use variable below where it's created. Use `echo` to print your question.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `echo $QUESTION1` at the bottom of your `questionnaire.sh` file
 
 ## 190. run ./questionnaire
 
 ### 190.1
 
-run the file again with `./questionnaire.sh`
+Run the file to see if it worked.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Run your file by executing it
+- Type `./questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 200. Add read NAME
 
 ### 200.1
 
-You are using your variable to print that to the screen. Next, you want to be able to accept input from a user. You can do that with the `read` command like this: `read VARIABLE_NAME`. This will take what is entered by a user and put it into a new variable. Use `read` to get input and store it in a value named `NAME`.
+The question was printed. Next, you want to be able to accept input from a user. You can do that with `read` like this: `read VARIABLE_NAME`. This will get user input and store it into a new variable. Use `read` to get input and store it in a variable named `NAME`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `read NAME` at the bottom of your `questionnaire.sh` file
 
-## 210. Add echo Your name is $NAME
+## 210. Add echo Hello $NAME
 
 ### 210.1
 
-`echo "Your name is $NAME."`
+At the bottom of your script, use `echo` to print `Hello, <name>.` to the terminal.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use your `$NAME` variable in place of `<name>`
+- Add `echo Hello, $NAME.` at the bottom of your script
 
 ## 220. run ./questionnaire
 
 ### 220.1
 
-run the file again with `./questionnaire.sh` and enter your name and press enter after it asks for it.
+Run the file again. Type your name and press enter after it asks for it.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Run your file by executing it
+- Type `./questionnaire.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 230. Add QUESTION2 variable
 
 ### 230.1
 
-Remove the echo command you just added and create a new variable named `QUESTION2`. Set the value to a new question that asks, `Where are you from, $NAME?`. Make sure you put it in double quotes.
+Create a new variable named `QUESTION2`. Set the value to, `Where are you from?`. Make sure to put it in double quotes.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `VARIABLE="value"`
+- Add `QUESTION2="Where are you from?"` to your script
 
 ## 240. Add echo $QUESTION2
 
 ### 240.1
 
-use your new variable to echo the next question to the screen.
+Use your new variable to print the next question.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use `echo` to print the variable
+- Add `echo $QUESTION2` below everything else
 
 ## 250. Add read LOCATION
 
@@ -275,8 +268,7 @@ Use `read` to get input from the user into a variable named `LOCATION`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `read LOCATION` to your script below everything else
 
 ## 260. Add echo Hello $NAME from $LOCATION
 
@@ -414,173 +406,183 @@ Run the script and enter values when asked.
 
 ### 380.1
 
-Use the touch command to create a new file named `countdown.sh`
+I think you are done that script for now. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder. This program will count down from a given input.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `touch countdown.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 390. chmod +x countdown.sh
 
 ### 390.1
 
-Give executable permissions to your file
+Give executable permissions to your file for all users so you can run it like the other one. It's the `chmod` command.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example `chmod <permissions> <filename>`
+- The value for permissions you want to use is `+x`
+- You previously used `chmod +x questionnaire.sh`
+- Type `chmod +x countdown.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 400. Add shebang
 
 ### 400.1
 
-Add a shebang
+You want to use the `bash` interpreter again. Add a `shebang` at the top of your new file to denote that.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Look at the `shebang` in your first script to get the syntax
+- It should look like this: `#!/bin/bash`
+- Add `#!/bin/bash` at the top of your `countdown.sh` file
 
 ## 410. Add a comment
 
 ### 410.1
 
-Add a comment `Program that counts down from a given argument`
+Comments in `bash` start with `#`. Here's an example: `# <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `# Program that counts down to zero from a given argument` to your `countdown.sh` file
 
 ## 420. Add echo $*
 
 ### 420.1
 
-Programs can take arguments, that can be accessed with a `$`. echo $*
+Programs can take arguments. You can access them a few different ways with `$`. Add `echo $*` in your script to print all arguments passed to it.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `echo $*` at the bottom of the `countdown.sh` file
 
 ## 425. run ./countdown.sh
 
 ### 425.1
 
-run `./countdown.sh`
+Execute your script with `./countdown.sh`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./countdown.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 430. run ./countdown.sh arg1 arg2 arg3
 
 ### 430.1
 
-run your file with `./countdown.sh arg1 arg2 arg3`
+Run your script again, but this time add three arguments to the command; `arg1`, `arg2`, and `arg3`. Just place them after the command with a space before each one.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./countdown.sh arg1 arg2 arg3` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 440. echo $1
 
 ### 440.1
 
-You can see the arguments that have been passed to your script. `$*` gets all the arguments, you can access any one of them with `$#`. `$1` would give you `arg1`. Change your script to echo the first argument instead of all the arguments.
+`$*` printed all the arguments passed to your script. To access any one of them, use `$<number>`. `arg1` could have been accessed with `$1`. Change your script to `echo` the second argument instead of all the arguments.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use `echo $2` to print the second argument
+- Change `echo $*` to `echo $2`
 
 ## 450. run ./countdown.sh arg1 arg2 arg3
 
 ### 450.1
 
-run your file with `./countdown.sh arg1 arg2 arg3` again
+Run your file with `./countdown.sh arg1 arg2 arg3` again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./countdown.sh arg1 arg2 arg3` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 460. help
 
 ### 460.1
 
-help in terminal
+Now it just prints the second argument. Your program will only need one argument, you will add an `if` statement to test it. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `help` in the terminal and press enter
 
 ## 470. man if
 
 ### 470.1
 
-man if
+This is a list of the built-in commands. One of them starts with `if`. See if you can find out more about it by checking its `man` page.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `man if` in the terminal and press enter
 
 ## 480. help if
 
 ### 480.1
 
-help if in terminal
+I guess there isn't a `man` page for it. At the top of the `help` screen, I noticed you can use `help <command>` to find out more. See if you can find out more about `if`. 
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `help if` in the terminal and press enter
 
 ## 490. Add if arg1 print true
 
 ### 490.1
 
-Now, only `arg1` is printed to the screen. You can create an `if` condition like this:
+The syntax is at the top, not all of it is required. Here's another example:
 
 ```sh
-if [[ CONDITION ]]
+if [ CONDITION ]
 then
   STATEMENTS
 fi
 ```
 
-Create an `if` condition that checks `if [[ $1 == "arg1" ]]`. Use `echo` to print `true` to the screen if it's true.
+Remove the `echo $2` and replace it with an `if` condition that checks `if [[ $1 == "arg1" ]]`. In its `then` area, use `echo` to print `true` to the screen.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add the following to your script:
+```sh
+if [ $1 == "arg1" ]
+then
+  echo true
+fi
+```
 
 ## 500. run ./countdown arg1
 
 ### 500.1
 
-Run the script again with the `arg1` as your first argument.
+The `if` statement will print `true` if you pass it `arg1`. Run the script again with `arg1` as the only argument.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./countdown.sh arg1` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 510. Add else print false
 
 ### 510.1
 
-You can add an else to your `if` condition like this:
+One of the optional parts of `if` was an `else` area. You can use it like this:
 
 ```sh
-if [[ CONDITION ]]
+if [ CONDITION ]
 then
   STATEMENTS
 else
@@ -588,12 +590,19 @@ else
 fi
 ```
 
-Add an `else` to your existing `if` condition that uses `echo` to print `false` to the terminal.
+Add an `else` to your existing `if` condition. Use `echo` to print `false` to the terminal in its `STATEMENTS` area.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add the following to your script:
+```sh
+if [ $1 == "arg1" ]
+then
+  echo true
+else
+  echo false
+fi
+```
 
 ## 520. run ./countdown !arg1
 
@@ -603,14 +612,15 @@ Run the script again and use anything except `arg1` as a first argument.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./countdown.sh !arg1` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 530. Change if condition -lt 5
 
 ### 530.1
 
-Your countdown timer is expecting an integer as a first argument. You can compare numbers with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your if condition to check if your first argument is less than `5`.
+Your program is expecting an integer as a first argument. You can compare integers inside the brackets (`[]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your if condition to check if your first argument is less than `5`.
 
 #### HINTS
 
@@ -665,7 +675,7 @@ Run the script again and use `5` as a first argument. Now it should be true.
 
 ### 580.1
 
-You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [[ $1 =~ ^[0-9]+$ ]]`. This regular expression checks that an integer is the first argument.
+You really want to be able to accept any interger as a first argument. You can compare against a regular expression pattern with `=~`. Change your if condition to `if [ $1 =~ ^[0-9]+$ ]`. This regular expression checks that an integer is the first argument.
 
 #### HINTS
 
