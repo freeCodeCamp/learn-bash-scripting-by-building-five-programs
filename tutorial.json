@@ -2530,7 +2530,11 @@
               "6f88991d4e0b152dbb4d16296b6ebd955320db61"
             ]
           },
-          "content": "View the `help` menu for the `while` command to see if you can find anything."
+          "content": "View the `help` menu for the `while` command to see if you can find anything.",
+          "hints": [
+            "Here's an example: `help <command>`",
+            "Enter `help while` in the terminal"
+          ]
         }
       ]
     },
