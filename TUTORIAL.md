@@ -1224,8 +1224,8 @@ View the `help` menu for the `while` command to see if you can find anything.
 
 #### HINTS
 
-Here's an example: `help <command>`
-Enter `help while` in the terminal
+- Here's an example: `help <command>`
+- Enter `help while` in the terminal
 
 ## 740. Add while loop
 
