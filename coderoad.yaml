@@ -904,12 +904,6 @@ levels:
         setup:
           watchers:
             - ../.bash_history
-  - id: '990'
-    steps:
-      - id: '990.1'
-        setup:
-          watchers:
-            - ../.bash_history
   - id: '1000'
     steps:
       - id: '1000.1'
@@ -943,6 +937,342 @@ levels:
   - id: '1050'
     steps:
       - id: '1050.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1060'
+    steps:
+      - id: '1060.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1070'
+    steps:
+      - id: '1070.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1080'
+    steps:
+      - id: '1080.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1090'
+    steps:
+      - id: '1090.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1100'
+    steps:
+      - id: '1100.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1110'
+    steps:
+      - id: '1110.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1120'
+    steps:
+      - id: '1120.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1130'
+    steps:
+      - id: '1130.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1140'
+    steps:
+      - id: '1140.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1150'
+    steps:
+      - id: '1150.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1160'
+    steps:
+      - id: '1160.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1170'
+    steps:
+      - id: '1170.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1180'
+    steps:
+      - id: '1180.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1190'
+    steps:
+      - id: '1190.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1200'
+    steps:
+      - id: '1200.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1210'
+    steps:
+      - id: '1210.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1220'
+    steps:
+      - id: '1220.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1230'
+    steps:
+      - id: '1230.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1240'
+    steps:
+      - id: '1240.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1250'
+    steps:
+      - id: '1250.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1260'
+    steps:
+      - id: '1260.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1270'
+    steps:
+      - id: '1270.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1280'
+    steps:
+      - id: '1280.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1290'
+    steps:
+      - id: '1290.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1300'
+    steps:
+      - id: '1300.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1310'
+    steps:
+      - id: '1310.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1320'
+    steps:
+      - id: '1320.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1330'
+    steps:
+      - id: '1330.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1340'
+    steps:
+      - id: '1340.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1350'
+    steps:
+      - id: '1350.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1360'
+    steps:
+      - id: '1360.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1370'
+    steps:
+      - id: '1370.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1380'
+    steps:
+      - id: '1380.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1390'
+    steps:
+      - id: '1390.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1400'
+    steps:
+      - id: '1400.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1410'
+    steps:
+      - id: '1410.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1420'
+    steps:
+      - id: '1420.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1430'
+    steps:
+      - id: '1430.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1440'
+    steps:
+      - id: '1440.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1450'
+    steps:
+      - id: '1450.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1460'
+    steps:
+      - id: '1460.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1470'
+    steps:
+      - id: '1470.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1480'
+    steps:
+      - id: '1480.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1490'
+    steps:
+      - id: '1490.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1500'
+    steps:
+      - id: '1500.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1510'
+    steps:
+      - id: '1510.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1520'
+    steps:
+      - id: '1520.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1530'
+    steps:
+      - id: '1530.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1540'
+    steps:
+      - id: '1540.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1550'
+    steps:
+      - id: '1550.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1560'
+    steps:
+      - id: '1560.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1570'
+    steps:
+      - id: '1570.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1580'
+    steps:
+      - id: '1580.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1590'
+    steps:
+      - id: '1590.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1600'
+    steps:
+      - id: '1600.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1610'
+    steps:
+      - id: '1610.1'
         setup:
           watchers:
             - ../.bash_history

@@ -1731,18 +1731,7 @@ elif [[ number -lt 61 ]]
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 990. else echo G:#
-
-### 990.1
-
-elso echo $TEXT G:$NUMBER
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 1000. run .bingo.sh
+## 1000. ./bingo.sh
 
 ### 1000.1
 
@@ -1764,20 +1753,9 @@ Looks like it's working :smile: Next project is a fortune teller. Use the `touch
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 1020. add shebang
+## 1020. chmod +x fortune.sh
 
 ### 1020.1
-
-Add a shebang
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 1030. chmod +x fortune.sh
-
-### 1030.1
 
 Change the permissions
 
@@ -1786,22 +1764,649 @@ Change the permissions
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 1040. Add RESPONSES array
+## 1030. Add shebang
 
-### 1040.1
+### 1030.1
 
-Create the array `RESPONSES=("Yes" "No" "Maybe")`
+Add a shebang
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 1050. echo ${RESPONSES[0]}
+## 1040. Add comment
+
+### 1040.1
+
+Add comment `Program to tell a persons fortune`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1050. Add echo "title"
 
 ### 1050.1
 
-echo ${RESPONSES[0]}
+Add echo `~~ Fortune teller ~~`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1060. ./fortune.sh
+
+### 1060.1
+
+fortune.sh
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1070. ARR=("a" "b" "c")
+
+### 1070.1
+
+In terminal: ARR=("a" "b" "c")
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1080. echo ${ARR[1]}
+
+### 1080.1
+
+`echo ${ARR[1]}`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1090. echo ${ARR[@]}
+
+### 1090.1
+
+`echo ${ARR[@]}`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1100. declare -p ARR
+
+### 1100.1
+
+`declare -p ARR`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1110. Add RESPONSES array
+
+### 1110.1
+
+Create the array `RESPONSES=("Yes" "No" "Maybe")` - but with all entries
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1120. echo ${RESPONSES[5]}
+
+### 1120.1
+
+`echo ${RESPONSES[5]}`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1130. ./fortune.sh
+
+### 1130.1
+
+`./fortune.sh`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1140. Add N=$((RANDOM % 7))
+
+### 1140.1
+
+Add `N=$((RANDOM % 7))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1150. Change to echo ${RESPONSES[$N]}
+
+### 1150.1
+
+Change to `echo ${RESPONSES[$N]}`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1160. help
+
+### 1160.1
+
+`help`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1170. help function
+
+### 1170.1
+
+`help function`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1180. Add GET_FORTUNE function
+
+### 1180.1
+
+Add `GET_FORTUNE` function. 
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1190. Add echo Ask a yes or no question
+
+### 1190.1
+
+Add echo ask a yes or no question
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1200. Add GET_FORTUNE function call
+
+### 1200.1
+
+Add `GET_FORTUNE` function call.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1210. ./fortune.sh
+
+### 1210.1
+
+./fortune.sh
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1220. Add read QUESTION
+
+### 1220.1
+
+Add `read QUESTION`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1230. ./fortune.sh
+
+### 1230.1
+
+./fortune.sh
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1240. help
+
+### 1240.1
+
+help
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1250. help until
+
+### 1250.1
+
+`help until`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1260. Add until loop
+
+### 1260.1
+
+Add until [[ question == "test?" ]]
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1270. ./fortune.sh
+
+### 1270.1
+
+./fortune.sh
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1280. help [[ expression ]]
+
+### 1280.1
+
+`help [[ expression ]]`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1290. [[ hello == hello ]]; echo $?
+
+### 1290.1
+
+`[[ hello == hello ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1300. [[ hello == world ]]; echo $?
+
+### 1300.1
+
+`[[ hello == world ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1310. [[ hello =~ el ]]; echo $?
+
+### 1310.1
+
+`[[ hello =~ el ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1320. [[ "hello world" =~ "ello" ]]; echo $?
+
+### 1320.1
+
+`[[ "hello world" =~ "ello" ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1330. [[ "hello world" =~ ^h ]]; echo $?
+
+### 1330.1
+
+`[[ "hello world" =~ ^h ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1340. [[ "hello world" =~ ^h.+d? ]]; echo $?
+
+### 1340.1
+
+`[[ "hello world" =~ ^h.+d? ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1350. VAR="hello world"
+
+### 1350.1
+
+`VAR="hello world"`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1360. echo $VAR
+
+### 1360.1
+
+`echo $VAR`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1370. [[ $VAR == "hello world" ]]; echo $?
+
+### 1370.1
+
+`[[ $VAR == "hello world" ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1380. [[ $VAR =~ \?$ ]; echo $?
+
+### 1380.1
+
+`[[ $VAR =~ \?$ ]]; echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1390. Change until condition
+
+### 1390.1
+
+Change until condition to see if it ends in a `?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1400. ./fortune.sh
+
+### 1400.1
+
+`./fortune.sh`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1410. Add if to GET_FORTUNE
+
+### 1410.1
+
+Add `if` to `GET_FORTUNE`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1420. ./fortune.sh
+
+### 1420.1
+
+`./fortune.sh`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1430. touch five.sh
+
+### 1430.1
+
+`touch five.sh`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1440. chmod +x five.sh
+
+### 1440.1
+
+chmod +x five.sh
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1450. Add shebang
+
+### 1450.1
+
+Add shebang
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1460. Add comment
+
+### 1460.1
+
+add comment 'program to run my other four programs'
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1470. Add ./questionnaire.sh
+
+### 1470.1
+
+Add questionnaire.sh to the file
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1480. ./five
+
+### 1480.1
+
+./five
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1490. Add the rest of the scripts
+
+### 1490.1
+
+Add the rest of the scripts to the file
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1500. Clear
+
+### 1500.1
+
+clear
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1510. ./five
+
+### 1510.1
+
+./five
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1520. help
+
+### 1520.1
+
+help
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1530. help type
+
+### 1530.1
+
+help type
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1540. type echo
+
+### 1540.1
+
+type echo
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1550. type read
+
+### 1550.1
+
+help type
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1560. type if
+
+### 1560.1
+
+type if
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1570. type then
+
+### 1570.1
+
+type then
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1580. type bash
+
+### 1580.1
+
+type bash
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1590. type psql
+
+### 1590.1
+
+type psql
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1600. type ./five.sh
+
+### 1600.1
+
+type ./five.sh
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1610. exit
+
+### 1610.1
+
+exit
 
 #### HINTS
 
