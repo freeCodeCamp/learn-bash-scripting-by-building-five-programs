@@ -1599,53 +1599,20 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 914. NUM=$(( RANDOM % 75 + 1))
+## 912. echo $J
+
+### 912.1
+
+`echo $J`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 914. declare -p J
 
 ### 914.1
-
-`NUM=$(( RANDOM % 75 + 1))`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 916. echo $NUM
-
-### 916.1
-
-`echo $NUM`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 918. declare -p NUM
-
-### 918.1
-
-`declare -p NUM`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 920. declare -p I
-
-### 920.1
-
-`declare -p I`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 923. declare -p J
-
-### 923.1
 
 `declare -p J`
 
@@ -1654,11 +1621,33 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 926. declare -p RANDOM
+## 916. declare -p RANDOM
 
-### 926.1
+### 916.1
 
 `declare -p RANDOM`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 920. NUM=$(( RANDOM % 75 + 1 ))
+
+### 920.1
+
+`NUM=$(( RANDOM % 75 + 1 ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 923. echo $NUM
+
+### 923.1
+
+`echo $NUM`
 
 #### HINTS
 
@@ -1669,7 +1658,7 @@ Run the script
 
 ### 928.1
 
-Change your number variable to $(( RANDOM % 75 + 1 )) and your echo statement to just echo $NUMBER again.
+Change your number variable to `$(( RANDOM % 75 + 1 ))` and your echo statement to just echo $NUMBER again.
 
 #### HINTS
 
