@@ -1,4 +1,4 @@
-describe('You', () => {
+/*describe('You', () => {
   it('should enter the suggested command in the terminal', async () => {
     const lastCommand = await getLastCommand();
     const joined = lastCommand.join('');
@@ -8,4 +8,4 @@ describe('You', () => {
 
     assert(joinedTest && first && second);
   });
-});
+});*/
