@@ -995,7 +995,7 @@ The condition you added should check if a positive integer was entered and execu
 
 - The `else` area should look like this: `echo Enter a positive integer as the first argument.`
 
-## 600. run ./countdown 1
+## 600. ./countdown 1
 
 ### 600.1
 
@@ -1006,7 +1006,7 @@ Run your script and use `1` as a first argument.
 - Type `./countdown.sh 1` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 610. run ./countdown 0
+## 610. ./countdown 0
 
 ### 610.1
 
@@ -1055,7 +1055,7 @@ do
 done
 ```
 
-## 630. run ./countdown 3
+## 630. ./countdown 3
 
 ### 630.1
 
@@ -1131,7 +1131,7 @@ In your `for` loop, use `sleep` to make the script pause for `1` second after ea
 
 - Add `sleep 1` after you print `i` in your `for` loop
 
-## 690. run ./countdown 3
+## 690. ./countdown 3
 
 ### 690.1
 
@@ -1153,7 +1153,7 @@ Change for loop to >=
 - Type `./countdown.sh 3` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 694. run ./countdown 3
+## 694. ./countdown 3
 
 ### 694.1
 
@@ -1175,7 +1175,7 @@ Add `echo -e "\n~~ Countdown Timer ~~\n"`
 - Type `./countdown.sh 3` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 698. run ./countdown 3
+## 698. ./countdown 3
 
 ### 698.1
 
@@ -1258,7 +1258,7 @@ Add `sleep 1`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 753. run ./countdown 3
+## 753. ./countdown 3
 
 ### 753.1
 
@@ -1280,7 +1280,7 @@ add `((I--))`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 770. run ./countdown.sh 3
+## 770. ./countdown.sh 3
 
 ### 770.1
 
@@ -1361,14 +1361,14 @@ NUMBER=5
 
 ### 830.1
 
-echo (($NUMBER))
+`echo (( $NUMBER ))`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 840. run ./bingo.sh
+## 840. ./bingo.sh
 
 ### 840.1
 
@@ -1379,11 +1379,22 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 850. echo $NUMBER + 1
+## 845. help let
+
+### 845.1
+
+`help let`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 850. Change to NUMBER=(( $RANDOM % 75 ))
 
 ### 850.1
 
-echo (($NUMBER + 1))
+change to `NUMBER=(( $RANDOM % 75 ))`
 
 #### HINTS
 
@@ -1401,66 +1412,264 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 870. change to subshell
+## 863. echo $RANDOM
 
-### 870.1
+### 863.1
 
-change to echo $((NUMBER + 1))
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 880. run ./bingo.sh
-
-### 880.1
-
-Run the script
+`echo $RANDOM`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 890. echo $RANDOM
+## 866. echo $RANDOM % 75
+
+### 866.1
+
+`echo $RANDOM % 75`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 869. echo (( $RANDOM % 75 ))
+
+### 869.1
+
+`echo (( $RANDOM % 75 ))`. You should get an error.
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 872. (( $RANDOM % 75 ))
+
+### 872.1
+
+`(( $RANDOM % 75 ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 875. echo $?
+
+### 875.1
+
+`echo $?`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 878. echo $(( RANDOM % 75 ))
+
+### 878.1
+
+`echo $(( RANDOM % 75 ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 881. I=0
+
+### 881.1
+
+`I=0`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 884. echo $I
+
+### 884.1
+
+`echo $I`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 887. (( I++ )) 
+
+### 887.1
+
+`(( I++ ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 890. echo $I
 
 ### 890.1
 
-echo $RANDOM
+`echo $I`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 900. echo $RANDOM%75
+## 893. (( I += 10 ))
 
-### 900.1
+### 893.1
 
-echo $RANDOM%75
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 910. Change to subshell
-
-### 910.1
-
-echo $((RANDOM%75))
+`(( I += 10 ))`
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 920. Set NUMBER to random%75
+## 896. echo $I
+
+### 896.1
+
+`echo $I`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 899. echo $(( I + 4 ))
+
+### 899.1
+
+`echo $(( I + 4 ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 902. echo $I
+
+### 902.1
+
+`echo $I`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 905. J=$(( I - 6 ))
+
+### 905.1
+
+`J=$(( I - 6 ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 908. echo $J
+
+### 908.1
+
+`echo $J`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 911. echo $(( J * 5 + 25 ))
+
+### 911.1
+
+`echo $(( J * 5 + 25 ))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 914. NUM=$(( RANDOM % 75 + 1))
+
+### 914.1
+
+`NUM=$(( RANDOM % 75 + 1))`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 916. echo $NUM
+
+### 916.1
+
+`echo $NUM`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 918. declare -p NUM
+
+### 918.1
+
+`declare -p NUM`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 920. declare -p I
 
 ### 920.1
 
-Change your number variable to $(($RANDOM % 75 + 1)) and your echo statement to just echo $NUMBER again.
+`declare -p I`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 923. declare -p J
+
+### 923.1
+
+`declare -p J`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 926. declare -p RANDOM
+
+### 926.1
+
+`declare -p RANDOM`
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 928. Set NUMBER=$(( RANDOM % 75 + 1))
+
+### 928.1
+
+Change your number variable to $(( RANDOM % 75 + 1 )) and your echo statement to just echo $NUMBER again.
 
 #### HINTS
 

@@ -712,6 +712,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '845'
+    steps:
+      - id: '845.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '850'
     steps:
       - id: '850.1'
@@ -724,15 +730,57 @@ levels:
         setup:
           watchers:
             - ../.bash_history
-  - id: '870'
+  - id: '863'
     steps:
-      - id: '870.1'
+      - id: '863.1'
         setup:
           watchers:
             - ../.bash_history
-  - id: '880'
+  - id: '866'
     steps:
-      - id: '880.1'
+      - id: '866.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '869'
+    steps:
+      - id: '869.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '872'
+    steps:
+      - id: '872.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '875'
+    steps:
+      - id: '875.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '878'
+    steps:
+      - id: '878.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '881'
+    steps:
+      - id: '881.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '884'
+    steps:
+      - id: '884.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '887'
+    steps:
+      - id: '887.1'
         setup:
           watchers:
             - ../.bash_history
@@ -742,21 +790,87 @@ levels:
         setup:
           watchers:
             - ../.bash_history
-  - id: '900'
+  - id: '893'
     steps:
-      - id: '900.1'
+      - id: '893.1'
         setup:
           watchers:
             - ../.bash_history
-  - id: '910'
+  - id: '896'
     steps:
-      - id: '910.1'
+      - id: '896.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '899'
+    steps:
+      - id: '899.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '902'
+    steps:
+      - id: '902.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '905'
+    steps:
+      - id: '905.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '908'
+    steps:
+      - id: '908.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '911'
+    steps:
+      - id: '911.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '914'
+    steps:
+      - id: '914.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '916'
+    steps:
+      - id: '916.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '918'
+    steps:
+      - id: '918.1'
         setup:
           watchers:
             - ../.bash_history
   - id: '920'
     steps:
       - id: '920.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '923'
+    steps:
+      - id: '923.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '926'
+    steps:
+      - id: '926.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '928'
+    steps:
+      - id: '928.1'
         setup:
           watchers:
             - ../.bash_history
