@@ -1,0 +1,11 @@
+const assert = require('assert');
+const { getLastCommand } = require('./utils');
+
+describe('You', () => {
+  it('should enter the suggested command in the terminal', async () => {
+    const lastCommand = await getLastCommand(0, false);
+    const secondLastCommand = await getLastCommand(1, false);
+
+    assert(/^\s*\(\([ \t]*\$RANDOM[ \t]*%[ \t]*75[ \t]*\)\)[ \t]*;?\s*$/gm.test(secondLastCommand) && /^\s*echo[ \t]+\$\?[ \t]*;?[ \t]*$/.test(lastCommand));
+  });
+});
