@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getFileContents, getScriptOutput } = require('./utils');
 
 describe('Your script', () => {
@@ -8,4 +8,4 @@ describe('Your script', () => {
 
     assert(/^\s*until[ \t]+\[\[[ \t]+\$QUESTION[ \t]+=~[ \t]+\\\?\$[ \t]+\]\]/gm.test(scriptFile) && output.match(/Ask a yes or no question:/gm).length === 2);
   });
-});
+});*/
