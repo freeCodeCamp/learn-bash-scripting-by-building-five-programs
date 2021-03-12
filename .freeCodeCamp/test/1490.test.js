@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { replaceAndRun } = require('./utils');
 
 describe('Your script', () => {
@@ -13,4 +13,4 @@ describe('Your script', () => {
 
     assert(test1 && test2 && test3 && test4);
   });
-});
+});*/
