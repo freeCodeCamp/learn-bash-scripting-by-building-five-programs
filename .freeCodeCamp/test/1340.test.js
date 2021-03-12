@@ -1,10 +1,10 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('You', () => {
   it('should enter the suggested command in the terminal', async () => {
     const lastCommand = await getLastCommand(0, false);
 
-    assert(/^\s*\[\[[ \t]+('|")hello world\1[ \t]+=~[ \t]+\^h[ \t]+\]\][ \t]*;[ \t]*echo[ \t]+\$\?[ \t]*;?\s*$/.test(lastCommand));
+    assert(/^\s*\[\[[ \t]+('|")hello world\1[ \t]+=~[ \t]+\^h\.\+d\$[ \t]+\]\][ \t]*;[ \t]*echo[ \t]+\$\?[ \t]*;?\s*$/.test(lastCommand));
   });
-});*/
+});
