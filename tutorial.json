@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "summary": {
     "title": "Learn Bash Scripting by Building Five Programs",
     "description": "> Welcome to the Bash Scripting lessons!"
@@ -11,7 +11,7 @@
         "sudo cp ~/project/.freeCodeCamp/.bashrc ~"
       ],
       "commits": [
-        "80c145073e1b548e430d030d943839ffa35823da"
+        "06ef601391f2acd494a45223a53c0fbd4f97f6ca"
       ]
     },
     "testRunner": {
@@ -23,7 +23,7 @@
     },
     "repo": {
       "uri": "https://github.com/moT01/.learn-bash-scripting-by-building-five-programs",
-      "branch": "v0.1.3"
+      "branch": "v0.1.4"
     },
     "dependencies": [
       {
@@ -46,7 +46,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fdc2f56aac8b8443cac2597efb36cd8f434ffbea"
+              "cdeb0943cb10e468df53c6dc626ea4d57959b138"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello bash` into the terminal and press enter.",
@@ -70,7 +70,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "19d514bd9be4a20dfcedcb83caa2bf3b8c165bb1"
+              "812001d1fa24d7783ad8d5e3626ed81164aae19d"
             ]
           },
           "content": "You can run commands in the terminal or put them in a file to be run as a script. You will be making five small programs to learn some scripting. The first one will be a \"questionnaire\". Use the `touch` command to create `questionnaire.sh` in the `project` folder.",
@@ -95,7 +95,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bfe5df3ad04cb4a924d13568fdd9d8b6dd862aa4"
+              "30449e138bd52a8797a9d82d279bc48d7233ddcd"
             ]
           },
           "content": "To start, just add `echo Hello Questionnaire` at the top of the file you just created.",
@@ -118,7 +118,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "82c4d4d8dd63dc0c48d2ab523bfe0237d56de972"
+              "8a1858508b7e68d41c1df3806bc9a40d2ff0c1a3"
             ]
           },
           "content": "Your script has one command. Run it with `sh questionnaire.sh` to see what happens. `sh` stands for `shell`.",
@@ -143,7 +143,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1c69ea5cdcb836344fa6ae774eaf85b22446175f"
+              "b3b17a323ea99cb50fadcebb778370c7af36b643"
             ]
           },
           "content": "When you ran the script, the `shell` interpreter was used. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.",
@@ -168,7 +168,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4b52f97d2acc89e22dc7d7a154c0f998e5692de3"
+              "b7068ebebc17f8e1efcf2b202fbba66c77a03135"
             ]
           },
           "content": "The output was the same, but there are many other interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.",
@@ -191,7 +191,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8f687e65eff5267cef6ff781b003bda40ef323cc"
+              "88da3c2f78844dd1acbeaaae2fd09db641f9ecfe"
             ]
           },
           "content": "That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a \"shebang\" at the very top of the file like this: `#! <path_to_interpreter>`. Add a \"shebang\" at the top of your file, the one you want looks like this: `#!/bin/bash`.",
@@ -214,7 +214,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "eec65bb9e2cde59b8987009e96740a8448a570f9"
+              "072cde8c7392622ec1174ab3ed112436eeb181bf"
             ]
           },
           "content": "Now, instead of using `sh` or `bash` to run your script. You can run it be executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`",
@@ -239,7 +239,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8dd0dccf7206f6ad88bf45b03e87bd4ca92512bc"
+              "478f9ad01afb5984aa05ddf83d8fd512feab96c8"
             ]
           },
           "content": "You should have got a permission denied message. List what's in the `project` folder in long list format with `ls -l`.",
@@ -264,7 +264,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "88c6abf7dec3e8a9ac46d2462d606be182aa6900"
+              "75b58831cc4d661aa4c8dfa5ca08482723911820"
             ]
           },
           "content": "You should see `-rw-r--r--` next to your file. All but the first character (`-`) describe permissions certain users have with the file. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnnaire.sh` in the terminal to give everyone executable permissions.",
@@ -289,7 +289,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "010f6eb31cacd61492b0f156de81b210a44b29fd"
+              "c7515b0a4d3b8624933b21e79983fc12e202bbd8"
             ]
           },
           "content": "List what's in the folder again with `ls -l` to see the new permissions.",
@@ -314,7 +314,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "69a8aa2964ceabffdb8272957443e578b6c72a47"
+              "1b0f0919b51fc0fcffe73e9ed10d3eb040a75602"
             ]
           },
           "content": "The `x` was added by each type of user to denote that anyone can execute the file. Run your file again by executing it with `./questionnaire.sh`.",
@@ -339,7 +339,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ab3f165bcfbb833baf88e47e390c86fe241cedba"
+              "830125cb8c828df0befc38e2aef7cd60582f09dc"
             ]
           },
           "content": "Now it works. In your script, you can add any commands that you would be able to enter in the terminal. Test this by adding the `ls -l` command below your other command.",
@@ -362,7 +362,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f4660ef9df9f90eada20770bf538d7c5a06b5598"
+              "f262cbb014aed77c84d9cd4cd9d9227699021332"
             ]
           },
           "content": "Run the script by executing it again.",
@@ -387,7 +387,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "566f6e29655571c5a2398bc73f46d2584f0c90cc"
+              "75b0d052d920f15831791ce278eefbfd07e8b08e"
             ]
           },
           "content": "Your script printed the one file as if you entered the `ls -l` in the terminal. Delete everything but the \"shebang\" from your file so you can start making the questionnaire.",
@@ -410,7 +410,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7e0902f3b6b4b5f80b0dbbedfeff28b862d50b46"
+              "941c7c600538b789bf37418aa32ad15e06d9c9ac"
             ]
           },
           "content": "Bash has variables, functions, and other things you might be familiar with. You can create a variable with `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `\"What's your name?\"`.",
@@ -433,7 +433,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8a9d6149afbb49d2af33053f18eda35f4da71b3c"
+              "01dd97fc13ba8a861275d97dc84551c8205114ad"
             ]
           },
           "content": "To use a variable, place `$` in front of it like this: `$VARIABLE_NAME`. Shell scripts run from top to bottom, so you can only use variable below where it's created. Use `echo` to print your variable.",
@@ -456,7 +456,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6ae67e04c87e6c045a122dd8cea9e04c2610da71"
+              "4b84631176ed0a859fb31a9716065c08f1d5acde"
             ]
           },
           "content": "Run the file like you did before to see if it worked.",
@@ -482,7 +482,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2cb2a01edf05d7f9f3f924cd5c1fa6838b912e99"
+              "3661311527dc76a5a755e6a6f93e65c3db4d90dd"
             ]
           },
           "content": "The question was printed. Next, you want to be able to accept input from a user. You can do that with `read` like this: `read VARIABLE_NAME`. This will get user input and store it into a new variable. Use `read` to get input and store it in a variable named `NAME`.",
@@ -505,7 +505,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1ae5cf260afcf58021c0056e306d336decafc9e1"
+              "395cac83bcd0158feeed6f5b52ad2d1ee1da1048"
             ]
           },
           "content": "At the bottom of your script, use `echo` to print `Hello, <name>.` to the terminal.",
@@ -529,7 +529,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1fa270d057798ec71ae9f979715f5a4232cc0ed4"
+              "8b5fe85b8ec7e2fae831a4ad5f570699a3e93179"
             ]
           },
           "content": "Run the file again. Type your name and press enter after it asks for it.",
@@ -556,7 +556,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fd91d25c05ab10222f99f584ac2ec37caf371665"
+              "7db9bf7dcf04b8b9231f51c3c1609e2b1f6e230f"
             ]
           },
           "content": "Right below your first variable, create another one named `QUESTION2`. Set the value to, `Where are you from?`. Make sure to put it in double quotes.",
@@ -580,7 +580,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3a548ebfeeb46de3aeb1d8b91eb297a63bc31c72"
+              "88d86ee27a9971e82deec88c67701548a05be640"
             ]
           },
           "content": "Use your new variable to print the next question after your `read` command.",
@@ -604,7 +604,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c3d63e0bc7300b395b9addecf71441e930c33cf0"
+              "e2ef2b69adb64c7fefe6bb65ee74bb53b7f6f2a7"
             ]
           },
           "content": "Use `read` to get input from the user into a variable named `LOCATION`.",
@@ -627,7 +627,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3b73b7f6ede9ada2cf9bbbffba0d789e40e31e09"
+              "d1969e9e85f0c4e309e23ccf60afb36b5e80a3f5"
             ]
           },
           "content": "Change the existing response of `\"Hello $NAME` to `\"Hello <name> from <location>.\"`. Use your two variables in place of `<name>` and `<location` and make sure the command is at the bottom of the file.",
@@ -650,7 +650,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "106beb0f9bf3d3e57d7fd77549811fb1211618d1"
+              "dd9d30d06fe0e0a1b3cad46d82ebf33e4228c561"
             ]
           },
           "content": "Run the script and enter values when it is waiting for input.",
@@ -677,7 +677,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1402b2638b7dee731bfa28520af571a96dd3c285"
+              "5dbf5270f73a01dc3f12372aef0bab6512192231"
             ]
           },
           "content": "Add a title to your program for me. Use `echo` to print `~~ Questionnaire ~~` before anything else is printed.",
@@ -701,7 +701,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e4fc231b2a8197603fd0adca07f3c07028307af4"
+              "580d9c9f6631baa2393c53e4a6cedbc9e347ede2"
             ]
           },
           "content": "Run the script and enter values until it is done again so you can see what the title looks like.",
@@ -728,7 +728,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a6787873044fe89c9c35088e9ab11ca183a9142b"
+              "6d54cc2cd46dc4e455474d0fc59e5e819fd8a01b"
             ]
           },
           "content": "It would be nice if there was some new lines around the title. You've probably used the `--help` flag before, see if you can use it with `echo` to try and find a way to add empty lines.",
@@ -751,7 +751,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "daac915971f2e32d2c1f048fc334056e44adcba5"
+              "a3dd2415d3c916c2bcd4436fa34bc521fd8db19f"
             ]
           },
           "content": "That didn't work as I hoped. Another way to find information about a command is with `man`. It stands for `manual` and you can use it like this: `man <command>`. See if there's a manual for `echo`.",
@@ -774,7 +774,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "57233d633093d71fbe8590214f8b05867f7debc7"
+              "50d686beba047ea4373acae639f0fe795bc8706c"
             ]
           },
           "content": "That `-e` option looks promising, and the `\\n` below it says `new line`. Change the title command to `echo -e \\n~~ Questionnaire ~~\\n` to put an empty line before and after it.",
@@ -797,7 +797,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cdc580a4db2ebbb4f067b84c61d14adb098fe5bd"
+              "7c6ec63fe48e053b0dfcddec1f4f694084146696"
             ]
           },
           "content": "Run it to see if it worked. You can press `ctrl+c` to close the program after it starts if you don't want to enter values.",
@@ -824,7 +824,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "40bbf4a0d541e73822ecd504884b44175e2fb6fd"
+              "632aff2e26695ed3e2c6371d9eef86a70722f34d"
             ]
           },
           "content": "Didn't work. When using patterns like `\\n`, you need to enclose the string in double quotes (`\"<string>\"`). Place double quotes around the title to see it will print the empty lines.",
@@ -847,7 +847,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "831dad222b734b72d109d2adac1b8ac43002a409"
+              "7296168b8965c29576c9bdfbf62e08abdc4a1067"
             ]
           },
           "content": "Try running it again to make sure it worked.",
@@ -874,7 +874,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "988aafc02af2a2ad4cf518e12c894a8f5705ece9"
+              "e1c5443732fb81e8225fbcb706a6e59c94b095f7"
             ]
           },
           "content": "It's working :smile: Create a `QUESTION3` variable next to the other ones and set the value to `\"What's your favorite coding website?\"`",
@@ -897,7 +897,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "44854835ae29944b1ac24088d2e013801a7b0d0c"
+              "3bf16129f872aab60083e3e2db21cb9006d3fa16"
             ]
           },
           "content": "Use `echo` to print the third question after the other two.",
@@ -920,7 +920,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8239cfbae7490a8ab41bb3a10d84f5cce7395f36"
+              "0252f1e1910a9b36e702ef25d9df42642cb74208"
             ]
           },
           "content": "Add code to `read` input into a variable named `WEBSITE`.",
@@ -943,7 +943,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7d907eb26472db7ef8668ff6193c73135ed0277d"
+              "bc90b2fa3de12645de61f5f2a601411f437cc9ea"
             ]
           },
           "content": "In your response, instead of printing the users name and location, change the `echo` command to print this sentence: `Hello $NAME from $LOCATION. I learned that your favorite coding website is $WEBSITE!`.",
@@ -966,7 +966,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "34b48d5ae7a79e78f67ea28b5038889c79471617"
+              "dd3e0ac212105a68403cbe7ecc26d3fe394ea043"
             ]
           },
           "content": "Run the script and enter values when the program is waiting. Lets see the final output.",
@@ -992,7 +992,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c779789cabdd3c00919de2a3ad7935d7da78d15d"
+              "0680f28de10725692482ce1cc2ab29a1fe8b63ab"
             ]
           },
           "content": "One last thing. Change that final sentence to print an empty line before it like you did for the title.",
@@ -1017,7 +1017,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0a6d5781a1593143ebbe26957390f41289292727"
+              "0b2f24477201fd89d75361cc1d2f89da1a9c05fe"
             ]
           },
           "content": "Run it one last time and enter values when it asks to see if you like how it looks.",
@@ -1043,7 +1043,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "77d7a72fe05f5986ae61f9e092f00b108e24171f"
+              "b5c6241e26c6611f19cf5f73ac89139f835ceca3"
             ]
           },
           "content": "Looks good. I think you are done that script for now. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder. This program will count down from a given input.",
@@ -1068,7 +1068,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7d04f894844849bd9d150b6b85c8dd6bf8b3a7d6"
+              "17f7117d091bb1abc3cf138e4f84f1452cce4cae"
             ]
           },
           "content": "Give your file executable permissions so you can run it like the other one. It's the `chmod` command.",
@@ -1096,7 +1096,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7b62424e0682afbe16e684bb003ff83be42d7fdb"
+              "688c88a6d8feaf214fe75566750915da132a7106"
             ]
           },
           "content": "You want to use the `bash` interpreter again. Add a `shebang` at the top of your new file to denote that.",
@@ -1123,7 +1123,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c39186ed7da88e97e30dc94a77b99c07f8549b22"
+              "db33d0063df064a8308e117b55efc651d83dcecb"
             ]
           },
           "content": "Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does.",
@@ -1146,7 +1146,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "285430d1cb442c3a9f6a64aa6e75d0f7df9eedda"
+              "13af7ae570155d814e8d69410b9834b5c1e26867"
             ]
           },
           "content": "Programs can take arguments. You can access them a few different ways with `$`. Add `echo $*` in your script to print all arguments passed to it.",
@@ -1169,7 +1169,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0dbe18387dfc09bb0508d275b3f2217214cece02"
+              "b9ddefff8942d98454ad0af84d40a9ff00e92be0"
             ]
           },
           "content": "Execute your script with `./countdown.sh`.",
@@ -1194,7 +1194,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6fed815b4aa620bdc1351878e3243d0458c66fd8"
+              "f7c9ca33d7b348bf07437ad05f05ff1caf516398"
             ]
           },
           "content": "Nothing was printed. Run your script again, but this time add three arguments to the command; `arg1`, `arg2`, and `arg3`. Place them after the command with a space before each one.",
@@ -1219,7 +1219,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "13d6d28f2cede25c351990b6011ff0a429371cb1"
+              "6bf9d33a83a20e58929dac49faf7861dc4257e3d"
             ]
           },
           "content": "`$*` printed all the arguments passed to your script. To access any one of them, use `$<number>`. `arg1` could have been accessed with `$1`. Change your script to `echo` the second argument instead of all the arguments.",
@@ -1243,7 +1243,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "38d841ac18d6e75e8e5469219f16f341f56e7791"
+              "84eaead9133a29218824b6370c5ce019908bb658"
             ]
           },
           "content": "Run your file with `./countdown.sh arg1 arg2 arg3` again.",
@@ -1268,7 +1268,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0a3bf268560f884c20202bbd45b38691632e28e7"
+              "fcb4e7b92f8612c25e4f58970d42ef06b95c8a00"
             ]
           },
           "content": "Now it just prints the second argument. Your program will only need one argument, you will add an `if` statement to test it. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.",
@@ -1291,7 +1291,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6a20689a1e24e44db80d1fa9b2b189d16a1c57cd"
+              "a8fdf792b3a335fb2ebacbe31ac2e1b708fb3455"
             ]
           },
           "content": "This is a list of the built-in commands. One of them starts with `if`. See if you can find out more about it by checking its `man` page.",
@@ -1315,7 +1315,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e6989035ef7188ba2fb3c7b8d60fe68ae0fe76f1"
+              "3c7a33349ffab49f4511c2d592e1cf2ab031de6f"
             ]
           },
           "content": "I guess there isn't a `man` page for it. At the top of the `help` screen, I noticed you can use `help <command>` to find out more. Yet another way to find out about a command. See if you can find out more about `if`.",
@@ -1339,7 +1339,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "405c9ae4bdb3cd5f879dd3c9cf42a9e16ef5d394"
+              "553cfbb0b62970118cf97dad734ddca0695a1b29"
             ]
           },
           "content": "The syntax is at the top, not all of it is required. Here's another example:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nRemove the `echo $2` in your new script and replace it with an `if` condition that checks `if [[ $1 == \"arg1\" ]]`. In its `then` area, use `echo` to print `true` to the screen.",
@@ -1362,7 +1362,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ea8637ee8978b4d269dded4f1f0efe1519e8817e"
+              "0f9341ec4fd620d593a2b7b02b49317aa662f892"
             ]
           },
           "content": "The `if` statement will print `true` if you pass `arg1`. Notice that the end of the syntax is `fi` (`if` backwards). Run the script again with `arg1` as the only argument.",
@@ -1387,7 +1387,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "71de7eacca3b7b004f094c6f11eeebda9c3167bd"
+              "dae141735b6fc66a7d257637601925604fde832a"
             ]
           },
           "content": "Run it again with anything except `arg1` as the first argument.",
@@ -1412,7 +1412,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "da38de2252dcd31bf8e2ba14cae7194312812d1b"
+              "bb286ac46338cfb84d1e752f1f469a2d30b4f46a"
             ]
           },
           "content": "One of the optional parts of `if` was an `else` area. You can use it like this:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nelse\n  STATEMENTS\nfi\n```\n\nAdd an `else` to your existing `if` condition. Use `echo` to print `false` to the terminal in its `STATEMENTS` area.",
@@ -1435,7 +1435,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "29868b0d69e3964d16937d1bcbfe518d12464feb"
+              "4665fd467b4a56a491833f89e30dfcff38fa57f1"
             ]
           },
           "content": "Run the script again and use anything except `arg1` as the only argument.",
@@ -1460,7 +1460,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "15bdfa3ffa1849cb7818a118de39c16655958b47"
+              "4d02de2cf828553103e226af3b6631cb7479ad20"
             ]
           },
           "content": "Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.",
@@ -1484,7 +1484,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "21127dd8e22b85a360c10e58fde34d1fde8f4ef2"
+              "c59013c192c5ed402d87a114b20bd5b8b1d0bd81"
             ]
           },
           "content": "Run the script again and use `4` as a first argument.",
@@ -1509,7 +1509,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e8b60a16034ab0c98d47f88a940af0af2fd3f801"
+              "e25c162e7f0241c609d64a03a18743255544228c"
             ]
           },
           "content": "It printed `true` since your argument was less than `5`. Run the script again and use `5` as a first argument.",
@@ -1534,7 +1534,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c8512381793ffc8940c41a5ad33c9ad30ba5435d"
+              "fd5ed5198ef5c9a2c9d8c4f789916a914c5c005a"
             ]
           },
           "content": "As expected, that printed `false`. Take a look at that `help` menu again. I want to see if we can find out more about how these expressions work.\n help",
@@ -1557,7 +1557,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9312d1b3a1880176f64612750284ecbeaa4cc233"
+              "0e94cb95d3fd4b90feaddbae3f5bc2512a3fc8a5"
             ]
           },
           "content": "Near the top left, it says `[[ expression ]]`. See if you can get more info about that with the `help` command like you did with `help if`.",
@@ -1581,7 +1581,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f0f744f17035002d95abfdc512d17e721d59314a"
+              "6050d2363f85f068549b5560bab95a6af2d48095"
             ]
           },
           "content": "There's some good info there. Looks like you can use some, probably familiar, things like `&&`, `||`, `==` and `!=`. It says something about the `test` built-in command. See if you can bring up the `help` menu for that.",
@@ -1606,7 +1606,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9ce19aedf0f0658052e3b6b93ff6a13949f75f37"
+              "4852241cdaa1cad0ba3f2bd9d5ecdb7a4c02703e"
             ]
           },
           "content": "That's what I was looking for. At the top is some operators to use with files. There's some string and other operators as well. You used the arithmetic operators with your `if` condition. Change the condition in your script to check if the first argument is less than or equal to `5`.",
@@ -1630,7 +1630,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "917ea04265bc702b997f48f6bec4d3aeed7c93e0"
+              "69d340f16f8bda6d1136019d10ba9799841ace63"
             ]
           },
           "content": "Run the script again and use `5` as a first argument again.",
@@ -1655,7 +1655,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "189e24cc2fdd62e64017fdb234bff9ee3976defe"
+              "4aa9362708b78491e055f222902f5d4826198753"
             ]
           },
           "content": "Now it prints `true`. Remember I said any command can run in the terminal or a script. Try running an expression right in the terminal by entering `[[ 0 -le 5 ]]` in it.",
@@ -1679,7 +1679,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bf009c4d913fafad825952aecee0c7959138db25"
+              "ba236d0630704268a0c70bca6921120096c04aa2"
             ]
           },
           "content": "Nothing happened. Each command has an exit status that can be accessed with `$?`. View the exit status of the **last command** with `echo $?`.",
@@ -1703,7 +1703,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e7dbd4d96bf21095e19d3504e74f976123572a44"
+              "21a233197c9bdd314c85a798fde9516467d51f5e"
             ]
           },
           "content": "The exit status of `0` means it was true, `0` is indeed less or equal to `5`. Try it again with `[[ 5 -lt 0 ]]`.",
@@ -1727,7 +1727,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cc27d9e701801cab2a466161a32634d74ec7c4a7"
+              "8bfaed18c118cc38a0af89ca0ae8e078992a7364"
             ]
           },
           "content": "Echo the exit status of the command you just entered.",
@@ -1751,7 +1751,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4c9cb52172105943250c9cfc45fa6cde9d4aeed5"
+              "31e6c737541cc2fc9f1507b84c2363e3e70a55d5"
             ]
           },
           "content": "It printed `1` this time for false. You can separate commands on a single line with `;`. Enter your last two commands on one line like this: `[[ 5 -lt 0 ]]; echo $?`. It will run the expression, then print the exit status of it since it was the last command.",
@@ -1774,7 +1774,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "45342756fa452f23a9519826c84d1dd9bf80a51c"
+              "6ce5d66da6e9425f950c41c3a1aebcfe2aa81c44"
             ]
           },
           "content": "Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is greater than (`-gt`) `1` and print the exit status of the expression on one line.",
@@ -1798,7 +1798,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f202ce0cbbe2acc91adb865346e91474072d567f"
+              "ea45bec15ce26365fae46aa94521f9e37f81b01f"
             ]
           },
           "content": "You can think of the exit status of `0` as true. But, more accurately, it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.",
@@ -1822,7 +1822,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1c88715b877f1107681ecc0f429fe83162519f7d"
+              "a97eb03e6da3388d3dfa9def577f67f72c21bed4"
             ]
           },
           "content": "`Command not found`, with an exit status of `127`. Anything but `0` means there was an error with the command. `bad_command` didn't exist. Try it again with `ls`.",
@@ -1848,7 +1848,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "48f207090cd726d97776d558c5edd7535f31c71a"
+              "5861b75e57eada90bccb7446f9c7eb3df6589a38"
             ]
           },
           "content": "The command executed as expected and there were zero errors. So it gave you an exit status of `0`. Try it again with `ls -y`.",
@@ -1874,7 +1874,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4651c0d9773341e7c55ce4297948ef7a79d389fc"
+              "aa5054395c1942dfe53c8536d4f912fefc90aa38"
             ]
           },
           "content": "The `-y` flag doesn't work with `ls` so it gave you an exit status code of `2`, meaning that the command was unsuccessful. View the `help` menu of the `test` command again, I want to see what else is in that list.",
@@ -1898,7 +1898,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b90b8071ac0b8a23ca9120de30288cb99fd9d3d2"
+              "285cc0db866cd9264b377db46cf064d676aac332"
             ]
           },
           "content": "You tried a few of the arithmetic operators, those work for integers. Try one of the file operators. The first one on the list checks if a file exists. Type `[[ -a countdown.sh ]]; echo $?` in the terminal to see if your file exists.",
@@ -1923,7 +1923,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a81b9479e9ef76fb000a824ba80e8e14c51bbae9"
+              "a933f56fe31d345abd9ac72ccc1ab2d85ed20712"
             ]
           },
           "content": "The file must exist. It's checking the folder the command is entered from. Try it again with `bad_file.txt`.",
@@ -1949,7 +1949,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f8e9381248d96f854bad717a24517a698380d8a8"
+              "aa477504c33b22efe495a045c0700e8854f6f55a"
             ]
           },
           "content": "`bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your file.",
@@ -1975,7 +1975,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dcc8715f76a9fd8b91522a03086da35770b5ad8a"
+              "3eb6ba7a405658efc2a5b759991b85e1a2147cd8"
             ]
           },
           "content": "You played around with a number of the expressions. View the `help [[ expression ]]` menu again that you looked at before to see a few more options.",
@@ -1999,7 +1999,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6d1e4bf686df0215e0b19169b1eb7654132dc64f"
+              "71f01e7e098323fe50d41c63dcb9c2d4fac5ae6a"
             ]
           },
           "content": "Some of these options existed in the `help test` menu, but I prefer these when they can be used. Enter `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` in the terminal to test if both conditions are true.",
@@ -2023,7 +2023,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b09454d4ec24a84b5d5943929cee018748cef671"
+              "21fa5098744e8b8d7696fc1ed54ecd4949932977"
             ]
           },
           "content": "Both conditions weren't true, so the command gave an error. Try testing the same two conditions with the `or` operator.",
@@ -2049,7 +2049,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "49d0c6849b4e1ce3392ea44e9f5e41ff9c487389"
+              "02db3ede979b8886eaa6cb4f050b1dcc9598d7dd"
             ]
           },
           "content": "One of the conditions was true, so you didn't get any errors. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is greater than zero.",
@@ -2073,7 +2073,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "72fc26910d8ef9b7ed3413b77de7d13a0de2e3e2"
+              "36608402ad04d09f63a9d3fea68463b9e1820edf"
             ]
           },
           "content": "The condition you added should check if a positive integer was entered and execute the `then` area. Change the message printed in the `else` area to `Enter a positive integer as the first argument.` so a user knows what's expected.",
@@ -2096,7 +2096,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d053b073b2e5e055d6d5fc8461b22d5139ef9486"
+              "400b99802dcac133d9446e9150538043ecfe3faf"
             ]
           },
           "content": "Run your script and use `1` as a first argument.",
@@ -2120,7 +2120,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4f7a59a55d2de4e20ebe48b7bc10cc0ba9b266d7"
+              "32cfdf006b5b0cccb983d4023e8751ee4da562fc"
             ]
           },
           "content": "Run the script again and use anything but a positive integer as the only argument.",
@@ -2144,7 +2144,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f487eef5828ff266449efa15039eb170ebe8c390"
+              "2edde637b571ef04d364dbbc9814e4c4edfe968d"
             ]
           },
           "content": "Looks like your `if` condition is working. Next, you want to loop over the argument and count down to zero from it. Check the `help` menu to see if there's any commands for this.",
@@ -2168,7 +2168,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ab50526e725b7f4af23beea3802c9da7042ec6fd"
+              "b07115d1918731fbbf66807f302cc9a419393892"
             ]
           },
           "content": "There's two `for` loops in there, you want the second one. Here's an example:\n\n```sh\nfor (( i = 10; i > 0; i-- ))\ndo\n  echo $i\ndone\n```\n\nThe above would print 10 through 1 to the screen. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from your `$1` argument to `1`.",
@@ -2193,7 +2193,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f6fec7998cc6a552a2512c27ae412bc7be54701a"
+              "6a430ef84f4bbecb0d4662eca96c23bd4202f635"
             ]
           },
           "content": "Run your script and use `3` and the first argument.",
@@ -2217,7 +2217,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ebff2ce2e85783369185e6f2d233f6977f276b5e"
+              "ad6f2b3d79798b06aadab6262548a346c04bfbad"
             ]
           },
           "content": "It works :smile: But I want it to pause for one second between each number. Check the `help` menu again.",
@@ -2241,7 +2241,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1ab3c932a541d2c810c699b89c6e6b38f7325158"
+              "cfe6e359021d6cb7a4691383b3505c6ecc6b9d47"
             ]
           },
           "content": "I'm not seeing the command I was hoping to. These are the built-in commands, where are the rest? Type `ls /` to look around.",
@@ -2265,7 +2265,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "caef484aec1f6cb65d7db2b7c04bf0f7088e3c7d"
+              "8857dc0bef54c9c3a13bc733565454599fc5835c"
             ]
           },
           "content": "The `/` listed what's in the root of the file system. I see a `bin` folder, `bin` stands for `binary`. View what's in it with `ls /bin`.",
@@ -2289,7 +2289,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dcc553987761a7eab0f1a7028b66f7e632e5dc44"
+              "5a02815a1d98b1909469cafec114bff25c10328a"
             ]
           },
           "content": "These are some non built-in commands. There's quite a few that should look familiar. One is `bash`, that's the one you used for the `shebang` in your scripts. I see one called `sleep` that might allow you to pause your script while it's counting down. View the manual of it.",
@@ -2313,7 +2313,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "853bc1d642c8b55ed66c04c63f7a6e881f026174"
+              "281d7aa9e0e3550a3eaca45b42f6c40ccbd54437"
             ]
           },
           "content": "It says you can pause execution for a number of seconds. Try it out in the terminal by entering `sleep 3`.",
@@ -2337,7 +2337,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "85bae237b2d1afd2a40b93381f8eb8d1a782444e"
+              "a31589716997cd4685564b22146f12230cfafee0"
             ]
           },
           "content": "In your `for` loop, use `sleep` to make the script pause for `1` second after each number is printed.",
@@ -2360,7 +2360,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "376c8ae8372d4a9c58a23c7dc05efb482921020b"
+              "484abdf8b8660c94ec5f328d45212fe0a18c78a7"
             ]
           },
           "content": "Run your script and use `3` and the first argument again.",
@@ -2384,7 +2384,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c16d839efa6b2952f5ba5ccff0e905bd7c16e2e7"
+              "76687d8eb95457c1e9c5b6e364f983ef623f0050"
             ]
           },
           "content": "Change for loop to >=",
@@ -2408,7 +2408,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ee58124befc264a7f8c8e8750277e3c90bd64cc9"
+              "ff9aa4e0bb0792aff9a15287d984edd03341af4a"
             ]
           },
           "content": "Run your script and use `3` and the first argument.",
@@ -2432,7 +2432,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5e6ad5f7817dfe3cbfd4896bc7455212d3e5eeb2"
+              "231dbec2665a22a00847636c4783f0ab28875149"
             ]
           },
           "content": "Add `echo -e \"\\n~~ Countdown Timer ~~\\n\"`",
@@ -2456,7 +2456,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "093f0d525d9792a2b60e41ab9c90afee2cd5a134"
+              "6b5103c0fcc8651ac4ec038fc17036c5881439d5"
             ]
           },
           "content": "Run your script and use `3` and the first argument.",
@@ -2480,7 +2480,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6542f6f8686d8c5c82577349b49b77a0200510d5"
+              "3f392cf574496ccb6398a7f7a9e61d438fd7e498"
             ]
           },
           "content": "Now it works like it should, you can create a multiline comment like this:\n\n```sh\n: '\n  comment here\n  more comment here\n'\n```\n\nComment out your `for` loop with a multiline comment. I want to try and do this with a `while` loop.",
@@ -2503,7 +2503,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2667fa591a7327fabcffc8dced6011dd5a2eab09"
+              "612962a1a9c041e0c9584d5e34dd7ef58279fb42"
             ]
           },
           "content": "Below your comment, create a variable named `I` that is set to the value of your first argument.",
@@ -2527,7 +2527,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2a088b52a6365fa49aa74f9848bbed334df1b2e7"
+              "d15282ea930a70de72c380a8ec7e36ec3d9f2524"
             ]
           },
           "content": "View the `help` menu for the `while` command to see if you can find anything.",
@@ -2551,7 +2551,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2e2282399ac87a9d3d5d295fe1df0e8a6bb248ee"
+              "a9b49fa1347b0f523a70e330cda4f5da5288620b"
             ]
           },
           "content": "You can make a `while` loop like this:\n\n```sh\nwhile [[ CONDITION ]]\ndo\n  STATEMENTS\ndone\n```\n\nEcho your `I` variable to the screen while `I` is greater than zero.",
@@ -2575,7 +2575,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2b51f32961c956209cc74e813a1ca745fe7cffa9"
+              "e589089bed2e30154a1401a41a1d03b32ff825b7"
             ]
           },
           "content": "Add `sleep 1`",
@@ -2599,7 +2599,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1447f80ac9245e005854a9ea30eb9341ef2ced65"
+              "7f3b03f25ee0c28e060911b24a81c5fcc4bcf47e"
             ]
           },
           "content": "Run your script and use `3` and the first argument.",
@@ -2623,7 +2623,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2bb9043294ace1cc0cdf7eea35dab3c69908fa9a"
+              "600d5b7a6521e97f1343d0bc27572220d05d69f2"
             ]
           },
           "content": "add `((I--))`",
@@ -2647,7 +2647,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7eacd18d268295eccb1835023a95cbce0a4164e0"
+              "9503dae72c2854c36acb2b61283015ce6b687ff5"
             ]
           },
           "content": "Run the script and use 3 as the first argument.",
@@ -2671,7 +2671,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "56dd12d12cb1fd60de1b2845af9d1598337159f0"
+              "0a252605898d1bc2975968a20f4babecad997753"
             ]
           },
           "content": "I think the countdown clock is looking good. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.",
@@ -2695,7 +2695,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b1211051152f7327258b38c5d40f4470892f88ac"
+              "51b0a5bbe0dc7bc8e451ec10f1108a5398d797c8"
             ]
           },
           "content": "Give your file executable permissions.",
@@ -2719,7 +2719,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9d31afaabbcc0aca77768b483bff5af34a3e14e0"
+              "4638890f8c85c8db9c9d3c06ba3cfbec9aebd854"
             ]
           },
           "content": "Add a \"shebang\" at the top. It's the same as the other two files.",
@@ -2743,7 +2743,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "982abb4788fc87973913b8797b002a74f8d2828f"
+              "778a9c2aebba65ab074ee01a90c7787e45de08d2"
             ]
           },
           "content": "Add a comment that says, `Bingo Number Generator`",
@@ -2767,7 +2767,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d38d09b4d2dc19b2b06bf81971261a18aca3571e"
+              "38b98cc901fa8fc15b29e20b0115d0ee98f3b235"
             ]
           },
           "content": "add echo -e \"\\n~~ Bingo Number Generator ~~\\n\"",
@@ -2791,7 +2791,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f7e34aa46f0a04c6c81e679c582c9ab4f5bc1bb5"
+              "ff3db83b48fc82856358a2ab06557ff0e129ada9"
             ]
           },
           "content": "NUMBER=5",
@@ -2815,7 +2815,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e642120a95be04b23e8855ff99485edd4227c8dc"
+              "7663f40912a2438f1e369700ead0bef7e13926a2"
             ]
           },
           "content": "`echo (( $NUMBER ))`",
@@ -2839,7 +2839,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "26e24a9b266c9741a1d3756c0c62f4dddf7aee2d"
+              "65bfc3b426e69e5c873df14c6164941cfba99524"
             ]
           },
           "content": "Run the script",
@@ -2863,7 +2863,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e4456501fc0daa025680f69244e4ca36bc1daca4"
+              "cd3e07be1176a392c2523f383c07b9e1593fe77e"
             ]
           },
           "content": "`help let`",
@@ -2887,7 +2887,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5346b1a8555f33b78eeafb68f0c688d726b3f8fd"
+              "df1704c43a7b14043a1b03ed625d7b8012eb5115"
             ]
           },
           "content": "change to `NUMBER=(( $RANDOM % 75 ))`",
@@ -2911,7 +2911,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "14c52929255e32f032745fd1697eea6fdcacf91a"
+              "8fac46a3adfd3d0743fb801d28c476590af63b58"
             ]
           },
           "content": "Run the script",
@@ -2935,7 +2935,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e463679e399c247290d74f91c71534e3e38e0080"
+              "a34d12cadd4987469986cd0123d4d5781904e2c5"
             ]
           },
           "content": "`echo $RANDOM`",
@@ -2959,7 +2959,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "653c44ed3029294a055bbe0778e1d71ea6860ff5"
+              "b085c3b9df91d6b56047b40e6de41b35a386d930"
             ]
           },
           "content": "`echo $RANDOM % 75`",
@@ -2983,7 +2983,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9729a09deebb7df02f81e685310dc5925575c13d"
+              "11f7e5d148689fc6949451ada3a12f5648b5c5bf"
             ]
           },
           "content": "`echo (( $RANDOM % 75 ))`. You should get an error.",
@@ -3007,7 +3007,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4aa7e0c559621666624c1d2fb023b30bd3a9f586"
+              "cae6ef716d376096307b391ef2fa7d0fda96add7"
             ]
           },
           "content": "`(( $RANDOM % 75 ))`",
@@ -3031,7 +3031,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7b80410f6cc65fa79c1c36c606ccf6eb37543104"
+              "9e4bc329c3f62b5d5416de1be920cce096508c32"
             ]
           },
           "content": "`echo $?`",
@@ -3055,7 +3055,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f356acd7e830a966bd19cb2fcd1604167aa03f4b"
+              "a15f8a8ec6506b0640d149b6f57fdd6f3e42e667"
             ]
           },
           "content": "`echo $(( RANDOM % 75 ))`",
@@ -3079,7 +3079,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "722b1c59b6ed6ef53a69ad3e4d9020d6fd278f0e"
+              "f1d8ef0e1c4a74bd903800a59608920deb0691d3"
             ]
           },
           "content": "`I=0`",
@@ -3103,7 +3103,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2529dc194f62da1b9fba14e25bf00b059e6ae505"
+              "931ce832fe8dcd81e399b1ceaaf814a9427854ff"
             ]
           },
           "content": "`echo $I`",
@@ -3127,7 +3127,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "72ab5951e1b44f03d27912e82fe8a5011bb87219"
+              "58e17dad206297a34f5db2e9ff036ba946ab0736"
             ]
           },
           "content": "`(( I++ ))`",
@@ -3151,7 +3151,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "16801b089944fa67d26df8a3e9c16f8df656eec0"
+              "b68c4fc51a2a5cf16644c13d0fbff8a62544cea8"
             ]
           },
           "content": "`echo $I`",
@@ -3175,7 +3175,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e8738384faa4ffa27533d6f6c1978c1d48765139"
+              "7a1a4462354cd89ecb26b08a98921d58dab9616b"
             ]
           },
           "content": "`(( I += 10 ))`",
@@ -3199,7 +3199,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d9078c03efe9695b61b37d7b920a25b088cd21a5"
+              "0c444cb4455f700aa72d871bc4bed7397a443c42"
             ]
           },
           "content": "`echo $I`",
@@ -3223,7 +3223,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "99dcaba779386f7374b0112f5bc8ca3e2a3ef35b"
+              "61fbaa462219e0f2465ba14a7e8a8381de0a274c"
             ]
           },
           "content": "`echo $(( I + 4 ))`",
@@ -3247,7 +3247,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9d0c773982e0186f38637f6f6bcfcab929d96b06"
+              "8520a06d62deb18486facf5e3276cb483572515f"
             ]
           },
           "content": "`echo $I`",
@@ -3271,7 +3271,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0275dbac19d3c9b8a668a65e9806b9a5a77de3b5"
+              "91608692e5f33082d362199d04c99e3f98535d24"
             ]
           },
           "content": "`J=$(( I - 6 ))`",
@@ -3295,7 +3295,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1a19c4a716a74608820851392eb8bd685c2739eb"
+              "eed6dfe33c80ac0e867a6fd052abcc311f7968cb"
             ]
           },
           "content": "`echo $J`",
@@ -3319,7 +3319,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2ae7746ac1efee8a6b88018397296fae6e398e8d"
+              "63cdb072e4571098662c223a49013414d830d7e2"
             ]
           },
           "content": "`echo $(( J * 5 + 25 ))`",
@@ -3343,7 +3343,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a952b9c0cc548e6d5488e14903d22bc3138f79b7"
+              "db3a11c8a55813d2f248c72a5de09193158fd451"
             ]
           },
           "content": "`echo $J`",
@@ -3367,7 +3367,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "75e76299f63971c1b08e1e0f44da062bf17371fa"
+              "3ff5bf18bc7316c7f9982c2462a781a351f7fe14"
             ]
           },
           "content": "`declare -p J`",
@@ -3391,7 +3391,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f6345ffbd56c45a2bf816c46974ae0bca952015f"
+              "13fa134db9dd3727478814b9f354567505ada63c"
             ]
           },
           "content": "`declare -p RANDOM`",
@@ -3415,7 +3415,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7966a9a50f59e6449fe9ca02b10bbe9e7279b2bc"
+              "d8dc82cb7b303ea51fa9aa0a2ac1b3feb7e54056"
             ]
           },
           "content": "`NUM=$(( RANDOM % 75 + 1 ))`",
@@ -3439,7 +3439,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d96d44c51320e3995551386f7c8cb74a5c3961d3"
+              "abc0e976861c371e3d05de17a3031bfa36b5be47"
             ]
           },
           "content": "`echo $NUM`",
@@ -3463,7 +3463,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "41f91a60574e8d03914d1b276f4ece89217b4b15"
+              "45ff8a8d0b334c33f27b08cccdf467095c30f856"
             ]
           },
           "content": "Change your number variable to `$(( RANDOM % 75 + 1 ))` and your echo statement to just echo $NUMBER again.",
@@ -3487,7 +3487,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d20fbaa6737944d2064d55f47bf535c759bffe16"
+              "4c6af305e6d234def4166e62cc6d4b960f14abd3"
             ]
           },
           "content": "Run the script to make sure it's working",
@@ -3511,7 +3511,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2146158791e4d0df5d7cc6b6cbb3ac6ac5742e34"
+              "814d75f14cadc11c733d75aedc789978f9d3ef7b"
             ]
           },
           "content": "Create `TEXT=\"The next number is, \"`",
@@ -3535,7 +3535,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "df0bfd8fd076ba71ebdbf9931f911fb29c05f894"
+              "87b46607e0b02314eee8ea2f8d18122a73e10e48"
             ]
           },
           "content": "Create `if (( $NUMBER <= 15 )) then echo $TEXT B:$NUMBER fi`",
@@ -3559,7 +3559,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cc09ff7169b2ba2917f0580cd39249c40f70bf00"
+              "cffa770481f41ebfcf4e2ef5e8d32bf39c37794d"
             ]
           },
           "content": "Add elif (( $NUMBER < 31 )) then",
@@ -3583,7 +3583,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7e0912b7b0ecaacdec3b0a3aae5dd8c0b52dc7f0"
+              "1a8735001590aff329795f6dc24ff16a8215cd2d"
             ]
           },
           "content": "Add elif [[ number -le 45 ]]",
@@ -3607,7 +3607,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d865ba6cb7e883f6ec1a3943927047d7a71ae0c8"
+              "c8e0792507c61248648dd38fb347212f697073e1"
             ]
           },
           "content": "elif [[ number -lt 61 ]]",
@@ -3631,7 +3631,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d175b466eda4866df2f45ca69f409022a4c553ff"
+              "3f8f792e16a8e2f44f7b08bcf925057c20060c17"
             ]
           },
           "content": "Run your script a few times and make sure it's working.",
@@ -3655,7 +3655,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cea1da6c4ca89de36e19227739dfbbecb1de680c"
+              "70c65990ebc0725fbab5c55264cfa24704727013"
             ]
           },
           "content": "Looks like it's working :smile: Next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.",
@@ -3679,7 +3679,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d9f5d6149d6b84115026c92eea13e0cc9dfb828f"
+              "844c40d754a232bb2f788128f42cb741b44d30b7"
             ]
           },
           "content": "Change the permissions",
@@ -3703,7 +3703,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6495b10938523771e73b0050fb8630c8c3646abd"
+              "db36b347649d5397e7ff8931ff29fda2eb69c4df"
             ]
           },
           "content": "Add a shebang",
@@ -3727,7 +3727,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4db7381449feb6f29b9d2a0bdb4934492d34fb09"
+              "f28f17dcfea710ec1d87ef885f813fc499e3b592"
             ]
           },
           "content": "Add comment `Program to tell a persons fortune`",
@@ -3751,7 +3751,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7a5e88f80907d6039a1823e232c9fa6d7bef2bee"
+              "3f9691fe7cd1de6ca0b1470807b315d22bc55cd6"
             ]
           },
           "content": "Add echo `~~ Fortune teller ~~`",
@@ -3775,7 +3775,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7860155cb0ac8caee6b7609c6620466ec3489864"
+              "4f74dfd149690c5cea564900dbfdb775c26abcbc"
             ]
           },
           "content": "fortune.sh",
@@ -3799,7 +3799,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "50d126d1bbcd25755b6d087919923263a0cb33d2"
+              "688d008e94e673dac6493ae8cb41ae9017e4c90a"
             ]
           },
           "content": "In terminal: ARR=(\"a\" \"b\" \"c\")",
@@ -3823,7 +3823,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3def68338219b7bc823d0499de284a5fda764d2a"
+              "971e5a44cfa7f251ba0a3c3682d4ad7e91038bfe"
             ]
           },
           "content": "`echo ${ARR[1]}`",
@@ -3847,7 +3847,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ad77201fda3e9b621de83bea6794a397730fb2b4"
+              "c71438ffcec568bdbdbf86b805e29fe10b1ccf5e"
             ]
           },
           "content": "`echo ${ARR[@]}`",
@@ -3871,7 +3871,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e5304d17f914a46db54a62d5abab366bc97e1adf"
+              "c131a1913af804379329134c327b81bebca726ea"
             ]
           },
           "content": "`declare -p ARR`",
@@ -3895,7 +3895,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "aadb15cca90ea88331ce86a4b7a0499edc99d0e3"
+              "c295a265a01dc2fa3c18466d3e2b2b89c3af0436"
             ]
           },
           "content": "Create the array `RESPONSES=(\"Yes\" \"No\" \"Maybe\")` - but with all entries",
@@ -3919,7 +3919,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0142a764fd1f285ec4c8ad6eda90e97db4fbe76b"
+              "8827c44e63a7a711b8fc831e4d5d224b8203105b"
             ]
           },
           "content": "`echo ${RESPONSES[5]}`",
@@ -3943,7 +3943,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0a6885da5a08f0515bc7934e7cd5c50773954143"
+              "bc86a2eed5c38467b9da9b3b5a8af08e6e290456"
             ]
           },
           "content": "`./fortune.sh`",
@@ -3967,7 +3967,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7e79022f07115189f1f6a0c36c2523f0ce14b834"
+              "0c8bd619380eb3848509f64126cc9468e9c21de6"
             ]
           },
           "content": "Add `N=$((RANDOM % 7))`",
@@ -3991,7 +3991,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "db261eb1bc4867db4f2575e99075840e2c0d5e4a"
+              "0610def54f16885bbd558a90d208a795360d400e"
             ]
           },
           "content": "Change to `echo ${RESPONSES[$N]}`",
@@ -4015,7 +4015,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "12ec3dab7788030d4db9b5a5f14b95302ecc97c4"
+              "894a60cc0c5f64cf9ee3ba40eb810a16f04aa696"
             ]
           },
           "content": "`help`",
@@ -4039,7 +4039,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bd0a4678971d89fd685d402cb8abe2f25ba2efdb"
+              "520f83bca5fda8163b908dff9712114b1c1bdcb5"
             ]
           },
           "content": "`help function`",
@@ -4063,7 +4063,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9e2e81869c4dd8c83dcb45df538764796e092a46"
+              "f5b2aca0fec5ba0406c5b82a61b92adba11a4c1c"
             ]
           },
           "content": "Add `GET_FORTUNE` function.",
@@ -4087,7 +4087,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d5b1691389120598670c286d2fd78f467756671e"
+              "14ce0569d34f5c86c496a7be427c5f2323b3c260"
             ]
           },
           "content": "Add echo ask a yes or no question",
@@ -4111,7 +4111,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a9cfff7e45c2e3b31aae18b515085287370764e4"
+              "a0f13e62ae70429822758652dc03594c948b5265"
             ]
           },
           "content": "Add `GET_FORTUNE` function call.",
@@ -4135,7 +4135,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8798d59d219b1c20c974d1bf17048b71342a76f3"
+              "b178780b4c2011e4a5b283593d246b5a8a8397fd"
             ]
           },
           "content": "./fortune.sh",
@@ -4159,7 +4159,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fb3add5d2e74261762e3c8a4fb474f627b5e309a"
+              "620732f817a2877db37752b1c5eb1a04507484ac"
             ]
           },
           "content": "Add `read QUESTION`",
@@ -4183,7 +4183,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "004e82c2e5ca50a23da3bf52b56ceeb21e8847f9"
+              "c4a3911914410b00e40d708042f6d984ae8bcbd2"
             ]
           },
           "content": "./fortune.sh",
@@ -4207,7 +4207,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2142d8fbfea63f7a2dbab9aa856cc4986e8e869b"
+              "20f74a019c1e75e3f54346b4c62467961ece6290"
             ]
           },
           "content": "help",
@@ -4231,7 +4231,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "41d98f5cb14d2fded06d01bf758411a24efa91cd"
+              "ce6f64fd70398f16b315dcde1cc5d6fa186258bd"
             ]
           },
           "content": "`help until`",
@@ -4255,7 +4255,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4942116384ffbbfa7ea7df781cb44c2def10d9a9"
+              "6af6268bf0affea1b03f33ee32808a370f11e638"
             ]
           },
           "content": "Add until [[ question == \"test?\" ]]",
@@ -4279,7 +4279,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b440fe4728e24fa965881afd13cbe0ff13b42ed0"
+              "1a697bfb37e50308ec715882f9bf85e3de6e948b"
             ]
           },
           "content": "./fortune.sh",
@@ -4303,7 +4303,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "07134603e647c83a8446aeba7af94c4aebbcb334"
+              "41d25ec40edb846b26325278d20884afcd26a320"
             ]
           },
           "content": "`help [[ expression ]]`",
@@ -4327,7 +4327,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f605e38a1f83cad24373490f17970955499dbd8f"
+              "b3aaf43d48b7676d487e7aa2e043b7533a5fddb0"
             ]
           },
           "content": "`[[ hello == hello ]]; echo $?`",
@@ -4351,7 +4351,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d0d5f120eba9a9c4a5860e1c7794e39adb1b8e76"
+              "a16f83ba7b0080feb0d62a7e9e99cd57d9a42528"
             ]
           },
           "content": "`[[ hello == world ]]; echo $?`",
@@ -4375,7 +4375,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a10e52b4ad09cf87d8610881259b697e380b02a0"
+              "2a025d6bc1ab41d29c45ae6b74dc233b4f5c49e4"
             ]
           },
           "content": "`[[ hello =~ el ]]; echo $?`",
@@ -4399,7 +4399,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a2a417715a4dc682e57e5903b2e913f65b9c27a2"
+              "97b721f75507b1ca745af50f038692b600d674fa"
             ]
           },
           "content": "`[[ \"hello world\" =~ \"ello\" ]]; echo $?`",
@@ -4423,7 +4423,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a6e482c9f1c6228adb8f36fc54ac75d77fe4259d"
+              "0d26d6b72be274a922b7fdbf589841eb9fa9f430"
             ]
           },
           "content": "`[[ \"hello world\" =~ ^h ]]; echo $?`",
@@ -4447,7 +4447,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "850c69f4917bf3635698328c33862dca7f01291f"
+              "c85b1cb4fc1ed7262879fdee858dc52e3a73ed73"
             ]
           },
           "content": "`[[ \"hello world\" =~ ^h.+d? ]]; echo $?`",
@@ -4471,7 +4471,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "75069deecfcaa217f849e80561b01b7884b26d61"
+              "82fe54395dc850d484a2b4990ec7eb80af624cc4"
             ]
           },
           "content": "`VAR=\"hello world\"`",
@@ -4495,7 +4495,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6603202f221895855b01b318e269c8136eac28a6"
+              "fce8d276c43985e3e28fb3343599aec2247f7043"
             ]
           },
           "content": "`echo $VAR`",
@@ -4519,7 +4519,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cb09fb6e06f067ebf437a9e9798e4af90b928b87"
+              "6ce9add5a186d34ca7a04422c50c60b281c24866"
             ]
           },
           "content": "`[[ $VAR == \"hello world\" ]]; echo $?`",
@@ -4543,7 +4543,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3f68cc6e71b21c5d9651cd6baaa15981b998aac6"
+              "e1f341cca408beed3991b6d1854d9999a6f1181b"
             ]
           },
           "content": "`[[ $VAR =~ \\?$ ]]; echo $?`",
@@ -4567,7 +4567,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7722e1237e3d6e358bd07fb1e9f86a30e18ca9ef"
+              "6fd534f716dd3fb7889bbffee8581ad7536c97d7"
             ]
           },
           "content": "Change until condition to see if it ends in a `?`",
@@ -4591,7 +4591,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1cb25a1f73db611e37661a9baf8515f1d1176368"
+              "ca903a8f7346fed432409d12bf54febd71907251"
             ]
           },
           "content": "`./fortune.sh`",
@@ -4615,7 +4615,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4b74df567a1bb83f9a2f07db7049bd01ee848439"
+              "35a4a99096b847693593d3b1957fce5f6dd7074e"
             ]
           },
           "content": "Add `if` to `GET_FORTUNE`",
@@ -4639,7 +4639,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "505dacad8c5eb0c66a800dfc49253800a3ed28dd"
+              "54b1edd01df29b0ad4cae876216dd3ebdee9d41d"
             ]
           },
           "content": "`./fortune.sh`",
@@ -4663,7 +4663,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "be0b92881d903e7b4c110fbaa80dc028fe1dfc60"
+              "bcb23bd29d39f17f8a2e00abbac64b65e68f5739"
             ]
           },
           "content": "`touch five.sh`",
@@ -4687,7 +4687,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "461f6786d6fd753da2e64162c8118bf87ea1b3c5"
+              "d3b210a07f46e68a43aaa3d32ce4642942ae4efb"
             ]
           },
           "content": "chmod +x five.sh",
@@ -4711,7 +4711,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3b8d87777e37ca1a0c94ea2199487cde9e3f18b8"
+              "41078b3bd51ab23becd5b08905d1e760fc0d3db6"
             ]
           },
           "content": "Add shebang",
@@ -4735,7 +4735,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f9b58e1ec7bd871620b6c56ea89ff1d4a55d6b85"
+              "64418bb10d30b20c22cd0d3ac15e0eeb42dad966"
             ]
           },
           "content": "add comment 'program to run my other four programs'",
@@ -4759,7 +4759,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4167b083c2855f318da546f114a766d4f32ee167"
+              "4e4284985ce11dae552e5d7095c32bbba5f914b6"
             ]
           },
           "content": "Add questionnaire.sh to the file",
@@ -4783,7 +4783,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6d9d171c6292e1a911884f6a500320425a1a98cc"
+              "35e1065eb04e02c4858c256a73be1519b1c487ce"
             ]
           },
           "content": "./five",
@@ -4807,7 +4807,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5a763e11ee7018d43969b1012824a67b46ce0e86"
+              "4e4efbf45afd47b5d64c89a71384e543a1fe57b0"
             ]
           },
           "content": "Add the rest of the scripts to the file",
@@ -4831,7 +4831,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5c04f5a85185ca798923d51d7fdc19a7d4c1e0ad"
+              "1269451c8c040a56c788c408860e2aeb325da154"
             ]
           },
           "content": "clear",
@@ -4855,7 +4855,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "63b9a6273c74de2985a4afbd656e81a442bbdfd0"
+              "28383c583b59c94a9f36abbcd071c3e5bd9dad59"
             ]
           },
           "content": "./five",
@@ -4879,7 +4879,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "68f678aac5ddc8994922a035eda3d8248b9738ff"
+              "42d459466f89a8192879d952a579555a6d393466"
             ]
           },
           "content": "help",
@@ -4903,7 +4903,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "27bbc03b8c38b7d91e669cbdbc1e9df11c29f1ab"
+              "8544b211de622976fe14a88d9fa4689e48a1cf68"
             ]
           },
           "content": "help type",
@@ -4927,7 +4927,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2ba1d3c547ffc4e0f18e23e8375b33c57205f276"
+              "6fe99c4ec40320515b61edd22863e07d4aded7a6"
             ]
           },
           "content": "type echo",
@@ -4951,7 +4951,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c70f5ab4b2daa494f6745e2e1cc71636c3f9ae7f"
+              "ccabe6cfd7c80ec15abec5fe4db0033fd73ee2ac"
             ]
           },
           "content": "help type",
@@ -4975,7 +4975,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1dffc1d221cefecf2eaf017d2528c32fb7b0c43d"
+              "e98adaead9881497074dd59a1f0991346699c2bb"
             ]
           },
           "content": "type if",
@@ -4999,7 +4999,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "67e57e35d27a9616922874d6af66b46877809eb0"
+              "86e48b7476e82db01a229261332ecfd83f4c3b53"
             ]
           },
           "content": "type then",
@@ -5023,7 +5023,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "73b70cc2a491fec9f23d0c2e5188371ffa823163"
+              "52c601486ff687c7f2de519e5189c4e805cd72ce"
             ]
           },
           "content": "type bash",
@@ -5047,7 +5047,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3d78db897da8a4c2de3e394e83336c80e27c4180"
+              "4ebb9bb300bdfd64f74ac73d9845691c17b6239d"
             ]
           },
           "content": "type psql",
@@ -5071,7 +5071,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3b23d0e63727fd8d4ecb5d67a5f7fd3842f14550"
+              "d1089447b8edbfa6406bb9707fcff7d673af9e83"
             ]
           },
           "content": "type ./five.sh",
@@ -5095,7 +5095,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a0aaf237fc3882aa604fd672290e7b5ffb89fee3"
+              "92c991a438da45f7f5200d9750a025894f9690d3"
             ]
           },
           "content": "exit",
