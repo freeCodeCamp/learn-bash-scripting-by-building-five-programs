@@ -29,7 +29,7 @@ You can run commands in the terminal or put them in a file to be run as a script
 
 ### 30.1
 
-To start, just add `echo Hello Questionnaire` at the top of the file you just created.
+To start, add `echo hello questionnaire` at the top of the file you just created.
 
 #### HINTS
 
@@ -73,7 +73,7 @@ The output was the same, but there are many other interpreters which may not giv
 
 ### 60.1
 
-That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a "shebang" at the very top of the file like this: `#! <path_to_interpreter>`. Add a "shebang" at the top of your file, the one you want looks like this: `#!/bin/bash`.
+That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a "shebang" at the very top of the file like this: `#!<path_to_interpreter>`. Add a "shebang" at the top of your file, the one you want looks like this: `#!/bin/bash`.
 
 #### HINTS
 
@@ -555,12 +555,12 @@ Nothing was printed. Run your script again, but this time add three arguments to
 
 ### 440.1
 
-`$*` printed all the arguments passed to your script. To access any one of them, use `$<number>`. `arg1` could have been accessed with `$1`. Change your script to `echo` the second argument instead of all the arguments.
+`$*` printed all the arguments passed to your script. To access any one of them, use `$<number>`. `arg2` could have been accessed with `$2`. Change your script to `echo` the first argument instead of all the arguments.
 
 #### HINTS
 
-- Use `echo $2` to print the second argument
-- Change `echo $*` to `echo $2` in your `countdown.sh` file
+- Use `echo $1` to print the second argument
+- Change `echo $*` to `echo $1` in your `countdown.sh` file
 
 ## 450. ./countdown.sh arg1 arg2 arg3
 
@@ -578,7 +578,7 @@ Run your file with `./countdown.sh arg1 arg2 arg3` again.
 
 ### 460.1
 
-Now it just prints the second argument. Your program will only need one argument, you will add an `if` statement to test it. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.
+Now it just prints the first argument. Your program will only need one argument, you will add an `if` statement to test it. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.
 
 #### HINTS
 
@@ -619,7 +619,7 @@ then
 fi
 ```
 
-Remove the `echo $2` in your new script and replace it with an `if` condition that checks `if [[ $1 == "arg1" ]]`. In its `then` area, use `echo` to print `true` to the screen.
+Remove the `echo $1` in your new script and replace it with an `if` condition that checks `if [[ $1 == "arg1" ]]`. In its `then` area, use `echo` to print `true` to the screen.
 
 #### HINTS
 
