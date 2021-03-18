@@ -51,7 +51,7 @@ Your script has one command. Run it with `sh questionnaire.sh` to see what happe
 
 ### 40.1
 
-When you ran the script, the `shell` interpreter was used. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.
+Using `sh` to run your script uses the `shell` interpreter. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.
 
 #### HINTS
 
@@ -63,7 +63,7 @@ When you ran the script, the `shell` interpreter was used. Run your script again
 
 ### 50.1
 
-The output was the same, but there are many other interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.
+The output was the same. There many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.
 
 #### HINTS
 
@@ -73,7 +73,7 @@ The output was the same, but there are many other interpreters which may not giv
 
 ### 60.1
 
-That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a "shebang" at the very top of the file like this: `#!<path_to_interpreter>`. Add a "shebang" at the top of your file, the one you want looks like this: `#!/bin/bash`.
+That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a "shebang" at the very top of the file like this: `#!<path_to_interpreter>`. Add a "shebang" at the very top of your file, the one you want looks like this: `#!/bin/bash`.
 
 #### HINTS
 
@@ -83,7 +83,7 @@ That's the absolute path to the `bash` interpreter. You can tell your program to
 
 ### 70.1
 
-Now, instead of using `sh` or `bash` to run your script. You can run it be executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`
+Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`
 
 #### HINTS
 
@@ -95,7 +95,7 @@ Now, instead of using `sh` or `bash` to run your script. You can run it be execu
 
 ### 80.1
 
-You should have got a permission denied message. List what's in the `project` folder in long list format with `ls -l`.
+You should have got a permission denied message because you don't have permissions to execute the script. List what's in the `project` folder in long list format with `ls -l` to see the file permissions.
 
 #### HINTS
 
@@ -107,7 +107,7 @@ You should have got a permission denied message. List what's in the `project` fo
 
 ### 90.1
 
-You should see `-rw-r--r--` next to your file. All but the first character (`-`) describe permissions certain users have with the file. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnnaire.sh` in the terminal to give everyone executable permissions.
+Next to your file is `-rw-r--r--`. All but the first character (`-`) describe permissions different users have with the file. `r` means `read`, `w` means `write`, `x` means `execute`. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnnaire.sh` in the terminal to give everyone executable permissions.
 
 #### HINTS
 
@@ -165,7 +165,7 @@ Run the script by executing it again.
 
 ### 160.1
 
-Your script printed the one file as if you entered the `ls -l` in the terminal. Delete everything but the "shebang" from your file so you can start making the questionnaire.
+Your script printed the result of the two commands as if you entered them in the terminal. Delete everything but the "shebang" from your file so you can start making the questionnaire.
 
 #### HINTS
 
@@ -218,11 +218,12 @@ The question was printed. Next, you want to be able to accept input from a user.
 
 ### 210.1
 
-At the bottom of your script, use `echo` to print `Hello, <name>.` to the terminal.
+At the bottom of your script, use `echo` to print `Hello <name>.` to the terminal.
 
 #### HINTS
 
 - Use your `$NAME` variable in place of `<name>`
+- Don't forget the period
 - Add `echo Hello, $NAME.` at the bottom of your script
 
 ## 220. ./questionnaire
@@ -254,32 +255,33 @@ Right below your first variable, create another one named `QUESTION2`. Set the v
 
 ### 240.1
 
-Use your new variable to print the next question after your `read` command.
+After your `read` command, use your new variable to print the next question.
 
 #### HINTS
 
 - Use `echo` to print the variable
-- Add `echo $QUESTION2` below everything else
+- Add `echo $QUESTION2` below your `read` command
 
 ## 250. Add read LOCATION
 
 ### 250.1
 
-Use `read` to get input from the user into a variable named `LOCATION`.
+Below where the second question is printed, use `read` to get input from the user into a variable named `LOCATION`.
 
 #### HINTS
 
-- Add `read LOCATION` to your script below everything else
+- Add `read LOCATION` to your script below `echo $QUESTION2`
 
 ## 260. Add echo Hello $NAME from $LOCATION
 
 ### 260.1
 
-Change the existing response of `"Hello $NAME` to `"Hello <name> from <location>."`. Use your two variables in place of `<name>` and `<location` and make sure the command is at the bottom of the file.
+Change the existing response to `Hello <name> from <location>.`. Use your two variables in place of `<name>` and `<location`. Make sure the command is at the bottom of the file.
 
 #### HINTS
 
 - The suggested command should look like: `echo Hello $NAME from $LOCATION.`
+- Make sure it's at the bottom of the file
 
 ## 270. ./questionnaire
 
@@ -292,19 +294,17 @@ Run the script and enter values when it is waiting for input.
 - Run your file by executing it
 - Type `./questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
-- You can press `ctrl+c` to close the program
+- You can press `ctrl+c` to close a program
 
 ## 280. Add echo "~~ Questionnaire ~~"
 
 ### 280.1
 
-Add a title to your program for me. Use `echo` to print `~~ Questionnaire ~~` before anything else is printed.
+It's looking good. I want a title to appear when the program first starts. Use `echo` to print `~~ Questionnaire ~~` before anything else is printed.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `echo ~~ Questionnaire ~~` below your `shebang`
 
 ## 290. ./questionnaire
 
@@ -317,14 +317,13 @@ Run the script and enter values until it is done again so you can see what the t
 - Run your file by executing it
 - Type `./questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 - You can press `ctrl+c` to close the program
 
 ## 300. echo --help
 
 ### 300.1
 
-It would be nice if there was some new lines around the title. You've probably used the `--help` flag before, see if you can use it with `echo` to try and find a way to add empty lines.
+It would be nice if there was some empty lines around the title. You've probably used the `--help` flag before, see if you can use it with `echo` to try and find a way to add empty lines.
 
 #### HINTS
 
@@ -339,12 +338,13 @@ That didn't work as I hoped. Another way to find information about a command is 
 #### HINTS
 
 - Type `man echo` in the terminal and press enter
+- Press enter until you have seen the whole menu
 
 ## 320. Add echo -e \n~~ Questionnaire ~~\n
 
 ### 320.1
 
-That `-e` option looks promising, and the `\n` below it says `new line`. Change the title command to `echo -e \n~~ Questionnaire ~~\n` to put an empty line before and after it.
+Take a look at the menu. That `-e` option looks promising, and the `\n` below it says `new line`. Change the title command to `echo -e \n~~ Questionnaire ~~\n` to see if that works.
 
 #### HINTS
 
@@ -361,14 +361,13 @@ Run it to see if it worked. You can press `ctrl+c` to close the program after it
 - Run your file by executing it
 - Type `./questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 - You can press `ctrl+c` to close the program
 
 ## 326. Change to echo -e "\n~~ Questionnaire ~~\n"
 
 ### 326.1
 
-Didn't work. When using patterns like `\n`, you need to enclose the string in double quotes (`"<string>"`). Place double quotes around the title to see it will print the empty lines.
+It didn't print the empty lines. `echo` will only print empty lines if it is enclosed in quotes. Place double quotes around the title that gets printed to see if it works.
 
 #### HINTS
 
@@ -378,54 +377,57 @@ Didn't work. When using patterns like `\n`, you need to enclose the string in do
 
 ### 330.1
 
-Try running it again to make sure it worked.
+Run your script.
 
 #### HINTS
 
 - Run your file by executing it
 - Type `./questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 - You can press `ctrl+c` to close the program
 
 ## 340. Add QUESTION3 variable
 
 ### 340.1
 
-It's working :smile: Create a `QUESTION3` variable next to the other ones and set the value to `"What's your favorite coding website?"`
+Now it's working :smile: Create a `QUESTION3` variable next to the other two, and set it's value to `"What's your favorite coding website?"`
 
 #### HINTS
 
-- Add `QUESTION3="What's your favorite coding website?"` by the other variables
+- Add `QUESTION3="What's your favorite coding website?"` to your `questionnaire.sh` file
+- Add it by the other two variables
 
-## 345. Add QUESTION3 variable
+## 345. echo QUESTION3 variable
 
 ### 345.1
 
-Use `echo` to print the third question after the other two.
+Use `echo` to print the third question after you `read` the `LOCATION`.
 
 #### HINTS
 
 - Add `echo $QUESTION3` below the `read LOCATION`
+- Add it to your `questionnaire.sh` file
 
 ## 350. read WEBSITE
 
 ### 350.1
 
-Add code to `read` input into a variable named `WEBSITE`. 
+After the question you just printed, add code to read input into a variable named `WEBSITE`. 
 
 #### HINTS
 
-- Add `read WEBSITE` below where you printed your third question
+- Add `read WEBSITE` below the `echo $QUESTION3`
 
 ## 360. echo final sentence
 
 ### 360.1
 
-In your response, instead of printing the users name and location, change the `echo` command to print this sentence: `Hello $NAME from $LOCATION. I learned that your favorite coding website is $WEBSITE!`.
+Change the `echo` command of the response to print this sentence instead: `Hello <name> from <location>. I learned that your favorite coding website is <website>!`.
 
 #### HINTS
 
+- Replace the `echo Hello $NAME from $LOCATION.` with the suggested sentence
+- Use your three variables in place of `<name>`, `<location>`, and `<website>`
 - The command should look like this: `echo Hello $NAME from $LOCATION. I learned that your favorite coding website is $WEBSITE!`
 
 ## 363. ./questionnaire
@@ -439,18 +441,19 @@ Run the script and enter values when the program is waiting. Lets see the final 
 - Run your file by executing it
 - Type `./questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 366. Add line breaks around final sentence
 
 ### 366.1
 
-One last thing. Change that final sentence to print an empty line before it like you did for the title.
+One last thing. Change that final response to print an empty line at the beginning of the sentence.
 
 #### HINTS
 
-- Use the `echo` command with the `-e` flag and a newline (`\n`) character
+- Use `echo` with the `-e` flag and a new line (`\n`) character like you did for the title
+- Don't forget to put the response in double quotes so it prints the empty line
 - Here's an example: `echo -e "\n<message>"`
+- Only add a new line at the beginning of the response, not the end
 - The final command should look like this: `echo "\nHello $NAME from $LOCATION. I learned that your favorite coding website is $WEBSITE!"`
 
 ## 370. ./questionnaire
@@ -464,13 +467,12 @@ Run it one last time and enter values when it asks to see if you like how it loo
 - Run your file by executing it
 - Type `./questionnaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 380. touch countdown.sh
 
 ### 380.1
 
-Looks good. I think you are done that script for now. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder. This program will count down from a given input.
+It looks good. I think you are done that script for now. The next program will be "countdown timer". Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
 
 #### HINTS
 
@@ -482,7 +484,7 @@ Looks good. I think you are done that script for now. Use the `touch` command to
 
 ### 390.1
 
-Give your file executable permissions so you can run it like the other one. It's the `chmod` command. 
+Give your file executable permissions so you can run it like the other one. It's the `chmod` command with the `+x` flag.
 
 #### HINTS
 
@@ -491,7 +493,6 @@ Give your file executable permissions so you can run it like the other one. It's
 - You previously used `chmod +x questionnaire.sh`
 - Type `chmod +x countdown.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 400. Add shebang
 
@@ -502,7 +503,7 @@ You want to use the `bash` interpreter again. Add a `shebang` at the top of your
 #### HINTS
 
 - A `shebang` looks like this: `#!<path_to_interpreter>`
-- Enter `which bash` in the terminal to see where `bash` is located
+- Enter `which bash` in the terminal to see the path to `bash`
 - Look at the `shebang` in your first script to get the syntax
 - It should look like this: `#!/bin/bash`
 - Add `#!/bin/bash` at the top of your `countdown.sh` file
@@ -511,11 +512,11 @@ You want to use the `bash` interpreter again. Add a `shebang` at the top of your
 
 ### 410.1
 
-Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does.
+Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.
 
 #### HINTS
 
-- Add `#Program that counts down to zero from a given argument` to your `countdown.sh` file
+- Add `# Program that counts down to zero from a given argument` to your `countdown.sh` file
 
 ## 420. Add echo $*
 
@@ -537,7 +538,6 @@ Execute your script with `./countdown.sh`.
 
 - Type `./countdown.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 430. ./countdown.sh arg1 arg2 arg3
 
@@ -549,9 +549,8 @@ Nothing was printed. Run your script again, but this time add three arguments to
 
 - Type `./countdown.sh arg1 arg2 arg3` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 440. Change to echo $2
+## 440. Change to echo $1
 
 ### 440.1
 
@@ -559,6 +558,7 @@ Nothing was printed. Run your script again, but this time add three arguments to
 
 #### HINTS
 
+- Try running your script with an argument to make sure it’s giving the expected output
 - Use `echo $1` to print the second argument
 - Change `echo $*` to `echo $1` in your `countdown.sh` file
 
@@ -572,13 +572,12 @@ Run your file with `./countdown.sh arg1 arg2 arg3` again.
 
 - Type `./countdown.sh arg1 arg2 arg3` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 460. help
 
 ### 460.1
 
-Now it just prints the first argument. Your program will only need one argument, you will add an `if` statement to test it. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.
+Now it just prints the first argument. Your program will test the first argument with an `if` to make sure it's a number that you can count down from. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.
 
 #### HINTS
 
@@ -599,7 +598,7 @@ This is a list of the built-in commands. One of them starts with `if`. See if yo
 
 ### 480.1
 
-I guess there isn't a `man` page for it. At the top of the `help` screen, I noticed you can use `help <command>` to find out more. Yet another way to find out about a command. See if you can find out more about `if`.
+I guess there isn't a `man` page for it. At the top of the `help` screen, I noticed you can use `help <command>` to find out more. Yet another way to find out about a command :disappointed_relieved: See if you can find out more about `if` with that method.
 
 #### HINTS
 
@@ -619,13 +618,13 @@ then
 fi
 ```
 
-Remove the `echo $1` in your new script and replace it with an `if` condition that checks `if [[ $1 == "arg1" ]]`. In its `then` area, use `echo` to print `true` to the screen.
+Remove the `echo $1` in your new script and replace it with an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There's must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
 
 #### HINTS
 
 - Add the following to your `countdown.sh` file:
 ```sh
-if [[ $1 == "arg1" ]]
+if [[ $1 == arg1 ]]
 then
   echo true
 fi
@@ -641,19 +640,17 @@ The `if` statement will print `true` if you pass `arg1`. Notice that the end of 
 
 - Type `./countdown.sh arg1` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 505. ./countdown !arg1
 
 ### 505.1
 
-Run it again with anything except `arg1` as the first argument.
+The `if` condition worked, it printed `true`. Run it again with anything except `arg1` as the first argument.
 
 #### HINTS
 
-- Type `./countdown.sh !arg1` in the terminal and press enter
+- Type `./countdown.sh arg2` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 510. Add else print false
 
@@ -674,9 +671,9 @@ Add an `else` to your existing `if` condition. Use `echo` to print `false` to th
 
 #### HINTS
 
-- Add the following to your script:
+- Your `if` should look like this:
 ```sh
-if [[ $1 == "arg1" ]]
+if [[ $1 == arg1 ]]
 then
   echo true
 else
@@ -700,43 +697,51 @@ Run the script again and use anything except `arg1` as the only argument.
 
 ### 530.1
 
-Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.
+It printed `false` that time since the `if` condition failed. Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.
 
 #### HINTS
 
 - Your `if` condition should look like this: `[[ $1 -lt 5 ]]`
+- Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-lt`)
 - It's the one in the `countdown.sh` file
+- The whole `if` should look like this:
+- Add the following to your script:
+```sh
+if [[ $1 -lt 5 ]]
+then
+  echo true
+else
+  echo false
+fi
+```
 
 ## 540. ./countdown 4
 
 ### 540.1
 
-Run the script again and use `4` as a first argument.
+Run the script again and use `4` as a first argument to make sure it's working.
 
 #### HINTS
 
 - Type `./countdown.sh 4` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 542. ./countdown 5
 
 ### 542.1
 
-It printed `true` since your argument was less than `5`. Run the script again and use `5` as a first argument.
+It printed `true` since your argument was less than `5`. Run it again with `5` as the argument.
 
 #### HINTS
 
 - Type `./countdown.sh 5` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
 ## 544. help
 
 ### 544.1
 
 As expected, that printed `false`. Take a look at that `help` menu again. I want to see if we can find out more about how these expressions work.
- help
 
 #### HINTS
 
@@ -757,23 +762,24 @@ Near the top left, it says `[[ expression ]]`. See if you can get more info abou
 
 ### 548.1
 
-There's some good info there. Looks like you can use some, probably familiar, things like `&&`, `||`, `==` and `!=`. It says something about the `test` built-in command. See if you can bring up the `help` menu for that.
+There's some good info there. Looks like you can use some, probably familiar, things like `&&`, `||`, `==` and `!=` to compare expressions. It says something about the `test` built-in command. See if you can bring up the `help` menu for that.
 
 #### HINTS
 
 - View the `help` menu of the suggested command like you did before
-- Here's and example: `help <command>`
+- Here's an example: `help <command>`
 - Type `help test` in the terminal and press enter
 
 ## 550. Change if to [[ $1 -le 5 ]]
 
 ### 550.1
 
-That's what I was looking for. At the top is some operators to use with files. There's some string and other operators as well. You used the arithmetic operators with your `if` condition. Change the condition in your script to check if the first argument is less than or equal to `5`.
+That's what I was looking for. At the top are some file operators. There's some string and other operators as well. You should take a look at them. You used the arithmetic operators with your `if` condition. Change the condition in your script to check if the first argument is less than or equal to `5`.
 
 #### HINTS
 
 - The `if` condition should look like this: `[[ $1 -le 5 ]]`
+- Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-le`)
 - It's the `if` in your `countdown.sh` file
 
 ## 552. ./countdown 5
@@ -786,40 +792,41 @@ Run the script again and use `5` as a first argument again.
 
 - Type `./countdown.sh 5` in the terminal and press enter
 - Make sure you are in the `project` folder first
-- Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 554. [[ 0 -le 5 ]]
+## 554. [[ 4 -le 5 ]]
 
 ### 554.1
 
-Now it prints `true`. Remember I said any command can run in the terminal or a script. Try running an expression right in the terminal by entering `[[ 0 -le 5 ]]` in it.
+Now it prints `true`. Remember I said any command can run in the terminal or a script. Try running an expression right in the terminal by entering `[[ 4 -le 5 ]]` in it.
 
 #### HINTS
 
 - Enter the suggested expression in the terminal
-- Type `[[ 0 -le 5 ]]` in the terminal and press enter
+- Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-le`)
+- Type `[[ 4 -le 5 ]]` in the terminal and press enter
 
 ## 556. echo $?
 
 ### 556.1
 
-Nothing happened. Each command has an exit status that can be accessed with `$?`. View the exit status of the **last command** with `echo $?`.
+Nothing happened? Each command has an exit status that can be accessed with `$?`. View the exit status of the **last command** with `echo $?`.
 
 #### HINTS
 
 - Type `echo $?` in the terminal and press enter
-- Your second to last command should be `[[ 0 -le 5 ]]` so enter that before `echo $?` if you entered something in between them
+- Your second to last command should be `[[ 4 -le 5 ]]`. So enter that before `echo $?`
 
-## 558. [[ 5 -lt 0 ]]
+## 558. [[ 5 -le 4 ]]
 
 ### 558.1
 
-The exit status of `0` means it was true, `0` is indeed less or equal to `5`. Try it again with `[[ 5 -lt 0 ]]`.
+The exit status of `0` means it was true, `4` is indeed less or equal to `5`. Try it again with `[[ 4 -ge 5 ]]`.
 
 #### HINTS
 
 - Enter the suggested expression in the terminal
-- Type `[[ 0 -lt 5 ]]` in the terminal and press enter
+- Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-ge`)
+- Type `[[ 4 -ge 5 ]]` in the terminal and press enter
 
 ## 560. echo $?
 
@@ -830,37 +837,42 @@ Echo the exit status of the command you just entered.
 #### HINTS
 
 - Type `echo $?` in the terminal and press enter
-- Your second to last command should be `[[ 5 -lt 0 ]]` so enter that before `echo $?` if you entered something in between them
+- Your second to last command should be `[[ 4 -ge 5 ]]`. So enter that before `echo $?`
 
-## 562. [[ 5 -lt 0 ]]; echo $?
+## 562. [[ 4 -ge 5 ]]; echo $?
 
 ### 562.1
 
-It printed `1` this time for false. You can separate commands on a single line with `;`. Enter your last two commands on one line like this: `[[ 5 -lt 0 ]]; echo $?`. It will run the expression, then print the exit status of it since it was the last command.
+It printed `1` this time for false. You can separate commands on a single line with `;`. Enter your last two commands on one line like this: `[[ 4 -ge 5 ]]; echo $?`. It will run the expression, then print the exit status of it since it was the last command.
 
 #### HINTS
 
-- Type `[[ 5 -lt 0 ]]; echo $?` in the terminal and press enter
+- Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-ge`)
+- Type `[[ 4 -ge 5 ]]; echo $?` in the terminal and press enter
 
-## 564. [[ 10 -gt 1 ]]; echo $?
+## 564. [[ 10 -gt 5 ]]; echo $?
 
 ### 564.1
 
-Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is greater than (`-gt`) `1` and print the exit status of the expression on one line.
+Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.
 
 #### HINTS
 
+- Check the `help test` menu to find the `not equal` operator
+- It's the `-ne` operator
 - You previously used `[[ 5 -lt 0 ]]; echo $?`
-- Type `[[ 10 -gt 1 ]]; echo $?` in the terminal and press enter
+- Make sure there's spaces inside the brackets and around the operator
+- Type `[[ 10 -ne 5 ]]; echo $?` in the terminal and press enter
 
 ## 566. bad_command; echo $?
 
 ### 566.1
 
-You can think of the exit status of `0` as true. But, more accurately, it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.
+You can think of the exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.
 
 #### HINTS
 
+- The syntax looks like this: `<command>; echo $?`
 - You previously used `[[ 10 -gt 1 ]]; echo $?`
 - Type `bad_command; echo $?` in the terminal and press enter
 
@@ -868,7 +880,7 @@ You can think of the exit status of `0` as true. But, more accurately, it means 
 
 ### 568.1
 
-`Command not found`, with an exit status of `127`. Anything but `0` means there was an error with the command. `bad_command` didn't exist. Try it again with `ls`.
+`command not found`, with an exit status of `127`. Anything but `0` means there was an error with the command. `bad_command` didn't exist. Try it again with `ls`.
 
 #### HINTS
 
@@ -894,7 +906,7 @@ The command executed as expected and there were zero errors. So it gave you an e
 
 ### 572.1
 
-The `-y` flag doesn't work with `ls` so it gave you an exit status code of `2`, meaning that the command was unsuccessful. View the `help` menu of the `test` command again, I want to see what else is in that list.
+The `-y` flag doesn't work with `ls` so it gave you an exit status other than `0`, meaning that the command was unsuccessful. View the `help` menu of the `test` command again, I want to see what else is in that list.
 
 #### HINTS
 
@@ -911,6 +923,7 @@ You tried a few of the arithmetic operators, those work for integers. Try one of
 
 - Enter the suggested commands in the terminal
 - Type `[[ -a countdown.sh ]]; echo $?` in the terminal and press enter
+- Don't forget the spaces inside the brackets
 - Make sure you are in the `project` folder first
 
 ## 575. [[ -a bad_file.txt ]]; echo $?
@@ -925,18 +938,21 @@ The file must exist. It's checking the folder the command is entered from. Try i
 - Here's an example: `<command>; echo $?`
 - You previously used `[[ -a countdown.sh ]]; echo $?`
 - Type `[[ -a bad_file.txt ]]; echo $?` in the terminal and press enter
+- Don't forget the spaces inside the brackets
 
 ## 576. [[ -x countdown.sh ]]; echo $?
 
 ### 576.1
 
-`bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your file.
+`bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your `coundown.sh` file. You may want to look at that menu again.
 
 #### HINTS
 
 - View the `help test` menu to find the file operator for checking if a file is executable by you
+- It's the `-x` operators
 - The syntax you want is `[[ ... ]]; echo $?`
 - Type `[[ -x countdown.sh ]]; echo $?` in the terminal and press enter
+- Don't forget the spaces inside the brackets
 - Make sure you are in the `project` folder first
 
 ## 582. help [[ expression ]]
@@ -950,18 +966,19 @@ You played around with a number of the expressions. View the `help [[ expression
 - Enter the suggested command in the terminal
 - Type `help [[ expression ]]` in the terminal and press enter
 
-## 584. [[ -x countdown.sh && 5 -lt 0 ]]; echo $?
+## 584. [[ -x countdown.sh && 5 -le 4 ]]; echo $?
 
 ### 584.1
 
-Some of these options existed in the `help test` menu, but I prefer these when they can be used. Enter `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` in the terminal to test if both conditions are true.
+Some of these options existed in the `help test` menu, but these are more common. Enter `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` in the terminal to test if both conditions are true.
 
 #### HINTS
 
 - Enter the suggested command in the terminal
 - Type `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` in the terminal and press enter
+- Make sure there's spaces around the brackets and all the operators
 
-## 586. [[ -x countdown.sh || 5 -lt 0 ]]; echo $?
+## 586. [[ -x countdown.sh || 5 -le 4 ]]; echo $?
 
 ### 586.1
 
@@ -973,12 +990,13 @@ Both conditions weren't true, so the command gave an error. Try testing the same
 - Use the or operator from the `help [[ expession ]]` menu
 - The `or` operator is `||`
 - Type `[[ -x countdown.sh || 5 -lt 0 ]]; echo $?` in the terminal and press enter
+- Make sure there's spaces around the brackets and all the operators
 
 ## 588. Change if to [[ $1 -gt 0 ]]
 
 ### 588.1
 
-One of the conditions was true, so you didn't get any errors. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is greater than zero.
+One of the conditions was true, so you didn't get any errors. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is greater than zero so you can be sure it's something you can count down from.
 
 #### HINTS
 
@@ -989,17 +1007,26 @@ One of the conditions was true, so you didn't get any errors. I think that's eno
 
 ### 590.1
 
-The condition you added should check if a positive integer was entered and execute the `then` area. Change the message printed in the `else` area to `Enter a positive integer as the first argument.` so a user knows what's expected.
+The condition you added should check if a positive integer was entered and execute the `then` area. Change the message printed in the `else` area to `Include a positive integer as the first argument.` so a user knows what's expected.
 
 #### HINTS
 
-- The `else` area should look like this: `echo Enter a positive integer as the first argument.`
+- The `else` area should look like this: `echo Include a positive integer as the first argument.`
+- The whole `if` condition should look like this:
+```sh
+if [[ $1 -gt 0 ]]
+then
+  echo true
+else
+  echo Include a positive integer as the first argument.
+fi
+```
 
 ## 600. ./countdown 1
 
 ### 600.1
 
-Run your script and use `1` as a first argument.
+Run your script and use `1` as a first argument to make sure the condition is working.
 
 #### HINTS
 
@@ -1010,7 +1037,7 @@ Run your script and use `1` as a first argument.
 
 ### 610.1
 
-Run the script again and use anything but a positive integer as the only argument.
+Run it again and use anything but a positive integer as the only argument.
 
 #### HINTS
 
@@ -1041,12 +1068,12 @@ do
 done
 ```
 
-The above would print 10 through 1 to the screen. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from your `$1` argument to `1`.
+The above would print `10` through `1` to the screen. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from your `$1` argument to `1`.
 
 #### HINTS
 
 - Use the same syntax as the example except change the `10` to `$1`
-- Don't include any extra `echo` commands in the `then` area
+- Don't include any extra commands in the `then` area
 - Your `then` area should look like this:
 ```sh
 for (( i = $1; i > 0; i-- ))
@@ -1054,23 +1081,35 @@ do
   echo $i
 done
 ```
+- The whole `if` condition should look like this:
+```sh
+if [[ $1 -gt 0 ]]
+then
+  for (( i = $1; i > 0; i-- ))
+  do
+    echo $i
+  done
+else
+  echo Include a positive integer as the first argument.
+fi
+```
 
-## 630. ./countdown 3
+## 630. ./countdown 10
 
 ### 630.1
 
-Run your script and use `3` and the first argument.
+Run your script and use `10` and the first argument.
 
 #### HINTS
 
-- Type `./countdown.sh 3` in the terminal and press enter
+- Type `./countdown.sh 10` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
 ## 640. help
 
 ### 640.1
 
-It works :smile: But I want it to pause for one second between each number. Check the `help` menu again.
+It works :smile: But I want it to pause for one second between each number. Check the `help` menu again to see if there's any commands that might help.
 
 #### HINTS
 
@@ -1103,7 +1142,7 @@ The `/` listed what's in the root of the file system. I see a `bin` folder, `bin
 
 ### 670.1
 
-These are some non built-in commands. There's quite a few that should look familiar. One is `bash`, that's the one you used for the `shebang` in your scripts. I see one called `sleep` that might allow you to pause your script while it's counting down. View the manual of it.
+These are some non built-in commands. There's quite a few that should look familiar. One is `bash`, that's the one you used for the `shebang` in your scripts. I see one called `sleep`. View the manual of it.
 
 #### HINTS
 
@@ -1125,10 +1164,11 @@ It says you can pause execution for a number of seconds. Try it out in the termi
 
 ### 680.1
 
-In your `for` loop, use `sleep` to make the script pause for `1` second after each number is printed.
+That should work. In your `for` loop, use `sleep` to make the script pause for `1` second after each number is printed.
 
 #### HINTS
 
+- Add the suggestion to the `for` loop in your `countdown.sh` file
 - Add `sleep 1` after you print `i` in your `for` loop
 
 ## 690. ./countdown 3
@@ -1146,12 +1186,31 @@ Run your script and use `3` and the first argument again.
 
 ### 692.1
 
-Change for loop to >=
+Awesome. Except it should print `0` instead of stopping at `1`. Change the condition in your for loop so that it checks for `i >= 0`.
 
 #### HINTS
 
-- Type `./countdown.sh 3` in the terminal and press enter
-- Make sure you are in the `project` folder first
+- Your `for` loop should look like this:
+```sh
+for (( i = $1; i >= 0; i-- ))
+do
+  echo $i
+  sleep 1
+done
+```
+- The whole `if` condition should look like this:
+```sh
+if [[ $1 -gt 0 ]]
+then
+  for (( i = $1; i >= 0; i-- ))
+  do
+    echo $i
+    sleep 1
+  done
+else
+  echo Include a positive integer as the first argument.
+fi
+```
 
 ## 694. ./countdown 3
 
@@ -1168,29 +1227,31 @@ Run your script and use `3` and the first argument.
 
 ### 696.1
 
-Add `echo -e "\n~~ Countdown Timer ~~\n"`
+It's looking good. I want this program to display a title like the other one. Make it so that it prints `~~ Countdown Timer ~~` before anything else. Include a new line before and after it like you did for the other title.
 
 #### HINTS
 
-- Type `./countdown.sh 3` in the terminal and press enter
-- Make sure you are in the `project` folder first
+- Use the `echo` command with the `-e` flag and the new line (`\n`) character
+- Make sure to place it in double quotes
+- Here's an example: `echo -e "\n<string>\n"`
+- Add `echo -e "\n~~ Countdown Timer ~~\n"` to the `countdown.sh` file after the `shebang`
 
-## 698. ./countdown 3
+## 698. ./countdown 1
 
 ### 698.1
 
-Run your script and use `3` and the first argument.
+Run your script and use `1` and the first argument again to see the title.
 
 #### HINTS
 
-- Type `./countdown.sh 3` in the terminal and press enter
+- Type `./countdown.sh 1` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
 ## 700. Add Multiline comment
 
 ### 700.1
 
-Now it works like it should, you can create a multiline comment like this:
+I'm having fun. You can create a multiline comment like this:
 
 ```sh
 : '
@@ -1203,22 +1264,21 @@ Comment out your `for` loop with a multiline comment. I want to try and do this 
 
 #### HINTS
 
-- Comment out your `for` loop with a multiline comment
+- Comment out the `for` loop in your `countdown.sh` file with a multiline comment
+- Your `for` loop should look like this:
+```sh
+: '
+for (( i = $1; i >= 0; i-- ))
+do
+  echo $i
+  sleep 1
+done
+'
+```
 
-## 710. Add I variable
+## 710. help while
 
 ### 710.1
-
-Below your comment, create a variable named `I` that is set to the value of your first argument.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 730. help while
-
-### 730.1
 
 View the `help` menu for the `while` command to see if you can find anything.
 
@@ -1227,11 +1287,32 @@ View the `help` menu for the `while` command to see if you can find anything.
 - Here's an example: `help <command>`
 - Enter `help while` in the terminal
 
+## 730. Add I variable
+
+### 730.1
+
+Below your comment, create a variable named `I` that is set to the value of your first argument. It will start there, then on each run of the `while` loop you can subtract `1` from it until it reaches `0`.
+
+#### HINTS
+
+- Add `I=$1` in the `then` area of your `if` statements below the multi-line comment
+- The `then` area should look like this:
+```sh
+: '
+for (( i = $1; i >= 0; i-- ))
+do
+  echo $i
+  sleep 1
+done
+'
+I=$1
+```
+
 ## 740. Add while loop
 
 ### 740.1
 
-You can make a `while` loop like this:
+The menu showed that you can make a `while` loop like this:
 
 ```sh
 while [[ CONDITION ]]
@@ -1240,95 +1321,108 @@ do
 done
 ```
 
-Echo your `I` variable to the screen while `I` is greater than zero.
+Add a `while` loop below the `I` variable you made. The condition should be `$I -ge 0` and you should `echo` the `I` variable in the `do` statements.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Your `while` loop should look like this:
+```sh
+while [[ $I -ge 0 ]]
+do
+  echo $I
+done
+```
 
-## 750. Add sleep 1
+## 750. Add (( I-- ))
 
 ### 750.1
 
-Add `sleep 1`
+You can subtract from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subract one from `I` on each pass. 
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Your `while` loop should look like this:
+```sh
+while [[ $I -ge 0 ]]
+do
+  echo $I
+  (( I-- ))
+done
+```
 
-## 753. ./countdown 3
-
-### 753.1
-
-Run your script and use `3` and the first argument.
-
-#### HINTS
-
-- Type `./countdown.sh 3` in the terminal and press enter
-- Make sure you are in the `project` folder first
-
-## 760. Add (( I-- ))
+## 760. Add sleep 1
 
 ### 760.1
 
-add `((I--))`
+The last thing to do is to add the `sleep` again. In your `while` loop, add the code to make it `sleep` for `1` second. Add the code after the `(( I-- ))`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the same `sleep 1` you used in the `for` loop
+- Your `while` loop should look like this:
+```sh
+while [[ $I -ge 0 ]]
+do
+  echo $I
+  (( I-- ))
+  sleep 1
+done
+```
 
-## 770. ./countdown.sh 3
+## 770. ./countdown.sh 5
 
 ### 770.1
 
-Run the script and use 3 as the first argument.
+Run the script and use 5 as the first argument.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./countdown.sh 5` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 780. touch bingo.sh
 
 ### 780.1
 
-I think the countdown clock is looking good. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.
+I think the countdown timer is finished. Feel free to try it with some other arguments. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `touch bingo.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 790. chmod +x bingo.sh
 
 ### 790.1
 
-Give your file executable permissions.
+Give your file executable permissions like you did for the other two.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `chmod` command with the `+x` flag
+- Here's an example `chmod <permissions> <filename>`
+- You previously used `chmod +x countdown.sh`
+- Type `chmod +x bingo.sh` in the terminal and press enter
 
 ## 800. Add shebang
 
 ### 800.1
 
-Add a "shebang" at the top. It's the same as the other two files.
+Add a "shebang" at the top of your new script. It should use `bash` again like other two.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- A `shebang` looks like this: `#!<path_to_interpreter>`
+- Enter `which bash` in the terminal to see the path to `bash`
+- Look at the `shebang` in your first script to get the syntax
+- It should look like this: `#!/bin/bash`
+- Add `#!/bin/bash` at the top of your `bingo.sh` file
 
 ## 810. Add comment
 
 ### 810.1
 
-Add a comment that says, `Bingo Number Generator`
+Add a comment below the `shebang` that says, `Bingo Number Generator`.
 
 #### HINTS
 
