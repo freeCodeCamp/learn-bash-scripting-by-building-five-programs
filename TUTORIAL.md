@@ -816,7 +816,7 @@ Nothing happened? Each command has an exit status that can be accessed with `$?`
 - Type `echo $?` in the terminal and press enter
 - Your second to last command should be `[[ 4 -le 5 ]]`. So enter that before `echo $?`
 
-## 558. [[ 5 -le 4 ]]
+## 558. [[ 4 -ge 5 ]]
 
 ### 558.1
 
@@ -850,7 +850,7 @@ It printed `1` this time for false. You can separate commands on a single line w
 - Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-ge`)
 - Type `[[ 4 -ge 5 ]]; echo $?` in the terminal and press enter
 
-## 564. [[ 10 -gt 5 ]]; echo $?
+## 564. [[ 10 -ne 5 ]]; echo $?
 
 ### 564.1
 
@@ -860,7 +860,7 @@ Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` 
 
 - Check the `help test` menu to find the `not equal` operator
 - It's the `-ne` operator
-- You previously used `[[ 5 -lt 0 ]]; echo $?`
+- You previously used `[[ 4 -ge 5 ]]; echo $?`
 - Make sure there's spaces inside the brackets and around the operator
 - Type `[[ 10 -ne 5 ]]; echo $?` in the terminal and press enter
 
@@ -873,7 +873,7 @@ You can think of the exit status of `0` as true. But it means that the command h
 #### HINTS
 
 - The syntax looks like this: `<command>; echo $?`
-- You previously used `[[ 10 -gt 1 ]]; echo $?`
+- You previously used `[[ 10 -ne 5 ]]; echo $?`
 - Type `bad_command; echo $?` in the terminal and press enter
 
 ## 568. ls; echo $?
@@ -970,12 +970,12 @@ You played around with a number of the expressions. View the `help [[ expression
 
 ### 584.1
 
-Some of these options existed in the `help test` menu, but these are more common. Enter `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` in the terminal to test if both conditions are true.
+Some of these options existed in the `help test` menu, but these are more common. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test if both conditions are true.
 
 #### HINTS
 
 - Enter the suggested command in the terminal
-- Type `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` in the terminal and press enter
+- Type `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal and press enter
 - Make sure there's spaces around the brackets and all the operators
 
 ## 586. [[ -x countdown.sh || 5 -le 4 ]]; echo $?
@@ -986,10 +986,10 @@ Both conditions weren't true, so the command gave an error. Try testing the same
 
 #### HINTS
 
-- Modify this `[[ -x countdown.sh && 5 -lt 0 ]]; echo $?` with the suggestion and enter it in the terminal
+- Modify this `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` with the suggestion and enter it in the terminal
 - Use the or operator from the `help [[ expession ]]` menu
 - The `or` operator is `||`
-- Type `[[ -x countdown.sh || 5 -lt 0 ]]; echo $?` in the terminal and press enter
+- Type `[[ -x countdown.sh || 5 -le 4 ]]; echo $?` in the terminal and press enter
 - Make sure there's spaces around the brackets and all the operators
 
 ## 588. Change if to [[ $1 -gt 0 ]]
