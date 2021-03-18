@@ -516,7 +516,7 @@ Comments in `bash` look like this: `#<comment>`. Add a comment below the `sheban
 
 #### HINTS
 
-- Add `# Program that counts down to zero from a given argument` to your `countdown.sh` file
+- Add `#Program that counts down to zero from a given argument` to your `countdown.sh` file
 
 ## 420. Add echo $*
 
