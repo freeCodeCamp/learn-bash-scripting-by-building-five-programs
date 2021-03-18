@@ -1127,7 +1127,10 @@
               "4b14766a1a44d0a85bd2ec287eb4837fd3b13f86"
             ]
           },
-          "content": "Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment."
+          "content": "Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.",
+          "hints": [
+            "Add `#Program that counts down to zero from a given argument` to your `countdown.sh` file"
+          ]
         }
       ]
     },
