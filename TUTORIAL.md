@@ -1455,7 +1455,7 @@ NUMBER=5
 
 ### 830.1
 
-`echo (( $NUMBER ))`
+`echo $NUMBER`
 
 #### HINTS
 
@@ -1484,11 +1484,11 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 850. Change to NUMBER=(( $RANDOM % 75 ))
+## 850. Change to NUMBER=$RANDOM
 
 ### 850.1
 
-change to `NUMBER=(( $RANDOM % 75 ))`
+change to `NUMBER=$RANDOM`
 
 #### HINTS
 
@@ -1726,22 +1726,11 @@ Run the script
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 920. NUM=$(( RANDOM % 75 + 1 ))
+## 920. echo $(( RANDOM % 75 + 1 ))
 
 ### 920.1
 
-`NUM=$(( RANDOM % 75 + 1 ))`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 923. echo $NUM
-
-### 923.1
-
-`echo $NUM`
+`echo $(( RANDOM % 75 + 1 ))`
 
 #### HINTS
 
@@ -1792,22 +1781,22 @@ Create `if (( $NUMBER <= 15 )) then echo $TEXT B:$NUMBER fi`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 960. Add elif < 31
+## 960. Add elif -le 30
 
 ### 960.1
 
-Add elif (( $NUMBER < 31 )) then
+Add elif [[ $NUMBER -le 30 )) then
 
 #### HINTS
 
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 970. Add elif -le 45
+## 970. Add elif < 46
 
 ### 970.1
 
-Add elif [[ number -le 45 ]]
+Add elif (( number < 45 ))
 
 #### HINTS
 
@@ -1819,6 +1808,17 @@ Add elif [[ number -le 45 ]]
 ### 980.1
 
 elif [[ number -lt 61 ]]
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 990. Add else
+
+### 990.1
+
+add else echo G:#
 
 #### HINTS
 
