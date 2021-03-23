@@ -208,7 +208,7 @@ Run the file like you did before to see if it worked.
 
 ### 200.1
 
-The question was printed. Next, you want to be able to accept input from a user. You can do that with `read` like this: `read VARIABLE_NAME`. This will get user input and store it into a new variable. Use `read` to get input and store it in a variable named `NAME`.
+The question was printed. Next, you want to be able to accept input from a user. You can do that with `read` like this: `read VARIABLE_NAME`. This will get user input and store it into a new variable. After you print the question, use `read` to get input and store it in a variable named `NAME`.
 
 #### HINTS
 
@@ -222,9 +222,10 @@ At the bottom of your script, use `echo` to print `Hello <name>.` to the termina
 
 #### HINTS
 
+- You can use your `NAME` variable like this: `$NAME`
 - Use your `$NAME` variable in place of `<name>`
 - Don't forget the period
-- Add `echo Hello, $NAME.` at the bottom of your script
+- Add `echo Hello $NAME.` at the bottom of your script
 
 ## 220. ./questionnaire
 
@@ -270,18 +271,21 @@ Below where the second question is printed, use `read` to get input from the use
 
 #### HINTS
 
+- Here's an example `read VARIABLE_NAME`
 - Add `read LOCATION` to your script below `echo $QUESTION2`
 
 ## 260. Add echo Hello $NAME from $LOCATION
 
 ### 260.1
 
-Change the existing response to `Hello <name> from <location>.`. Use your two variables in place of `<name>` and `<location`. Make sure the command is at the bottom of the file.
+Change the existing response to `Hello <name> from <location>.`.
 
 #### HINTS
 
+- Use your two variables in place of `<name>` and `<location`
+- Use your two variables with `$NAME` and `$LOCATION`
+- Make sure the command is at the bottom of the file
 - The suggested command should look like: `echo Hello $NAME from $LOCATION.`
-- Make sure it's at the bottom of the file
 
 ## 270. ./questionnaire
 
@@ -327,6 +331,9 @@ It would be nice if there was some empty lines around the title. You've probably
 
 #### HINTS
 
+- Enter the suggested command in the terminal
+- Here's an example: `<command> <flag>`
+- The command is `echo`, the flag is `--help`
 - Type `echo --help` in the terminal and press enter
 
 ## 310. man echo
@@ -344,7 +351,7 @@ That didn't work as I hoped. Another way to find information about a command is 
 
 ### 320.1
 
-Take a look at the menu. That `-e` option looks promising, and the `\n` below it says `new line`. Change the title command to `echo -e \n~~ Questionnaire ~~\n` to see if that works.
+At the top of the menu, there's a `-e` option looks promising. and the `\n` below it says `new line`. You should take a look at what those say. In your script, change the title to `echo -e \n~~ Questionnaire ~~\n` to see if that works.
 
 #### HINTS
 
@@ -377,7 +384,7 @@ It didn't print the empty lines. `echo` will only print empty lines if it is enc
 
 ### 330.1
 
-Run your script.
+Run your script again to see if that fixed it.
 
 #### HINTS
 
@@ -390,7 +397,7 @@ Run your script.
 
 ### 340.1
 
-Now it's working :smile: Create a `QUESTION3` variable next to the other two, and set it's value to `"What's your favorite coding website?"`
+Now it's working :smile: Create a `QUESTION3` variable next to the other two, set it's value to `"What's your favorite coding website?"`
 
 #### HINTS
 
@@ -577,7 +584,7 @@ Run your file with `./countdown.sh arg1 arg2 arg3` again.
 
 ### 460.1
 
-Now it just prints the first argument. Your program will test the first argument with an `if` to make sure it's a number that you can count down from. I wonder what the syntax would look like. Type `help` in the terminal to see if you can find anything.
+Now it just prints the first argument. Your program will accept an argument to count down from. You will test it with an `if` statement to make sure it's a positive integer. I wonder what that syntax would look like. Type `help` in the terminal to see if you can find anything.
 
 #### HINTS
 
@@ -587,7 +594,7 @@ Now it just prints the first argument. Your program will test the first argument
 
 ### 470.1
 
-This is a list of the built-in commands. One of them starts with `if`. See if you can find out more about it by checking its `man` page.
+This is a list of built-in commands. You should look over it, some of them may look familiar. I see `echo` in there. Another one is `if`. See if you can find out more about it by checking its `man` page.
 
 #### HINTS
 
@@ -618,7 +625,7 @@ then
 fi
 ```
 
-Remove the `echo $1` in your new script and replace it with an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There's must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
+Remove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There's must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
 
 #### HINTS
 
@@ -634,7 +641,7 @@ fi
 
 ### 500.1
 
-The `if` statement will print `true` if you pass `arg1`. Notice that the end of the syntax is `fi` (`if` backwards). Run the script again with `arg1` as the only argument.
+Notice that the end of the syntax is `fi` (`if` backwards). It should print `true` if you pass `arg1` to your script now. Run the script with `arg1` as the only argument.
 
 #### HINTS
 
@@ -656,7 +663,7 @@ The `if` condition worked, it printed `true`. Run it again with anything except 
 
 ### 510.1
 
-One of the optional parts of `if` was an `else` area. You can use it like this:
+Nothing was printed. One of the optional parts of `if` was an `else` area. You can use it like this:
 
 ```sh
 if [[ CONDITION ]]
@@ -667,7 +674,7 @@ else
 fi
 ```
 
-Add an `else` to your existing `if` condition. Use `echo` to print `false` to the terminal in its `STATEMENTS` area.
+Add an `else` to your existing `if` condition. Use `echo` to print `false` if the condition fails.
 
 #### HINTS
 
@@ -697,15 +704,13 @@ Run the script again and use anything except `arg1` as the only argument.
 
 ### 530.1
 
-It printed `false` that time since the `if` condition failed. Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.
+Now it printed `false` since you told it to. Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.
 
 #### HINTS
 
-- Your `if` condition should look like this: `[[ $1 -lt 5 ]]`
 - Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-lt`)
-- It's the one in the `countdown.sh` file
+- Your `if` condition should look like this: `[[ $1 -lt 5 ]]`
 - The whole `if` should look like this:
-- Add the following to your script:
 ```sh
 if [[ $1 -lt 5 ]]
 then
@@ -751,22 +756,22 @@ As expected, that printed `false`. Take a look at that `help` menu again. I want
 
 ### 546.1
 
-Near the top left, it says `[[ expression ]]`. See if you can get more info about that with the `help` command like you did with `help if`.
+Near the top left, it says `[[ expression ]]`. Those look like the double brackets you are using. See if you can get more info about that with the `help` command like you did with `help if`.
 
 #### HINTS
 
 - Here's an example: `help <command>`
-- Type `help [[ expression ]]` in the terminal and press enter
+- Type `help [[ expression ]]` or `help [[` in the terminal and press enter
 
 ## 548. help test
 
 ### 548.1
 
-There's some good info there. Looks like you can use some, probably familiar, things like `&&`, `||`, `==` and `!=` to compare expressions. It says something about the `test` built-in command. See if you can bring up the `help` menu for that.
+It might not be a bad idea to read that. Looks like you can use some, probably familiar, things like `!`, `&&`, and `||` to compare multiple expressions. There's also `==` and `!=` operators for an individual expression. It says something about the `test` built-in command. See if you can bring up the `help` menu for that.
 
 #### HINTS
 
-- View the `help` menu of the suggested command like you did before
+- View the `help` menu of the suggested command like you did for the `help if`
 - Here's an example: `help <command>`
 - Type `help test` in the terminal and press enter
 
@@ -774,7 +779,7 @@ There's some good info there. Looks like you can use some, probably familiar, th
 
 ### 550.1
 
-That's what I was looking for. At the top are some file operators. There's some string and other operators as well. You should take a look at them. You used the arithmetic operators with your `if` condition. Change the condition in your script to check if the first argument is less than or equal to `5`.
+That's what I was looking for. At the top are some file operators. There's some string and other operators as well. You should take a look at them. Near the bottom, are the arithmetic operators you used with your `if` condition. Change the condition in your script to check if the first argument is less than or equal to `5`.
 
 #### HINTS
 
@@ -786,7 +791,7 @@ That's what I was looking for. At the top are some file operators. There's some 
 
 ### 552.1
 
-Run the script again and use `5` as a first argument again.
+Run the script and use `5` as a first argument again.
 
 #### HINTS
 
@@ -837,7 +842,7 @@ Echo the exit status of the command you just entered.
 #### HINTS
 
 - Type `echo $?` in the terminal and press enter
-- Your second to last command should be `[[ 4 -ge 5 ]]`. So enter that before `echo $?`
+- Your second to last command should be `[[ 4 -ge 5 ]]`. So enter that right before `echo $?`
 
 ## 562. [[ 4 -ge 5 ]]; echo $?
 
@@ -854,7 +859,7 @@ It printed `1` this time for false. You can separate commands on a single line w
 
 ### 564.1
 
-Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.
+It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.
 
 #### HINTS
 
@@ -868,7 +873,7 @@ Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` 
 
 ### 566.1
 
-You can think of the exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.
+You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.
 
 #### HINTS
 
@@ -944,33 +949,33 @@ The file must exist. It's checking the folder the command is entered from. Try i
 
 ### 576.1
 
-`bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your `coundown.sh` file. You may want to look at that menu again.
+`bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your `countdown.sh` file. You may want to look at that menu again.
 
 #### HINTS
 
 - View the `help test` menu to find the file operator for checking if a file is executable by you
-- It's the `-x` operators
-- The syntax you want is `[[ ... ]]; echo $?`
-- Type `[[ -x countdown.sh ]]; echo $?` in the terminal and press enter
+- It's the `-x` operator
+- The syntax you want is `[[ ... ]]; echo $?` to see if the condition is true
 - Don't forget the spaces inside the brackets
+- Type `[[ -x countdown.sh ]]; echo $?` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
 ## 582. help [[ expression ]]
 
 ### 582.1
 
-You played around with a number of the expressions. View the `help [[ expression ]]` menu again that you looked at before to see a few more options.
+You played around with a number of the expressions. View the `help [[ expression ]]` menu again that you looked at before to see a few more options. You can view the menu with just `help [[`.
 
 #### HINTS
 
 - Enter the suggested command in the terminal
-- Type `help [[ expression ]]` in the terminal and press enter
+- Type `help [[ expression ]]` or `help [[` in the terminal and press enter
 
 ## 584. [[ -x countdown.sh && 5 -le 4 ]]; echo $?
 
 ### 584.1
 
-Some of these options existed in the `help test` menu, but these are more common. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test if both conditions are true.
+As I mentioned before, you can test mutiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** (`&&`) five is less than or equal to four.
 
 #### HINTS
 
@@ -982,12 +987,12 @@ Some of these options existed in the `help test` menu, but these are more common
 
 ### 586.1
 
-Both conditions weren't true, so the command gave an error. Try testing the same two conditions with the `or` operator.
+Both conditions weren't true, so the exit status was `1` for `false`. Try testing the same two conditions with the `or` operator.
 
 #### HINTS
 
 - Modify this `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` with the suggestion and enter it in the terminal
-- Use the or operator from the `help [[ expession ]]` menu
+- Use the `or` operator from the `help [[ expession ]]` menu
 - The `or` operator is `||`
 - Type `[[ -x countdown.sh || 5 -le 4 ]]; echo $?` in the terminal and press enter
 - Make sure there's spaces around the brackets and all the operators
@@ -996,10 +1001,11 @@ Both conditions weren't true, so the command gave an error. Try testing the same
 
 ### 588.1
 
-One of the conditions was true, so you didn't get any errors. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is greater than zero so you can be sure it's something you can count down from.
+One of the conditions was true, so you didn't get any errors. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is **greater than** zero so you can be sure it's something you can count down from.
 
 #### HINTS
 
+- Use the `-gt` operator in your `if` condition
 - The `if` condition should look like this: `[[ $1 -gt 0 ]]`
 - It's in the `countdown.sh` file
 
@@ -1007,7 +1013,7 @@ One of the conditions was true, so you didn't get any errors. I think that's eno
 
 ### 590.1
 
-The condition you added should check if a positive integer was entered and execute the `then` area. Change the message printed in the `else` area to `Include a positive integer as the first argument.` so a user knows what's expected.
+The condition you added should check if a positive integer was entered with the script and execute the `then` area. Change the message printed in the `else` area to `Include a positive integer as the first argument.` so a user knows what's expected.
 
 #### HINTS
 
@@ -1068,10 +1074,11 @@ do
 done
 ```
 
-The above would print `10` through `1` to the screen. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from your `$1` argument to `1`.
+The above creates a varable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.
 
 #### HINTS
 
+- Set the variable to the value of your argument (`$1`) inititally
 - Use the same syntax as the example except change the `10` to `$1`
 - Don't include any extra commands in the `then` area
 - Your `then` area should look like this:
@@ -1146,14 +1153,16 @@ These are some non built-in commands. There's quite a few that should look famil
 
 #### HINTS
 
-- View a manual with `man <command>`
+- View a manual with the `man` command
+- Here's an example: `man <command>`
 - Enter `man sleep` in the terminal
+- Press enter until you have seen the whole menu
 
 ## 675. sleep 3
 
 ### 675.1
 
-It says you can pause execution for a number of seconds. Try it out in the terminal by entering `sleep 3`.
+At the top, it says you can pause execution for a number of seconds. Try it out by entering `sleep 3` in the terminal.
 
 #### HINTS
 
@@ -1175,7 +1184,7 @@ That should work. In your `for` loop, use `sleep` to make the script pause for `
 
 ### 690.1
 
-Run your script and use `3` and the first argument again.
+Run your script and use `3` and the first argument.
 
 #### HINTS
 
@@ -1216,7 +1225,7 @@ fi
 
 ### 694.1
 
-Run your script and use `3` and the first argument.
+Run your script with `3` as the argument again.
 
 #### HINTS
 
@@ -1227,14 +1236,14 @@ Run your script and use `3` and the first argument.
 
 ### 696.1
 
-It's looking good. I want this program to display a title like the other one. Make it so that it prints `~~ Countdown Timer ~~` before anything else. Include a new line before and after it like you did for the other title.
+Excellent. I want it to display a title like the other script. Make it so that it prints `~~ Countdown Timer ~~` before anything else. Include a new line before and after it like you did for the other title.
 
 #### HINTS
 
 - Use the `echo` command with the `-e` flag and the new line (`\n`) character
-- Make sure to place it in double quotes
-- Here's an example: `echo -e "\n<string>\n"`
-- Add `echo -e "\n~~ Countdown Timer ~~\n"` to the `countdown.sh` file after the `shebang`
+- Make sure to place the message in double quotes
+- Here's an example: `echo -e "\n<message>\n"`
+- Add `echo -e "\n~~ Countdown Timer ~~\n"` to the `countdown.sh` file after the comment
 
 ## 698. ./countdown 1
 
@@ -1251,7 +1260,7 @@ Run your script and use `1` and the first argument again to see the title.
 
 ### 700.1
 
-I'm having fun. You can create a multiline comment like this:
+This is fun. You can create a multiline comment like this:
 
 ```sh
 : '
@@ -1265,6 +1274,7 @@ Comment out your `for` loop with a multiline comment. I want to try and do this 
 #### HINTS
 
 - Comment out the `for` loop in your `countdown.sh` file with a multiline comment
+- Make sure there's a space between the `:` and `'`
 - Your `for` loop should look like this:
 ```sh
 : '
@@ -1291,7 +1301,7 @@ View the `help` menu for the `while` command to see if you can find anything.
 
 ### 730.1
 
-Below your comment, create a variable named `I` that is set to the value of your first argument. It will start there, then on each run of the `while` loop you can subtract `1` from it until it reaches `0`.
+It shows the syntax. First, below your comment, create a variable named `I` that is set to the value of your first argument. It will start there, then on each iteration of the `while` loop you can subtract `1` from it until it reaches `0`.
 
 #### HINTS
 
@@ -1337,7 +1347,7 @@ done
 
 ### 750.1
 
-You can subtract from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subract one from `I` on each pass. 
+`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subract one from `I` on each pass. 
 
 #### HINTS
 
@@ -1414,7 +1424,7 @@ Add a "shebang" at the top of your new script. It should use `bash` again like o
 
 - A `shebang` looks like this: `#!<path_to_interpreter>`
 - Enter `which bash` in the terminal to see the path to `bash`
-- Look at the `shebang` in your first script to get the syntax
+- Look at the `shebang` in one of your other scripts to get the syntax
 - It should look like this: `#!/bin/bash`
 - Add `#!/bin/bash` at the top of your `bingo.sh` file
 
@@ -1426,404 +1436,581 @@ Add a comment below the `shebang` that says, `Bingo Number Generator`.
 
 #### HINTS
 
+- Comments look like this: `#<comment>`
+- Add `#Bingo Number Generator` below the `shebang`
 - Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
 ## 815. Add echo -e "title"
 
 ### 815.1
 
-add echo -e "\n~~ Bingo Number Generator ~~\n"
+Before I forget, use a single `echo` command to print a title for this program. It should say `~~ Bingo Number Generator ~~` with an empty line before and after it.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `echo` command with the `-e` flag and the new line (`\n`) character
+- Don't forget the double quotes when using a new line character
+- Take a look at one of the title's from a previous file for a hint
+- Here's an example: `echo -e "\n<message>\n"`
+- You previously used `echo -e "\n~~ Countdown Timer ~~\n"`
+- Add `echo -e "\n~~ Bingo Number Generator ~~\n"` below the comment of your `bingo.sh` file
 
-## 820. Add NUMBER=5 variable
+## 817. Add NUMBER=5 variable
+
+### 817.1
+
+In your script, create a `NUMBER` variable that equals `5`.
+
+#### HINTS
+
+- Here's an example: `VARIABLE_NAME=VALUE`
+- Add `NUMBER=5` to the bottom of your `bingo.sh` file
+
+## 818. echo $NUMBER
+
+### 818.1
+
+Below your new variable, use `echo` to print it to the screen.
+
+#### HINTS
+
+- Here's an example: `echo $<variable>`
+- Use `NUMBER` in place of `<variable>`
+- Add `echo $NUMBER` at the bottom of your `bingo.sh` file
+
+## 819. ./bingo.sh
+
+### 819.1
+
+Run the script by executing it.
+
+#### HINTS
+
+- Type `./bingo.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+
+## 820. printenv
 
 ### 820.1
 
-NUMBER=5
+The numbers in bingo go up to 75, each number has a letter from the word `bingo` associated with it. You will need to randomly generate a number between 1 and 75. Bash may have something that can help you here. A shell comes with environment variables. View them by entering `printenv` in the terminal.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `printenv` in the terminal and press enter
 
-## 830. echo $NUMBER
+## 822. echo $LANG
+
+### 822.1
+
+These are all environment variables, they are predefined and loaded with each shell. Most of them aren’t very relevant, but it’s nice to know they’re there. One of them is `LANG`. Use `echo` to print it in the terminal.
+
+#### HINTS
+
+- Here's an example: `echo $<variable>`
+- Type `echo $LANG` in the terminal and press enter
+
+## 824. declare -p
+
+### 824.1
+
+View all variables in the shell with `declare -p`. `-p` stands for `print`
+
+#### HINTS
+
+- Type `declare -p` in the terminal and press enter
+
+## 826. echo $RANDOM
+
+### 826.1
+
+This list includes all the environment variables, and any others that may have been created in the current shell. There's one named `RANDOM`. Use `echo` to print it in the terminal.
+
+#### HINTS
+
+- Here's an example: `echo $<variable>`
+- Type `echo $RANDOM` in the terminal and press enter
+
+## 828. Change to NUMBER=$RANDOM
+
+### 828.1
+
+Back in your script, use the `RANDOM` variable to set `NUMBER` to a random number instead of `5`.
+
+#### HINTS
+
+- Change `NUMBER=5` to `NUMBER=$RANDOM`
+
+## 830. ./bingo.sh
 
 ### 830.1
 
-`echo $NUMBER`
+Run the script a few times in a row to make sure it's working.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./bingo.sh` in the terminal and press enter two times in a row
+- Make sure you are in the `project` folder first
+
+## 835. Change to NUMBER=$RANDOM%75
+
+### 835.1
+
+The `RANDOM` variable will generate a random number between 0 and 32767. You can use the `modulus` operator to make it in the range you want. In your script, change the `NUMBER` variable to `$RANDOM%75`.
+
+#### HINTS
+
+- Change `NUMBER=$RANDOM` to `NUMBER=$RANDOM%75`
 
 ## 840. ./bingo.sh
 
 ### 840.1
 
-Run the script
+Run the script again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 845. help let
-
-### 845.1
-
-`help let`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 850. Change to NUMBER=$RANDOM
-
-### 850.1
-
-change to `NUMBER=$RANDOM`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 860. run ./bingo.sh
-
-### 860.1
-
-Run the script
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 863. echo $RANDOM
-
-### 863.1
-
-`echo $RANDOM`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 866. echo $RANDOM % 75
-
-### 866.1
-
-`echo $RANDOM % 75`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 869. echo (( $RANDOM % 75 ))
-
-### 869.1
-
-`echo (( $RANDOM % 75 ))`. You should get an error.
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 872. (( $RANDOM % 75 ))
-
-### 872.1
-
-`(( $RANDOM % 75 ))`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 875. echo $?
-
-### 875.1
-
-`echo $?`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
-
-## 878. echo $(( RANDOM % 75 ))
-
-### 878.1
-
-`echo $(( RANDOM % 75 ))`
-
-#### HINTS
-
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./bingo.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 881. I=0
 
 ### 881.1
 
-`I=0`
+Bash sees everything as a string so it just printed the `%75` part literally. In the terminal, create an `I` variable equal to `0` (zero), so we can play with it and figure out how to do some calculations.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `I=0` in the terminal and press enter
 
 ## 884. echo $I
 
 ### 884.1
 
-`echo $I`
+In the terminal, use `echo` to print your new variable.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `echo $<variable>`
+- Type `echo $I` in the terminal and press enter
 
 ## 887. (( I++ )) 
 
 ### 887.1
 
-`(( I++ ))`
+I noticed that you used double parenthesis in the `while` loop of your Countdown Timer to subtract one from `I` there. Type `(( I++ ))` in the terminal to see if anything happens.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `(( I++ ))` in the terminal and press enter
 
 ## 890. echo $I
 
 ### 890.1
 
-`echo $I`
+Use `echo` to print `I` in the terminal again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $I` in the terminal and press enter
+
+## 891. help let
+
+### 891.1
+
+The double parenthesis perfomed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.
+
+#### HINTS
+
+- Type `help let` in the terminal and press enter
 
 ## 893. (( I += 10 ))
 
 ### 893.1
 
-`(( I += 10 ))`
+You used several of these now, including in the `for` loop from the Countdown Timer. Enter `(( I += 10 ))` in the terminal to increment `I` by `10`. Note that you don't need to prepend variables with `$` inside these parenthesis.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `(( I += 10 ))` in the terminal and press enter
 
 ## 896. echo $I
 
 ### 896.1
 
-`echo $I`
+Use `echo` to print your `I` variable again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $I` in the terminal and press enter.
+
+## 897. $(( I + 4 ))
+
+### 897.1
+
+It should have printed `11` for the value of `I`. Using the double parenthesis like you have been is good for changing variable values or making comparisons. It makes the calculation in place and provides no output. If you want to make a calculation and do something with the result, add a `$` in front like this: `$(( ... ))`. Type `$(( I + 4 ))` in the terminal to see what happens.
+
+#### HINTS
+
+- If it didn't print `11` for `I`, enter `I=11` to set it to `11`
+- Type `$(( I + 4 ))` in the terminal and press enter
 
 ## 899. echo $(( I + 4 ))
 
 ### 899.1
 
-`echo $(( I + 4 ))`
+It should say, `bash: 15: command not found`. It added `4` to `I` and returned the result (`15`), which bash tried to execute as if you entered `15` in the terminal. Enter the same command, but put `echo` in front of it. The command was `$(( I + 4 ))`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $(( I + 4 ))` in the terminal and press enter
 
 ## 902. echo $I
 
 ### 902.1
 
-`echo $I`
+These double parenthesis with the `$` in front, will basically replace the operation with it's result. So the `echo $(( I + 4 ))` was pretty much the same as `echo 15`. Use `echo` to print `I` to the screen again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $I` in the terminal and press enter
 
 ## 905. J=$(( I - 6 ))
 
 ### 905.1
 
-`J=$(( I - 6 ))`
+It should still have printed `11` for `I`. These double parenthesis with a `$` are how you can assign a variable to some calculation. In the terminal, create a `J` variable, and use the `$(( ... ))` syntax to set its value to `I - 6`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- If it didn't print `11` for `I`, enter `I=11` to set it to `11`
+- Type `J=$(( I - 6 ))` in the terminal and press enter
 
 ## 908. echo $J
 
 ### 908.1
 
-`echo $J`
+Use `echo` to print `J`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `echo $<variable>`
+- Type `echo $J` in the terminal and press enter
 
 ## 911. echo $(( J * 5 + 25 ))
 
 ### 911.1
 
-`echo $(( J * 5 + 25 ))`
+`J` should equal `5`. For some more practice, use `echo` to print the value `J * 5 + 25`. 
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $(( J * 5 + 25 ))` in the terminal and press enter
 
 ## 912. echo $J
 
 ### 912.1
 
-`echo $J`
+Print `J` with `echo` again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `echo $<variable>`
+- Type `echo $J` in the terminal and press enter
+
+## 913. declare -p
+
+### 913.1
+
+So, as a reminder, `(( ... ))` will perform a calculation or operation and output nothing. `$(( ... ))` will replace the calculation with the result of it. You made a few variables in this shell, view them with `declare -p`.
+
+#### HINTS
+
+- Type `declare -p` in the terminal and press enter
 
 ## 914. declare -p J
 
 ### 914.1
 
-`declare -p J`
+I see your `I` and `J` in there. View `J` with `declare -p J`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `declare -p J` in the terminal and press enter
 
 ## 916. declare -p RANDOM
 
 ### 916.1
 
-`declare -p RANDOM`
+I saw `RANDOM` in that list, too. View it with `declare -p <variable>` like you did for `J`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `declare -p RANDOM` in the terminal and press enter
+
+## 918. echo $(( RANDOM % 75 ))
+
+### 918.1
+
+Okay, I think I finally know how to get the random number for the Bingo Number Generator. Use `echo` and `RANDOM % 75` to print a random number in the terminal.
+
+#### HINTS
+
+- Use the `$(( ... ))` syntax to calculate the random number
+- Here's an example: `echo $(( <calculation> ))`
+- Type `echo $(( RANDOM % 75 ))` in the terminal and press enter
 
 ## 920. echo $(( RANDOM % 75 + 1 ))
 
 ### 920.1
 
-`echo $(( RANDOM % 75 + 1 ))`
+One tiny problem, that calculation will give a number between 0 and 74. Enter the same command in the terminal, but add `1` to the calculation to get a random number between 1 and 75.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $(( RANDOM % 75 + 1 ))` in the terminal and press enter
 
 ## 928. Set NUMBER=$(( RANDOM % 75 + 1))
 
 ### 928.1
 
-Change your number variable to `$(( RANDOM % 75 + 1 ))` and your echo statement to just echo $NUMBER again.
+Back in your `bingo.sh` script, change the `NUMBER` variable so that it starts as a random number between 1 and 75 using the syntax you have been practicing.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Change the `NUMBER` variable to the result of the calculation `RANDOM % 75 + 1`
+- Use the `$(( ... ))` syntax to make the calculation
+- It should look like this: `NUMBER=$(( RANDOM % 75 + 1 ))`
 
 ## 930. run ./bingo.sh
 
 ### 930.1
 
-Run the script to make sure it's working
+Run your script a few times in a row to make sure it's working.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./bingo.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Run it at least two times in a row
 
 ## 940. Add TEXT variable
 
 ### 940.1
 
-Create `TEXT="The next number is, "`
+Next, create a `TEXT` variable and set the value to `"The next number is, "`. When the script is finished, the output will be something like `The next number is B:15`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Make sure there's a space after the comma
+- Add `TEXT="The next number is, "` to the `bingo.sh` file
+
+## 945. help let
+
+### 945.1
+
+The letter that goes with the random number depends on what the number is. If it's 15 or less, it will be a `B`. I saw some comparisons in the `help let` menu, take a look at it again.
+
+#### HINTS
+
+- Type `help let` in the terminal and press enter
 
 ## 950. Add first if <= 15
 
 ### 950.1
 
-Create `if (( $NUMBER <= 15 )) then echo $TEXT B:$NUMBER fi`
+You used the double square brackets with your `if` statement in the last program, but you can use the double parenthesis with these operators as well. In your script, create an `if` statement that uses double parenthesis for the condition. Check if the number variable is less than or equal to 15. If it is, use your two variables to print `The next number is, B:<number>`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example of how your `if` statement should look:
+```sh
+if (( CONDITION ))
+then
+  STATEMENTS
+fi
+```
+- The condition you want is `(( NUMBER <= 15 ))`
+- In the statments area, use `echo` and your two variables to print `The next number is, B:<number>`
+- The statements area should look like this: `echo $TEXT B:$NUMBER`
+- The whole `if` statement should look like this:
+```sh
+if (( NUMBER <= 15 ))
+then
+  echo $TEXT B:$NUMBER
+fi
+```
 
 ## 960. Add elif -le 30
 
 ### 960.1
 
-Add elif [[ $NUMBER -le 30 )) then
+`if` statements can have an "else if" area like this:
+```sh
+if (( CONDITION ))
+then
+  STATEMENTS
+elif [[ CONDITION ]]
+then
+  STATEMENTS
+fi
+```
+
+Using the double square brackets this time, add ad `elif` condition that checks if the number variable is less than or equal to `30`. If it is, use your two variables again to print `The next number is, I:<number>`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- View the `help test` menu to see the operators you can use with the double square brackets
+- The condition you want is `[[ $NUMBER -le 30 ]]`. Don't forget the `$`
+- In the statments area, use `echo` and your two variables to print `The next number is, I:<number>`
+- The statements area should look like this: `echo $TEXT I:$NUMBER`
+- The `elif` area should look like this:
+```sh
+elif [[ $NUMBER -le 30 ]]
+then
+  echo $TEXT I:$NUMBER
+fi
+```
+- The whole `if` statement should look like this:
+```sh
+if (( NUMBER <= 15 ))
+then
+  echo $TEXT B:$NUMBER
+elif [[ $NUMBER -le 30 ]]
+then
+  echo $TEXT I:$NUMBER
+fi
+```
 
 ## 970. Add elif < 46
 
 ### 970.1
 
-Add elif (( number < 45 ))
+You can add as many `elif` sections to an `if` statement as you want. Add another `elif`, below the last, one that uses the double parenthesis to check if the number variable is less than 46. If it is, use your two variables to print `The next number is, N:<number>`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- View the `help let` menu to see the operators you can use with the double parenthesis
+- The operator you want it `<`
+- You can add another `elif` like this:
+```sh
+if CONDITION
+then
+  STATEMENTS
+elif CONDITION
+then
+  STATEMENTS
+elif CONDITION
+then
+  STATEMENTS
+fi
+```
+- The condition you want is `(( NUMBER < 46 ))`
+- In the statments area, use `echo` and your two variables to print `The next number is, N:<number>`
+- The statements area should look like this: `echo $TEXT N:$NUMBER`
+- This `elif` area should look like this:
+```sh
+elif (( NUMBER < 46 ))
+then
+  echo $TEXT N:$NUMBER
+fi
+```
+- The whole `if` statement should look like this:
+```sh
+if (( NUMBER <= 15 ))
+then
+  echo $TEXT B:$NUMBER
+elif [[ $NUMBER -le 30 ]]
+then
+  echo $TEXT I:$NUMBER
+elif (( NUMBER < 46 ))
+then
+  echo $TEXT N:$NUMBER
+fi
+```
 
 ## 980. Add elif -lt 61
 
 ### 980.1
 
-elif [[ number -lt 61 ]]
+Run your script if you want to see the output. It should print one of the senteces if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- View the `help test` menu to see the operators you can use with the double square brackets
+- The operator you want it `-lt`
+- The condition you want is `[[ $NUMBER -lt 61 ]]`. Don't forget the `$`
+- The statements area should look like this: `echo $TEXT G:$NUMBER`
+- This `elif` area should look like this:
+```sh
+elif [[ $NUMBER -lt 61 ]]
+then
+  echo $TEXT G:$NUMBER
+fi
+```
+- The whole `if` statement should look like this:
+```sh
+if (( NUMBER <= 15 ))
+then
+  echo $TEXT B:$NUMBER
+elif [[ $NUMBER -le 30 ]]
+then
+  echo $TEXT I:$NUMBER
+elif (( NUMBER < 46 ))
+then
+  echo $TEXT N:$NUMBER
+elif [[ $NUMBER -lt 61 ]]
+then
+  echo $TEXT G:$NUMBER
+fi
+```
 
 ## 990. Add else
 
 ### 990.1
 
-add else echo G:#
+One more case to handle. Add an `else` at the bottom of the `if` that uses your two variables to print `The next number is, O:<number>`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- View the `if/else` in your `countdown.sh` file to see how you did it before
+- You don't need a condition or the `then` on this one
+- Here's an example:
+```sh
+if CONDITION
+then
+  STATEMENTS
+elif CONDITION
+then
+  STATEMENTS
+...
+else
+  STATEMENTS
+fi
+```
+- The `else` area should looke like this:
+```sh
+else
+  echo $TEXT O:$NUMBER
+```
+- The whole `if` should look like this:
+```sh
+if (( NUMBER <= 15 ))
+then
+  echo $TEXT B:$NUMBER
+elif [[ $NUMBER -le 30 ]]
+then
+  echo $TEXT I:$NUMBER
+elif (( NUMBER < 46 ))
+then
+  echo $TEXT N:$NUMBER
+elif [[ $NUMBER -lt 61 ]]
+then
+  echo $TEXT G:$NUMBER
+else
+  echo $TEXT O:$NUMBER
+fi
+```
 
 ## 1000. ./bingo.sh
 
@@ -1833,41 +2020,47 @@ Run your script a few times and make sure it's working.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./bingo.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+- Run it at least two times in a row
 
 ## 1010. touch fortune.sh
 
 ### 1010.1
 
-Looks like it's working :smile: Next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.
+I think the generator is done :smile: The next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `touch fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1020. chmod +x fortune.sh
 
 ### 1020.1
 
-Change the permissions
+Give your file executable permissions.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `chmod` command with the `+x` flag
+- Here's an example `chmod <permissions> <filename>`
+- You previously used `chmod +x bingo.sh`
+- Type `chmod +x fortune.sh` in the terminal and press enter
 
 ## 1030. Add shebang
 
 ### 1030.1
 
-Add a shebang
+Add a `shebang` at the top of your new file that uses `bash` again.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- A `shebang` looks like this: `#!<path_to_interpreter>`
+- Enter `which bash` in the terminal to see the path to `bash`
+- Look at the `shebang` in one of your other scripts to get the syntax
+- It should look like this: `#!/bin/bash`
+- Add `#!/bin/bash` at the top of your `fortune.sh` file
 
 ## 1040. Add comment
 
@@ -1877,96 +2070,106 @@ Add comment `Program to tell a persons fortune`
 
 #### HINTS
 
+- Comments look like this: `#<comment>`
+- Add `#Program to tell a persons fortune` below the `shebang`
 - Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
 ## 1050. Add echo "title"
 
 ### 1050.1
 
-Add echo `~~ Fortune teller ~~`
+Add a title for this one like the others. This one should say `~~ Fortune Teller ~~`. Don't forget the empty line before and after it.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Print the whole title and the empty lines with a single `echo` command
+- Use the `echo` command with the `-e` flag and the new line (`\n`) character
+- Don't forget to put it in double quotes
+- Take a look at one of the title's from a previous file for a hint
+- Here's an example: `echo -e "\n<message>\n"`
+- You previously used `echo -e "\n~~ Bingo Number Generator ~~\n"`
+- Add `echo -e "\n~~ Fortune Teller ~~\n"` below the comment of your `fortune.sh` file
 
 ## 1060. ./fortune.sh
 
 ### 1060.1
 
-fortune.sh
+Run the file once to make sure it's working.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1070. ARR=("a" "b" "c")
 
 ### 1070.1
 
-In terminal: ARR=("a" "b" "c")
+This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first; in the terminal, create an array like this: `ARR=("a" "b" "c")`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type the suggested command in the terminal
+- Type `ARR=("a" "b" "c")` in the terminal and press enter
 
 ## 1080. echo ${ARR[1]}
 
 ### 1080.1
 
-`echo ${ARR[1]}`
+Each variable in the array is like any other variable, just combined into a single variable. In the terminal, print the second item in the array with `echo ${ARR[1]}`. Note that the first item would be index zero.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo ${ARR[1]}` in the terminal
 
 ## 1090. echo ${ARR[@]}
 
 ### 1090.1
 
+If you recall, you were able to print all the arguements to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarily, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.
+
 `echo ${ARR[@]}`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example `echo ${ARR[<index>]}`
+- Type `echo ${ARR[@]}` in the terminal and press enter
 
 ## 1100. declare -p ARR
 
 ### 1100.1
 
-`declare -p ARR`
+The variable must be in that `declare` list as well. View your array variable using the `declare` command and the `-p` flag.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `declare -p <variable>`
+- Type `declare -p ARR` in the terminal
 
 ## 1110. Add RESPONSES array
 
 ### 1110.1
 
-Create the array `RESPONSES=("Yes" "No" "Maybe")` - but with all entries
+In your script, create an array named `RESPONSES`. Give it these six values: `Yes`, `No`, `Maybe`, `Outlook good`, `Don't count on it`, and `Ask again later`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `VARIABLE=(value value ...)`
+- Make sure any values with spaces are in proper quotes
+- You created your other array with `ARR=("a" "b" "c")`
+- Add `RESPONSES=("Yes" "No" "Maybe" "Outlook good" "Don't count on it" "Ask again later")` in your script
 
 ## 1120. echo ${RESPONSES[5]}
 
 ### 1120.1
 
-`echo ${RESPONSES[5]}`
+In your script, use `echo` to print the last item in the array.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example `echo ${ARR[<index>]}`
+- Remember that the first item starts at zero
+- Add `echo ${RESPONSES[5]}` to your `fortune.sh` file
 
 ## 1130. ./fortune.sh
 
@@ -1976,30 +2179,33 @@ Create the array `RESPONSES=("Yes" "No" "Maybe")` - but with all entries
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1140. Add N=$((RANDOM % 7))
 
 ### 1140.1
 
-Add `N=$((RANDOM % 7))`
+You will randomly print one of the values. In your script, create a variable named `N`. Set it equal to a random number between `0` and `5`, the first and last index of the array.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Look at the random number you created in the `bingo.sh` file for a hint
+- Here's an example: `VARIABLE=$(( <calculation> ))`
+- Calculate a random number in the range you want with `RANDOM % 6`
+- Add `N=$(( RANDOM % 6 ))` to the script
 
 ## 1150. Change to echo ${RESPONSES[$N]}
 
 ### 1150.1
 
-Change to `echo ${RESPONSES[$N]}`
+Change your `echo` command to print the item in the array whose index is the random number you generated.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use your `$N` variable as the index where you print an item from the array
+- Don't forget that scripts run from top to bottom, so you can't use any variables before they are created
+- Change the `echo` line to `echo ${RESPONSES[$N]}`
 
 ## 1160. help
 

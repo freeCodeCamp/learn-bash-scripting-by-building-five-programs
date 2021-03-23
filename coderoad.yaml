@@ -1,4 +1,4 @@
-version: '0.1.5'
+version: '0.1.6'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-bash-scripting-by-building-five-programs
-    branch: v0.1.5
+    branch: v0.1.6
   dependencies:
     - name: node
       version: '>=10'
@@ -688,9 +688,51 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '817'
+    steps:
+      - id: '817.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '818'
+    steps:
+      - id: '818.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '819'
+    steps:
+      - id: '819.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '820'
     steps:
       - id: '820.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '822'
+    steps:
+      - id: '822.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '824'
+    steps:
+      - id: '824.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '826'
+    steps:
+      - id: '826.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '828'
+    steps:
+      - id: '828.1'
         setup:
           watchers:
             - ../.bash_history
@@ -700,63 +742,15 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '835'
+    steps:
+      - id: '835.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '840'
     steps:
       - id: '840.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '845'
-    steps:
-      - id: '845.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '850'
-    steps:
-      - id: '850.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '860'
-    steps:
-      - id: '860.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '863'
-    steps:
-      - id: '863.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '866'
-    steps:
-      - id: '866.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '869'
-    steps:
-      - id: '869.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '872'
-    steps:
-      - id: '872.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '875'
-    steps:
-      - id: '875.1'
-        setup:
-          watchers:
-            - ../.bash_history
-  - id: '878'
-    steps:
-      - id: '878.1'
         setup:
           watchers:
             - ../.bash_history
@@ -784,6 +778,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '891'
+    steps:
+      - id: '891.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '893'
     steps:
       - id: '893.1'
@@ -793,6 +793,12 @@ levels:
   - id: '896'
     steps:
       - id: '896.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '897'
+    steps:
+      - id: '897.1'
         setup:
           watchers:
             - ../.bash_history
@@ -832,6 +838,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '913'
+    steps:
+      - id: '913.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '914'
     steps:
       - id: '914.1'
@@ -841,6 +853,12 @@ levels:
   - id: '916'
     steps:
       - id: '916.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '918'
+    steps:
+      - id: '918.1'
         setup:
           watchers:
             - ../.bash_history
@@ -865,6 +883,12 @@ levels:
   - id: '940'
     steps:
       - id: '940.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '945'
+    steps:
+      - id: '945.1'
         setup:
           watchers:
             - ../.bash_history
