@@ -5288,7 +5288,11 @@
               "c39127a01329ca1c60067f9e4456c5f40f881699"
             ]
           },
-          "content": "That's all I have for now. Close the terminal with `exit`."
+          "content": "That's all I have for now. Close the terminal with `exit`.",
+          "hints": [
+            "Type `exit` in the terminal and press enter",
+            "Thanks and happy coding!"
+          ]
         }
       ]
     }
