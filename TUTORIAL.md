@@ -2766,3 +2766,4 @@ That's all I have for now. Close the terminal with `exit`.
 #### HINTS
 
 - Type `exit` in the terminal and press enter
+- Thanks and happy coding!
