@@ -1,4 +1,4 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getFileContents, appendAndRun } = require('./utils');
 
 describe('Your script', () => {
@@ -8,4 +8,4 @@ describe('Your script', () => {
 
     assert(false);
   });
-});*/
+});
