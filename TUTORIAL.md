@@ -2175,7 +2175,7 @@ In your script, use `echo` to print the last item in the array.
 
 ### 1130.1
 
-`./fortune.sh`
+Run your script.
 
 #### HINTS
 
@@ -2211,188 +2211,219 @@ Change your `echo` command to print the item in the array whose index is the ran
 
 ### 1160.1
 
-`help`
+You will create a function to generate an answer. Check the `help` menu to see if you can find anything.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Enter the suggested command in the terminal
+- Type `help` in the terminal
 
 ## 1170. help function
 
 ### 1170.1
 
-`help function`
+There's one that says `function`. See if you can find out more about it.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `help` command to find out more
+- Here's an example: `help <command>`
+- Type `help function` in the terminal
 
 ## 1180. Add GET_FORTUNE function
 
 ### 1180.1
 
-Add `GET_FORTUNE` function. 
+So it looks like you can create a function like this:
+
+```sh
+FUNCTION_NAME() {
+  STATEMENTS
+}
+```
+
+Add an empty function named `GET_FORTUNE` to your script.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add this to the bottom of your script:
+```sh
+GET_FORTUNE() {
+
+}
+```
 
 ## 1190. Add echo Ask a yes or no question
 
 ### 1190.1
 
-Add echo ask a yes or no question
+In your function, use `echo` to print `Ask a yes or no question:`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Your function should look like this:
+```sh
+GET_FORTUNE() {
+  echo Ask a yes or no question:
+}
+```
 
 ## 1200. Add GET_FORTUNE function call
 
 ### 1200.1
 
-Add `GET_FORTUNE` function call.
+Call your function by putting the name of it below where you create it. No `$` needed.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `GET_FORTUNE` below where you create your function to call it
 
 ## 1210. ./fortune.sh
 
 ### 1210.1
 
-./fortune.sh
+Run your script to make sure it's working.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1220. Add read QUESTION
 
 ### 1220.1
 
-Add `read QUESTION`
+In your function, after you print the sentence, use `read` to get use input into a variable named `QUESTION`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `read QUESTION` to your function below the `echo`
 
 ## 1230. ./fortune.sh
 
 ### 1230.1
 
-./fortune.sh
+Run the script again to test it out. Enter a question when it asks.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1240. help
 
 ### 1240.1
 
-help
+I want to make sure the input is a question. You are going to add a loop that asks for input until the input ends with a question mark. View the `help` menu to see if you can find an appropriate loop.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `help` in the terminal and press enter
 
 ## 1250. help until
 
 ### 1250.1
 
-`help until`
+View more about that `until` command. That might be the one to use here.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use `help <command>` to view more about a command
+- Type `help until` in the terminal and press enter
 
 ## 1260. Add until loop
 
 ### 1260.1
 
-Add until [[ question == "test?" ]]
+The `until` loop is very similar to the `while` loop you used. It will execute the loop until a condition is met. Here's an example:
+
+```sh
+until [[ CONDITION ]]
+do
+  STATEMENTS
+done
+```
+
+Add an `until` loop that checks if the question variable is equal to `test?`. Call your `GET_FORTUNE` function in the statements area so that it asks for input until it equals `test?`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add this to the bottom of your script:
+```sh
+until [[ QUESTION == test? ]]
+do
+  GET_FORTUNE
+done
+```
 
 ## 1270. ./fortune.sh
 
 ### 1270.1
 
-./fortune.sh
+Run the script and enter something other than `test?`. Then enter `test?` after it asks for a question the second time.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1280. help [[ expression ]]
 
 ### 1280.1
 
-`help [[ expression ]]`
+View that `help [[ expression ]]` menu again. We need to find out how to test if the input ends with a question mark (`?`).
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `help [[` or `help [[ expression ]]` in the terminal and press enter
 
 ## 1290. [[ hello == hello ]]; echo $?
 
 ### 1290.1
 
-`[[ hello == hello ]]; echo $?`
+Lets play around with these again. You can test two strings with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Be sure to use the `==` operator
+- Type `[[ hello == hello ]]; echo $?` in the terminal and press enter
 
 ## 1300. [[ hello == world ]]; echo $?
 
 ### 1300.1
 
-`[[ hello == world ]]; echo $?`
+Exit status of `0` means it was true. Using the same syntax, test if `hello` is equal to `world`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `[[ ... ]]; echo $?` syntax
+- Be sure to use the `==` operator
+- Type `[[ hello == world ]]; echo $?` in the terminal and press enter
 
 ## 1310. [[ hello =~ el ]]; echo $?
 
 ### 1310.1
 
+Of course, that is false. An import operator in that menu is `=~`. It allows for pattern matching. Using the same syntax, check if `hello` contains the pattern `el`.
 `[[ hello =~ el ]]; echo $?`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `[[ ... ]]; echo $?` syntax
+- Use the `=~` operator with it
+- Type `[[ hello =~ el ]]; echo $?` in the terminal and press enter
 
-## 1320. [[ "hello world" =~ "ello" ]]; echo $?
+## 1320. [[ "hello world" =~ "lo wor" ]]; echo $?
 
 ### 1320.1
 
-`[[ "hello world" =~ "ello" ]]; echo $?`
+True. The condition was checking for the characters `el` next to each other, which `hello` contains. Using the same syntax, check if `hello world` contains the pattern `lo wor`. You will need to put them both in quotes so it recognizes the spaces.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `[[ ... ]]; echo $?` syntax
+- Use the `=~` operator with it
+- Type `[[ "hello world" =~ "lo wor" ]]; echo $?` in the terminal and press enter
 
 ## 1330. [[ "hello world" =~ ^h ]]; echo $?
 
@@ -2405,11 +2436,11 @@ Add until [[ question == "test?" ]]
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 1340. [[ "hello world" =~ ^h.+d? ]]; echo $?
+## 1340. [[ "hello world" =~ ^h.+d$ ]]; echo $?
 
 ### 1340.1
 
-`[[ "hello world" =~ ^h.+d? ]]; echo $?`
+`[[ "hello world" =~ ^h.+d$ ]]; echo $?`
 
 #### HINTS
 
@@ -2475,12 +2506,12 @@ Change until condition to see if it ends in a `?`
 
 ### 1400.1
 
-`./fortune.sh`
+Run the script and enter a question when it asks.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1410. Add if to GET_FORTUNE
 
@@ -2493,11 +2524,44 @@ Add `if` to `GET_FORTUNE`
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
+## 1413. Add argument to function call
+
+### 1413.1
+
+Add argument to function in until loop (`again`)
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
+## 1416. Add Initial function call
+
+### 1416.1
+
+Add initial function call
+
+#### HINTS
+
+- Capitalization matters
+- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+
 ## 1420. ./fortune.sh
 
 ### 1420.1
 
 `./fortune.sh`
+
+#### HINTS
+
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
+
+## 1425. Add line break in front of response
+
+### 1425.1
+
+Add line break in front of response (`echo -e \n`)
 
 #### HINTS
 
@@ -2600,115 +2664,105 @@ clear
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./five.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1520. help
 
 ### 1520.1
 
-help
+View the `help` menu.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `help` in the terminal and press enter
 
 ## 1530. help type
 
 ### 1530.1
 
-help type
+View more about that `type` command with `help`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `help type` in the terminal and press enter
 
 ## 1540. type echo
 
 ### 1540.1
 
-type echo
+It says you can view the type of a command with `type <command>`. View the type of `echo`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type echo` in the terminal and press enter
 
 ## 1550. type read
 
 ### 1550.1
 
-help type
+View the type of the `read` command.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type read` in the terminal and press enter
 
 ## 1560. type if
 
 ### 1560.1
 
-type if
+View the type of `if`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type if` in the terminal and press enter
 
 ## 1570. type then
 
 ### 1570.1
 
-type then
+View the type of `then`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type then` in the terminal and press enter
 
 ## 1580. type bash
 
 ### 1580.1
 
-type bash
+View the type of `bash`
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type bash` in the terminal and press enter
 
 ## 1590. type psql
 
 ### 1590.1
 
-type psql
+View the type of `psql`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type psql` in the terminal and press enter
 
 ## 1600. type ./five.sh
 
 ### 1600.1
 
-type ./five.sh
+View the type of your `./five.sh` file.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `type ./five.sh` in the terminal and press enter
 
 ## 1610. exit
 
 ### 1610.1
 
-exit
+That's all I have for now. Close the terminal with `exit`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `exit` in the terminal and press enter
