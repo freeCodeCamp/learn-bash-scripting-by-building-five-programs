@@ -351,7 +351,7 @@ That didn't work as I hoped. Another way to find information about a command is 
 
 ### 320.1
 
-At the top of the menu, there's a `-e` option looks promising. and the `\n` below it says `new line`. You should take a look at what those say. In your script, change the title to `echo -e \n~~ Questionnaire ~~\n` to see if that works.
+At the top of the menu, the `-e` option looks promising. And the `\n` below it says `new line`. You should take a look at those. In your script, change the title to `echo -e \n~~ Questionnaire ~~\n` to see if that prints the empty lines.
 
 #### HINTS
 
@@ -374,7 +374,7 @@ Run it to see if it worked. You can press `ctrl+c` to close the program after it
 
 ### 326.1
 
-It didn't print the empty lines. `echo` will only print empty lines if it is enclosed in quotes. Place double quotes around the title that gets printed to see if it works.
+It didn't print the empty lines. `echo` will only print empty lines if the value is enclosed in quotes. Place double quotes around the title that gets printed to see if it works.
 
 #### HINTS
 
