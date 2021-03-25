@@ -2549,7 +2549,7 @@ read QUESTION
 ```
 - Your function should look like this:
 ```sh
-function GET_FORTUNE (){
+function GET_FORTUNE() {
   if [[ ! $1 ]]
   then
     echo Ask a yes or no question:
