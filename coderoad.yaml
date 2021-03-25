@@ -12,6 +12,9 @@ config:
   repo:
     uri: https://github.com/moT01/.learn-bash-scripting-by-building-five-programs
     branch: v0.1.7
+  reset:
+    commands:
+      - './.freeCodeCamp/reset.sh'
   dependencies:
     - name: node
       version: '>=10'
