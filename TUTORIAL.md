@@ -73,7 +73,7 @@ The output was the same. There many interpreters which may not give the output y
 
 ### 60.1
 
-That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a "shebang" at the very top of the file like this: `#!<path_to_interpreter>`. Add a "shebang" at the very top of your file, the one you want looks like this: `#!/bin/bash`.
+That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a `shebang` at the very top of the file like this: `#!<path_to_interpreter>`. Add a `shebang` at the very top of your file, the one you want looks like this: `#!/bin/bash`.
 
 #### HINTS
 
@@ -165,7 +165,7 @@ Run the script by executing it again.
 
 ### 160.1
 
-Your script printed the result of the two commands as if you entered them in the terminal. Delete everything but the "shebang" from your file so you can start making the questionnaire.
+Your script printed the result of the two commands as if you entered them in the terminal. Delete everything but the `shebang` from your file so you can start making the questionnaire.
 
 #### HINTS
 
@@ -479,7 +479,7 @@ Run it one last time and enter values when it asks to see if you like how it loo
 
 ### 380.1
 
-It looks good. I think you are done that script for now. The next program will be "countdown timer". Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
+It looks good. I think you are done that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
 
 #### HINTS
 
@@ -1002,7 +1002,7 @@ Both conditions weren't true, so the exit status was `1` for `false`. Try testin
 
 ### 588.1
 
-One of the conditions was true, so you didn't get any errors. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is **greater than** zero so you can be sure it's something you can count down from.
+One of the conditions was true so it printed `0`. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is **greater than zero** so you can be sure it's something you can count down from.
 
 #### HINTS
 
@@ -1014,7 +1014,7 @@ One of the conditions was true, so you didn't get any errors. I think that's eno
 
 ### 590.1
 
-The condition you added should check if a positive integer was entered with the script and execute the `then` area. Change the message printed in the `else` area to `Include a positive integer as the first argument.` so a user knows what's expected.
+The condition you added checks if a positive integer was passed as an argument to the script and executes the `then` area. Change the existing `echo` command to print `Include a positive integer as the first argument.` if a positive integer is not used.
 
 #### HINTS
 
@@ -1419,7 +1419,7 @@ Give your file executable permissions like you did for the other two.
 
 ### 800.1
 
-Add a "shebang" at the top of your new script. It should use `bash` again like other two.
+Add a `shebang` at the top of your new script. It should use `bash` again like other two.
 
 #### HINTS
 
@@ -1629,7 +1629,7 @@ The double parenthesis perfomed the calculation, changing the value of `I` from 
 
 ### 893.1
 
-You used several of these now, including in the `for` loop from the Countdown Timer. Enter `(( I += 10 ))` in the terminal to increment `I` by `10`. Note that you don't need to prepend variables with `$` inside these parenthesis.
+You used several of these now, including in the `for` loop from the countdown timer. Enter `(( I += 10 ))` in the terminal to increment `I` by `10`. Note that you don't need to prepend variables with `$` inside these parenthesis.
 
 #### HINTS
 
@@ -1712,7 +1712,7 @@ Use `echo` to print `J`.
 
 ### 912.1
 
-Print `J` with `echo` again.
+It should have printed `50`. Print `J` with `echo` again.
 
 #### HINTS
 
@@ -1733,7 +1733,7 @@ So, as a reminder, `(( ... ))` will perform a calculation or operation and outpu
 
 ### 914.1
 
-If you scroll up a little, you should find your `I` and `J` variables in there. View `J` with `declare -p J`.
+`declare` can be used to create variables, but you are just going to use it to view them for now. If you scroll up a little, you should find your `I` and `J` variables in there. View `J` with `declare -p J`.
 
 #### HINTS
 
@@ -2223,7 +2223,7 @@ You will create a function to generate an answer. Check the `help` menu to see i
 
 ### 1170.1
 
-There's one that says `function`. See if you can find out more about it.
+See any that might help? There's one that says `function`. See if you can find out more about it.
 
 #### HINTS
 
@@ -2354,10 +2354,13 @@ do
 done
 ```
 
-Using the double brackets, add an `until` loop that checks if the question variable is equal to `test?`. Move where you call `GET_FORTUNE` to the statements area of the loop so that it asks for input until it equals `test?`. Make sure the response you are printing is at the bottom of the file.
+Add an `until` loop below your function. Use the double brackets to check if `QUESTION` is equal to `test?`. Move the `GET_FORTUNE` function call to the statements area of the loop. It should run the function until you input `test?` as the question.
 
 #### HINTS
 
+- View the `help [[` or `help test` menu to see if you can find the operator to use
+- You want the `==` operator
+- The condition should look like this: `[[ $QUESTION == test? ]]`
 - Your `until` loop should look like this:
 ```sh
 until [[ $QUESTION == test? ]]
@@ -2497,7 +2500,7 @@ Using the `[[ ... ]]; echo $?` syntax. Check if your variable is equal to `hello
 
 ### 1380.1
 
-Using the same syntax, check if your variable end with `?` by using the pattern `\?$`.
+Using the same syntax, check if your variable ends with `?` by using the pattern `\?$`.
 
 #### HINTS
 
@@ -2506,15 +2509,29 @@ Using the same syntax, check if your variable end with `?` by using the pattern 
 - You want to check if `$VAR =~ \?$`
 - Type `[[ $VAR =~ \?$ ]]; echo $?` in the terminal
 
+## 1385. [[ test? =~ \?$ ]; echo $?
+
+### 1385.1
+
+It doesn't end with `?`. Just to make sure I don't have the pattern wrong, check if `test?` ends with `?`.
+
+#### HINTS
+
+- Use the same `[[ ... ]]; echo $?` syntax you have been using
+- Use the `\?$` pattern to see if a string ends with `?`
+- Make sure you're using the pattern matching operator `=~`
+- You want to check if `test? =~ \?$`
+- Type `[[ test? =~ \?$ ]]; echo $?` in the terminal
+
 ## 1390. Change until condition
 
 ### 1390.1
 
-It doesn't end with a question mark. Back in your script, change until condition to see if your variable ends with `?`.
+I think that will work. Back in your script, change the `until` condition to see if your variable ends with `?`.
 
 #### HINTS
 
-- Use the pattern matching operator with the `\?$` pattern
+- Use the pattern matching operator with `\?$`
 - It's the `=~` operator
 - Your condition should look like this: `[[ $QUESTION =~ \?$ ]]`
 - Make sure there's spaces inside the brackets and around the operator
@@ -2534,7 +2551,7 @@ Run the script and input something that doesn't end with `?` the first time, the
 
 ### 1410.1
 
-I don't like how it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`, print the existing sentence in the `then` area and keep the `read` below the whole `if` condition.
+I don't that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.
 
 #### HINTS
 
@@ -2563,7 +2580,7 @@ function GET_FORTUNE() {
 
 ### 1412.1
 
-You can pass arguments to functions like you can to your scripts. This condition will check if one isn't passed and print the existing sentence. Add an `else` to your `if`. Use `echo` to print `Try again. Make sure it ends with a question mark:` if the condition fails.
+You can pass arguments to functions like you did with your script. This condition will check if one isn't passed and print the sentence. Add an `else` to your `if`. Use `echo` to print `Try again. Make sure it ends with a question mark:` if the condition fails.
 
 #### HINTS
 
@@ -2590,7 +2607,7 @@ fi
 
 ### 1413.1
 
-In the `until` loop, add `again` as an argument to where you call the function.
+Now, your function will print one thing if you pass it any argument, and something else if not. In the `until` loop, add `again` as an argument to where you call the function.
 
 #### HINTS
 
@@ -2630,14 +2647,14 @@ Run the script and enter something without a question mark when it asks the firs
 ### 1425.1
 
 Awesome. One last thing. Add an empty line in front of where you print the response.
-Add line break in front of response (`echo -e \n`)
 
 #### HINTS
 
-- Use the `-e` flag and the new line (`\n`) character with the echo statement
+- Change the existing `echo ${RESPONSES[$N]}` line
+- Use the `-e` flag and the new line (`\n`) character with the `echo` statement
 - Make sure to use quotes so it prints the new line
 - Run the script and see if it's working
-- The suggested command should look like this: `echo -e "\n$RESPONSES[$N]"`
+- The suggested command should look like this: `echo -e "\n${RESPONSES[$N]}"`
 
 ## 1428. ./fortune.sh
 
@@ -2654,7 +2671,7 @@ Run the script one more time to see if you like the output.
 
 ### 1430.1
 
-One last program to make. Use `touch` to create a new file named `five.sh` in the same folder as the others.
+Excellent. One last program to make. Use `touch` to create a new file named `five.sh` in the same folder as the others.
 
 #### HINTS
 
@@ -2678,7 +2695,7 @@ Give your file executable permissions.
 
 ### 1450.1
 
-Add a shebang to the new script that uses `bash` like the others.
+Add a `shebang` to the new script that uses `bash` like the others.
 
 #### HINTS
 
@@ -2763,7 +2780,7 @@ Run the script and enter input when it asks.
 
 ### 1520.1
 
-Awesome. I think all the scripts are done. View the `help` menu again I want to explore something.
+Cool. I think all the scripts are done. View the `help` menu again I want to explore one more thing.
 
 #### HINTS
 
@@ -2773,7 +2790,7 @@ Awesome. I think all the scripts are done. View the `help` menu again I want to 
 
 ### 1530.1
 
-Find the `type` command in there and view more about it.
+View more about that `type` command.
 
 #### HINTS
 
@@ -2824,7 +2841,7 @@ View the type of `then`
 
 ### 1580.1
 
-View the type of `bash`
+Those were all from the `help` menu and described as a `shell builtin` or `shell keyword`. View the type of `bash`
 
 #### HINTS
 
@@ -2834,7 +2851,7 @@ View the type of `bash`
 
 ### 1590.1
 
-View the type of `psql`.
+That's the location of the `bash` command. View the type of `psql`.
 
 #### HINTS
 
@@ -2844,7 +2861,7 @@ View the type of `psql`.
 
 ### 1600.1
 
-View the type of your `./five.sh` file.
+It's showing the location of the commands. View the type of your `./five.sh` file.
 
 #### HINTS
 
@@ -2854,7 +2871,7 @@ View the type of your `./five.sh` file.
 
 ### 1610.1
 
-That's all I have for now. Lastly, close the terminal with the `exit` command.
+That's all I have for now. Lastly, close the terminal with the `exit` command. Thanks and happy coding!
 
 #### HINTS
 
