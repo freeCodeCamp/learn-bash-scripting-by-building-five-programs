@@ -2763,7 +2763,7 @@ Run the script and enter input when it asks.
 
 ### 1520.1
 
-Awesome. I think all the scripts are done. View the `help` menu again.
+Awesome. I think all the scripts are done. View the `help` menu again I want to explore something.
 
 #### HINTS
 
@@ -2773,17 +2773,18 @@ Awesome. I think all the scripts are done. View the `help` menu again.
 
 ### 1530.1
 
-View more about that `type` command with `help`.
+Find the `type` command in there and view more about it.
 
 #### HINTS
 
+- Use `help <command>` to find out more about a command
 - Type `help type` in the terminal and press enter
 
 ## 1540. type echo
 
 ### 1540.1
 
-It says you can view the type of a command with `type <command>`. View the type of `echo`
+It says you can view the type of a command with `type <command>`. Just for fun, lets take a look at the type of a few different commands. View the type of `echo`.
 
 #### HINTS
 
@@ -2853,7 +2854,7 @@ View the type of your `./five.sh` file.
 
 ### 1610.1
 
-That's all I have for now. Feel free to play around with things. When you are done, close the terminal with `exit`.
+That's all I have for now. Lastly, close the terminal with the `exit` command.
 
 #### HINTS
 
