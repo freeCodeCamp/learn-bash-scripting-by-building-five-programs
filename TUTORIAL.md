@@ -629,6 +629,7 @@ Remove the `echo $1` in your script and add an `if` condition that checks `if [[
 
 #### HINTS
 
+- Make sure to remove the `echo $1`
 - Add the following to your `countdown.sh` file:
 ```sh
 if [[ $1 == arg1 ]]
@@ -704,7 +705,7 @@ Run the script again and use anything except `arg1` as the only argument.
 
 ### 530.1
 
-Now it printed `false` since you told it to. Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.
+Now it printed `false`. Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.
 
 #### HINTS
 
@@ -837,7 +838,7 @@ The exit status of `0` means it was true, `4` is indeed less or equal to `5`. Tr
 
 ### 560.1
 
-Echo the exit status of the command you just entered.
+Use `echo` to view the exit status of the command you just entered.
 
 #### HINTS
 
@@ -975,7 +976,7 @@ You played around with a number of the expressions. View the `help [[ expression
 
 ### 584.1
 
-As I mentioned before, you can test mutiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** (`&&`) five is less than or equal to four.
+As I mentioned before, you can test mutiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.
 
 #### HINTS
 
@@ -1577,7 +1578,7 @@ Run the script again.
 
 ### 881.1
 
-Bash sees everything as a string so it just printed the `%75` part literally. In the terminal, create an `I` variable equal to `0` (zero), so we can play with it and figure out how to do some calculations.
+Bash sees everything as a string so it just printed the `%75` part literally. In the terminal, create an `I` variable equal to `0` (zero), so you can play with it and figure out how to do some calculations.
 
 #### HINTS
 
@@ -1598,7 +1599,7 @@ In the terminal, use `echo` to print your new variable.
 
 ### 887.1
 
-I noticed that you used double parenthesis in the `while` loop of your Countdown Timer to subtract one from `I` there. Type `(( I++ ))` in the terminal to see if anything happens.
+I noticed that you used double parenthesis in the `while` loop of your countdown timer to subtract one from `I`. Type `(( I++ ))` in the terminal to see if anything happens.
 
 #### HINTS
 
@@ -1608,7 +1609,7 @@ I noticed that you used double parenthesis in the `while` loop of your Countdown
 
 ### 890.1
 
-Use `echo` to print `I` in the terminal again.
+There was no output. Use `echo` to print `I` in the terminal again.
 
 #### HINTS
 
@@ -1659,7 +1660,7 @@ It should have printed `11` for the value of `I`. Using the double parenthesis l
 
 ### 899.1
 
-It should say, `bash: 15: command not found`. It added `4` to `I` and returned the result (`15`), which bash tried to execute as if you entered `15` in the terminal. Enter the same command, but put `echo` in front of it. The command was `$(( I + 4 ))`
+It should say, `bash: 15: command not found`. It replaced the command with the result of the calculation. Effectively, trying to run `15` as a command. Enter the same command, but put `echo` in front of it. The command was `$(( I + 4 ))`
 
 #### HINTS
 
@@ -1669,7 +1670,7 @@ It should say, `bash: 15: command not found`. It added `4` to `I` and returned t
 
 ### 902.1
 
-These double parenthesis with the `$` in front, will basically replace the operation with it's result. So the `echo $(( I + 4 ))` was pretty much the same as `echo 15`. Use `echo` to print `I` to the screen again.
+Again, it replaced the calculation with the result. So it was basically the same as if you entered `echo 15`. Use `echo` to print `I` to the screen again.
 
 #### HINTS
 
@@ -1679,7 +1680,7 @@ These double parenthesis with the `$` in front, will basically replace the opera
 
 ### 905.1
 
-It should still have printed `11` for `I`. These double parenthesis with a `$` are how you can assign a variable to some calculation. In the terminal, create a `J` variable, and use the `$(( ... ))` syntax to set its value to `I - 6`.
+It should still have printed `11` for `I`. See the hints if it didn't. These double parenthesis with a `$` are how you can assign a variable to some calculation. In the terminal, create a `J` variable, and use the `$(( ... ))` syntax to set its value to `I - 6`.
 
 #### HINTS
 
@@ -1732,7 +1733,7 @@ So, as a reminder, `(( ... ))` will perform a calculation or operation and outpu
 
 ### 914.1
 
-I see your `I` and `J` in there. View `J` with `declare -p J`.
+If you scroll up a little, you should find your `I` and `J` variables in there. View `J` with `declare -p J`.
 
 #### HINTS
 
@@ -1823,6 +1824,7 @@ You used the double square brackets with your `if` statement in the last program
 
 #### HINTS
 
+- Make sure you only have two `echo` statements in your script, the title being one of them
 - Here's an example of how your `if` statement should look:
 ```sh
 if (( CONDITION ))
@@ -1856,7 +1858,7 @@ then
 fi
 ```
 
-Using the double square brackets this time, add ad `elif` condition that checks if the number variable is less than or equal to `30`. If it is, use your two variables again to print `The next number is, I:<number>`
+Using the double square brackets this time, add an `elif` condition that checks if the number variable is less than or equal to `30`. If it is, use your two variables again to print `The next number is, I:<number>`
 
 #### HINTS
 
@@ -2128,8 +2130,6 @@ Each variable in the array is like any other variable, just combined into a sing
 
 If you recall, you were able to print all the arguements to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarily, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.
 
-`echo ${ARR[@]}`
-
 #### HINTS
 
 - Here's an example `echo ${ARR[<index>]}`
@@ -2139,7 +2139,7 @@ If you recall, you were able to print all the arguements to your `countdown.sh` 
 
 ### 1100.1
 
-The variable must be in that `declare` list as well. View your array variable using the `declare` command and the `-p` flag.
+The variable must be in that `declare` list. View your array variable using the `declare` command and the `-p` flag.
 
 #### HINTS
 
@@ -2150,7 +2150,7 @@ The variable must be in that `declare` list as well. View your array variable us
 
 ### 1110.1
 
-In your script, create an array named `RESPONSES`. Give it these six values: `Yes`, `No`, `Maybe`, `Outlook good`, `Don't count on it`, and `Ask again later`.
+The `-a` next to it stands for `array`. In your script, create an array named `RESPONSES`. Give it these six values: `Yes`, `No`, `Maybe`, `Outlook good`, `Don't count on it`, and `Ask again later`.
 
 #### HINTS
 
@@ -2175,14 +2175,14 @@ In your script, use `echo` to print the last item in the array.
 
 ### 1130.1
 
-Run your script.
+Run it to see the output.
 
 #### HINTS
 
 - Type `./fortune.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
-## 1140. Add N=$((RANDOM % 7))
+## 1140. Add N=$(( RANDOM % 6 ))
 
 ### 1140.1
 
@@ -2190,6 +2190,7 @@ You will randomly print one of the values. In your script, create a variable nam
 
 #### HINTS
 
+- Use the modulus (`%`) operator and `6` to get a number between `0` and `5`
 - Look at the random number you created in the `bingo.sh` file for a hint
 - Here's an example: `VARIABLE=$(( <calculation> ))`
 - Calculate a random number in the range you want with `RANDOM % 6`
@@ -2234,7 +2235,7 @@ There's one that says `function`. See if you can find out more about it.
 
 ### 1180.1
 
-So it looks like you can create a function like this:
+It looks like you can create a function like this:
 
 ```sh
 FUNCTION_NAME() {
@@ -2242,16 +2243,15 @@ FUNCTION_NAME() {
 }
 ```
 
-Add an empty function named `GET_FORTUNE` to your script.
+Add an empty function named `GET_FORTUNE` to your script. Make sure the repsonse you are printing is the last thing in the script.
 
 #### HINTS
 
-- Add this to the bottom of your script:
+- Add this to your script:
 ```sh
-GET_FORTUNE() {
-
-}
+GET_FORTUNE() {}
 ```
+- Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
 ## 1190. Add echo Ask a yes or no question
 
@@ -2267,16 +2267,18 @@ GET_FORTUNE() {
   echo Ask a yes or no question:
 }
 ```
+- Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
 ## 1200. Add GET_FORTUNE function call
 
 ### 1200.1
 
-Call your function by putting the name of it below where you create it. No `$` needed.
+Call your function by putting the name of it below where you create it. No `$` needed. Make sure the reponse you are printing is at the bottom of the file.
 
 #### HINTS
 
 - Add `GET_FORTUNE` below where you create your function to call it
+- Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
 ## 1210. ./fortune.sh
 
@@ -2293,11 +2295,19 @@ Run your script to make sure it's working.
 
 ### 1220.1
 
-In your function, after you print the sentence, use `read` to get use input into a variable named `QUESTION`.
+In your function after you print the sentence, use `read` to get user input into a variable named `QUESTION`.
 
 #### HINTS
 
 - Add `read QUESTION` to your function below the `echo`
+- Your function should look like this:
+```sh
+GET_FORTUNE() {
+  echo Ask a yes or no question:
+  read QUESTION
+}
+```
+- Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
 ## 1230. ./fortune.sh
 
@@ -2344,17 +2354,19 @@ do
 done
 ```
 
-Add an `until` loop that checks if the question variable is equal to `test?`. Call your `GET_FORTUNE` function in the statements area so that it asks for input until it equals `test?`
+Using the double brackets, add an `until` loop that checks if the question variable is equal to `test?`. Move where you call `GET_FORTUNE` to the statements area of the loop so that it asks for input until it equals `test?`. Make sure the response you are printing is at the bottom of the file.
 
 #### HINTS
 
-- Add this to the bottom of your script:
+- Your `until` loop should look like this:
 ```sh
-until [[ QUESTION == test? ]]
+until [[ $QUESTION == test? ]]
 do
   GET_FORTUNE
 done
 ```
+- You should only call the `GET_FORTUNE` function once
+- Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file
 
 ## 1270. ./fortune.sh
 
@@ -2381,7 +2393,7 @@ View that `help [[ expression ]]` menu again. We need to find out how to test if
 
 ### 1290.1
 
-Lets play around with these again. You can test two strings with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
+Lets play around with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
 
 #### HINTS
 
@@ -2392,7 +2404,7 @@ Lets play around with these again. You can test two strings with `==`. In the te
 
 ### 1300.1
 
-Exit status of `0` means it was true. Using the same syntax, test if `hello` is equal to `world`
+Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`
 
 #### HINTS
 
@@ -2404,8 +2416,7 @@ Exit status of `0` means it was true. Using the same syntax, test if `hello` is 
 
 ### 1310.1
 
-Of course, that is false. An import operator in that menu is `=~`. It allows for pattern matching. Using the same syntax, check if `hello` contains the pattern `el`.
-`[[ hello =~ el ]]; echo $?`
+False. An import operator in that menu is `=~`. It allows for pattern matching. Using the same syntax but with this operator, check if `hello` contains the pattern `el`.
 
 #### HINTS
 
@@ -2417,7 +2428,7 @@ Of course, that is false. An import operator in that menu is `=~`. It allows for
 
 ### 1320.1
 
-True. The condition was checking for the characters `el` next to each other, which `hello` contains. Using the same syntax, check if `hello world` contains the pattern `lo wor`. You will need to put them both in quotes so it recognizes the spaces.
+True. The condition was checking for `el` within the word `hello`. Using the same syntax, check if `hello world` contains the pattern `lo wor`. You will need to put them both in quotes so it recognizes the spaces.
 
 #### HINTS
 
@@ -2429,84 +2440,90 @@ True. The condition was checking for the characters `el` next to each other, whi
 
 ### 1330.1
 
-`[[ "hello world" =~ ^h ]]; echo $?`
+Your patterns have been checking for literal matches, `el` and `lo wor`. You can use regular expression characters as well, but you can't put the pattern in quotes when you do. Using the same syntax, check if `hello world` starts with an `h` by using `^h` as the pattern.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Make sure not to use quotes around the pattern when using regex characters it
+- Type `[[ "hello world" =~ ^h ]]; echo $?` in the terminal
 
 ## 1340. [[ "hello world" =~ ^h.+d$ ]]; echo $?
 
 ### 1340.1
 
-`[[ "hello world" =~ ^h.+d$ ]]; echo $?`
+Do it again, but use `^h.+d$` as the pattern to see if the string starts with an `h`, has at least one character after it, and ends with a `d`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `[[ ... ]]; echo $?` syntax again
+- Check if `hello world` contains the suggested pattern
+- Make sure not to use quotes around the pattern when using regex characters it
+- Type `[[ "hello world" =~ ^h.+d$ ]]; echo $?` in the terminal
 
 ## 1350. VAR="hello world"
 
 ### 1350.1
 
-`VAR="hello world"`
+In the terminal, create a variable named `VAR` that equals `hello world`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `VAR="hello world"` in the terminal
 
 ## 1360. echo $VAR
 
 ### 1360.1
 
-`echo $VAR`
+Use `echo` to print the variable you just created.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `echo $VAR` in the terminal
 
 ## 1370. [[ $VAR == "hello world" ]]; echo $?
 
 ### 1370.1
 
-`[[ $VAR == "hello world" ]]; echo $?`
+Using the `[[ ... ]]; echo $?` syntax. Check if your variable is equal to `hello world`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Check the `help [[` menu to find the operator to use
+- It's the `==` operator
+- You want to check if `$VAR == "hello world"`
+- Type `[[ $VAR == "hello world" ]]; echo $?` in the terminal
 
 ## 1380. [[ $VAR =~ \?$ ]; echo $?
 
 ### 1380.1
 
-`[[ $VAR =~ \?$ ]]; echo $?`
+Using the same syntax, check if your variable end with `?` by using the pattern `\?$`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Be sure to use the pattern matching operator
+- It's the `=~` operator
+- You want to check if `$VAR =~ \?$`
+- Type `[[ $VAR =~ \?$ ]]; echo $?` in the terminal
 
 ## 1390. Change until condition
 
 ### 1390.1
 
-Change until condition to see if it ends in a `?`
+It doesn't end with a question mark. Back in your script, change until condition to see if your variable ends with `?`.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the pattern matching operator with the `\?$` pattern
+- It's the `=~` operator
+- Your condition should look like this: `[[ $QUESTION =~ \?$ ]]`
+- Make sure there's spaces inside the brackets and around the operator
 
 ## 1400. ./fortune.sh
 
 ### 1400.1
 
-Run the script and enter a question when it asks.
+Run the script and input something that doesn't end with `?` the first time, then something that does the second.
 
 #### HINTS
 
@@ -2517,40 +2534,91 @@ Run the script and enter a question when it asks.
 
 ### 1410.1
 
-Add `if` to `GET_FORTUNE`
+I don't like how it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`, print the existing sentence in the `then` area and keep the `read` below the whole `if` condition.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example:
+```sh
+if [[ CONDITION ]]
+then
+  STATEMENTS
+fi
+
+read QUESTION
+```
+- Your function should look like this:
+```sh
+function GET_FORTUNE (){
+  if [[ ! $1 ]]
+  then
+    echo Ask a yes or no question:
+  fi
+
+  read QUESTION
+}
+```
+
+## 1412. Add else to if [[ ! $1 ]]
+
+### 1412.1
+
+You can pass arguments to functions like you can to your scripts. This condition will check if one isn't passed and print the existing sentence. Add an `else` to your `if`. Use `echo` to print `Try again. Make sure it ends with a question mark:` if the condition fails.
+
+#### HINTS
+
+- Here's an example:
+```sh
+if [[ CONDITION ]]
+then
+  STATEMENTS
+else
+  STATEMENTS
+fi
+```
+- Your `if` condition should look like this:
+```sh
+if [[ ! $1 ]]
+then
+  echo Ask a yes or no question:
+else
+  echo Try again. Make sure it ends with a question mark:
+fi
+```
 
 ## 1413. Add argument to function call
 
 ### 1413.1
 
-Add argument to function in until loop (`again`)
+In the `until` loop, add `again` as an argument to where you call the function.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Here's an example: `FUNCTION_NAME argument`
+- Your function call should look like this: `GET_FORTUNE again`
+- Your `until` loop should look like this:
+```sh
+until [[ $QUESTION =~ \?$ ]]
+do
+  GET_FORTUNE again
+done
+```
 
 ## 1416. Add Initial function call
 
 ### 1416.1
 
-Add initial function call
+Now, each time the function is called in the `until` loop. It will pass `again` as an argument and print the `Try again...` sentence. Before your `until` loop, call the function without an argument so the first time it runs, it prints the initial sentence.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Add `GET_FORTUNE` before the `until` loop
 
 ## 1420. ./fortune.sh
 
 ### 1420.1
 
-`./fortune.sh`
+Run the script and enter something without a question mark when it asks the first time. Use a question mark the second time.
 
 #### HINTS
 
@@ -2561,106 +2629,130 @@ Add initial function call
 
 ### 1425.1
 
+Awesome. One last thing. Add an empty line in front of where you print the response.
 Add line break in front of response (`echo -e \n`)
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `-e` flag and the new line (`\n`) character with the echo statement
+- Make sure to use quotes so it prints the new line
+- Run the script and see if it's working
+- The suggested command should look like this: `echo -e "\n$RESPONSES[$N]"`
+
+## 1428. ./fortune.sh
+
+### 1428.1
+
+Run the script one more time to see if you like the output.
+
+#### HINTS
+
+- Type `./fortune.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1430. touch five.sh
 
 ### 1430.1
 
-`touch five.sh`
+One last program to make. Use `touch` to create a new file named `five.sh` in the same folder as the others.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `touch five.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1440. chmod +x five.sh
 
 ### 1440.1
 
-chmod +x five.sh
+Give your file executable permissions.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Use the `chmod` command with the `+x` flag
+- Here's an example `chmod <permissions> <filename>`
+- You previously used `chmod +x fortune.sh`
+- Type `chmod +x five.sh` in the terminal and press enter
 
 ## 1450. Add shebang
 
 ### 1450.1
 
-Add shebang
+Add a shebang to the new script that uses `bash` like the others.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- A `shebang` looks like this: `#!<path_to_interpreter>`
+- Enter `which bash` in the terminal to see the path to `bash`
+- Look at the `shebang` in one of your other scripts to get the syntax
+- It should look like this: `#!/bin/bash`
+- Add `#!/bin/bash` at the top of your `five.sh` file
 
 ## 1460. Add comment
 
 ### 1460.1
 
-add comment 'program to run my other four programs'
+Add a comment below the `shebang` that says, `Program to run my other four programs`
 
 #### HINTS
 
+- Comments look like this: `#<comment>`
+- Add `#Program to run my other four programs` below the `shebang`
 - Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
 ## 1470. Add ./questionnaire.sh
 
 ### 1470.1
 
-Add questionnaire.sh to the file
+This program will run all the programs you made so far consecutively. Add the command to run the `questionnaire.sh` file.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- The command should look like how you would execute the file in the terminal
+- Add `./questionnaire.sh` to the `five.sh` file
 
 ## 1480. ./five
 
 ### 1480.1
 
-./five
+Run the file to see if it works. Enter input when it asks.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `./five.sh` in the terminal and press enter
+- Make sure you are in the `project` folder first
 
 ## 1490. Add the rest of the scripts
 
 ### 1490.1
 
-Add the rest of the scripts to the file
+Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an arguement, so put a `3` next to it.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Your `five.sh` file should have these commands:
+```sh
+./questionnaire.sh
+./countdown.sh 3
+./bingo.sh
+./fortune.sh
+```
 
 ## 1500. Clear
 
 ### 1500.1
 
-clear
+Okay, use `clear` to empty out what's in the terminal before the big moment.
 
 #### HINTS
 
-- Capitalization matters
-- If the tests don't run automatically, "trash" all the terminals and try the instructions again
+- Type `clear` in the terminal
 
 ## 1510. ./five
 
 ### 1510.1
 
-./five
+Run the script and enter input when it asks.
 
 #### HINTS
 
@@ -2671,7 +2763,7 @@ clear
 
 ### 1520.1
 
-View the `help` menu.
+Awesome. I think all the scripts are done. View the `help` menu again.
 
 #### HINTS
 
@@ -2681,7 +2773,7 @@ View the `help` menu.
 
 ### 1530.1
 
-View more about that `type` command with `help`
+View more about that `type` command with `help`.
 
 #### HINTS
 
@@ -2761,7 +2853,7 @@ View the type of your `./five.sh` file.
 
 ### 1610.1
 
-That's all I have for now. Close the terminal with `exit`.
+That's all I have for now. Feel free to play around with things. When you are done, close the terminal with `exit`.
 
 #### HINTS
 
