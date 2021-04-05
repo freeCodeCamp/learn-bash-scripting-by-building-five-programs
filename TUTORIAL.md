@@ -519,11 +519,11 @@ You want to use the `bash` interpreter again. Add a `shebang` at the top of your
 
 ### 410.1
 
-Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.
+Comments in `bash` look like this: `# <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.
 
 #### HINTS
 
-- Add `#Program that counts down to zero from a given argument` to your `countdown.sh` file
+- Add `# Program that counts down to zero from a given argument` to your `countdown.sh` file
 
 ## 420. Add echo $*
 
@@ -1437,7 +1437,7 @@ Add a comment below the `shebang` that says, `Bingo Number Generator`.
 
 #### HINTS
 
-- Comments look like this: `#<comment>`
+- Comments look like this: `# <comment>`
 - Add `#Bingo Number Generator` below the `shebang`
 - Capitalization matters
 
@@ -2072,7 +2072,7 @@ Add comment `Program to tell a persons fortune`
 
 #### HINTS
 
-- Comments look like this: `#<comment>`
+- Comments look like this: `# <comment>`
 - Add `#Program to tell a persons fortune` below the `shebang`
 - Capitalization matters
 
@@ -2713,8 +2713,8 @@ Add a comment below the `shebang` that says, `Program to run my other four progr
 
 #### HINTS
 
-- Comments look like this: `#<comment>`
-- Add `#Program to run my other four programs` below the `shebang`
+- Comments look like this: `# <comment>`
+- Add `# Program to run my other four programs` below the `shebang`
 - Capitalization matters
 
 ## 1470. Add ./questionnaire.sh
