@@ -1139,9 +1139,9 @@
               "3449d5bee1da00b9fb4f3725be61c1011399205e"
             ]
           },
-          "content": "Comments in `bash` look like this: `#<comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.",
+          "content": "Comments in `bash` look like this: `# <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.",
           "hints": [
-            "Add `#Program that counts down to zero from a given argument` to your `countdown.sh` file"
+            "Add `# Program that counts down to zero from a given argument` to your `countdown.sh` file"
           ]
         }
       ]
@@ -2760,7 +2760,7 @@
           },
           "content": "Add a comment below the `shebang` that says, `Bingo Number Generator`.",
           "hints": [
-            "Comments look like this: `#<comment>`",
+            "Comments look like this: `# <comment>`",
             "Add `#Bingo Number Generator` below the `shebang`",
             "Capitalization matters"
           ]
@@ -3858,7 +3858,7 @@
           },
           "content": "Add comment `Program to tell a persons fortune`",
           "hints": [
-            "Comments look like this: `#<comment>`",
+            "Comments look like this: `# <comment>`",
             "Add `#Program to tell a persons fortune` below the `shebang`",
             "Capitalization matters"
           ]
@@ -5046,8 +5046,8 @@
           },
           "content": "Add a comment below the `shebang` that says, `Program to run my other four programs`",
           "hints": [
-            "Comments look like this: `#<comment>`",
-            "Add `#Program to run my other four programs` below the `shebang`",
+            "Comments look like this: `# <comment>`",
+            "Add `# Program to run my other four programs` below the `shebang`",
             "Capitalization matters"
           ]
         }
