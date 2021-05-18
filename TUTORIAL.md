@@ -874,7 +874,7 @@ It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is
 
 ### 566.1
 
-You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.
+You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same syntax, enter `bad_command;` and check its exit status on a single line.
 
 #### HINTS
 
@@ -976,7 +976,7 @@ You played around with a number of the expressions. View the `help [[ expression
 
 ### 584.1
 
-As I mentioned before, you can test mutiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.
+As I mentioned before, you can test multiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.
 
 #### HINTS
 
@@ -993,7 +993,7 @@ Both conditions weren't true, so the exit status was `1` for `false`. Try testin
 #### HINTS
 
 - Modify this `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` with the suggestion and enter it in the terminal
-- Use the `or` operator from the `help [[ expession ]]` menu
+- Use the `or` operator from the `help [[ expression ]]` menu
 - The `or` operator is `||`
 - Type `[[ -x countdown.sh || 5 -le 4 ]]; echo $?` in the terminal and press enter
 - Make sure there's spaces around the brackets and all the operators
@@ -1079,7 +1079,7 @@ The above creates a varable (`i = 10`), then prints it, subtracts one, and repea
 
 #### HINTS
 
-- Set the variable to the value of your argument (`$1`) inititally
+- Set the variable to the value of your argument (`$1`) initially
 - Use the same syntax as the example except change the `10` to `$1`
 - Don't include any extra commands in the `then` area
 - Your `then` area should look like this:
@@ -1348,7 +1348,7 @@ done
 
 ### 750.1
 
-`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subract one from `I` on each pass. 
+`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subtract one from `I` on each pass. 
 
 #### HINTS
 
@@ -1619,7 +1619,7 @@ There was no output. Use `echo` to print `I` in the terminal again.
 
 ### 891.1
 
-The double parenthesis perfomed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.
+The double parenthesis performed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.
 
 #### HINTS
 
@@ -1833,7 +1833,7 @@ then
 fi
 ```
 - The condition you want is `(( NUMBER <= 15 ))`
-- In the statments area, use `echo` and your two variables to print `The next number is, B:<number>`
+- In the statements area, use `echo` and your two variables to print `The next number is, B:<number>`
 - The statements area should look like this: `echo $TEXT B:$NUMBER`
 - The whole `if` statement should look like this:
 ```sh
@@ -1864,7 +1864,7 @@ Using the double square brackets this time, add an `elif` condition that checks 
 
 - View the `help test` menu to see the operators you can use with the double square brackets
 - The condition you want is `[[ $NUMBER -le 30 ]]`. Don't forget the `$`
-- In the statments area, use `echo` and your two variables to print `The next number is, I:<number>`
+- In the statements area, use `echo` and your two variables to print `The next number is, I:<number>`
 - The statements area should look like this: `echo $TEXT I:$NUMBER`
 - The `elif` area should look like this:
 ```sh
@@ -1908,7 +1908,7 @@ then
 fi
 ```
 - The condition you want is `(( NUMBER < 46 ))`
-- In the statments area, use `echo` and your two variables to print `The next number is, N:<number>`
+- In the statements area, use `echo` and your two variables to print `The next number is, N:<number>`
 - The statements area should look like this: `echo $TEXT N:$NUMBER`
 - This `elif` area should look like this:
 ```sh
@@ -1935,7 +1935,7 @@ fi
 
 ### 980.1
 
-Run your script if you want to see the output. It should print one of the senteces if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`
+Run your script if you want to see the output. It should print one of the sentences if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`
 
 #### HINTS
 
@@ -1990,7 +1990,7 @@ else
   STATEMENTS
 fi
 ```
-- The `else` area should looke like this:
+- The `else` area should look like this:
 ```sh
 else
   echo $TEXT O:$NUMBER
@@ -2128,7 +2128,7 @@ Each variable in the array is like any other variable, just combined into a sing
 
 ### 1090.1
 
-If you recall, you were able to print all the arguements to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarily, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.
+If you recall, you were able to print all the arguments to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarly, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.
 
 #### HINTS
 
@@ -2743,7 +2743,7 @@ Run the file to see if it works. Enter input when it asks.
 
 ### 1490.1
 
-Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an arguement, so put a `3` next to it.
+Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an argument, so put a `3` next to it.
 
 #### HINTS
 
