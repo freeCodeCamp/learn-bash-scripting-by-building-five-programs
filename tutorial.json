@@ -1816,7 +1816,7 @@
               "22473b7004eb2a36905fa29bf67cb7be63b305ca"
             ]
           },
-          "content": "You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same sytax, enter `bad_command;` and check its exit status on a single line.",
+          "content": "You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same syntax, enter `bad_command;` and check its exit status on a single line.",
           "hints": [
             "The syntax looks like this: `<command>; echo $?`",
             "You previously used `[[ 10 -ne 5 ]]; echo $?`",
@@ -2022,7 +2022,7 @@
               "289b62cf811200e676f5eb62a4115d4d3db0c0b0"
             ]
           },
-          "content": "As I mentioned before, you can test mutiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.",
+          "content": "As I mentioned before, you can test multiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.",
           "hints": [
             "Enter the suggested command in the terminal",
             "Type `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal and press enter",
@@ -2050,7 +2050,7 @@
           "content": "Both conditions weren't true, so the exit status was `1` for `false`. Try testing the same two conditions with the `or` operator.",
           "hints": [
             "Modify this `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` with the suggestion and enter it in the terminal",
-            "Use the `or` operator from the `help [[ expession ]]` menu",
+            "Use the `or` operator from the `help [[ expression ]]` menu",
             "The `or` operator is `||`",
             "Type `[[ -x countdown.sh || 5 -le 4 ]]; echo $?` in the terminal and press enter",
             "Make sure there's spaces around the brackets and all the operators"
@@ -2197,7 +2197,7 @@
           },
           "content": "There's two `for` loops in there, you want the second one. Here's an example:\n\n```sh\nfor (( i = 10; i > 0; i-- ))\ndo\n  echo $i\ndone\n```\n\nThe above creates a varable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.",
           "hints": [
-            "Set the variable to the value of your argument (`$1`) inititally",
+            "Set the variable to the value of your argument (`$1`) initially",
             "Use the same syntax as the example except change the `10` to `$1`",
             "Don't include any extra commands in the `then` area",
             "Your `then` area should look like this:\n```sh\nfor (( i = $1; i > 0; i-- ))\ndo\n  echo $i\ndone\n```",
@@ -2610,7 +2610,7 @@
               "5f4ae3ff7e30eb0fadc3051a0b0a6954cadff788"
             ]
           },
-          "content": "`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subract one from `I` on each pass.",
+          "content": "`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subtract one from `I` on each pass.",
           "hints": [
             "Your `while` loop should look like this:\n```sh\nwhile [[ $I -ge 0 ]]\ndo\n  echo $I\n  (( I-- ))\ndone\n```"
           ]
@@ -3165,7 +3165,7 @@
               "9135fc96470b7ab221b2f63c9a40bc187f35e401"
             ]
           },
-          "content": "The double parenthesis perfomed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.",
+          "content": "The double parenthesis performed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.",
           "hints": [
             "Type `help let` in the terminal and press enter"
           ]
@@ -3618,7 +3618,7 @@
             "Make sure you only have two `echo` statements in your script, the title being one of them",
             "Here's an example of how your `if` statement should look:\n```sh\nif (( CONDITION ))\nthen\n  STATEMENTS\nfi\n```",
             "The condition you want is `(( NUMBER <= 15 ))`",
-            "In the statments area, use `echo` and your two variables to print `The next number is, B:<number>`",
+            "In the statements area, use `echo` and your two variables to print `The next number is, B:<number>`",
             "The statements area should look like this: `echo $TEXT B:$NUMBER`",
             "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nfi\n```"
           ]
@@ -3645,7 +3645,7 @@
           "hints": [
             "View the `help test` menu to see the operators you can use with the double square brackets",
             "The condition you want is `[[ $NUMBER -le 30 ]]`. Don't forget the `$`",
-            "In the statments area, use `echo` and your two variables to print `The next number is, I:<number>`",
+            "In the statements area, use `echo` and your two variables to print `The next number is, I:<number>`",
             "The statements area should look like this: `echo $TEXT I:$NUMBER`",
             "The `elif` area should look like this:\n```sh\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nfi\n```",
             "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nfi\n```"
@@ -3675,7 +3675,7 @@
             "The operator you want it `<`",
             "You can add another `elif` like this:\n```sh\nif CONDITION\nthen\n  STATEMENTS\nelif CONDITION\nthen\n  STATEMENTS\nelif CONDITION\nthen\n  STATEMENTS\nfi\n```",
             "The condition you want is `(( NUMBER < 46 ))`",
-            "In the statments area, use `echo` and your two variables to print `The next number is, N:<number>`",
+            "In the statements area, use `echo` and your two variables to print `The next number is, N:<number>`",
             "The statements area should look like this: `echo $TEXT N:$NUMBER`",
             "This `elif` area should look like this:\n```sh\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nfi\n```",
             "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nfi\n```"
@@ -3699,7 +3699,7 @@
               "d340e53a33184a7f6d968bd25cbdd3a40cadfb3a"
             ]
           },
-          "content": "Run your script if you want to see the output. It should print one of the senteces if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`",
+          "content": "Run your script if you want to see the output. It should print one of the sentences if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`",
           "hints": [
             "View the `help test` menu to see the operators you can use with the double square brackets",
             "The operator you want it `-lt`",
@@ -3732,7 +3732,7 @@
             "View the `if/else` in your `countdown.sh` file to see how you did it before",
             "You don't need a condition or the `then` on this one",
             "Here's an example:\n```sh\nif CONDITION\nthen\n  STATEMENTS\nelif CONDITION\nthen\n  STATEMENTS\n...\nelse\n  STATEMENTS\nfi\n```",
-            "The `else` area should looke like this:\n```sh\nelse\n  echo $TEXT O:$NUMBER\n```",
+            "The `else` area should look like this:\n```sh\nelse\n  echo $TEXT O:$NUMBER\n```",
             "The whole `if` should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nelif [[ $NUMBER -lt 61 ]]\nthen\n  echo $TEXT G:$NUMBER\nelse\n  echo $TEXT O:$NUMBER\nfi\n```"
           ]
         }
@@ -3981,7 +3981,7 @@
               "c41cb4d30d1fd42abdb3121cb58057dc72f4d010"
             ]
           },
-          "content": "If you recall, you were able to print all the arguements to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarily, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.",
+          "content": "If you recall, you were able to print all the arguments to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarly, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.",
           "hints": [
             "Here's an example `echo ${ARR[<index>]}`",
             "Type `echo ${ARR[@]}` in the terminal and press enter"
@@ -5117,7 +5117,7 @@
               "7bad4321201667404e66f776207bfc14c18ab75e"
             ]
           },
-          "content": "Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an arguement, so put a `3` next to it.",
+          "content": "Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an argument, so put a `3` next to it.",
           "hints": [
             "Your `five.sh` file should have these commands:\n```sh\n./questionnaire.sh\n./countdown.sh 3\n./bingo.sh\n./fortune.sh\n```"
           ]
