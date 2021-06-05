@@ -2107,7 +2107,7 @@ Run the file once to make sure it's working.
 
 ### 1070.1
 
-This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first; in the terminal, create an array like this: `ARR=("a" "b" "c")`
+This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first :smile: In the terminal, create an array like this: `ARR=("a" "b" "c")`
 
 #### HINTS
 
@@ -2386,7 +2386,7 @@ Run the script and enter something other than `test?`. Then enter `test?` after 
 
 ### 1280.1
 
-View that `help [[ expression ]]` menu again. We need to find out how to test if the input ends with a question mark (`?`).
+View that `help [[ expression ]]` menu again. You need to find out how to test if the input ends with a question mark (`?`).
 
 #### HINTS
 
@@ -2396,7 +2396,7 @@ View that `help [[ expression ]]` menu again. We need to find out how to test if
 
 ### 1290.1
 
-Lets play around with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
+Lets play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
 
 #### HINTS
 
@@ -2407,7 +2407,7 @@ Lets play around with these again. You can test if two strings are the same with
 
 ### 1300.1
 
-Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`
+Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`.
 
 #### HINTS
 
@@ -2871,7 +2871,7 @@ It's showing the location of the commands. View the type of your `./five.sh` fil
 
 ### 1610.1
 
-That's all I have for now. Lastly, close the terminal with the `exit` command. Thanks and happy coding!
+Last step, close the terminal with the `exit` command. Thanks and happy coding!
 
 #### HINTS
 
