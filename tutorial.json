@@ -97,7 +97,7 @@
           "id": "30.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "57b29fadfdcd23947c32d132e5826e329b43b310"
@@ -193,7 +193,7 @@
           "id": "60.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "f01a698aff3b132c302f65e41e87ed6f257eb9e6"
@@ -341,7 +341,7 @@
           "id": "140.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "bc359c2f47c6b1bd95e4ad7b90bfe0cf70c024c0"
@@ -389,7 +389,7 @@
           "id": "160.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "8a39903a98d8f74153148dfb516783446917923a"
@@ -412,7 +412,7 @@
           "id": "170.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "a6aa144c4f2b06e1f6be7c8bb2d80e2197315a0d"
@@ -435,7 +435,7 @@
           "id": "180.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "e3dbf118b5e9f9b187a43da242c07fde4b16b4d2"
@@ -484,7 +484,7 @@
           "id": "200.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "6b4bbc6b22d9b60b8800182bd52493e03d9be279"
@@ -507,7 +507,7 @@
           "id": "210.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "a289ce5bc48b7faaf8348561bac855be2a68b0b4"
@@ -560,7 +560,7 @@
           "id": "230.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "fc6df5cf2a2f1e0925c56df5ef087bf976babaf0"
@@ -584,7 +584,7 @@
           "id": "240.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "147c20091b4ebee86dfca6c3ab493549f05a4965"
@@ -608,7 +608,7 @@
           "id": "250.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "4cbd7b7fbfcc4ed0cb6256cdee8793cc113f104b"
@@ -632,7 +632,7 @@
           "id": "260.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "076adc639a3147fba1246d155ea63098f245181e"
@@ -684,7 +684,7 @@
           "id": "280.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "70084a13f992c3e4ab97f821af595803963fc01b"
@@ -783,7 +783,7 @@
           "id": "320.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "9d60ea81d05b212ab6ffe73e15e41516cffd4001"
@@ -832,7 +832,7 @@
           "id": "326.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "71d0fa7f08fce42595cde683d460fc7d51185a79"
@@ -881,7 +881,7 @@
           "id": "340.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "28ea756c57b5ebf781c1041e75f22eccbbbf37b7"
@@ -905,7 +905,7 @@
           "id": "345.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "57d44804d01ff508f339018c9ec5ce36a81368c8"
@@ -929,7 +929,7 @@
           "id": "350.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "203b1c2b3547635a0ceedb87c9ff2d6816fdef3d"
@@ -952,7 +952,7 @@
           "id": "360.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "f44cb3c73535638af9bb63d3907d0a570314e852"
@@ -1002,7 +1002,7 @@
           "id": "366.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./questionnaire.sh"
             ],
             "commits": [
               "8eb46bee20cc5bca93798caf915514f76ca0759d"
@@ -1106,7 +1106,7 @@
           "id": "400.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "cc33fbd19909146f25481ad7e7b33d040889efc4"
@@ -1133,7 +1133,7 @@
           "id": "410.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "6f9ce50d3232efd2e58647631ace398a3a09aaed"
@@ -1156,7 +1156,7 @@
           "id": "420.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "511ea3f409df9caa42b041385c26d40230eb60bc"
@@ -1227,7 +1227,7 @@
           "id": "440.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "cff1f2b816e1046560f25794a6904e47085784b1"
@@ -1347,7 +1347,7 @@
           "id": "490.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "7d7ee44d091421b5c523f01793fcd003e703baa9"
@@ -1419,7 +1419,7 @@
           "id": "510.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "6d97a5c345167d433713d7559b57355b936c551d"
@@ -1467,7 +1467,7 @@
           "id": "530.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "c62bc596244ee55803cb4893c0311db04df22404"
@@ -1612,7 +1612,7 @@
           "id": "550.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "df1251ea303e1555dd7f9f4b26e87240b9622e43"
@@ -2068,7 +2068,7 @@
           "id": "588.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "9a97f58c11bf7cb4abaa1ee8b95f336e79ddb051"
@@ -2093,7 +2093,7 @@
           "id": "590.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "cf806eb1cbdca545579becc3effa99fb2dc38960"
@@ -2189,7 +2189,7 @@
           "id": "620.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "dea0ee1d3ed951557ee1bdc7a26b4a86104385bd"
@@ -2362,7 +2362,7 @@
           "id": "680.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "d74afb7f905bc6924bb6ee3f3f10364a4e1addc0"
@@ -2410,7 +2410,7 @@
           "id": "692.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "81fec7818c36e6f0c77bbd39b86772094365e0cf"
@@ -2458,7 +2458,7 @@
           "id": "696.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "497e03de4c16bcd27e51e5136945a259477376ae"
@@ -2508,7 +2508,7 @@
           "id": "700.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "43cfcd98f7090886b367ad054b68cebb3de6edcf"
@@ -2557,7 +2557,7 @@
           "id": "730.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "be5ea8fdc841b4fa8af6b73212012bf467f4eb49"
@@ -2581,7 +2581,7 @@
           "id": "740.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "8c175daa87b7357d26d5f056b18c9fc059475a6a"
@@ -2604,7 +2604,7 @@
           "id": "750.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "470731e91643f0672cc75aa88b9c4a2dfca67052"
@@ -2627,7 +2627,7 @@
           "id": "760.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./countdown.sh"
             ],
             "commits": [
               "cd9edd3253a770872990ddf30727c1beaa908d53"
@@ -2725,7 +2725,7 @@
           "id": "800.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "9626d871a6aed811fc8bf8845897e89c2572d4f8"
@@ -2752,7 +2752,7 @@
           "id": "810.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "62c31e07a1c2bedf9d9f0a4e3b5d62f355845435"
@@ -2777,7 +2777,7 @@
           "id": "815.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "738a6fed86d3c9701b1e42611c3dbe729cd4f78c"
@@ -2805,7 +2805,7 @@
           "id": "817.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "d3d76b64098a8a5cf459b7b0e033fe77dd44267f"
@@ -2829,7 +2829,7 @@
           "id": "818.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "d365acb7b5440c12ad297e9b675d3e079e0f99c8"
@@ -2972,7 +2972,7 @@
           "id": "828.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "fea2c94cc2242edaba9287260953ddd408bdc838"
@@ -3019,7 +3019,7 @@
           "id": "835.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "d00fd922e4181d1b84f8b4ca431ef729438f627f"
@@ -3510,7 +3510,7 @@
           "id": "928.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "f57fc95a03fa28295cef855c05c5274c5ef1c998"
@@ -3560,7 +3560,7 @@
           "id": "940.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "fbef52f7b7c5862f9c8040a02ba606571d66ac8e"
@@ -3607,7 +3607,7 @@
           "id": "950.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "13efb67ef133b6718292416c5cea85de4d39e081"
@@ -3635,7 +3635,7 @@
           "id": "960.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "b58d4a1828126dc3c06321afb065bf1e7944713b"
@@ -3663,7 +3663,7 @@
           "id": "970.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "b1e906fe365dec6458280b109c1e04ea1c796b48"
@@ -3693,7 +3693,7 @@
           "id": "980.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "e53e1d2d495b7234442c81ad81921824c13d57d0"
@@ -3721,7 +3721,7 @@
           "id": "990.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./bingo.sh"
             ],
             "commits": [
               "b6e7a58ccec3693a9388910b0c90b71f168be1cd"
@@ -3823,7 +3823,7 @@
           "id": "1030.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "deec4ecb5f1fdf1ac91ee2b7ad5419faf3eac684"
@@ -3850,7 +3850,7 @@
           "id": "1040.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "1d3dd3410c628caad7f797eb815e94032a338b17"
@@ -3875,7 +3875,7 @@
           "id": "1050.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "495e6343a65420874f271b1091ac1bb9cc3820e5"
@@ -3934,7 +3934,7 @@
               "4fa5da92eadfb73d40e5d833d3e6d8b4ccb0131f"
             ]
           },
-          "content": "This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first; in the terminal, create an array like this: `ARR=(\"a\" \"b\" \"c\")`",
+          "content": "This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first :smile: In the terminal, create an array like this: `ARR=(\"a\" \"b\" \"c\")`",
           "hints": [
             "Type the suggested command in the terminal",
             "Type `ARR=(\"a\" \"b\" \"c\")` in the terminal and press enter"
@@ -4023,7 +4023,7 @@
           "id": "1110.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "56a3c1fac918bc8c0419db48c9290c201866a146"
@@ -4049,7 +4049,7 @@
           "id": "1120.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "a56f95d478fa5fd8b710ac1a2bc4ece5b058fcef"
@@ -4098,7 +4098,7 @@
           "id": "1140.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "e3c3b49783307da496bf1b727258a2fd90f5eeb1"
@@ -4125,7 +4125,7 @@
           "id": "1150.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "515de2448e055864a76f9ce58090bc8d05a0bc9f"
@@ -4199,7 +4199,7 @@
           "id": "1180.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "9abc6141f351c455b064aa428b79753660ecf9de"
@@ -4223,7 +4223,7 @@
           "id": "1190.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "750f2124f5def3f1cf89113564dfe208f1e046d6"
@@ -4247,7 +4247,7 @@
           "id": "1200.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "f1ed51f554c418a3f010107501dd48f1c9f7a302"
@@ -4295,7 +4295,7 @@
           "id": "1220.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "af3a35a302265724da714d585bb2f3ca55a4fa05"
@@ -4391,7 +4391,7 @@
           "id": "1260.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "1d3f1e01076032123be4285fb467412775ba7eea"
@@ -4449,7 +4449,7 @@
               "ceb6c6d222a1933e989a0274692f2d0306aa6f08"
             ]
           },
-          "content": "View that `help [[ expression ]]` menu again. We need to find out how to test if the input ends with a question mark (`?`).",
+          "content": "View that `help [[ expression ]]` menu again. You need to find out how to test if the input ends with a question mark (`?`).",
           "hints": [
             "Type `help [[` or `help [[ expression ]]` in the terminal and press enter"
           ]
@@ -4472,7 +4472,7 @@
               "2939f65f4be3df30b889fbd9a111274a0afee1a3"
             ]
           },
-          "content": "Lets play around with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.",
+          "content": "Lets play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.",
           "hints": [
             "Be sure to use the `==` operator",
             "Type `[[ hello == hello ]]; echo $?` in the terminal and press enter"
@@ -4496,7 +4496,7 @@
               "10c83a6321b1b5dfe200bc8f67881a17e42e182a"
             ]
           },
-          "content": "Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`",
+          "content": "Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`.",
           "hints": [
             "Use the `[[ ... ]]; echo $?` syntax",
             "Be sure to use the `==` operator",
@@ -4740,7 +4740,7 @@
           "id": "1390.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "d94741dca88191b0a52ce33f0023c84806548cc9"
@@ -4790,7 +4790,7 @@
           "id": "1410.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "bf7a577e0b276915d16ad81bad49dd848c9f9842"
@@ -4814,7 +4814,7 @@
           "id": "1412.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "d363d6219ea7f8f5c55a4ffb114f3687f7a42c03"
@@ -4838,7 +4838,7 @@
           "id": "1413.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "b22f32bf1fa6c6fa96e3adcb41d24f7fb6972f58"
@@ -4863,7 +4863,7 @@
           "id": "1416.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "69600ecfc5fec0e0c82c08594d1af9435035b07c"
@@ -4910,7 +4910,7 @@
           "id": "1425.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./fortune.sh"
             ],
             "commits": [
               "c316515d6eeb862012de7b1495e8063f46a9e1f9"
@@ -5011,7 +5011,7 @@
           "id": "1450.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./five.sh"
             ],
             "commits": [
               "193220111c707053d6634404b20c380c814e0df4"
@@ -5038,7 +5038,7 @@
           "id": "1460.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./five.sh"
             ],
             "commits": [
               "f6e63cf4b8f1e71bae11d5f0f0b3202d02721b3b"
@@ -5063,7 +5063,7 @@
           "id": "1470.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./five.sh"
             ],
             "commits": [
               "8e2a3f7ecb1ffccfa3c419123d6dfa4123b1585a"
@@ -5111,7 +5111,7 @@
           "id": "1490.1",
           "setup": {
             "watchers": [
-              "../.bash_history"
+              "./five.sh"
             ],
             "commits": [
               "3dbec4e283957db9ef17719ab49adc9f2034cb8c"
@@ -5395,7 +5395,7 @@
               "81f7be00a6b8d89c34bb6c5b550b0e0d46f66a0f"
             ]
           },
-          "content": "That's all I have for now. Lastly, close the terminal with the `exit` command. Thanks and happy coding!",
+          "content": "Last step, close the terminal with the `exit` command. Thanks and happy coding!",
           "hints": [
             "Type `exit` in the terminal and press enter"
           ]
