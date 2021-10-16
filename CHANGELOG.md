@@ -9,3 +9,8 @@ Whenever something on the version branch gets changed, add the new branch name a
 ## [v1.0.0]
 
 - Initial soft release with news article
+
+## [v1.0.1]
+
+- Fix regex in steps `950.1` and `970.1`, to match variable in double parenthesis not preceded by `$`
+- Fix test description in step `990.1`: elif -> else
