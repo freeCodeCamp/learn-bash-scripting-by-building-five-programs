@@ -63,7 +63,7 @@ Using `sh` to run your script uses the `shell` interpreter. Run your script agai
 
 ### 50.1
 
-The output was the same. There many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.
+The output was the same. There are many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.
 
 #### HINTS
 
@@ -441,7 +441,7 @@ Change the `echo` command of the response to print this sentence instead: `Hello
 
 ### 363.1
 
-Run the script and enter values when the program is waiting. Lets see the final output.
+Run the script and enter values when the program is waiting. Let's see the final output.
 
 #### HINTS
 
@@ -479,7 +479,7 @@ Run it one last time and enter values when it asks to see if you like how it loo
 
 ### 380.1
 
-It looks good. I think you are done that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
+It looks good. I think you are done with that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
 
 #### HINTS
 
@@ -625,7 +625,7 @@ then
 fi
 ```
 
-Remove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There's must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
+Remove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
 
 #### HINTS
 
@@ -1075,7 +1075,7 @@ do
 done
 ```
 
-The above creates a varable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.
+The above creates a variable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` area of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.
 
 #### HINTS
 
@@ -1106,7 +1106,7 @@ fi
 
 ### 630.1
 
-Run your script and use `10` and the first argument.
+Run your script and use `10` as the first argument.
 
 #### HINTS
 
@@ -1185,7 +1185,7 @@ That should work. In your `for` loop, use `sleep` to make the script pause for `
 
 ### 690.1
 
-Run your script and use `3` and the first argument.
+Run your script and use `3` as the first argument.
 
 #### HINTS
 
@@ -1250,7 +1250,7 @@ Excellent. I want it to display a title like the other script. Make it so that i
 
 ### 698.1
 
-Run your script and use `1` and the first argument again to see the title.
+Run your script and use `1` as the first argument again to see the title.
 
 #### HINTS
 
@@ -2396,7 +2396,7 @@ View that `help [[ expression ]]` menu again. You need to find out how to test i
 
 ### 1290.1
 
-Lets play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
+Let's play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.
 
 #### HINTS
 
@@ -2487,7 +2487,7 @@ Use `echo` to print the variable you just created.
 
 ### 1370.1
 
-Using the `[[ ... ]]; echo $?` syntax. Check if your variable is equal to `hello world`.
+Using the `[[ ... ]]; echo $?` syntax, check if your variable is equal to `hello world`.
 
 #### HINTS
 
@@ -2551,7 +2551,7 @@ Run the script and input something that doesn't end with `?` the first time, the
 
 ### 1410.1
 
-I don't that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.
+I don't want that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.
 
 #### HINTS
 
@@ -2625,7 +2625,7 @@ done
 
 ### 1416.1
 
-Now, each time the function is called in the `until` loop. It will pass `again` as an argument and print the `Try again...` sentence. Before your `until` loop, call the function without an argument so the first time it runs, it prints the initial sentence.
+Now, each time the function is called in the `until` loop, it will pass `again` as an argument and print the `Try again...` sentence. Before your `until` loop, call the function without an argument so the first time it runs, it prints the initial sentence.
 
 #### HINTS
 
