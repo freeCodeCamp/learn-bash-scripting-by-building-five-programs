@@ -63,7 +63,7 @@ Using `sh` to run your script uses the `shell` interpreter. Run your script agai
 
 ### 50.1
 
-The output was the same. There many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.
+The output was the same. There are many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.
 
 #### HINTS
 
@@ -441,7 +441,7 @@ Change the `echo` command of the response to print this sentence instead: `Hello
 
 ### 363.1
 
-Run the script and enter values when the program is waiting. Lets see the final output.
+Run the script and enter values when the program is waiting. Let's see the final output.
 
 #### HINTS
 
@@ -479,7 +479,7 @@ Run it one last time and enter values when it asks to see if you like how it loo
 
 ### 380.1
 
-It looks good. I think you are done that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
+It looks good. I think you are done with that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.
 
 #### HINTS
 
@@ -625,7 +625,7 @@ then
 fi
 ```
 
-Remove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There's must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
+Remove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).
 
 #### HINTS
 
@@ -1075,7 +1075,7 @@ do
 done
 ```
 
-The above creates a varable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.
+The above creates a variable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` area of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.
 
 #### HINTS
 
