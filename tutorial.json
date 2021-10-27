@@ -176,7 +176,7 @@
               "07210f86301bee0f649ecbabea372a4fa5d6c19c"
             ]
           },
-          "content": "The output was the same. There many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.",
+          "content": "The output was the same. There are many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.",
           "hints": [
             "Type `which bash` in the terminal and press enter"
           ]
@@ -983,7 +983,7 @@
               "7fc7770995940a2ac91b19e6f033f36b5a921978"
             ]
           },
-          "content": "Run the script and enter values when the program is waiting. Lets see the final output.",
+          "content": "Run the script and enter values when the program is waiting. Let's see the final output.",
           "hints": [
             "Run your file by executing it",
             "Type `./questionnaire.sh` in the terminal and press enter",
@@ -1060,7 +1060,7 @@
               "e63c7755940e4fd24513b1d64b3b2c3bc30a6b75"
             ]
           },
-          "content": "It looks good. I think you are done that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.",
+          "content": "It looks good. I think you are done with that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.",
           "hints": [
             "Type `touch countdown.sh` in the terminal and press enter",
             "Make sure you are in the `project` folder first",
@@ -1353,7 +1353,7 @@
               "ab010fc25b1342b68db9ba190ab2b69037db6e60"
             ]
           },
-          "content": "The syntax is at the top, not all of it is required. Here's another example:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nRemove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There's must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).",
+          "content": "The syntax is at the top, not all of it is required. Here's another example:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nRemove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).",
           "hints": [
             "Make sure to remove the `echo $1`",
             "Add the following to your `countdown.sh` file:\n```sh\nif [[ $1 == arg1 ]]\nthen\n  echo true\nfi\n```"
@@ -2195,7 +2195,7 @@
               "cabcc20b1bdf052b92fce098860e674dc09c231d"
             ]
           },
-          "content": "There's two `for` loops in there, you want the second one. Here's an example:\n\n```sh\nfor (( i = 10; i > 0; i-- ))\ndo\n  echo $i\ndone\n```\n\nThe above creates a varable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` are of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.",
+          "content": "There's two `for` loops in there, you want the second one. Here's an example:\n\n```sh\nfor (( i = 10; i > 0; i-- ))\ndo\n  echo $i\ndone\n```\n\nThe above creates a variable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` area of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.",
           "hints": [
             "Set the variable to the value of your argument (`$1`) initially",
             "Use the same syntax as the example except change the `10` to `$1`",
@@ -2222,7 +2222,7 @@
               "082423cd8d10794a3fa9f033e6f5fd7c469cd1e4"
             ]
           },
-          "content": "Run your script and use `10` and the first argument.",
+          "content": "Run your script and use `10` as the first argument.",
           "hints": [
             "Type `./countdown.sh 10` in the terminal and press enter",
             "Make sure you are in the `project` folder first"
@@ -2392,7 +2392,7 @@
               "ae08fad7d06f4da5df0a1e74a933b586e04b1cd9"
             ]
           },
-          "content": "Run your script and use `3` and the first argument.",
+          "content": "Run your script and use `3` as the first argument.",
           "hints": [
             "Type `./countdown.sh 3` in the terminal and press enter",
             "Make sure you are in the `project` folder first"
@@ -2490,7 +2490,7 @@
               "9fcb488f76bbf9d2925f3ba2fa23ab376976bf79"
             ]
           },
-          "content": "Run your script and use `1` and the first argument again to see the title.",
+          "content": "Run your script and use `1` as the first argument again to see the title.",
           "hints": [
             "Type `./countdown.sh 1` in the terminal and press enter",
             "Make sure you are in the `project` folder first"
@@ -4472,7 +4472,7 @@
               "2fd9807f0f73728f763151179453cb4905f50774"
             ]
           },
-          "content": "Lets play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` sytax you used before to test if `hello` is equal to `hello`.",
+          "content": "Let's play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` syntax you used before to test if `hello` is equal to `hello`.",
           "hints": [
             "Be sure to use the `==` operator",
             "Type `[[ hello == hello ]]; echo $?` in the terminal and press enter"
@@ -4667,7 +4667,7 @@
               "ae8e720bb889ad872d364852562d042ea2235c82"
             ]
           },
-          "content": "Using the `[[ ... ]]; echo $?` syntax. Check if your variable is equal to `hello world`.",
+          "content": "Using the `[[ ... ]]; echo $?` syntax, check if your variable is equal to `hello world`.",
           "hints": [
             "Check the `help [[` menu to find the operator to use",
             "It's the `==` operator",
@@ -4796,7 +4796,7 @@
               "1d6c82a0703b1a38e8f6bb2831276dc121d5ee9a"
             ]
           },
-          "content": "I don't that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.",
+          "content": "I know that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.",
           "hints": [
             "Here's an example:\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n\nread QUESTION\n```",
             "Your function should look like this:\n```sh\nfunction GET_FORTUNE() {\n  if [[ ! $1 ]]\n  then\n    echo Ask a yes or no question:\n  fi\n\n  read QUESTION\n}\n```"
@@ -4869,7 +4869,7 @@
               "46b7c293cdfe0d422b8c57d94084f0487a1bf13e"
             ]
           },
-          "content": "Now, each time the function is called in the `until` loop. It will pass `again` as an argument and print the `Try again...` sentence. Before your `until` loop, call the function without an argument so the first time it runs, it prints the initial sentence.",
+          "content": "Now, each time the function is called in the `until` loop, it will pass `again` as an argument and print the `Try again...` sentence. Before your `until` loop, call the function without an argument so the first time it runs, it prints the initial sentence.",
           "hints": [
             "Add `GET_FORTUNE` before the `until` loop"
           ]
