@@ -10,7 +10,7 @@ config:
       tap: --reporter=mocha-tap-reporter
     directory: .freeCodeCamp
   repo:
-    uri: https://github.com/gikf/learn-bash-scripting-by-building-five-programs
+    uri: https://github.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs
     branch: v1.0.1
   reset:
     commands:
