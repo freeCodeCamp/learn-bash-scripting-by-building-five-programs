@@ -1,4 +1,4 @@
-version: '1.0.0'
+version: '1.0.1'
 config:
   setup:
     commands:
@@ -11,7 +11,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs
-    branch: v1.0.0
+    branch: v1.0.1
   reset:
     commands:
       - './.freeCodeCamp/reset.sh'
@@ -402,7 +402,7 @@ levels:
       - id: '548.1'
         setup:
           watchers:
-            - ../.bash_history            
+            - ../.bash_history
   - id: '550'
     steps:
       - id: '550.1'
