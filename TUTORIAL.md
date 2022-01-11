@@ -13,15 +13,15 @@
 - Capitalization matters
 - If the tests don't run automatically, "trash" all the terminals and try the instructions again
 
-## 20. touch questionnaire.sh
+## 20. touch questionaire.sh
 
 ### 20.1
 
-You can run commands in the terminal or put them in a file to be run as a script. You will be making five small programs to learn some scripting. The first one will be a "questionnaire". Use the `touch` command to create `questionnaire.sh` in the `project` folder.
+You can run commands in the terminal or put them in a file to be run as a script. You will be making five small programs to learn some scripting. The first one will be a "questionnaire". Use the `touch` command to create `questionaire.sh` in the `project` folder.
 
 #### HINTS
 
-- Type `touch questionnaire.sh` in the terminal and press enter
+- Type `touch questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -51,11 +51,11 @@ Your script has one command. Run it with `sh questionnaire.sh` to see what happe
 
 ### 40.1
 
-Using `sh` to run your script uses the `shell` interpreter. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.
+Using `sh` to run your script uses the `shell` interpreter. Run your script again with `bash questionaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.
 
 #### HINTS
 
-- Type `bash questionnaire.sh` in the terminal and press enter
+- Type `bash questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -77,9 +77,9 @@ That's the absolute path to the `bash` interpreter. You can tell your program to
 
 #### HINTS
 
-- Add `#!/bin/bash` at the top of your `questionnaire.sh` file
+- Add `#!/bin/bash` at the top of your `questionaire.sh` file
 
-## 70. ./questionnaire
+## 70. ./questionaire
 
 ### 70.1
 
@@ -87,7 +87,7 @@ Now, instead of using `sh` or `bash` to run your script. You can run it by execu
 
 #### HINTS
 
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -103,15 +103,15 @@ You should have got a permission denied message because you don't have permissio
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 90. chmod +x questionnaire.sh
+## 90. chmod +x questionaire.sh
 
 ### 90.1
 
-Next to your file is `-rw-r--r--`. All but the first character (`-`) describe permissions different users have with the file. `r` means `read`, `w` means `write`, `x` means `execute`. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnnaire.sh` in the terminal to give everyone executable permissions.
+Next to your file is `-rw-r--r--`. All but the first character (`-`) describe permissions different users have with the file. `r` means `read`, `w` means `write`, `x` means `execute`. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionaire.sh` in the terminal to give everyone executable permissions.
 
 #### HINTS
 
-- Type `chmod +x questionnaire.sh` in the terminal and press enter
+- Type `chmod +x questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -127,15 +127,15 @@ List what's in the folder again with `ls -l` to see the new permissions.
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
-## 110. ./questionnaire
+## 110. ./questionaire
 
 ### 110.1
 
-The `x` was added by each type of user to denote that anyone can execute the file. Run your file again by executing it with `./questionnaire.sh`.
+The `x` was added by each type of user to denote that anyone can execute the file. Run your file again by executing it with `./questionaire.sh`.
 
 #### HINTS
 
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -147,7 +147,7 @@ Now it works. In your script, you can add any commands that you would be able to
 
 #### HINTS
 
-- Add `ls -l` at the bottom of your `questionnaire.sh` file
+- Add `ls -l` at the bottom of your `questionaire.sh` file
 
 ## 150. ./questionnaire
 
@@ -157,7 +157,7 @@ Run the script by executing it again.
 
 #### HINTS
 
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -169,7 +169,7 @@ Your script printed the result of the two commands as if you entered them in the
 
 #### HINTS
 
-- Only `#!/bin/bash` should remain in your `questionnaire.sh` file
+- Only `#!/bin/bash` should remain in your `questionaire.sh` file
 
 ## 170. Add QUESTION1 variable
 
@@ -179,7 +179,7 @@ Bash has variables, functions, and other things you might be familiar with. You 
 
 #### HINTS
 
-- Add `QUESTION1="What's your name?"` at the bottom of your `questionnaire.sh` file
+- Add `QUESTION1="What's your name?"` at the bottom of your `questionaire.sh` file
 
 ## 180. Add echo $QUESTION1
 
@@ -189,7 +189,7 @@ To use a variable, place `$` in front of it like this: `$VARIABLE_NAME`. Shell s
 
 #### HINTS
 
-- Add `echo $QUESTION1` at the bottom of your `questionnaire.sh` file
+- Add `echo $QUESTION1` at the bottom of your `questionaire.sh` file
 
 ## 190. ./questionnaire
 
@@ -200,7 +200,7 @@ Run the file like you did before to see if it worked.
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 
@@ -212,7 +212,7 @@ The question was printed. Next, you want to be able to accept input from a user.
 
 #### HINTS
 
-- Add `read NAME` at the bottom of your `questionnaire.sh` file
+- Add `read NAME` at the bottom of your `questionaire.sh` file
 
 ## 210. Add echo Hello $NAME
 
@@ -236,7 +236,7 @@ Run the file again. Type your name and press enter after it asks for it.
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - Enter `cd ~/project` in the terminal to get to the project folder if you aren't there
 - You can press `ctrl+c` to close the program
@@ -296,7 +296,7 @@ Run the script and enter values when it is waiting for input.
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - You can press `ctrl+c` to close a program
 
@@ -304,11 +304,11 @@ Run the script and enter values when it is waiting for input.
 
 ### 280.1
 
-It's looking good. I want a title to appear when the program first starts. Use `echo` to print `~~ Questionnaire ~~` before anything else is printed.
+It's looking good. I want a title to appear when the program first starts. Use `echo` to print `~~ Questionaire ~~` before anything else is printed.
 
 #### HINTS
 
-- Add `echo ~~ Questionnaire ~~` below your `shebang`
+- Add `echo ~~ Questionaire ~~` below your `shebang`
 
 ## 290. ./questionnaire
 
@@ -319,7 +319,7 @@ Run the script and enter values until it is done again so you can see what the t
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - You can press `ctrl+c` to close the program
 
@@ -351,11 +351,11 @@ That didn't work as I hoped. Another way to find information about a command is 
 
 ### 320.1
 
-At the top of the menu, the `-e` option looks promising. And the `\n` below it says `new line`. You should take a look at those. In your script, change the title to `echo -e \n~~ Questionnaire ~~\n` to see if that prints the empty lines.
+At the top of the menu, the `-e` option looks promising. And the `\n` below it says `new line`. You should take a look at those. In your script, change the title to `echo -e \n~~ Questionaire ~~\n` to see if that prints the empty lines.
 
 #### HINTS
 
-- Change the suggested line to `echo -e \n~~ Questionnaire ~~\n`
+- Change the suggested line to `echo -e \n~~ Questionaire ~~\n`
 
 ## 323. ./questionnaire
 
@@ -366,7 +366,7 @@ Run it to see if it worked. You can press `ctrl+c` to close the program after it
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - You can press `ctrl+c` to close the program
 
@@ -378,7 +378,7 @@ It didn't print the empty lines. `echo` will only print empty lines if the value
 
 #### HINTS
 
-- Change the suggested line to `echo -e "\n~~ Questionnaire ~~\n"`
+- Change the suggested line to `echo -e "\n~~ Questionaire ~~\n"`
 
 ## 330. ./questionnaire
 
@@ -389,7 +389,7 @@ Run your script again to see if that fixed it.
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 - You can press `ctrl+c` to close the program
 
@@ -401,7 +401,7 @@ Now it's working :smile: Create a `QUESTION3` variable next to the other two, se
 
 #### HINTS
 
-- Add `QUESTION3="What's your favorite coding website?"` to your `questionnaire.sh` file
+- Add `QUESTION3="What's your favorite coding website?"` to your `questionaire.sh` file
 - Add it by the other two variables
 
 ## 345. echo QUESTION3 variable
@@ -413,7 +413,7 @@ Use `echo` to print the third question after you `read` the `LOCATION`.
 #### HINTS
 
 - Add `echo $QUESTION3` below the `read LOCATION`
-- Add it to your `questionnaire.sh` file
+- Add it to your `questionaire.sh` file
 
 ## 350. read WEBSITE
 
@@ -446,7 +446,7 @@ Run the script and enter values when the program is waiting. Let's see the final
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
 ## 366. Add line breaks around final sentence
@@ -472,7 +472,7 @@ Run it one last time and enter values when it asks to see if you like how it loo
 #### HINTS
 
 - Run your file by executing it
-- Type `./questionnaire.sh` in the terminal and press enter
+- Type `./questionaire.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
 ## 380. touch countdown.sh
@@ -497,7 +497,7 @@ Give your file executable permissions so you can run it like the other one. It's
 
 - Here's an example `chmod <permissions> <filename>`
 - The value for permissions you want to use is `+x`
-- You previously used `chmod +x questionnaire.sh`
+- You previously used `chmod +x questionaire.sh`
 - Type `chmod +x countdown.sh` in the terminal and press enter
 - Make sure you are in the `project` folder first
 
