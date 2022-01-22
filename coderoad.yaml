@@ -1,9 +1,9 @@
 id: 'freeCodeCamp/learn-bash-scripting-by-building-five-programs:v1.0.0'
-version: '1.0.1'
+version: '1.0.2'
 config:
   setup:
     commands:
-      - sudo cp ~/project/.freeCodeCamp/.bashrc ~
+      - ./.freeCodeCamp/setup.sh
       - cd .freeCodeCamp && npm install
   testRunner:
     command: npm run programmatic-test
@@ -12,15 +12,20 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs
-    branch: v1.0.1
+    branch: v1.0.2
+  continue:
+    commands:
+      - './.freeCodeCamp/setup.sh'
+      - './.freeCodeCamp/reset.sh'
   reset:
     commands:
+      - './.freeCodeCamp/setup.sh'
       - './.freeCodeCamp/reset.sh'
   dependencies:
     - name: node
       version: '>=10'
   webhook:
-    url: 'http://freecodecamp.org/coderoad-challenge-completed'
+    url: 'http://freecodecamp.dev/coderoad-challenge-completed'
     events:
       init: false
       reset: false
