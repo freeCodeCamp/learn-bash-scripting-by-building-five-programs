@@ -290,7 +290,7 @@
               "f2abbf7d55c4641a39df27e1af7ba49d7ddce7b1"
             ]
           },
-          "content": "Next to your file is `-rw-r--r--`. All but the first character (`-`) describe permissions different users have with the file. `r` means `read`, `w` means `write`, `x` means `execute`. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnnaire.sh` in the terminal to give everyone executable permissions.",
+          "content": "Next to your file is `-rw-r--r--`. All but the first character (`-`) describe permissions different users have with the file. `r` means `read`, `w` means `write`, `x` means `execute`. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnaire.sh` in the terminal to give everyone executable permissions.",
           "hints": [
             "Type `chmod +x questionnaire.sh` in the terminal and press enter",
             "Make sure you are in the `project` folder first",
