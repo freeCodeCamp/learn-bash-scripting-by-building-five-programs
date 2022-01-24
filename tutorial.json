@@ -1364,10 +1364,10 @@
               "d01dd3d8fd1cdb14cab517f1a2355c14b74f502f"
             ]
           },
-          "content": "The syntax is at the top, not all of it is required. Here's another example:\r\n\r\n```sh\r\nif [[ CONDITION ]]\r\nthen\r\n  STATEMENTS\r\nfi\r\n```\r\n\r\nRemove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).",
+          "content": "The syntax is at the top, not all of it is required. Here's another example:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nRemove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).",
           "hints": [
             "Make sure to remove the `echo $1`",
-            "Add the following to your `countdown.sh` file:\r\n```sh\r\nif [[ $1 == arg1 ]]\r\nthen\r\n  echo true\r\nfi\r\n```"
+            "Add the following to your `countdown.sh` file:\n```sh\nif [[ $1 == arg1 ]]\nthen\n  echo true\nfi\n```"
           ]
         }
       ]
@@ -1436,9 +1436,9 @@
               "4ac24ae22a7c69e650d2242802b5cfdf34c29630"
             ]
           },
-          "content": "Nothing was printed. One of the optional parts of `if` was an `else` area. You can use it like this:\r\n\r\n```sh\r\nif [[ CONDITION ]]\r\nthen\r\n  STATEMENTS\r\nelse\r\n  STATEMENTS\r\nfi\r\n```\r\n\r\nAdd an `else` to your existing `if` condition. Use `echo` to print `false` if the condition fails.",
+          "content": "Nothing was printed. One of the optional parts of `if` was an `else` area. You can use it like this:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nelse\n  STATEMENTS\nfi\n```\n\nAdd an `else` to your existing `if` condition. Use `echo` to print `false` if the condition fails.",
           "hints": [
-            "Your `if` should look like this:\r\n```sh\r\nif [[ $1 == arg1 ]]\r\nthen\r\n  echo true\r\nelse\r\n  echo false\r\nfi\r\n```"
+            "Your `if` should look like this:\n```sh\nif [[ $1 == arg1 ]]\nthen\n  echo true\nelse\n  echo false\nfi\n```"
           ]
         }
       ]
@@ -1488,7 +1488,7 @@
           "hints": [
             "Make sure there's spaces inside the brackets (`[[ ... ]]`) and around the operator (`-lt`)",
             "Your `if` condition should look like this: `[[ $1 -lt 5 ]]`",
-            "The whole `if` should look like this:\r\n```sh\r\nif [[ $1 -lt 5 ]]\r\nthen\r\n  echo true\r\nelse\r\n  echo false\r\nfi\r\n```"
+            "The whole `if` should look like this:\n```sh\nif [[ $1 -lt 5 ]]\nthen\n  echo true\nelse\n  echo false\nfi\n```"
           ]
         }
       ]
@@ -2113,7 +2113,7 @@
           "content": "The condition you added checks if a positive integer was passed as an argument to the script and executes the `then` area. Change the existing `echo` command to print `Include a positive integer as the first argument.` if a positive integer is not used.",
           "hints": [
             "The `else` area should look like this: `echo Include a positive integer as the first argument.`",
-            "The whole `if` condition should look like this:\r\n```sh\r\nif [[ $1 -gt 0 ]]\r\nthen\r\n  echo true\r\nelse\r\n  echo Include a positive integer as the first argument.\r\nfi\r\n```"
+            "The whole `if` condition should look like this:\n```sh\nif [[ $1 -gt 0 ]]\nthen\n  echo true\nelse\n  echo Include a positive integer as the first argument.\nfi\n```"
           ]
         }
       ]
@@ -2206,13 +2206,13 @@
               "68928b961f3df99792bf63219cc78f24c8d83f89"
             ]
           },
-          "content": "There's two `for` loops in there, you want the second one. Here's an example:\r\n\r\n```sh\r\nfor (( i = 10; i > 0; i-- ))\r\ndo\r\n  echo $i\r\ndone\r\n```\r\n\r\nThe above creates a variable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` area of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.",
+          "content": "There's two `for` loops in there, you want the second one. Here's an example:\n\n```sh\nfor (( i = 10; i > 0; i-- ))\ndo\n  echo $i\ndone\n```\n\nThe above creates a variable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` area of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.",
           "hints": [
             "Set the variable to the value of your argument (`$1`) initially",
             "Use the same syntax as the example except change the `10` to `$1`",
             "Don't include any extra commands in the `then` area",
-            "Your `then` area should look like this:\r\n```sh\r\nfor (( i = $1; i > 0; i-- ))\r\ndo\r\n  echo $i\r\ndone\r\n```",
-            "The whole `if` condition should look like this:\r\n```sh\r\nif [[ $1 -gt 0 ]]\r\nthen\r\n  for (( i = $1; i > 0; i-- ))\r\n  do\r\n    echo $i\r\n  done\r\nelse\r\n  echo Include a positive integer as the first argument.\r\nfi\r\n```"
+            "Your `then` area should look like this:\n```sh\nfor (( i = $1; i > 0; i-- ))\ndo\n  echo $i\ndone\n```",
+            "The whole `if` condition should look like this:\n```sh\nif [[ $1 -gt 0 ]]\nthen\n  for (( i = $1; i > 0; i-- ))\n  do\n    echo $i\n  done\nelse\n  echo Include a positive integer as the first argument.\nfi\n```"
           ]
         }
       ]
@@ -2429,8 +2429,8 @@
           },
           "content": "Awesome. Except it should print `0` instead of stopping at `1`. Change the condition in your for loop so that it checks for `i >= 0`.",
           "hints": [
-            "Your `for` loop should look like this:\r\n```sh\r\nfor (( i = $1; i >= 0; i-- ))\r\ndo\r\n  echo $i\r\n  sleep 1\r\ndone\r\n```",
-            "The whole `if` condition should look like this:\r\n```sh\r\nif [[ $1 -gt 0 ]]\r\nthen\r\n  for (( i = $1; i >= 0; i-- ))\r\n  do\r\n    echo $i\r\n    sleep 1\r\n  done\r\nelse\r\n  echo Include a positive integer as the first argument.\r\nfi\r\n```"
+            "Your `for` loop should look like this:\n```sh\nfor (( i = $1; i >= 0; i-- ))\ndo\n  echo $i\n  sleep 1\ndone\n```",
+            "The whole `if` condition should look like this:\n```sh\nif [[ $1 -gt 0 ]]\nthen\n  for (( i = $1; i >= 0; i-- ))\n  do\n    echo $i\n    sleep 1\n  done\nelse\n  echo Include a positive integer as the first argument.\nfi\n```"
           ]
         }
       ]
@@ -2525,11 +2525,11 @@
               "dfecc64aa513dcbed4bb64ab74e19a12160d2827"
             ]
           },
-          "content": "This is fun. You can create a multiline comment like this:\r\n\r\n```sh\r\n: '\r\n  comment here\r\n  more comment here\r\n'\r\n```\r\n\r\nComment out your `for` loop with a multiline comment. I want to try and do this with a `while` loop.",
+          "content": "This is fun. You can create a multiline comment like this:\n\n```sh\n: '\n  comment here\n  more comment here\n'\n```\n\nComment out your `for` loop with a multiline comment. I want to try and do this with a `while` loop.",
           "hints": [
             "Comment out the `for` loop in your `countdown.sh` file with a multiline comment",
             "Make sure there's a space between the `:` and `'`",
-            "Your `for` loop should look like this:\r\n```sh\r\n: '\r\nfor (( i = $1; i >= 0; i-- ))\r\ndo\r\n  echo $i\r\n  sleep 1\r\ndone\r\n'\r\n```"
+            "Your `for` loop should look like this:\n```sh\n: '\nfor (( i = $1; i >= 0; i-- ))\ndo\n  echo $i\n  sleep 1\ndone\n'\n```"
           ]
         }
       ]
@@ -2577,7 +2577,7 @@
           "content": "It shows the syntax. First, below your comment, create a variable named `I` that is set to the value of your first argument. It will start there, then on each iteration of the `while` loop you can subtract `1` from it until it reaches `0`.",
           "hints": [
             "Add `I=$1` in the `then` area of your `if` statements below the multi-line comment",
-            "The `then` area should look like this:\r\n```sh\r\n: '\r\nfor (( i = $1; i >= 0; i-- ))\r\ndo\r\n  echo $i\r\n  sleep 1\r\ndone\r\n'\r\nI=$1\r\n```"
+            "The `then` area should look like this:\n```sh\n: '\nfor (( i = $1; i >= 0; i-- ))\ndo\n  echo $i\n  sleep 1\ndone\n'\nI=$1\n```"
           ]
         }
       ]
@@ -2598,9 +2598,9 @@
               "722204c4f1320540f137e264a320106babfa3309"
             ]
           },
-          "content": "The menu showed that you can make a `while` loop like this:\r\n\r\n```sh\r\nwhile [[ CONDITION ]]\r\ndo\r\n  STATEMENTS\r\ndone\r\n```\r\n\r\nAdd a `while` loop below the `I` variable you made. The condition should be `$I -ge 0` and you should `echo` the `I` variable in the `do` statements.",
+          "content": "The menu showed that you can make a `while` loop like this:\n\n```sh\nwhile [[ CONDITION ]]\ndo\n  STATEMENTS\ndone\n```\n\nAdd a `while` loop below the `I` variable you made. The condition should be `$I -ge 0` and you should `echo` the `I` variable in the `do` statements.",
           "hints": [
-            "Your `while` loop should look like this:\r\n```sh\r\nwhile [[ $I -ge 0 ]]\r\ndo\r\n  echo $I\r\ndone\r\n```"
+            "Your `while` loop should look like this:\n```sh\nwhile [[ $I -ge 0 ]]\ndo\n  echo $I\ndone\n```"
           ]
         }
       ]
@@ -2623,7 +2623,7 @@
           },
           "content": "`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subtract one from `I` on each pass.",
           "hints": [
-            "Your `while` loop should look like this:\r\n```sh\r\nwhile [[ $I -ge 0 ]]\r\ndo\r\n  echo $I\r\n  (( I-- ))\r\ndone\r\n```"
+            "Your `while` loop should look like this:\n```sh\nwhile [[ $I -ge 0 ]]\ndo\n  echo $I\n  (( I-- ))\ndone\n```"
           ]
         }
       ]
@@ -2647,7 +2647,7 @@
           "content": "The last thing to do is to add the `sleep` again. In your `while` loop, add the code to make it `sleep` for `1` second. Add the code after the `(( I-- ))`.",
           "hints": [
             "Use the same `sleep 1` you used in the `for` loop",
-            "Your `while` loop should look like this:\r\n```sh\r\nwhile [[ $I -ge 0 ]]\r\ndo\r\n  echo $I\r\n  (( I-- ))\r\n  sleep 1\r\ndone\r\n```"
+            "Your `while` loop should look like this:\n```sh\nwhile [[ $I -ge 0 ]]\ndo\n  echo $I\n  (( I-- ))\n  sleep 1\ndone\n```"
           ]
         }
       ]
@@ -3627,11 +3627,11 @@
           "content": "You used the double square brackets with your `if` statement in the last program, but you can use the double parenthesis with these operators as well. In your script, create an `if` statement that uses double parenthesis for the condition. Check if the number variable is less than or equal to 15. If it is, use your two variables to print `The next number is, B:<number>`.",
           "hints": [
             "Make sure you only have two `echo` statements in your script, the title being one of them",
-            "Here's an example of how your `if` statement should look:\r\n```sh\r\nif (( CONDITION ))\r\nthen\r\n  STATEMENTS\r\nfi\r\n```",
+            "Here's an example of how your `if` statement should look:\n```sh\nif (( CONDITION ))\nthen\n  STATEMENTS\nfi\n```",
             "The condition you want is `(( NUMBER <= 15 ))`",
             "In the statements area, use `echo` and your two variables to print `The next number is, B:<number>`",
             "The statements area should look like this: `echo $TEXT B:$NUMBER`",
-            "The whole `if` statement should look like this:\r\n```sh\r\nif (( NUMBER <= 15 ))\r\nthen\r\n  echo $TEXT B:$NUMBER\r\nfi\r\n```"
+            "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nfi\n```"
           ]
         }
       ]
@@ -3652,14 +3652,14 @@
               "c3f91465fb088d0ebcc04bc33e4591b8bcf97d4c"
             ]
           },
-          "content": "`if` statements can have an \"else if\" area like this:\r\n```sh\r\nif (( CONDITION ))\r\nthen\r\n  STATEMENTS\r\nelif [[ CONDITION ]]\r\nthen\r\n  STATEMENTS\r\nfi\r\n```\r\n\r\nUsing the double square brackets this time, add an `elif` condition that checks if the number variable is less than or equal to `30`. If it is, use your two variables again to print `The next number is, I:<number>`",
+          "content": "`if` statements can have an \"else if\" area like this:\n```sh\nif (( CONDITION ))\nthen\n  STATEMENTS\nelif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nUsing the double square brackets this time, add an `elif` condition that checks if the number variable is less than or equal to `30`. If it is, use your two variables again to print `The next number is, I:<number>`",
           "hints": [
             "View the `help test` menu to see the operators you can use with the double square brackets",
             "The condition you want is `[[ $NUMBER -le 30 ]]`. Don't forget the `$`",
             "In the statements area, use `echo` and your two variables to print `The next number is, I:<number>`",
             "The statements area should look like this: `echo $TEXT I:$NUMBER`",
-            "The `elif` area should look like this:\r\n```sh\r\nelif [[ $NUMBER -le 30 ]]\r\nthen\r\n  echo $TEXT I:$NUMBER\r\nfi\r\n```",
-            "The whole `if` statement should look like this:\r\n```sh\r\nif (( NUMBER <= 15 ))\r\nthen\r\n  echo $TEXT B:$NUMBER\r\nelif [[ $NUMBER -le 30 ]]\r\nthen\r\n  echo $TEXT I:$NUMBER\r\nfi\r\n```"
+            "The `elif` area should look like this:\n```sh\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nfi\n```",
+            "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nfi\n```"
           ]
         }
       ]
@@ -3684,12 +3684,12 @@
           "hints": [
             "View the `help let` menu to see the operators you can use with the double parenthesis",
             "The operator you want it `<`",
-            "You can add another `elif` like this:\r\n```sh\r\nif CONDITION\r\nthen\r\n  STATEMENTS\r\nelif CONDITION\r\nthen\r\n  STATEMENTS\r\nelif CONDITION\r\nthen\r\n  STATEMENTS\r\nfi\r\n```",
+            "You can add another `elif` like this:\n```sh\nif CONDITION\nthen\n  STATEMENTS\nelif CONDITION\nthen\n  STATEMENTS\nelif CONDITION\nthen\n  STATEMENTS\nfi\n```",
             "The condition you want is `(( NUMBER < 46 ))`",
             "In the statements area, use `echo` and your two variables to print `The next number is, N:<number>`",
             "The statements area should look like this: `echo $TEXT N:$NUMBER`",
-            "This `elif` area should look like this:\r\n```sh\r\nelif (( NUMBER < 46 ))\r\nthen\r\n  echo $TEXT N:$NUMBER\r\nfi\r\n```",
-            "The whole `if` statement should look like this:\r\n```sh\r\nif (( NUMBER <= 15 ))\r\nthen\r\n  echo $TEXT B:$NUMBER\r\nelif [[ $NUMBER -le 30 ]]\r\nthen\r\n  echo $TEXT I:$NUMBER\r\nelif (( NUMBER < 46 ))\r\nthen\r\n  echo $TEXT N:$NUMBER\r\nfi\r\n```"
+            "This `elif` area should look like this:\n```sh\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nfi\n```",
+            "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nfi\n```"
           ]
         }
       ]
@@ -3716,8 +3716,8 @@
             "The operator you want it `-lt`",
             "The condition you want is `[[ $NUMBER -lt 61 ]]`. Don't forget the `$`",
             "The statements area should look like this: `echo $TEXT G:$NUMBER`",
-            "This `elif` area should look like this:\r\n```sh\r\nelif [[ $NUMBER -lt 61 ]]\r\nthen\r\n  echo $TEXT G:$NUMBER\r\nfi\r\n```",
-            "The whole `if` statement should look like this:\r\n```sh\r\nif (( NUMBER <= 15 ))\r\nthen\r\n  echo $TEXT B:$NUMBER\r\nelif [[ $NUMBER -le 30 ]]\r\nthen\r\n  echo $TEXT I:$NUMBER\r\nelif (( NUMBER < 46 ))\r\nthen\r\n  echo $TEXT N:$NUMBER\r\nelif [[ $NUMBER -lt 61 ]]\r\nthen\r\n  echo $TEXT G:$NUMBER\r\nfi\r\n```"
+            "This `elif` area should look like this:\n```sh\nelif [[ $NUMBER -lt 61 ]]\nthen\n  echo $TEXT G:$NUMBER\nfi\n```",
+            "The whole `if` statement should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nelif [[ $NUMBER -lt 61 ]]\nthen\n  echo $TEXT G:$NUMBER\nfi\n```"
           ]
         }
       ]
@@ -3742,9 +3742,9 @@
           "hints": [
             "View the `if/else` in your `countdown.sh` file to see how you did it before",
             "You don't need a condition or the `then` on this one",
-            "Here's an example:\r\n```sh\r\nif CONDITION\r\nthen\r\n  STATEMENTS\r\nelif CONDITION\r\nthen\r\n  STATEMENTS\r\n...\r\nelse\r\n  STATEMENTS\r\nfi\r\n```",
-            "The `else` area should look like this:\r\n```sh\r\nelse\r\n  echo $TEXT O:$NUMBER\r\n```",
-            "The whole `if` should look like this:\r\n```sh\r\nif (( NUMBER <= 15 ))\r\nthen\r\n  echo $TEXT B:$NUMBER\r\nelif [[ $NUMBER -le 30 ]]\r\nthen\r\n  echo $TEXT I:$NUMBER\r\nelif (( NUMBER < 46 ))\r\nthen\r\n  echo $TEXT N:$NUMBER\r\nelif [[ $NUMBER -lt 61 ]]\r\nthen\r\n  echo $TEXT G:$NUMBER\r\nelse\r\n  echo $TEXT O:$NUMBER\r\nfi\r\n```"
+            "Here's an example:\n```sh\nif CONDITION\nthen\n  STATEMENTS\nelif CONDITION\nthen\n  STATEMENTS\n...\nelse\n  STATEMENTS\nfi\n```",
+            "The `else` area should look like this:\n```sh\nelse\n  echo $TEXT O:$NUMBER\n```",
+            "The whole `if` should look like this:\n```sh\nif (( NUMBER <= 15 ))\nthen\n  echo $TEXT B:$NUMBER\nelif [[ $NUMBER -le 30 ]]\nthen\n  echo $TEXT I:$NUMBER\nelif (( NUMBER < 46 ))\nthen\n  echo $TEXT N:$NUMBER\nelif [[ $NUMBER -lt 61 ]]\nthen\n  echo $TEXT G:$NUMBER\nelse\n  echo $TEXT O:$NUMBER\nfi\n```"
           ]
         }
       ]
@@ -4216,9 +4216,9 @@
               "71b01a39b1147648c347690c2ebfb3d40c820933"
             ]
           },
-          "content": "It looks like you can create a function like this:\r\n\r\n```sh\r\nFUNCTION_NAME() {\r\n  STATEMENTS\r\n}\r\n```\r\n\r\nAdd an empty function named `GET_FORTUNE` to your script. Make sure the repsonse you are printing is the last thing in the script.",
+          "content": "It looks like you can create a function like this:\n\n```sh\nFUNCTION_NAME() {\n  STATEMENTS\n}\n```\n\nAdd an empty function named `GET_FORTUNE` to your script. Make sure the repsonse you are printing is the last thing in the script.",
           "hints": [
-            "Add this to your script:\r\n```sh\r\nGET_FORTUNE() {}\r\n```",
+            "Add this to your script:\n```sh\nGET_FORTUNE() {}\n```",
             "Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file"
           ]
         }
@@ -4242,7 +4242,7 @@
           },
           "content": "In your function, use `echo` to print `Ask a yes or no question:`",
           "hints": [
-            "Your function should look like this:\r\n```sh\r\nGET_FORTUNE() {\r\n  echo Ask a yes or no question:\r\n}\r\n```",
+            "Your function should look like this:\n```sh\nGET_FORTUNE() {\n  echo Ask a yes or no question:\n}\n```",
             "Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file"
           ]
         }
@@ -4315,7 +4315,7 @@
           "content": "In your function after you print the sentence, use `read` to get user input into a variable named `QUESTION`.",
           "hints": [
             "Add `read QUESTION` to your function below the `echo`",
-            "Your function should look like this:\r\n```sh\r\nGET_FORTUNE() {\r\n  echo Ask a yes or no question:\r\n  read QUESTION\r\n}\r\n```",
+            "Your function should look like this:\n```sh\nGET_FORTUNE() {\n  echo Ask a yes or no question:\n  read QUESTION\n}\n```",
             "Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file"
           ]
         }
@@ -4408,12 +4408,12 @@
               "833d4095ca5e6a88af265c4bf15e9c9ea0b8ef75"
             ]
           },
-          "content": "The `until` loop is very similar to the `while` loop you used. It will execute the loop until a condition is met. Here's an example:\r\n\r\n```sh\r\nuntil [[ CONDITION ]]\r\ndo\r\n  STATEMENTS\r\ndone\r\n```\r\n\r\nAdd an `until` loop below your function. Use the double brackets to check if `QUESTION` is equal to `test?`. Move the `GET_FORTUNE` function call to the statements area of the loop. It should run the function until you input `test?` as the question.",
+          "content": "The `until` loop is very similar to the `while` loop you used. It will execute the loop until a condition is met. Here's an example:\n\n```sh\nuntil [[ CONDITION ]]\ndo\n  STATEMENTS\ndone\n```\n\nAdd an `until` loop below your function. Use the double brackets to check if `QUESTION` is equal to `test?`. Move the `GET_FORTUNE` function call to the statements area of the loop. It should run the function until you input `test?` as the question.",
           "hints": [
             "View the `help [[` or `help test` menu to see if you can find the operator to use",
             "You want the `==` operator",
             "The condition should look like this: `[[ $QUESTION == test? ]]`",
-            "Your `until` loop should look like this:\r\n```sh\r\nuntil [[ $QUESTION == test? ]]\r\ndo\r\n  GET_FORTUNE\r\ndone\r\n```",
+            "Your `until` loop should look like this:\n```sh\nuntil [[ $QUESTION == test? ]]\ndo\n  GET_FORTUNE\ndone\n```",
             "You should only call the `GET_FORTUNE` function once",
             "Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file"
           ]
@@ -4809,8 +4809,8 @@
           },
           "content": "I know that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.",
           "hints": [
-            "Here's an example:\r\n```sh\r\nif [[ CONDITION ]]\r\nthen\r\n  STATEMENTS\r\nfi\r\n\r\nread QUESTION\r\n```",
-            "Your function should look like this:\r\n```sh\r\nfunction GET_FORTUNE() {\r\n  if [[ ! $1 ]]\r\n  then\r\n    echo Ask a yes or no question:\r\n  fi\r\n\r\n  read QUESTION\r\n}\r\n```"
+            "Here's an example:\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n\nread QUESTION\n```",
+            "Your function should look like this:\n```sh\nfunction GET_FORTUNE() {\n  if [[ ! $1 ]]\n  then\n    echo Ask a yes or no question:\n  fi\n\n  read QUESTION\n}\n```"
           ]
         }
       ]
@@ -4833,8 +4833,8 @@
           },
           "content": "You can pass arguments to functions like you did with your script. This condition will check if one isn't passed and print the sentence. Add an `else` to your `if`. Use `echo` to print `Try again. Make sure it ends with a question mark:` if the condition fails.",
           "hints": [
-            "Here's an example:\r\n```sh\r\nif [[ CONDITION ]]\r\nthen\r\n  STATEMENTS\r\nelse\r\n  STATEMENTS\r\nfi\r\n```",
-            "Your `if` condition should look like this:\r\n```sh\r\nif [[ ! $1 ]]\r\nthen\r\n  echo Ask a yes or no question:\r\nelse\r\n  echo Try again. Make sure it ends with a question mark:\r\nfi\r\n```"
+            "Here's an example:\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nelse\n  STATEMENTS\nfi\n```",
+            "Your `if` condition should look like this:\n```sh\nif [[ ! $1 ]]\nthen\n  echo Ask a yes or no question:\nelse\n  echo Try again. Make sure it ends with a question mark:\nfi\n```"
           ]
         }
       ]
@@ -4859,7 +4859,7 @@
           "hints": [
             "Here's an example: `FUNCTION_NAME argument`",
             "Your function call should look like this: `GET_FORTUNE again`",
-            "Your `until` loop should look like this:\r\n```sh\r\nuntil [[ $QUESTION =~ \\?$ ]]\r\ndo\r\n  GET_FORTUNE again\r\ndone\r\n```"
+            "Your `until` loop should look like this:\n```sh\nuntil [[ $QUESTION =~ \\?$ ]]\ndo\n  GET_FORTUNE again\ndone\n```"
           ]
         }
       ]
@@ -5130,7 +5130,7 @@
           },
           "content": "Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an argument, so put a `3` next to it.",
           "hints": [
-            "Your `five.sh` file should have these commands:\r\n```sh\r\n./questionnaire.sh\r\n./countdown.sh 3\r\n./bingo.sh\r\n./fortune.sh\r\n```"
+            "Your `five.sh` file should have these commands:\n```sh\n./questionnaire.sh\n./countdown.sh 3\n./bingo.sh\n./fortune.sh\n```"
           ]
         }
       ]
