@@ -1,6 +1,6 @@
 {
   "id": "freeCodeCamp/learn-bash-scripting-by-building-five-programs:v1.0.0",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "summary": {
     "title": "Learn Bash Scripting by Building Five Programs",
     "description": "> Welcome to the Bash Scripting lessons!"
@@ -12,7 +12,7 @@
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
-        "50711ef16b921325434e47883a6e0f9ff225b49a"
+        "a3b35ff93b168a3f926ecff745cdfe9e6016e726"
       ]
     },
     "testRunner": {
@@ -24,7 +24,7 @@
     },
     "repo": {
       "uri": "https://github.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs",
-      "branch": "v1.0.2"
+      "branch": "v1.0.3"
     },
     "continue": {
       "commands": [
@@ -69,7 +69,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dc73ad119fd5ee6a66620a7ce8f9f4fe24630f8a"
+              "ad783cd59b96d300e1e6c8890a885016b428ba16"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello bash` into the terminal and press enter.",
@@ -93,7 +93,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3b2e3992ce7f00927868fe639cd8226f24ec3c76"
+              "0c0479399a23dd76e7499cbeadc8e5e162a70c74"
             ]
           },
           "content": "You can run commands in the terminal or put them in a file to be run as a script. You will be making five small programs to learn some scripting. The first one will be a \"questionnaire\". Use the `touch` command to create `questionnaire.sh` in the `project` folder.",
@@ -118,11 +118,12 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "cfaba02e112f74f8715da5d1d297e08b7ded13d1"
+              "b08374af1831d57d58ac723cea1a89ed18d13afe"
             ]
           },
-          "content": "To start, add `echo hello questionnaire` at the top of the file you just created.",
+          "content": "To start, open the file in the main editor by clicking the filename in the left side panel.\nThen, add the text `echo hello questionnaire` at the top of the file.",
           "hints": [
+            "If the left side panel isn't visible, click the icon that looks like two pieces of paper \nat the top left to open the panel. Then, click on your file to open it",
             "Add the suggested text to the `questionnaire.sh` file"
           ]
         }
@@ -141,7 +142,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5fd891d1b4b1bce33ebf174cff2fffa8c922635d"
+              "386379f53065d9ea311af7716f34be1d19efce24"
             ]
           },
           "content": "Your script has one command. Run it with `sh questionnaire.sh` to see what happens. `sh` stands for `shell`.",
@@ -166,7 +167,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "edcb4f026956bec4589a59bd7caedeeb2748f8fe"
+              "4b6d8e91a6727e064c5262a602c77b4a3da89d95"
             ]
           },
           "content": "Using `sh` to run your script uses the `shell` interpreter. Run your script again with `bash questionnaire.sh` to use the `bash` interpreter. `bash` stands for `bourne-again shell`.",
@@ -191,7 +192,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e841d4c9dcc2a7c0e6b46e2cf1f87566e6a130e8"
+              "c3fd56eaa8c0c2259ee50deb12b9fc4d83e38d8d"
             ]
           },
           "content": "The output was the same. There are many interpreters which may not give the output you expect. Find out where the `bash` interpreter is located by entering `which bash` in the terminal.",
@@ -214,7 +215,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "78f90c4cd013430df74c4de7d2796624640de87e"
+              "e6396c644ec072492efb07187c538b623a42f091"
             ]
           },
           "content": "That's the absolute path to the `bash` interpreter. You can tell your program to use it by placing a `shebang` at the very top of the file like this: `#!<path_to_interpreter>`. Add a `shebang` at the very top of your file, the one you want looks like this: `#!/bin/bash`.",
@@ -237,7 +238,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b7cf420551a574f7df5c8a39c2c8c8b93ae09cac"
+              "d511b6744933d3a9c7e8b08ff0e17c0184a74fb7"
             ]
           },
           "content": "Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`",
@@ -262,7 +263,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ab8f76f4d9fb3eb5d89940a14dd319dc19708b9a"
+              "5c779a1776735d698f21ed9fd8ddb7240ad6e867"
             ]
           },
           "content": "You should have got a permission denied message because you don't have permissions to execute the script. List what's in the `project` folder in long list format with `ls -l` to see the file permissions.",
@@ -287,7 +288,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f2abbf7d55c4641a39df27e1af7ba49d7ddce7b1"
+              "1672a0fc7ea3a35e30b6b199af505c3edeb92a9c"
             ]
           },
           "content": "Next to your file is `-rw-r--r--`. All but the first character (`-`) describe permissions different users have with the file. `r` means `read`, `w` means `write`, `x` means `execute`. I don't see an `x` anywhere, so nobody can execute it. Enter `chmod +x questionnaire.sh` in the terminal to give everyone executable permissions.",
@@ -312,7 +313,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "400c1beae31d98dd991f88b93de8f8dfb42e14e3"
+              "ba0fbdace9c911404f9099feae942c6c6f5ee731"
             ]
           },
           "content": "List what's in the folder again with `ls -l` to see the new permissions.",
@@ -337,7 +338,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8a81ec8e0e46b3a62b7acbdb9f06ab110fd2fa51"
+              "f03e585738009e4833cc12143379ca4f5a65a44b"
             ]
           },
           "content": "The `x` was added by each type of user to denote that anyone can execute the file. Run your file again by executing it with `./questionnaire.sh`.",
@@ -362,7 +363,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "cbc38096a1f0fa54841268c5235c65c4395067b4"
+              "5e4516e5afcb044cd2a0a70c0ab4de06da2ef93a"
             ]
           },
           "content": "Now it works. In your script, you can add any commands that you would be able to enter in the terminal. Test this by adding the `ls -l` command below your other command.",
@@ -385,7 +386,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c0c0575d89402e3cca0261206b87c9af51b73fdf"
+              "5382cd6a71b6d3779014ce501d1323a9861de4e3"
             ]
           },
           "content": "Run the script by executing it again.",
@@ -410,7 +411,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "358fed3f411b8b1260a2c17e572a57e0132fd554"
+              "cad98d42d46c8fe486038d7eee0c988a41add7f4"
             ]
           },
           "content": "Your script printed the result of the two commands as if you entered them in the terminal. Delete everything but the `shebang` from your file so you can start making the questionnaire.",
@@ -433,7 +434,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "57e25ee4ca9cda815f4ef4795dbaab48deb746e7"
+              "b56e2ffc9a4ac56d67e7dbeeaffe69c213131955"
             ]
           },
           "content": "Bash has variables, functions, and other things you might be familiar with. You can create a variable with `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `\"What's your name?\"`.",
@@ -456,7 +457,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "e6750a2a3a23439a5f2cb1517d739d6f1fbcd997"
+              "3152f2fe0a73640b54a87dda0c6ef52d276e948a"
             ]
           },
           "content": "To use a variable, place `$` in front of it like this: `$VARIABLE_NAME`. Shell scripts run from top to bottom, so you can only use variable below where it's created. Use `echo` to print your variable.",
@@ -479,7 +480,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "900d3821d48f185385fc56086f5e78b297c48d1c"
+              "274c6d8e2ccab38c2f1d2f24d546bad5434ca72f"
             ]
           },
           "content": "Run the file like you did before to see if it worked.",
@@ -505,7 +506,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "d21f09625167319dd5582253f03b4a4357c002d9"
+              "11ce69f6964ad3dd3a3f68a56b18f76eb4bbc971"
             ]
           },
           "content": "The question was printed. Next, you want to be able to accept input from a user. You can do that with `read` like this: `read VARIABLE_NAME`. This will get user input and store it into a new variable. After you print the question, use `read` to get input and store it in a variable named `NAME`.",
@@ -528,7 +529,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "80b8186b599af21f94dd9ce9fd61c711f9839f47"
+              "6a6336258bb7e69d876b6c26977c44cb26f222ee"
             ]
           },
           "content": "At the bottom of your script, use `echo` to print `Hello <name>.` to the terminal.",
@@ -554,7 +555,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "eae128b616799d78ae8ab4b4e89bed9c6ac27584"
+              "5b68d09b60f03678b49b02fbc63b6b0d408cecdc"
             ]
           },
           "content": "Run the file again. Type your name and press enter after it asks for it.",
@@ -581,7 +582,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "56657c2854fe790ad9d25444c171af4a501401a4"
+              "9fd587bf0a42451d0bb7248a2ad87d7e150f0006"
             ]
           },
           "content": "Right below your first variable, create another one named `QUESTION2`. Set the value to, `Where are you from?`. Make sure to put it in double quotes.",
@@ -605,7 +606,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "d8563acdc472af545b4ab5e0508d029b41bca5b2"
+              "eed63fa9344ef2b4ced37e1bad064768fe638b1f"
             ]
           },
           "content": "After your `read` command, use your new variable to print the next question.",
@@ -629,7 +630,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "4c1b4b0557a3cb5433fa394354e67bce2e6ed778"
+              "7a742b9900b888150d997fe9100855466be17f0d"
             ]
           },
           "content": "Below where the second question is printed, use `read` to get input from the user into a variable named `LOCATION`.",
@@ -653,7 +654,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "aa88511d71a31332d09ab9ed063edf57ca6b0971"
+              "cfc83407c25f4403b38b26a04d98a9ccce9ca241"
             ]
           },
           "content": "Change the existing response to `Hello <name> from <location>.`.",
@@ -679,7 +680,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9bdcea61e81aff7aa804b8564f0781ac45de6507"
+              "1478a167cb2b5903e4d8c36b8667326af2e92de9"
             ]
           },
           "content": "Run the script and enter values when it is waiting for input.",
@@ -705,7 +706,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "de7aad4b75fa5245685866c41c695504af57546c"
+              "eb4926180817e362781316f1fa29321b1e4a1c89"
             ]
           },
           "content": "It's looking good. I want a title to appear when the program first starts. Use `echo` to print `~~ Questionnaire ~~` before anything else is printed.",
@@ -728,7 +729,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "722fc66c3d7f2798607501c59ebecb49def2f507"
+              "a73edb4aba906bb054f664eae109f56657787579"
             ]
           },
           "content": "Run the script and enter values until it is done again so you can see what the title looks like.",
@@ -754,7 +755,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "be6088d7c24a2e85fc28f68cc3b69e300d16408f"
+              "5dd852870470b5f6f84db0b47a191323165ca694"
             ]
           },
           "content": "It would be nice if there was some empty lines around the title. You've probably used the `--help` flag before, see if you can use it with `echo` to try and find a way to add empty lines.",
@@ -780,7 +781,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "db862fc3868c7c5a4040e64ba0784987f3edfdfc"
+              "548b365083c06fbb6692c3216595ee50ff900067"
             ]
           },
           "content": "That didn't work as I hoped. Another way to find information about a command is with `man`. It stands for `manual` and you can use it like this: `man <command>`. See if there's a manual for `echo`.",
@@ -804,7 +805,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "44e6c907ec46797bcf8a116c2866c4f5f9156ff4"
+              "5fb552270cfb939fffe9b74ff13cad4b3fb46b29"
             ]
           },
           "content": "At the top of the menu, the `-e` option looks promising. And the `\\n` below it says `new line`. You should take a look at those. In your script, change the title to `echo -e \\n~~ Questionnaire ~~\\n` to see if that prints the empty lines.",
@@ -827,7 +828,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9f1105658f3f712be5923656dd9773dc871b96d6"
+              "639787d795a4f530115df6472cc1e2803d3b4692"
             ]
           },
           "content": "Run it to see if it worked. You can press `ctrl+c` to close the program after it starts if you don't want to enter values.",
@@ -853,7 +854,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "cace5285421d236c3aa678a202b6fc94241b262e"
+              "ebe1fc69ca7d734e6550d1527db5177b88e3cb99"
             ]
           },
           "content": "It didn't print the empty lines. `echo` will only print empty lines if the value is enclosed in quotes. Place double quotes around the title that gets printed to see if it works.",
@@ -876,7 +877,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2489a8275a560a3cbc0308a94cf5e9a1e878ef68"
+              "55646cd1cc251f780394fae446aa2f2fdaf50086"
             ]
           },
           "content": "Run your script again to see if that fixed it.",
@@ -902,7 +903,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "469f7e32467a3ff4b005afc5dde936182e5e7b11"
+              "0f304c1a2ebaed005f5efdc949b95281ad19bb14"
             ]
           },
           "content": "Now it's working :smile: Create a `QUESTION3` variable next to the other two, set it's value to `\"What's your favorite coding website?\"`",
@@ -926,7 +927,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "df19e48692fb892c7dd195787fc2ad6b091a7e19"
+              "e46b95375da3c0f9806cb97a6fd64cf8cf244535"
             ]
           },
           "content": "Use `echo` to print the third question after you `read` the `LOCATION`.",
@@ -950,7 +951,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "4a9f428d79f184a3ebfa717ccdb3f00f511e3035"
+              "843a8cf9d849df423c217d5a329747c96388faf1"
             ]
           },
           "content": "After the question you just printed, add code to read input into a variable named `WEBSITE`.",
@@ -973,7 +974,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "982cd39482111b39ed45b4e54cb9cdc5fcb9e5b2"
+              "62725fcc90536ee99f6edaab52d072c9eeca03d9"
             ]
           },
           "content": "Change the `echo` command of the response to print this sentence instead: `Hello <name> from <location>. I learned that your favorite coding website is <website>!`.",
@@ -998,7 +999,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "63a624282df95f53f00379890a63bb414024d026"
+              "cbaa66385659d7450b840752a826d8046ba71463"
             ]
           },
           "content": "Run the script and enter values when the program is waiting. Let's see the final output.",
@@ -1023,7 +1024,7 @@
               "./questionnaire.sh"
             ],
             "commits": [
-              "a9d82851a85d0d2a5d11f87174a105e9ce669519"
+              "bb0cffd14ca5f4717a721fab40828b7a3bfa73a0"
             ]
           },
           "content": "One last thing. Change that final response to print an empty line at the beginning of the sentence.",
@@ -1050,7 +1051,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "54429db38439cd8740697bad7f0f76fb1ab173d6"
+              "a255a7bf1a447032bf554dbf3a8a678ba682fe05"
             ]
           },
           "content": "Run it one last time and enter values when it asks to see if you like how it looks.",
@@ -1075,7 +1076,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5f9953165f293d974af63c419633d0d7adc61a25"
+              "1977baa4acb488493bdb95ddb85a6fc8a1fee2ef"
             ]
           },
           "content": "It looks good. I think you are done with that script for now. The next program will be countdown timer. Use the `touch` command to create a new file named `countdown.sh` in your `project` folder.",
@@ -1100,7 +1101,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e7f3a67386f07d01453301a2f4f91312df0934d5"
+              "76385b1c7a6ca43afe8a0705a3bc627535c50d8b"
             ]
           },
           "content": "Give your file executable permissions so you can run it like the other one. It's the `chmod` command with the `+x` flag.",
@@ -1127,7 +1128,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "ec967985bab2d419296d24178c03dc73ddff6c3e"
+              "10dfb19a406b169f095d3cd376e8407dc312df7a"
             ]
           },
           "content": "You want to use the `bash` interpreter again. Add a `shebang` at the top of your new file to denote that.",
@@ -1154,7 +1155,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "8eb105a3c10dbbf5dfe3d11d23be28b9cb52ddba"
+              "447c27a00e645da3496814d1e82f10fa82af8587"
             ]
           },
           "content": "Comments in `bash` look like this: `# <comment>`. Add a comment below the `shebang` that says `Program that counts down to zero from a given argument` so people know what it does. Note that the `shebang` is a special case and is not treated like a comment.",
@@ -1177,7 +1178,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "09817c7fa456460f35d2ab08fc1f681c5a4c73e7"
+              "ef5e9e665fde2bfb0c47125364115210eb4269c6"
             ]
           },
           "content": "Programs can take arguments. You can access them a few different ways with `$`. Add `echo $*` in your script to print all arguments passed to it.",
@@ -1200,7 +1201,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "176d16ae4b3276518655a703c7d30759b70fc014"
+              "690cc39f03d261cf778ae55b903de168b01c8576"
             ]
           },
           "content": "Execute your script with `./countdown.sh`.",
@@ -1224,7 +1225,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "756e469cb9d23acf1530b9985cb6c0d662a66ab0"
+              "98ab3d1d5c82208b932d24a08e63f3f1e6b44080"
             ]
           },
           "content": "Nothing was printed. Run your script again, but this time add three arguments to the command; `arg1`, `arg2`, and `arg3`. Place them after the command with a space before each one.",
@@ -1248,7 +1249,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "31faabedb493eab5f0ec160f3a3d41de31048aca"
+              "d63669906552f701946dac1b120c59485386bd16"
             ]
           },
           "content": "`$*` printed all the arguments passed to your script. To access any one of them, use `$<number>`. `arg2` could have been accessed with `$2`. Change your script to `echo` the first argument instead of all the arguments.",
@@ -1273,7 +1274,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9d066d2afd101f528b7cd7324afc5788146a25ec"
+              "23f92e55cf99b56ae741f0d9caf48db557ae5d7f"
             ]
           },
           "content": "Run your file with `./countdown.sh arg1 arg2 arg3` again.",
@@ -1297,7 +1298,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d3b9f28d0317aa1ffd8334cfa0145120368bb549"
+              "57f77465e3fcb8494f2d50f80493f974b4f435b7"
             ]
           },
           "content": "Now it just prints the first argument. Your program will accept an argument to count down from. You will test it with an `if` statement to make sure it's a positive integer. I wonder what that syntax would look like. Type `help` in the terminal to see if you can find anything.",
@@ -1320,7 +1321,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "db179af428c1e6646099c451e79fe0ca38298fe0"
+              "d7037121eaf5516c565380d6f1d9e3bcb7869628"
             ]
           },
           "content": "This is a list of built-in commands. You should look over it, some of them may look familiar. I see `echo` in there. Another one is `if`. See if you can find out more about it by checking its `man` page.",
@@ -1344,7 +1345,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "599a0691a23f47fa9ec593ee250f4adbbeac48fa"
+              "ae0287abf3fd5c9d13f339c9a3cae910f80dba08"
             ]
           },
           "content": "I guess there isn't a `man` page for it. At the top of the `help` screen, I noticed you can use `help <command>` to find out more. Yet another way to find out about a command :disappointed_relieved: See if you can find out more about `if` with that method.",
@@ -1368,7 +1369,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "80683c427c8cb5f206579cf9b33edb31a84c481c"
+              "808a6184470acd4b454d801d4816e6a614ef3bf1"
             ]
           },
           "content": "The syntax is at the top, not all of it is required. Here's another example:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nRemove the `echo $1` in your script and add an `if` condition that checks `if [[ $1 == arg1 ]]`. In its `then` area, use `echo` to print `true` to the screen. There must be spaces on the inside of the brackets (`[[ ... ]]`) and around the operator (`==`).",
@@ -1392,7 +1393,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2fc79a6a604ed4af36feeb3a9ef23da9a6546a74"
+              "501bd5a0c92d419afd1280e113a924da1916422d"
             ]
           },
           "content": "Notice that the end of the syntax is `fi` (`if` backwards). It should print `true` if you pass `arg1` to your script now. Run the script with `arg1` as the only argument.",
@@ -1416,7 +1417,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "95b2eeda770bcbb49ded4741761fb12a55ff8daa"
+              "4ed5186789e7e78c55d33518a50ba4e911c84dd5"
             ]
           },
           "content": "The `if` condition worked, it printed `true`. Run it again with anything except `arg1` as the first argument.",
@@ -1440,7 +1441,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "3e2275272465d50e140a469147539512bafbfa0c"
+              "376e1cce0a0931a55a71fa54b38666bf4984893d"
             ]
           },
           "content": "Nothing was printed. One of the optional parts of `if` was an `else` area. You can use it like this:\n\n```sh\nif [[ CONDITION ]]\nthen\n  STATEMENTS\nelse\n  STATEMENTS\nfi\n```\n\nAdd an `else` to your existing `if` condition. Use `echo` to print `false` if the condition fails.",
@@ -1463,7 +1464,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "adb24c1bd6b5f8400150898f1f8b0c6bc40644b0"
+              "916835e3733664640ec32cf7291fc5b839d96e9b"
             ]
           },
           "content": "Run the script again and use anything except `arg1` as the only argument.",
@@ -1488,7 +1489,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "593c3486bac470f1e9dda9b1c8a3e279f980dcea"
+              "c8acd33eb2fd54d776cfd87df1580b9105312757"
             ]
           },
           "content": "Now it printed `false`. Your program is expecting an integer to count down from as its argument. You can compare integers inside the brackets (`[[ ... ]]`) of your `if` with `-eq` (equal), `-ne` (not equal), `-lt` (less than), `-le` (less than or equal), `-gt` (greater than), `-ge` (greater than or equal). Change your `if` condition to check if your first argument is less than `5`.",
@@ -1513,7 +1514,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ff2bae736f6e9a9f596f7f7d47b2454c6e124941"
+              "171d102183361cddb28573cb9787d55de5bc1d5e"
             ]
           },
           "content": "Run the script again and use `4` as a first argument to make sure it's working.",
@@ -1537,7 +1538,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7d277fc2644f84aec6f43ff5895bde25d704dda8"
+              "88c93f84ea0b2e8766d22e6625f4d5a36e2dfd55"
             ]
           },
           "content": "It printed `true` since your argument was less than `5`. Run it again with `5` as the argument.",
@@ -1561,7 +1562,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7e3562865976ba6559354fa1cb15b190cabe1af7"
+              "c8134b675346d6594854fd76a2fcadc718c65cc0"
             ]
           },
           "content": "As expected, that printed `false`. Take a look at that `help` menu again. I want to see if we can find out more about how these expressions work.",
@@ -1584,7 +1585,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0a2d77c996f782572ff64c22d13e5de88265dcc7"
+              "d3aed4018144f40dca667598d269d8ea922c111e"
             ]
           },
           "content": "Near the top left, it says `[[ expression ]]`. Those look like the double brackets you are using. See if you can get more info about that with the `help` command like you did with `help if`.",
@@ -1608,7 +1609,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3f09e173afc699cd122d98d1ade05f7636875342"
+              "7ddf44adf9d550b86d66bfa3da91f64fc5584b34"
             ]
           },
           "content": "It might not be a bad idea to read that. Looks like you can use some, probably familiar, things like `!`, `&&`, and `||` to compare multiple expressions. There's also `==` and `!=` operators for an individual expression. It says something about the `test` built-in command. See if you can bring up the `help` menu for that.",
@@ -1633,7 +1634,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "26f8d457fb3cb38d9dbfbcfbf28032b5de665e32"
+              "4fc316cb08c4fc90f20137d09a0f8259f8562b6b"
             ]
           },
           "content": "That's what I was looking for. At the top are some file operators. There's some string and other operators as well. You should take a look at them. Near the bottom, are the arithmetic operators you used with your `if` condition. Change the condition in your script to check if the first argument is less than or equal to `5`.",
@@ -1658,7 +1659,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0b3718e1dea976aa8082f38c504b5a189a314a65"
+              "59df9d729c3b0915ce506a99e2d220c68fc19607"
             ]
           },
           "content": "Run the script and use `5` as a first argument again.",
@@ -1682,7 +1683,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2e732155b8efb769955a4e1314992ce8c924b8d1"
+              "07cd90003b4b7b1f59cc585b8dc92ba77ede59c0"
             ]
           },
           "content": "Now it prints `true`. Remember I said any command can run in the terminal or a script. Try running an expression right in the terminal by entering `[[ 4 -le 5 ]]` in it.",
@@ -1707,7 +1708,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c9531092936c8e12f37ffd4dd0a9e9afc976cf87"
+              "9daf277a5d92c43a6105f5c59e0866d6df2b25e3"
             ]
           },
           "content": "Nothing happened? Each command has an exit status that can be accessed with `$?`. View the exit status of the **last command** with `echo $?`.",
@@ -1731,7 +1732,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5cd23c12125e78be85b2d0d3d453acae75b88569"
+              "17529613a0fbe82644bddb7ad26786af778aa859"
             ]
           },
           "content": "The exit status of `0` means it was true, `4` is indeed less or equal to `5`. Try it again with `[[ 4 -ge 5 ]]`.",
@@ -1756,7 +1757,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "db509abd8472a37d61525635d4994faf7b4c4959"
+              "bf97265a4704fe8ec9ce94a8af25b1f380502432"
             ]
           },
           "content": "Use `echo` to view the exit status of the command you just entered.",
@@ -1780,7 +1781,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "29564c7c564f1678879f14b154fe153f8d2340ee"
+              "dcce634989e85e824cfaa6b9a33e4fa8b03baa99"
             ]
           },
           "content": "It printed `1` this time for false. You can separate commands on a single line with `;`. Enter your last two commands on one line like this: `[[ 4 -ge 5 ]]; echo $?`. It will run the expression, then print the exit status of it since it was the last command.",
@@ -1804,7 +1805,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8e3ed5d837c03f155c812f8b49ad7be86b09ab69"
+              "e22015c99ce9c340cd4669db9c96ee61e4ae6277"
             ]
           },
           "content": "It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.",
@@ -1831,7 +1832,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "030d3e59e1eee6dbd7be4e5ffd42f98bfc5d3d77"
+              "73b2a9dc4cc610d68e8d099151e41857f2b6acb5"
             ]
           },
           "content": "You can think of an exit status of `0` as true. But it means that the command had zero errors. All commands have an exit status. Using the same syntax, enter `bad_command;` and check its exit status on a single line.",
@@ -1856,7 +1857,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bef19ff4eea7c9b16fc3a02b604da46048b45470"
+              "20dd25798535b105f3bfd6508d1d396d5724889a"
             ]
           },
           "content": "`command not found`, with an exit status of `127`. Anything but `0` means there was an error with the command. `bad_command` didn't exist. Try it again with `ls`.",
@@ -1882,7 +1883,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5ceb3d0ef603299aaeb6c070ef044c44808c3ded"
+              "b24bb83cf2aad45988bcd7ad4f53cf9b109dd763"
             ]
           },
           "content": "The command executed as expected and there were zero errors. So it gave you an exit status of `0`. Try it again with `ls -y`.",
@@ -1908,7 +1909,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "803f246a9fc64153bcc91de6ae7409069640f532"
+              "674a808d214b25a419f19726e16ccb00405dfe8f"
             ]
           },
           "content": "The `-y` flag doesn't work with `ls` so it gave you an exit status other than `0`, meaning that the command was unsuccessful. View the `help` menu of the `test` command again, I want to see what else is in that list.",
@@ -1932,7 +1933,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e050226eb83a471d4aee8d048c16d50798952819"
+              "2109c77e51b6a8ef36187dea6da43ca88e97de6b"
             ]
           },
           "content": "You tried a few of the arithmetic operators, those work for integers. Try one of the file operators. The first one on the list checks if a file exists. Type `[[ -a countdown.sh ]]; echo $?` in the terminal to see if your file exists.",
@@ -1958,7 +1959,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7c3a9fb5b67c51c0ba467dac1855297c8d02947b"
+              "ef3b781c1a24dbd23b32371c80647fafab553288"
             ]
           },
           "content": "The file must exist. It's checking the folder the command is entered from. Try it again with `bad_file.txt`.",
@@ -1985,7 +1986,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "671534fcae948ad29fa23ef9bf642ccb36fe47e5"
+              "919efcd38d0861867621c3c59959b268b6c77299"
             ]
           },
           "content": "`bad_file.txt` doesn't exist. I think you're getting the hang of this. Using the same syntax, check if you have permissions to execute your `countdown.sh` file. You may want to look at that menu again.",
@@ -2013,7 +2014,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ba651342ff3da8e2e1861e3a616a73615b3a58a9"
+              "8c2c607934fcddcf98f5621e069ebb201165782e"
             ]
           },
           "content": "You played around with a number of the expressions. View the `help [[ expression ]]` menu again that you looked at before to see a few more options. You can view the menu with just `help [[`.",
@@ -2037,7 +2038,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "923dbcf2ecec3c17d46a4164dd65719413e9c473"
+              "76e0287159f60f6ae127a8c1703983bb43f9588c"
             ]
           },
           "content": "As I mentioned before, you can test multiple expressions with `&&` and `||`. Enter `[[ -x countdown.sh && 5 -le 4 ]]; echo $?` in the terminal to test the file is executable by you **and** five is less than or equal to four.",
@@ -2062,7 +2063,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f45f075485567b540a0b7fd3ac02cbed22a6f0db"
+              "9f3a9ea767725289263e3148225fc44463658c90"
             ]
           },
           "content": "Both conditions weren't true, so the exit status was `1` for `false`. Try testing the same two conditions with the `or` operator.",
@@ -2089,7 +2090,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "dc944a66e0ba6fd4e6d91f36db6587d75fdfb314"
+              "f088c961dea9c882c478529e5b6268d6fa8798d9"
             ]
           },
           "content": "One of the conditions was true so it printed `0`. I think that's enough of a detour. Back in your script, change the `if` condition to check if the first argument is **greater than zero** so you can be sure it's something you can count down from.",
@@ -2114,7 +2115,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "8a27e9049175eb4bfca56223ea408ab9c808c980"
+              "e8f95061cac69b7134f60050012eb6490e95cce1"
             ]
           },
           "content": "The condition you added checks if a positive integer was passed as an argument to the script and executes the `then` area. Change the existing `echo` command to print `Include a positive integer as the first argument.` if a positive integer is not used.",
@@ -2138,7 +2139,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9f2d0897527699b17484490f6dd60003d21de76d"
+              "b80fd17edcaab6f93d1423e4ccb4ceddc2275adf"
             ]
           },
           "content": "Run your script and use `1` as a first argument to make sure the condition is working.",
@@ -2162,7 +2163,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ded9a7613d4b5049d9307491345ee454c8c0cae5"
+              "e8f73e2ac25c5da5a34a921c5cbf533a79561677"
             ]
           },
           "content": "Run it again and use anything but a positive integer as the only argument.",
@@ -2186,7 +2187,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1c68deabbd1fbe6cf308bb9ce5eccfa746e46207"
+              "1a07e31ffead7380f0c49538a809b4d6858c3f24"
             ]
           },
           "content": "Looks like your `if` condition is working. Next, you want to loop over the argument and count down to zero from it. Check the `help` menu to see if there's any commands for this.",
@@ -2210,7 +2211,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "137efc8b147da0dea83c8853f43652b98164f8f7"
+              "9bb1757a73fdda3e4293f5441af791c7ece04b16"
             ]
           },
           "content": "There's two `for` loops in there, you want the second one. Here's an example:\n\n```sh\nfor (( i = 10; i > 0; i-- ))\ndo\n  echo $i\ndone\n```\n\nThe above creates a variable (`i = 10`), then prints it, subtracts one, and repeats until `i` is not greater than `0`. So it prints `10` through `1`. In the `then` area of your condition, replace the `echo` with a `for` loop that prints from the argument (`$1`) to `1`.",
@@ -2237,7 +2238,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "02026b4b0fdd5fdce88c91f0227df6ffe833e277"
+              "241355dca1b216d426aa48357f0a884d9d357a61"
             ]
           },
           "content": "Run your script and use `10` as the first argument.",
@@ -2261,7 +2262,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a615bfb112b515582cb80f68838dc4292b10ec4a"
+              "6126cce3dc9c2f094a80dc10f75a64da30df1af8"
             ]
           },
           "content": "It works :smile: But I want it to pause for one second between each number. Check the `help` menu again to see if there's any commands that might help.",
@@ -2285,7 +2286,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "61080aa45588db1d290a55a1e2aa71a1feca75cf"
+              "014aabc574c5503daa69dd89e1697de9448cbbb9"
             ]
           },
           "content": "I'm not seeing the command I was hoping to. These are the built-in commands, where are the rest? Type `ls /` to look around.",
@@ -2309,7 +2310,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0213329923d30147c7899107c3966a457674bdb9"
+              "d82ca8bd656218ffe5907575adf6aa32bd594b0c"
             ]
           },
           "content": "The `/` listed what's in the root of the file system. I see a `bin` folder, `bin` stands for `binary`. View what's in it with `ls /bin`.",
@@ -2333,7 +2334,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8bd2e21ec94203de94b66ddaecd4da265a2e325d"
+              "a50af08919d2a43b0ec2de92aee01ce2d3ed0c87"
             ]
           },
           "content": "These are some non built-in commands. There's quite a few that should look familiar. One is `bash`, that's the one you used for the `shebang` in your scripts. I see one called `sleep`. View the manual of it.",
@@ -2359,7 +2360,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d1dd2da4099dd0cc7e03a7ad19554b357de5168d"
+              "426a8064ec6208aa155c30c084fce21bfca2815f"
             ]
           },
           "content": "At the top, it says you can pause execution for a number of seconds. Try it out by entering `sleep 3` in the terminal.",
@@ -2383,7 +2384,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "27d5e5707606d65cdddcb5a573d668acaa639984"
+              "c79160399d86f78cc796f68c6324566ac1e9c1fe"
             ]
           },
           "content": "That should work. In your `for` loop, use `sleep` to make the script pause for `1` second after each number is printed.",
@@ -2407,7 +2408,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1a7433314a1e66f76b2339eb2a0f581eb6abeb77"
+              "5492ebb6be0134afdc1bb9b8e5beb96ba70d444b"
             ]
           },
           "content": "Run your script and use `3` as the first argument.",
@@ -2431,7 +2432,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "445dc3eb25f56e65cf99f71e9d530bea8fefc556"
+              "5034214c23ac465f5e2a13523c6f8d24cd39c36f"
             ]
           },
           "content": "Awesome. Except it should print `0` instead of stopping at `1`. Change the condition in your for loop so that it checks for `i >= 0`.",
@@ -2455,7 +2456,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "58240c93feddb0250827de6980193d66cc5b2260"
+              "fa360a545724ee7c685643d6d1180c508b56361c"
             ]
           },
           "content": "Run your script with `3` as the argument again.",
@@ -2479,7 +2480,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "d3a79deb149dcf7f15ba8af4b4388ccd8fae4553"
+              "1b937fffbd2a99f3122b6053fad0802dffb79ac5"
             ]
           },
           "content": "Excellent. I want it to display a title like the other script. Make it so that it prints `~~ Countdown Timer ~~` before anything else. Include a new line before and after it like you did for the other title.",
@@ -2505,7 +2506,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d25678777840cae220de3c0d4cbdd523ac06a4c3"
+              "fb525967ea1b894a5e8000427f34c3e7cdf46472"
             ]
           },
           "content": "Run your script and use `1` as the first argument again to see the title.",
@@ -2529,7 +2530,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "8761e355b37ea62aac757b30affc143a63424587"
+              "c74216af92f9c7c99d01ca531f31e27abe5fdfb5"
             ]
           },
           "content": "This is fun. You can create a multiline comment like this:\n\n```sh\n: '\n  comment here\n  more comment here\n'\n```\n\nComment out your `for` loop with a multiline comment. I want to try and do this with a `while` loop.",
@@ -2554,7 +2555,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0ebe3da87a79db4fb48c179fed31e3cb428dc16e"
+              "70e1400854a054acfc66cd3adcccf176bdba0bd3"
             ]
           },
           "content": "View the `help` menu for the `while` command to see if you can find anything.",
@@ -2578,7 +2579,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "e671e36dd16c0067df4bcca97ad5e7ad46b12741"
+              "15ea4c4486b80dc48b7c89307841e8bf222d3db6"
             ]
           },
           "content": "It shows the syntax. First, below your comment, create a variable named `I` that is set to the value of your first argument. It will start there, then on each iteration of the `while` loop you can subtract `1` from it until it reaches `0`.",
@@ -2602,7 +2603,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "eb1efa0dbebc84b922d6c7ef23fb6ad0809f7c2d"
+              "19718a0c1c334dd15a1bed505b72d052568f70e9"
             ]
           },
           "content": "The menu showed that you can make a `while` loop like this:\n\n```sh\nwhile [[ CONDITION ]]\ndo\n  STATEMENTS\ndone\n```\n\nAdd a `while` loop below the `I` variable you made. The condition should be `$I -ge 0` and you should `echo` the `I` variable in the `do` statements.",
@@ -2625,7 +2626,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "7622c320763628ae709b37b8d97a5af51a155929"
+              "8766572e61398cd18dcf23588c0fd2ee0f3a8606"
             ]
           },
           "content": "`I` never changes here, so you would have an infinite loop. You can subtract one from `I` with double parenthesis (`((...))`) and the `--` operator. In your while loop, add `(( I-- ))` after you `echo $I` to subtract one from `I` on each pass.",
@@ -2648,7 +2649,7 @@
               "./countdown.sh"
             ],
             "commits": [
-              "c62f08fd4fb86a6bb95eaee3dc39e5ba88a26811"
+              "c2561789c0ba748ddb333328074dd5127fbb6878"
             ]
           },
           "content": "The last thing to do is to add the `sleep` again. In your `while` loop, add the code to make it `sleep` for `1` second. Add the code after the `(( I-- ))`.",
@@ -2672,7 +2673,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "58f2d837f1120acc6365b92777798e764043768d"
+              "11a7b65628c4d20ec0df394e7ee9e358f4c15a80"
             ]
           },
           "content": "Run the script and use 5 as the first argument.",
@@ -2696,7 +2697,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f4f51c3e32c86e530e207791da9ad69b5a56b078"
+              "d89177fe677a7650177c7c326654f3c4410005e8"
             ]
           },
           "content": "I think the countdown timer is finished. Feel free to try it with some other arguments. The next one is a bingo number generator. Use `touch` to create `bingo.sh` in the same folder as the others.",
@@ -2720,7 +2721,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f5efa75c3969087ea5999289527d0216efe7b276"
+              "f61cc3025bc4e0920561490287e1ec541d1838ae"
             ]
           },
           "content": "Give your file executable permissions like you did for the other two.",
@@ -2746,7 +2747,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "7da31a747fd594e2abaa37dc752be73406ef14a0"
+              "e573fb6dfcb5a1b0e141e6151e4e45d042df910a"
             ]
           },
           "content": "Add a `shebang` at the top of your new script. It should use `bash` again like other two.",
@@ -2773,7 +2774,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "2c17b372c5fe3b44e6b6d37858d0472e4930cadf"
+              "b002044531bfa79a8ac8039eaba2218b9d145227"
             ]
           },
           "content": "Add a comment below the `shebang` that says, `Bingo Number Generator`.",
@@ -2798,7 +2799,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "1448a625c6aef25748d5e723d9b0a7a0c3276e44"
+              "f6812255da0c59042b983ca7f3c8f74a508df997"
             ]
           },
           "content": "Before I forget, use a single `echo` command to print a title for this program. It should say `~~ Bingo Number Generator ~~` with an empty line before and after it.",
@@ -2826,7 +2827,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "ba6e934fa2b1f224484649c5af259408ed423d87"
+              "160620276d33b3722515c0762d530d5c42c97688"
             ]
           },
           "content": "In your script, create a `NUMBER` variable that equals `5`.",
@@ -2850,7 +2851,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "fc26562bcdcb6d7006b37fd74555bdb4b4010c1a"
+              "ccb0cf40e80055da4b9c0c19524d1b28c3f22967"
             ]
           },
           "content": "Below your new variable, use `echo` to print it to the screen.",
@@ -2875,7 +2876,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "42609c705a30472c516bb8226287b7c06c64218a"
+              "a23baafcf824c0a00f78d9c80f13a5fef0f5ed1f"
             ]
           },
           "content": "Run the script by executing it.",
@@ -2899,7 +2900,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e87dedb958f2b1e23b665a4cc5fe483bf2ae33ef"
+              "4b991456b6b313d4eef4c3df32397d64d7351615"
             ]
           },
           "content": "The numbers in bingo go up to 75, each number has a letter from the word `bingo` associated with it. You will need to randomly generate a number between 1 and 75. Bash may have something that can help you here. A shell comes with environment variables. View them by entering `printenv` in the terminal.",
@@ -2922,7 +2923,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1c04ac9cfe01c2e0c3d34e73c3889ba9046d6b64"
+              "8b88190537d0e32fcf22087d77170384c1d0ac7a"
             ]
           },
           "content": "These are all environment variables, they are predefined and loaded with each shell. Most of them aren’t very relevant, but it’s nice to know they’re there. One of them is `LANG`. Use `echo` to print it in the terminal.",
@@ -2946,7 +2947,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "871917fec8f99b96a64379ac4447d8520737cb78"
+              "76f6ad3ce9b03576a7e2fb151bbcd963915f5d1f"
             ]
           },
           "content": "View all variables in the shell with `declare -p`. `-p` stands for `print`",
@@ -2969,7 +2970,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ab81f7dd65d7441b517112cab9c9d6314ad77c9b"
+              "3f9c3a33ea27f3074d1e4a0d088a1f66b71f556a"
             ]
           },
           "content": "This list includes all the environment variables, and any others that may have been created in the current shell. There's one named `RANDOM`. Use `echo` to print it in the terminal.",
@@ -2993,7 +2994,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "fc8a2a6bd86e2ac9a2aeeb3e858999a5879b7470"
+              "2ad4aab3547a50b9a60cc8212545f170c481f576"
             ]
           },
           "content": "Back in your script, use the `RANDOM` variable to set `NUMBER` to a random number instead of `5`.",
@@ -3016,7 +3017,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "63ce1710cd8d8a2432a5b3cf245f2f9b579535a9"
+              "184730555401d1d6e8494f641fe639f4911bd2f8"
             ]
           },
           "content": "Run the script a few times in a row to make sure it's working.",
@@ -3040,7 +3041,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "b4e90bd56c3187e0a80fef9934ecb72cd7a0f547"
+              "c3685d7faddecb97eb9b574cbb11dddb1df3e5e6"
             ]
           },
           "content": "The `RANDOM` variable will generate a random number between 0 and 32767. You can use the `modulus` operator to make it in the range you want. In your script, change the `NUMBER` variable to `$RANDOM%75`.",
@@ -3063,7 +3064,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2e1fc5c351a6e3d046ea2a65f07906afd6e53697"
+              "d00258bd766abaecc0f3e3598e0b6923cacbcbd9"
             ]
           },
           "content": "Run the script again.",
@@ -3087,7 +3088,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "acc6e1e031d685a85b34d1e10e877a099fb7860e"
+              "233e6a95b97dae139700569b50bec1bfb6096754"
             ]
           },
           "content": "Bash sees everything as a string so it just printed the `%75` part literally. In the terminal, create an `I` variable equal to `0` (zero), so you can play with it and figure out how to do some calculations.",
@@ -3110,7 +3111,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8a0d7b1dbff12340df15f86636407e076fe87c1a"
+              "eb0e3f5a823b316a19c367bd2abce6bdeea6634d"
             ]
           },
           "content": "In the terminal, use `echo` to print your new variable.",
@@ -3134,7 +3135,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3c2a796825bc8acd86fb1e8ab7853deffed5ee70"
+              "7a309d0fd6aa04f7fcf814af9c6dae14283ce4d5"
             ]
           },
           "content": "I noticed that you used double parenthesis in the `while` loop of your countdown timer to subtract one from `I`. Type `(( I++ ))` in the terminal to see if anything happens.",
@@ -3157,7 +3158,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "87871682af35af79dab0f7bbfbd5c37c76f30944"
+              "2e8809b0dfa9cb8aa605ffff20711d2039623e1b"
             ]
           },
           "content": "There was no output. Use `echo` to print `I` in the terminal again.",
@@ -3180,7 +3181,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e9601f170f4eccd60afe15286cddb14071ea7fc5"
+              "50a90b236855352b803b4667190fa1ec1e1a6749"
             ]
           },
           "content": "The double parenthesis performed the calculation, changing the value of `I` from `0` to `1`. Enter `help let` in the terminal to see the operators you can use with the double parenthesis.",
@@ -3203,7 +3204,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "dac3280742c2721f5e3f00f4598190fe3e767cd6"
+              "8b444bc1fdcf793c0f91b9c86319e28c08cd79a0"
             ]
           },
           "content": "You used several of these now, including in the `for` loop from the countdown timer. Enter `(( I += 10 ))` in the terminal to increment `I` by `10`. Note that you don't need to prepend variables with `$` inside these parenthesis.",
@@ -3226,7 +3227,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5de05a33cff947ed62a9553fe13e83b0d638a7e3"
+              "ed7724678c7a49033997c071bed6ee2ec78132a2"
             ]
           },
           "content": "Use `echo` to print your `I` variable again.",
@@ -3249,7 +3250,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "548b8f02552389262e6b3319d9e1bef45bb697fd"
+              "c896e1f65a1c1043997533b04a251db6fd71f3d0"
             ]
           },
           "content": "It should have printed `11` for the value of `I`. Using the double parenthesis like you have been is good for changing variable values or making comparisons. It makes the calculation in place and provides no output. If you want to make a calculation and do something with the result, add a `$` in front like this: `$(( ... ))`. Type `$(( I + 4 ))` in the terminal to see what happens.",
@@ -3273,7 +3274,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d23e93d3fbcdcbb4a86b3ecb01dc37b57b91d82c"
+              "f4bcdfe25fe6643122f5c2f8dc7ce461ff0a635c"
             ]
           },
           "content": "It should say, `bash: 15: command not found`. It replaced the command with the result of the calculation. Effectively, trying to run `15` as a command. Enter the same command, but put `echo` in front of it. The command was `$(( I + 4 ))`",
@@ -3296,7 +3297,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "93ce541c3822f3d299dbe374d8016dd804044147"
+              "e079f61f37cfffa7125344243b8afaca67dc3eaf"
             ]
           },
           "content": "Again, it replaced the calculation with the result. So it was basically the same as if you entered `echo 15`. Use `echo` to print `I` to the screen again.",
@@ -3319,7 +3320,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "eea3bb88ab6e800b91d7886d41572273e7e2b6ad"
+              "1585768954a03006e8dfa1e8f58c4fb202dcf11c"
             ]
           },
           "content": "It should still have printed `11` for `I`. See the hints if it didn't. These double parenthesis with a `$` are how you can assign a variable to some calculation. In the terminal, create a `J` variable, and use the `$(( ... ))` syntax to set its value to `I - 6`.",
@@ -3343,7 +3344,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "39bd2565bfdc4499680eb6c0f14eeee75104afc8"
+              "6cc5d6838bea782b736cbae0ae31af17704699be"
             ]
           },
           "content": "Use `echo` to print `J`.",
@@ -3367,7 +3368,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4d8ce69f475d968b343712061b2143c93303f66c"
+              "cf1643cfcef7584766b7946eac6b4ff657fb01c9"
             ]
           },
           "content": "`J` should equal `5`. For some more practice, use `echo` to print the value `J * 5 + 25`.",
@@ -3390,7 +3391,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b70081bfb7a463266d6cd65edae0ae5c2937cbf1"
+              "2deead559e8cb44bd732cc89411515765f20c416"
             ]
           },
           "content": "It should have printed `50`. Print `J` with `echo` again.",
@@ -3414,7 +3415,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ff6857564a5c5e725839ccf1a069b76485752209"
+              "6a71afd33be81920ec53bd34eabaf49ab60f5cd9"
             ]
           },
           "content": "So, as a reminder, `(( ... ))` will perform a calculation or operation and output nothing. `$(( ... ))` will replace the calculation with the result of it. You made a few variables in this shell, view them with `declare -p`.",
@@ -3437,7 +3438,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ff33fe3861ccda6ef5b3135c28e9d90e1085d44b"
+              "c34f84a83956d09aa43263741d19377c26d992af"
             ]
           },
           "content": "`declare` can be used to create variables, but you are just going to use it to view them for now. If you scroll up a little, you should find your `I` and `J` variables in there. View `J` with `declare -p J`.",
@@ -3460,7 +3461,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "81b800f7bed2dedde8db2a55d8ce8e947effe4a4"
+              "8f749ed393abde09092dc350b8bfe5ff1c486ef8"
             ]
           },
           "content": "I saw `RANDOM` in that list, too. View it with `declare -p <variable>` like you did for `J`.",
@@ -3483,7 +3484,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1f07044accf20fcb0abe71640d440604881af6ff"
+              "5134424a064cb6a69ee0ab7499e8ab16d0f2b35e"
             ]
           },
           "content": "Okay, I think I finally know how to get the random number for the Bingo Number Generator. Use `echo` and `RANDOM % 75` to print a random number in the terminal.",
@@ -3508,7 +3509,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "cc090fe6c5339b756d153c6508e9b6c75ef802de"
+              "da97f0e1883c5104900a6504041b29dc5c7d7bc6"
             ]
           },
           "content": "One tiny problem, that calculation will give a number between 0 and 74. Enter the same command in the terminal, but add `1` to the calculation to get a random number between 1 and 75.",
@@ -3531,7 +3532,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "e15f70ffb5a352220a56d8bb90c68755ac5604c2"
+              "8ec3c9dbc3d1c39e8a28aa82955a0e7937600a4c"
             ]
           },
           "content": "Back in your `bingo.sh` script, change the `NUMBER` variable so that it starts as a random number between 1 and 75 using the syntax you have been practicing.",
@@ -3556,7 +3557,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ea498b80f551013eb971a579ed44f10015d68e8f"
+              "4b9f589d3f7fd407704e30c23118f4c3fa3f6ecd"
             ]
           },
           "content": "Run your script a few times in a row to make sure it's working.",
@@ -3581,7 +3582,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "9c54a2ac34a433b25f2dc0617fe27fed5e565a17"
+              "3de64e66c183ba76ff3fdfd9989985ef89f0bbff"
             ]
           },
           "content": "Next, create a `TEXT` variable and set the value to `\"The next number is, \"`. When the script is finished, the output will be something like `The next number is B:15`.",
@@ -3605,7 +3606,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e81187bbe7a40ccb6e0646c61a82b0bfd88b483c"
+              "9c3dc72d2c625928502cc904e8b570e7334a7ab7"
             ]
           },
           "content": "The letter that goes with the random number depends on what the number is. If it's 15 or less, it will be a `B`. I saw some comparisons in the `help let` menu, take a look at it again.",
@@ -3628,7 +3629,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "5894d82be1bac4f4e5e71d3d85bd7be044c8ab54"
+              "95df0dfebab1128cfad964eaf707a645bb9b97fc"
             ]
           },
           "content": "You used the double square brackets with your `if` statement in the last program, but you can use the double parenthesis with these operators as well. In your script, create an `if` statement that uses double parenthesis for the condition. Check if the number variable is less than or equal to 15. If it is, use your two variables to print `The next number is, B:<number>`.",
@@ -3656,7 +3657,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "d3c1d8b68b0cf86d55fa6c5c5df42b1d7ddab8b6"
+              "f16aa4462ca66e6d5aa3497d6762942f713a0536"
             ]
           },
           "content": "`if` statements can have an \"else if\" area like this:\n```sh\nif (( CONDITION ))\nthen\n  STATEMENTS\nelif [[ CONDITION ]]\nthen\n  STATEMENTS\nfi\n```\n\nUsing the double square brackets this time, add an `elif` condition that checks if the number variable is less than or equal to `30`. If it is, use your two variables again to print `The next number is, I:<number>`",
@@ -3684,7 +3685,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "db2d4a56cd9bc2667658037a01718f769a5f844b"
+              "b4166345c91dd10c40a5e75cd3cca464af048997"
             ]
           },
           "content": "You can add as many `elif` sections to an `if` statement as you want. Add another `elif`, below the last, one that uses the double parenthesis to check if the number variable is less than 46. If it is, use your two variables to print `The next number is, N:<number>`",
@@ -3714,7 +3715,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "ef6c8af0275f76fafa99615d4262c5d33036053d"
+              "64e1814522ff7e16b98e71a2f25065b092ae6277"
             ]
           },
           "content": "Run your script if you want to see the output. It should print one of the sentences if the random number is less than 46. It may take a couple tries. Add another `elif`, below the last one, that uses double square brackets to check if the number variable is less than 61. If it is, use your two variables to print `The next number is, G:<number>`",
@@ -3742,7 +3743,7 @@
               "./bingo.sh"
             ],
             "commits": [
-              "970bd492554dd0e5ddb2c556d128bbd8542e44e3"
+              "dae11871e995ca83f1855dc55651983a4d597321"
             ]
           },
           "content": "One more case to handle. Add an `else` at the bottom of the `if` that uses your two variables to print `The next number is, O:<number>`.",
@@ -3769,7 +3770,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "40d5d53264c0124a269b27750897746f1a4d9f6b"
+              "2c986eb511c51c43532bf7780a6ef850fc9720e7"
             ]
           },
           "content": "Run your script a few times and make sure it's working.",
@@ -3794,7 +3795,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "05937efc586b3df610f6e7eefa0ef20a64013249"
+              "ea544a2b1e68030e7f2c1d388ac1dde57a8d94bc"
             ]
           },
           "content": "I think the generator is done :smile: The next project is a fortune teller. Use the `touch` command to create `fortune.sh` in the same folder as the other scripts.",
@@ -3818,7 +3819,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "56f571a4f43a6e71a601fcf4ebf8d4bfb52088a8"
+              "d7db462a28f08be7ac0535925048a482d58fb66a"
             ]
           },
           "content": "Give your file executable permissions.",
@@ -3844,7 +3845,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "bdaffa732269d11ecb04e51ddb855c05413ff5a4"
+              "5594a1813efb2c10c1b0e3d0d6a0e93a761af1db"
             ]
           },
           "content": "Add a `shebang` at the top of your new file that uses `bash` again.",
@@ -3871,7 +3872,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "74b94c50052e212a1b370c6e1faa0cf4658de6c5"
+              "77515c832bd85e4bd9e9d4d728fff1b5b7cd1ff1"
             ]
           },
           "content": "Add comment `Program to tell a persons fortune`",
@@ -3896,7 +3897,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "7469f45373b109a99f54aeaccd497f90c1d873d8"
+              "6951b5d0829374ac88704255d3ebf90c2f13cf21"
             ]
           },
           "content": "Add a title for this one like the others. This one should say `~~ Fortune Teller ~~`. Don't forget the empty line before and after it.",
@@ -3925,7 +3926,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3066177e1a5f8620d2ccb9f3dc9e1e532c0c0c1c"
+              "0a8db77375a7013e15c916a9db9575afc2c30c5c"
             ]
           },
           "content": "Run the file once to make sure it's working.",
@@ -3949,7 +3950,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0a1d0f6c14099ba44e4df778fea114468ae514ba"
+              "623ed42d5371694d5d0ba8603c21879616ea4a75"
             ]
           },
           "content": "This program will have an array of responses. One will be printed randomly after a user inputs a question. Practice first :smile: In the terminal, create an array like this: `ARR=(\"a\" \"b\" \"c\")`",
@@ -3973,7 +3974,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bddd531e860b939f7bc12ece9224d37d8f4a11b6"
+              "f453da591e72f940c065a6d08a08df5adadc8bd7"
             ]
           },
           "content": "Each variable in the array is like any other variable, just combined into a single variable. In the terminal, print the second item in the array with `echo ${ARR[1]}`. Note that the first item would be index zero.",
@@ -3996,7 +3997,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "be32cb5ccbfb898d7ce9ee064a287574a4c4fb25"
+              "ecccc60a74c8adfd577fe37ad9da3bc3b35be18d"
             ]
           },
           "content": "If you recall, you were able to print all the arguments to your `countdown.sh` script with `echo $*`. `echo $@` would have worked as well. Similarly, you can use the `*` or `@` to print your whole array. In the terminal, use `echo` to print all the items in your array.",
@@ -4020,7 +4021,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "553fffc7b63623c499e79369490545da0e51c6cc"
+              "0efbb3d3c7480a490818f7645695cffe66e501c4"
             ]
           },
           "content": "The variable must be in that `declare` list. View your array variable using the `declare` command and the `-p` flag.",
@@ -4044,7 +4045,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "d7b6ee199453ad9409294fafe8ac67471e686e8a"
+              "1dda61c8b704603d8a5b4eea2f49e296c9fe0d8b"
             ]
           },
           "content": "The `-a` next to it stands for `array`. In your script, create an array named `RESPONSES`. Give it these six values: `Yes`, `No`, `Maybe`, `Outlook good`, `Don't count on it`, and `Ask again later`.",
@@ -4070,7 +4071,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "5bca1d5cca2ce491e12555497904914a35a9a46a"
+              "a3b1013e7d8e02f2cbe242ae89b7188a742612a3"
             ]
           },
           "content": "In your script, use `echo` to print the last item in the array.",
@@ -4095,7 +4096,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4f2e0232c97ee0ed73c58b730ed50206843c4008"
+              "d7de1925b419877fa9437c7dcc5d75b9d230b3cb"
             ]
           },
           "content": "Run it to see the output.",
@@ -4119,7 +4120,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "b6d91c0644a3ec109427b8801a472d50817c80a5"
+              "b683256070e75446442d0afdefe0349cb257d1f6"
             ]
           },
           "content": "You will randomly print one of the values. In your script, create a variable named `N`. Set it equal to a random number between `0` and `5`, the first and last index of the array.",
@@ -4146,7 +4147,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "cce4e835611bb7e4720688677c076da3fd6b8356"
+              "1fd559d54ea22ed048bddcd0fbacb7e8e128e0f3"
             ]
           },
           "content": "Change your `echo` command to print the item in the array whose index is the random number you generated.",
@@ -4171,7 +4172,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "582b7e308b12dc12b7bfed17689e39533674f1c4"
+              "d4e94be608b78fa47cd1e1814559feb6c1c4ffed"
             ]
           },
           "content": "You will create a function to generate an answer. Check the `help` menu to see if you can find anything.",
@@ -4195,7 +4196,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f9bb0cb18a87a4e78fb4428299c4671d9cca734c"
+              "be87549563c4f1e5ea966faa38530ae1777a0d69"
             ]
           },
           "content": "See any that might help? There's one that says `function`. See if you can find out more about it.",
@@ -4220,7 +4221,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "78193343a1c46ba2e15f5d459dcc0efa6009dc6c"
+              "b316e208aa6e0df6d77129b17ab3316feae04824"
             ]
           },
           "content": "It looks like you can create a function like this:\n\n```sh\nFUNCTION_NAME() {\n  STATEMENTS\n}\n```\n\nAdd an empty function named `GET_FORTUNE` to your script. Make sure the repsonse you are printing is the last thing in the script.",
@@ -4244,7 +4245,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "e8aac92102e316265f55df4375ae3a384c3118be"
+              "6c03b37bfc570c024021c23063aa4ef6d75546d7"
             ]
           },
           "content": "In your function, use `echo` to print `Ask a yes or no question:`",
@@ -4268,7 +4269,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "86ec1227e4daf2f124be3020fa9f90bc37a80f0b"
+              "3f1f7241dc0c31862b81378d7a5cfa181888b493"
             ]
           },
           "content": "Call your function by putting the name of it below where you create it. No `$` needed. Make sure the reponse you are printing is at the bottom of the file.",
@@ -4292,7 +4293,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "101c22447e413f9d3b64a56c2f24b8dd5167ff95"
+              "e420d6391ab95417d69218db7f4ecdaafc134a56"
             ]
           },
           "content": "Run your script to make sure it's working.",
@@ -4316,7 +4317,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "b43ef4b553d00d2f9ea068d0d2a2719cec4b916b"
+              "94d94c79258678006b173a52913ab43cea4e9a0f"
             ]
           },
           "content": "In your function after you print the sentence, use `read` to get user input into a variable named `QUESTION`.",
@@ -4341,7 +4342,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b30ac6be1d4ccdc605a8c584568366c657323a3d"
+              "8636c61453e2c63e501e0c8c7e6a526b15c7da11"
             ]
           },
           "content": "Run the script again to test it out. Enter a question when it asks.",
@@ -4365,7 +4366,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2087b488802e54fa2477586eea0d8acf4b22645a"
+              "b22ac4a5cdc58fcfbd4d4ffbf0462072493a1825"
             ]
           },
           "content": "I want to make sure the input is a question. You are going to add a loop that asks for input until the input ends with a question mark. View the `help` menu to see if you can find an appropriate loop.",
@@ -4388,7 +4389,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ddd047b8a130869aa0f23576775a71d605d087fa"
+              "265f1df44734c6f7b489d8bf54fac2acb1470aa6"
             ]
           },
           "content": "View more about that `until` command. That might be the one to use here.",
@@ -4412,7 +4413,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "bde9aa079e86a28069bc0d0ad5c16426d9668a73"
+              "b7a1a25197f0dcab9f4cbcd0cea860bb725511fb"
             ]
           },
           "content": "The `until` loop is very similar to the `while` loop you used. It will execute the loop until a condition is met. Here's an example:\n\n```sh\nuntil [[ CONDITION ]]\ndo\n  STATEMENTS\ndone\n```\n\nAdd an `until` loop below your function. Use the double brackets to check if `QUESTION` is equal to `test?`. Move the `GET_FORTUNE` function call to the statements area of the loop. It should run the function until you input `test?` as the question.",
@@ -4440,7 +4441,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e64ba01e8f3b32627b0b501d8600b8062c2c7623"
+              "8d0d909bde054312f6066aea2e2fc7de747bb7c7"
             ]
           },
           "content": "Run the script and enter something other than `test?`. Then enter `test?` after it asks for a question the second time.",
@@ -4464,7 +4465,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d3a6d39361bd47b7e09ab82b3a83f5da02ca8bff"
+              "bfb64b6385a81ee408b29f19adb6bd91fe8a1954"
             ]
           },
           "content": "View that `help [[ expression ]]` menu again. You need to find out how to test if the input ends with a question mark (`?`).",
@@ -4487,7 +4488,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "02bd1fd65afdbf11ccd7982beb8b676c15d81d5d"
+              "17977bd8b2d9397bb01547bfcb6dbbe5708799ae"
             ]
           },
           "content": "Let's play with these again. You can test if two strings are the same with `==`. In the terminal, use the `[[ ... ]]; echo $?` syntax you used before to test if `hello` is equal to `hello`.",
@@ -4511,7 +4512,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e03559ace93eefce23a57fa34c700c65ee8e7bcd"
+              "96a94a93b8358753f191daa89b335f545a3cb838"
             ]
           },
           "content": "Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal to `world`.",
@@ -4536,7 +4537,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5a5766c95f54fb361192c8f55a1ba8259a13304e"
+              "df02e2e7b008ca5bd0fd4bb0aac2abd0d667a9f8"
             ]
           },
           "content": "False. An import operator in that menu is `=~`. It allows for pattern matching. Using the same syntax but with this operator, check if `hello` contains the pattern `el`.",
@@ -4561,7 +4562,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0419842e90339274a3afeecfcaab2bc84679e390"
+              "3c4569cd60ecc23bbda675a4e4ef7ea9b87d173d"
             ]
           },
           "content": "True. The condition was checking for `el` within the word `hello`. Using the same syntax, check if `hello world` contains the pattern `lo wor`. You will need to put them both in quotes so it recognizes the spaces.",
@@ -4586,7 +4587,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ff3c96c957c5a60948a895b5518a2267e3d2ee19"
+              "a319dd1fe827121bbf17c95b621b2b8c7c3532fc"
             ]
           },
           "content": "Your patterns have been checking for literal matches, `el` and `lo wor`. You can use regular expression characters as well, but you can't put the pattern in quotes when you do. Using the same syntax, check if `hello world` starts with an `h` by using `^h` as the pattern.",
@@ -4610,7 +4611,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3eeacb37522e5db17e75bef959db5aab40e17f5f"
+              "746b06a16e9833003f83b02787c1762e8e6ba4be"
             ]
           },
           "content": "Do it again, but use `^h.+d$` as the pattern to see if the string starts with an `h`, has at least one character after it, and ends with a `d`.",
@@ -4636,7 +4637,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e6b936baa18e395941691900b2abf103e94b9251"
+              "dff21c36f05edbbed439977157439e7b4b9b9de1"
             ]
           },
           "content": "In the terminal, create a variable named `VAR` that equals `hello world`.",
@@ -4659,7 +4660,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5a8617255ddd704cc2f308898c2808e6d42385ab"
+              "3aad4db218f986446ba0e8c82bc0e0a51cca1293"
             ]
           },
           "content": "Use `echo` to print the variable you just created.",
@@ -4682,7 +4683,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a7818940276b3762954b8d492548cca6d23b5e18"
+              "56d83d0cd5b3bbf84ebb730e247b40ebf28da3dc"
             ]
           },
           "content": "Using the `[[ ... ]]; echo $?` syntax, check if your variable is equal to `hello world`.",
@@ -4708,7 +4709,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fdf1c73c3e2cb8e8ffa75e578c05e5c739af3c80"
+              "a6d2312d8d9cb702ba7edbff045f5a2efb11ad13"
             ]
           },
           "content": "Using the same syntax, check if your variable ends with `?` by using the pattern `\\?$`.",
@@ -4734,7 +4735,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e3b099447c5bde81cd044875576c22843022821c"
+              "7ba9227d7503ec7a09d60c89ba003e140bba4150"
             ]
           },
           "content": "It doesn't end with `?`. Just to make sure I don't have the pattern wrong, check if `test?` ends with `?`.",
@@ -4761,7 +4762,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "4e1754f8fb8b223c26b0e1190cdca4c15d9a0fa2"
+              "2343279c3ec7a75dcba124b8ed351d3b847dbe74"
             ]
           },
           "content": "I think that will work. Back in your script, change the `until` condition to see if your variable ends with `?`.",
@@ -4787,7 +4788,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a724ace5e06b1a27a07ccc2cc5cf28c2e2d6cf12"
+              "223ecb2c295fa1644e71ead61109f23f2237b074"
             ]
           },
           "content": "Run the script and input something that doesn't end with `?` the first time, then something that does the second.",
@@ -4811,7 +4812,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "0abc48be14b4266f44d6aa96d43ad36029079f99"
+              "ee7edd971227a17b9068f8700734ef4c07e7e315"
             ]
           },
           "content": "I know that it asks the same thing if the input isn't what you want. You should let users know that it needs to end with `?`. Add an `if` condition in your **function** that checks `if [[ ! $1 ]]`. Put the existing `echo` statement in the `then` area and make sure the existing `read` is below the whole `if` condition.",
@@ -4835,7 +4836,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "8c60c0681fda82d45451eccea3056af16c134625"
+              "0071ab68833e7b96f1c350db04505025790e34d6"
             ]
           },
           "content": "You can pass arguments to functions like you did with your script. This condition will check if one isn't passed and print the sentence. Add an `else` to your `if`. Use `echo` to print `Try again. Make sure it ends with a question mark:` if the condition fails.",
@@ -4859,7 +4860,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "65ce60d45eeef4a4ccb35492238a02d7ea9364dc"
+              "d4451ac2176dbd9ac0041cde537fcdd5c3697e55"
             ]
           },
           "content": "Now, your function will print one thing if you pass it any argument, and something else if not. In the `until` loop, add `again` as an argument to where you call the function.",
@@ -4884,7 +4885,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "e71c583eb5d8f88d85e1616c3308ab64f9ff2057"
+              "68be1c2dcd6ee9b36abe4c7ca94376a1b9eb2de0"
             ]
           },
           "content": "Now, each time the function is called in the `until` loop, it will pass `again` as an argument and print the `Try again...` sentence. Before your `until` loop, call the function without an argument so the first time it runs, it prints the initial sentence.",
@@ -4907,7 +4908,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e0ccae72fc0c6710fa24f9deeb170e491c95acb1"
+              "c6d9d2bc9865306125f5d98660f7035cec5aee30"
             ]
           },
           "content": "Run the script and enter something without a question mark when it asks the first time. Use a question mark the second time.",
@@ -4931,7 +4932,7 @@
               "./fortune.sh"
             ],
             "commits": [
-              "79165e4311175e4c5960952cee35d925dedd2efe"
+              "321e2cd4502df41267ecbb33c05ceea0644eab14"
             ]
           },
           "content": "Awesome. One last thing. Add an empty line in front of where you print the response.",
@@ -4958,7 +4959,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "784325cb951a18e542faff1a8724991688f5bd34"
+              "ba710bb0a33b2ca85225a0f33505c8ab68a8d2f6"
             ]
           },
           "content": "Run the script one more time to see if you like the output.",
@@ -4982,7 +4983,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a30b2f4f06b73155bedf1c484b90d8f26a2aeea8"
+              "baed26b4a883e347ac934ee6c7f17544c0864525"
             ]
           },
           "content": "Excellent. One last program to make. Use `touch` to create a new file named `five.sh` in the same folder as the others.",
@@ -5006,7 +5007,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e7b831d2d94c1ea2bfc8a2817c4418533016ab53"
+              "8871c76ade36df20b70b54dd445a704f375cbce2"
             ]
           },
           "content": "Give your file executable permissions.",
@@ -5032,7 +5033,7 @@
               "./five.sh"
             ],
             "commits": [
-              "8c14007232c46456d9c94359911c55f5a68e52c6"
+              "76dae6454fe94897680bbff107cbaad866f963bc"
             ]
           },
           "content": "Add a `shebang` to the new script that uses `bash` like the others.",
@@ -5059,7 +5060,7 @@
               "./five.sh"
             ],
             "commits": [
-              "18a24f23c97617450ffd9ae4e4a23ddf80632086"
+              "ed6462b82c4e4857a441ff230fb520cf6fd367ec"
             ]
           },
           "content": "Add a comment below the `shebang` that says, `Program to run my other four programs`",
@@ -5084,7 +5085,7 @@
               "./five.sh"
             ],
             "commits": [
-              "e9ded001c8be18c47838808da769764c6ce5da9b"
+              "5cb8417efa55f29ea4a88db08a62aa452414dd5c"
             ]
           },
           "content": "This program will run all the programs you made so far consecutively. Add the command to run the `questionnaire.sh` file.",
@@ -5108,7 +5109,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e500278885adbcfba3baa9548c52c1037d30b7f6"
+              "7808757cbf8c839ffbf545b0c8c53a7346dbc430"
             ]
           },
           "content": "Run the file to see if it works. Enter input when it asks.",
@@ -5132,7 +5133,7 @@
               "./five.sh"
             ],
             "commits": [
-              "0fc711234858ddf88e4c5cf71a413f056ce7e036"
+              "93c0f33a84976ec749d885888238cd10fcacd780"
             ]
           },
           "content": "Add commands to run the rest of your scripts in the file. They should be in this order: `questionnaire`, `countdown`, `bingo`, and `fortune`. Don't forget that your `countdown.sh` file needs an argument, so put a `3` next to it.",
@@ -5155,7 +5156,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "11ad6226241412972147ad5139f09e2d3435b0d4"
+              "efbac3d83741d715eb42acf2d206e0403aa7747a"
             ]
           },
           "content": "Okay, use `clear` to empty out what's in the terminal before the big moment.",
@@ -5178,7 +5179,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "13248868f215d902fa007f12a6096def3ed316b0"
+              "c556437c2d0ca56f18a25665e08c42470fe7085d"
             ]
           },
           "content": "Run the script and enter input when it asks.",
@@ -5202,7 +5203,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bdde0d27523d15c83812ca5229ba1dbcb20738a2"
+              "451a36c1fbdafd67667eb5b0850cd753aafb2a97"
             ]
           },
           "content": "Cool. I think all the scripts are done. View the `help` menu again I want to explore one more thing.",
@@ -5225,7 +5226,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "71c34ccc32320179cfe0258b8efd288a842ef6ef"
+              "8988a3838299205c0665abb22211bc8d8786aa23"
             ]
           },
           "content": "View more about that `type` command.",
@@ -5249,7 +5250,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9896ffc40821762cb159b9e2414bdbdf75c9d8dd"
+              "604a60ba7980cb2f93568d3de644a1c0de636f5b"
             ]
           },
           "content": "It says you can view the type of a command with `type <command>`. Just for fun, lets take a look at the type of a few different commands. View the type of `echo`.",
@@ -5272,7 +5273,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "40c037ea9d4181b14ba3a139705f8c46f704339b"
+              "20fa9b569a294026c52646f84a0f25270ecc787e"
             ]
           },
           "content": "View the type of the `read` command.",
@@ -5295,7 +5296,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "de546d8f2e0c294fc036db2782a4e515a9149581"
+              "34f8e822b8025e76dfdbd64788ff5da455b168a5"
             ]
           },
           "content": "View the type of `if`",
@@ -5318,7 +5319,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "def5e14d41bf97eb74e72b1f5df36c6b9bd98888"
+              "d12c2252d5e0506566ac3503de07aba967a6e0fa"
             ]
           },
           "content": "View the type of `then`",
@@ -5341,7 +5342,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "39efd228bd4bee41898480e7d974988629324554"
+              "285cfb6da0f2510182e5918256d24b9018c1ffcb"
             ]
           },
           "content": "Those were all from the `help` menu and described as a `shell builtin` or `shell keyword`. View the type of `bash`",
@@ -5364,7 +5365,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "635472ea72a895a5f52a7ccf560c7bf1ade566fe"
+              "9e02dce8eeebb72c78e176dbf02d538a266f92b0"
             ]
           },
           "content": "That's the location of the `bash` command. View the type of `psql`.",
@@ -5387,7 +5388,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "77a3a05988fd420a1531b436fe1fb37c18f0af91"
+              "bdc65c71bbc2af49555377e473b685e3a698d688"
             ]
           },
           "content": "It's showing the location of the commands. View the type of your `./five.sh` file.",
@@ -5410,7 +5411,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "414d9d4471a0ec106a1f1fdf384c7228eb002067"
+              "770f22a7f8ffd6fb35af172fdb698d209b3c894c"
             ]
           },
           "content": "Last step, close the terminal with the `exit` command. Thanks and happy coding!",
