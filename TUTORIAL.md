@@ -29,10 +29,13 @@ You can run commands in the terminal or put them in a file to be run as a script
 
 ### 30.1
 
-To start, add `echo hello questionnaire` at the top of the file you just created.
+To start, open the file in the main editor by clicking the filename in the left side panel.
+Then, add the text `echo hello questionnaire` at the top of the file.
 
 #### HINTS
 
+- If the left side panel isn't visible, click the icon that looks like two pieces of paper 
+at the top left to open the panel. Then, click on your file to open it
 - Add the suggested text to the `questionnaire.sh` file
 
 ## 35. sh questionnaire.sh
