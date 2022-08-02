@@ -2276,7 +2276,7 @@ GET_FORTUNE() {
 
 ### 1200.1
 
-Call your function by putting the name of it below where you create it. No `$` needed. Make sure the reponse you are printing is at the bottom of the file.
+Call your function by putting the name of it below where you create it. No `$` needed. Make sure the response you are printing is at the bottom of the file.
 
 #### HINTS
 
