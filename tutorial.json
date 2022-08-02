@@ -4224,7 +4224,7 @@
               "b316e208aa6e0df6d77129b17ab3316feae04824"
             ]
           },
-          "content": "It looks like you can create a function like this:\n\n```sh\nFUNCTION_NAME() {\n  STATEMENTS\n}\n```\n\nAdd an empty function named `GET_FORTUNE` to your script. Make sure the repsonse you are printing is the last thing in the script.",
+          "content": "It looks like you can create a function like this:\n\n```sh\nFUNCTION_NAME() {\n  STATEMENTS\n}\n```\n\nAdd an empty function named `GET_FORTUNE` to your script. Make sure the response you are printing is the last thing in the script.",
           "hints": [
             "Add this to your script:\n```sh\nGET_FORTUNE() {}\n```",
             "Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file"
@@ -4272,7 +4272,7 @@
               "3f1f7241dc0c31862b81378d7a5cfa181888b493"
             ]
           },
-          "content": "Call your function by putting the name of it below where you create it. No `$` needed. Make sure the reponse you are printing is at the bottom of the file.",
+          "content": "Call your function by putting the name of it below where you create it. No `$` needed. Make sure the response you are printing is at the bottom of the file.",
           "hints": [
             "Add `GET_FORTUNE` below where you create your function to call it",
             "Your `echo ${RESPONSES[$N]}` command should be at the bottom of the file"
