@@ -2422,7 +2422,7 @@ Exit status of `0`, it was true. Using the same syntax, test if `hello` is equal
 
 ### 1310.1
 
-False. An import operator in that menu is `=~`. It allows for pattern matching. Using the same syntax but with this operator, check if `hello` contains the pattern `el`.
+False. An important operator in that menu is `=~`. It allows for pattern matching. Using the same syntax but with this operator, check if `hello` contains the pattern `el`.
 
 #### HINTS
 

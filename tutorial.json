@@ -4540,7 +4540,7 @@
               "df02e2e7b008ca5bd0fd4bb0aac2abd0d667a9f8"
             ]
           },
-          "content": "False. An import operator in that menu is `=~`. It allows for pattern matching. Using the same syntax but with this operator, check if `hello` contains the pattern `el`.",
+          "content": "False. An important operator in that menu is `=~`. It allows for pattern matching. Using the same syntax but with this operator, check if `hello` contains the pattern `el`.",
           "hints": [
             "Use the `[[ ... ]]; echo $?` syntax",
             "Use the `=~` operator with it",
