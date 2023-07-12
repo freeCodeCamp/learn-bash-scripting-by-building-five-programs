@@ -241,7 +241,7 @@
               "d511b6744933d3a9c7e8b08ff0e17c0184a74fb7"
             ]
           },
-          "content": "Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`",
+          "content": "Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to bash. Execute your script with `./questionnaire.sh`. You will get a permission denied error.",
           "hints": [
             "Type `./questionnaire.sh` in the terminal and press enter",
             "Make sure you are in the `project` folder first",

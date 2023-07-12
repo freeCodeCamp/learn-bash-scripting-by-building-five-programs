@@ -86,7 +86,7 @@ That's the absolute path to the `bash` interpreter. You can tell your program to
 
 ### 70.1
 
-Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to `bash`. Run your script by executing it with `./questionnaire.sh`
+Now, instead of using `sh` or `bash` to run your script. You can run it by executing the file and it will default to bash. Execute your script with `./questionnaire.sh`. You will get a permission denied error.
 
 #### HINTS
 
