@@ -6,7 +6,7 @@
   "editor.acceptSuggestionOnEnter": "off",
   "editor.autoClosingBrackets": "never",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.hover.enabled": false,
   "editor.inlineSuggest.enabled": false,
