@@ -25,3 +25,7 @@ Whenever a new version is created, add the new branch name and the changes here
 - Restructure commits to use new style. Instead of loading a new test file, and commenting out the old one on each commit, this loads all the tests in the `INIT` commit and uses mocha settings to only run tests in a specific file. The commits now just change the test file that should run.
 - There was an issue with the last commit not loading after using the reset button in a tutorial. I added a final commit at end that seems to have resolved it.
 - Add instructions for [issue](https://github.com/freeCodeCamp/freeCodeCamp/issues/45683)
+
+## [v2.0.0]
+
+- Add Gitpod config
