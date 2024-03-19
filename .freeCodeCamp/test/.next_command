@@ -29,3 +29,4 @@ touch questionaire.sh
 ls --color=auto
 rm questionaire.sh
 touch questionnaire.sh
+sh questionnaire.sh
