@@ -47,3 +47,9 @@ ls --color=auto -l
 ls --color=auto -l
 ./questionnaire.sh
 ./questionnaire.sh
+VARIABLE_NAME=QUESTION1
+QUESTION1="What's your name?"
+QUESTION1 = "What's your name?"
+QUESTION1
+.question1
+QUESTION1="What's your name?"
