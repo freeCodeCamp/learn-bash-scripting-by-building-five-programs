@@ -6,5 +6,5 @@ echo Hello $NAME.;
 QUESTION2="Where are you from?";
 echo $QUESTION2
 read LOCATION;
-echo $FROM;
+echo Hello $NAME from $LOCATION.;
 
