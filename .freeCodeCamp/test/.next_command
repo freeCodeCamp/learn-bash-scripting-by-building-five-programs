@@ -57,3 +57,6 @@ git push
 git push
 git push
 git push
+$QUESTION1
+echo $question1
+echo $QUESTION1
