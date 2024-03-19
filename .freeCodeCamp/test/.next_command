@@ -22,3 +22,10 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 echo hello bash
+touch > questionaire.sh
+touch --help
+touch questionaire.sh
+\l
+ls --color=auto
+rm questionaire.sh
+touch questionnaire.sh
