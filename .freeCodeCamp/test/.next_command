@@ -68,3 +68,4 @@ echo Hello $NAME
 .
 .
 ./questionnaire.sh
+./questionnaire.sh
