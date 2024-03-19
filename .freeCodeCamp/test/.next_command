@@ -41,3 +41,4 @@ which bash
 sh questionnaire.sh
 sh ./questionnaire.sh
 ./questionnaire.sh
+ls --color=auto -l
