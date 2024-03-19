@@ -32,3 +32,9 @@ touch questionnaire.sh
 sh questionnaire.sh
 bash questionnaire.sh
 which bash
+which questionnaire.sh
+which sh
+which universe
+which touch
+__vsc_prompt_cmd_original
+which bash
