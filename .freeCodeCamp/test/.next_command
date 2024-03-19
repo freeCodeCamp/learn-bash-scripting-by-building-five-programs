@@ -62,3 +62,5 @@ echo $question1
 echo $QUESTION1
 ./questionnaire
 ./questionnaire.sh
+./questionnaire.sh
+echo Hello $NAME
