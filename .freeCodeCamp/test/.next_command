@@ -38,3 +38,6 @@ which universe
 which touch
 __vsc_prompt_cmd_original
 which bash
+sh questionnaire.sh
+sh ./questionnaire.sh
+./questionnaire.sh
