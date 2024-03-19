@@ -64,3 +64,4 @@ echo $QUESTION1
 ./questionnaire.sh
 ./questionnaire.sh
 echo Hello $NAME
+./questionnaire.sh
