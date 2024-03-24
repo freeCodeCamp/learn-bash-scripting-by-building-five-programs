@@ -5,5 +5,5 @@ if [[ $1 -lt 5 ]]
 then
   echo true
 else
-  echo false
+  echo false 
 fi
