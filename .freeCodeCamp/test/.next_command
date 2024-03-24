@@ -51,3 +51,4 @@ man --help
 man echo
 ./questionnaire.sh
 __vsc_prompt_cmd_original
+./questionnaire.sh
