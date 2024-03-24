@@ -75,3 +75,4 @@ __vsc_prompt_cmd_original
 ./countdown.sh arasdf
 ./countdown.sh 4
 ./countdown.sh 5
+help
