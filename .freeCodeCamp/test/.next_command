@@ -58,3 +58,5 @@ __vsc_prompt_cmd_original
 touch countdown.sh
 chmod 755 countdown.sh
 ./countdown.sh
+./countdown.sh 1 2 3
+./countdown.sh arg1 arg2 arg3
