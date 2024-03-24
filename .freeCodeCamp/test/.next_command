@@ -73,3 +73,4 @@ __vsc_prompt_cmd_original
 ./countdown.sh
 ./countdown.sh arg1
 ./countdown.sh arasdf
+./countdown.sh 4
