@@ -68,3 +68,5 @@ man if
 help if
 __vsc_prompt_cmd_original
 ./countdown.sh arg1 arg2 arg3
+./countdown.sh arg1 arg2 arg3
+./countdown.sh
