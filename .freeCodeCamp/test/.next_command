@@ -33,3 +33,4 @@ chmod 755 questionnaire.sh
 ls --color=auto -l
 ls --color=auto -l
 ./questionnaire.sh
+ls --color=auto -l
