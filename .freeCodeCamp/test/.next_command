@@ -31,3 +31,4 @@ __vsc_prompt_cmd_original
 ./questionnaire.sh
 chmod 755 questionnaire.sh
 ls --color=auto -l
+ls --color=auto -l
