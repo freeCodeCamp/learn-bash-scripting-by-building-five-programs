@@ -110,3 +110,6 @@ man echo
 ./questionnaire.sh
 ./questionnaire.sh
 touch countdown.sh
+chmod mod
+__vsc_prompt_cmd_original
+chmod +x countdown.sh
