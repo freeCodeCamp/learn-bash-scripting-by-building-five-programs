@@ -133,3 +133,8 @@ help
 help [[ expression]]
 help
 help test
+git status
+git chechout
+git checkout
+git branch
+git status
