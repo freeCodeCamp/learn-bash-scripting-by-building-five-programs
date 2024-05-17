@@ -114,3 +114,9 @@ chmod mod
 __vsc_prompt_cmd_original
 chmod +x countdown.sh
 ./countdown.sh
+./countdown.sh
+./countdown.sh
+./countdown.sh
+./countdown.sh ja ja ja
+./countdown.sh ja ja ja
+./countdown.sh arg1 arg2 arg3
