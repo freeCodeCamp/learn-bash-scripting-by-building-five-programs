@@ -120,3 +120,4 @@ chmod +x countdown.sh
 ./countdown.sh ja ja ja
 ./countdown.sh ja ja ja
 ./countdown.sh arg1 arg2 arg3
+./countdown.sh arg1 arg2 arg3
