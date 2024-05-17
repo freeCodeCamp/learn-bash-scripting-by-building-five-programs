@@ -103,3 +103,4 @@ ls --color=auto -l
 --help
 --help
 echo --help
+man echo
