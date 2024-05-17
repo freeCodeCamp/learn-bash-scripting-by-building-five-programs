@@ -138,3 +138,11 @@ git chechout
 git checkout
 git branch
 git status
+git status
+git branch fredylopez01
+git status
+git push
+git branch
+git checkout fredylopez01
+git status
+./countdown.sh 5

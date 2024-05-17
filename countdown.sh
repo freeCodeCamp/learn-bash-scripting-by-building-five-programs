@@ -4,5 +4,5 @@ if [[ $1 -le 5 ]]
 then 
   echo true
 else
-  echo false
+  echo flse
 fi
