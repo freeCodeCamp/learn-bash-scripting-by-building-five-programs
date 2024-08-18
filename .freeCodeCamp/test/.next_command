@@ -93,3 +93,4 @@ echo $1
 help
 man
 man if
+help if
