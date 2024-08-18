@@ -83,3 +83,4 @@ echo -e \n~~ Questionnaire ~~\n
 ./questionnaire.sh
 ./questionnaire.sh
 ./questionnaire.sh
+./questionnaire.sh
