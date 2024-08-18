@@ -86,3 +86,4 @@ echo -e \n~~ Questionnaire ~~\n
 ./questionnaire.sh
 touch countdown.sh
 chmod +x countdown.sh
+./countdown.sh
