@@ -80,3 +80,4 @@ __vsc_prompt_cmd_original
 echo --help
 man echo
 echo -e \n~~ Questionnaire ~~\n
+./questionnaire.sh
