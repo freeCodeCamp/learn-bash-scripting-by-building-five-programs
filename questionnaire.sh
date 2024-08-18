@@ -22,5 +22,6 @@ echo $QUESTION3
 
 read WEBSITE
 
+echo 
 echo Hello $NAME from $LOCATION. I learned that your favorite coding website is $WEBSITE!
 
