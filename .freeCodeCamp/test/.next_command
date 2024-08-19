@@ -228,3 +228,4 @@ I=0
 echo $I
 I++
 (( I++ ))
+echo $I
