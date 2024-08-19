@@ -213,3 +213,4 @@ __vsc_prompt_cmd_original
 printenv
 echo LANG
 echo $LANG
+declare -p
