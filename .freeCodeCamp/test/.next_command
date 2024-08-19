@@ -141,3 +141,4 @@ help test
 echo $?
 [[ 4 -ge 5 ]]
 echo $?
+[[ 4 -ge 5 ]]
