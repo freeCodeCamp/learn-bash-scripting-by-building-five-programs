@@ -133,3 +133,5 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ./countdown.sh 5
 help
 help [[
+help ==
+help test
