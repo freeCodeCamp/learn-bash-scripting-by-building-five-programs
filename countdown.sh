@@ -14,7 +14,8 @@ then
 I=$1
 while [[ $I -ge 0 ]]
 do
-  echo $I
+  echo $I 
+  (( I--))
 done
 else
   echo Include a positive integer as the first argument.
