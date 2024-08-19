@@ -164,3 +164,4 @@ __vsc_prompt_cmd_original
 help
 ./countdown.sh 10
 help
+ls --color=auto /
