@@ -238,3 +238,5 @@ echo $I
 J=0
 echo $(( I - 6 ))
 J=$(( I - 6 ))
+echo J
+echo $J
