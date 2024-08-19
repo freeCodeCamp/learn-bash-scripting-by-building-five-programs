@@ -209,3 +209,5 @@ pwd
 touch bingo.sh
 chmod +x bingo.sh
 ./bingo.sh
+__vsc_prompt_cmd_original
+printenv
