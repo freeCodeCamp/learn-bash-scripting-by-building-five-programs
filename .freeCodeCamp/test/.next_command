@@ -226,3 +226,5 @@ __vsc_prompt_cmd_original
 ./bingo.sh
 I=0
 echo $I
+I++
+(( I++ ))
