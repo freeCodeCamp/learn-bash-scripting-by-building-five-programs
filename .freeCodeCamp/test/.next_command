@@ -215,3 +215,11 @@ echo LANG
 echo $LANG
 declare -p
 echo $RANDOM
+./bingo.sh
+__vsc_prompt_cmd_original
+./b
+__vsc_prompt_cmd_original
+./bingo.sh
+__vsc_prompt_cmd_original
+./bingo.sh
+__vsc_prompt_cmd_original
