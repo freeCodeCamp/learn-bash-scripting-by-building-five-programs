@@ -290,3 +290,9 @@ help let
 ./b
 ./bingo.sh
 ./bingo.sh
+git remote add https://github.com/modisoham/learn-bash-scripting-by-building-five-programs.git
+git remote add new https://github.com/modisoham/learn-bash-scripting-by-building-five-programs.git
+git push origin main
+git branch bingo
+git checkout bingo
+git push origin bingo
