@@ -863,7 +863,7 @@ It printed `1` this time for false. You can separate commands on a single line w
 
 ### 564.1
 
-It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.
+It's still false. Using the same syntax of `[[ ... ]]; echo $?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.
 
 #### HINTS
 
