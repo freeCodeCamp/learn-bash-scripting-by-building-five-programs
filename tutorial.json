@@ -1808,7 +1808,7 @@
               "f8d172acfa090a77f4d686f980f68eb980f2d6c3"
             ]
           },
-          "content": "It's still false. Using the same syntax of `[[ ... ]]; echo$?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.",
+          "content": "It's still false. Using the same syntax of `[[ ... ]]; echo $?`, check if `10` is not equal to `5` and print the exit status of the expression on one line.",
           "hints": [
             "Check the `help test` menu to find the `not equal` operator",
             "It's the `-ne` operator",
