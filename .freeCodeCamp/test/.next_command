@@ -29,3 +29,4 @@ which bash
 ./questionnaire.sh
 ls-l
 ls --color=auto -l
+chmod +x questionnaire.sh
