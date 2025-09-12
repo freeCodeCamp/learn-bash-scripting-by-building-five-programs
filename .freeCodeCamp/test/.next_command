@@ -313,3 +313,10 @@ __vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
 [[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
 trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
+ls --color=auto pwd
+ls --color=auto
+pwd
+git remote remove origin
+git remote add origin https://github.com/4ndre-pire5/learn-bash-scripting-by-building-five-programs
+git remote -v
+git add .
