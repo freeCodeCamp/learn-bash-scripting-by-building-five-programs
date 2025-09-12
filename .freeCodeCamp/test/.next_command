@@ -47,3 +47,4 @@ man echo
 touch countdow.sh
 touch countdown.sh
 chmod +x countdown.sh
+./countdown.sh
