@@ -101,3 +101,4 @@ man while
 ./countdown.sh 5
 touch bingo.sh
 chmod +x bingo.sh
+./bingo.sh
