@@ -187,3 +187,4 @@ echo ${ARR[1]}
 echo $@{ARR}
 echo $@
 echo ${ARR[@]}
+declare -p ARR
