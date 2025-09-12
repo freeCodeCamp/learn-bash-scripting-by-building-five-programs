@@ -111,3 +111,4 @@ echo $RANDOM
 ./bingo.sh
 ./bingo.sh
 ./bingo.sh
+I=0
