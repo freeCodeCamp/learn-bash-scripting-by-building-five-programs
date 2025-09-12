@@ -320,3 +320,5 @@ git remote remove origin
 git remote add origin https://github.com/4ndre-pire5/learn-bash-scripting-by-building-five-programs
 git remote -v
 git add .
+git commit -m "Bash Script"
+git push -u origin master
