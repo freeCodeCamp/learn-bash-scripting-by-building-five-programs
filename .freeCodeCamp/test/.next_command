@@ -129,3 +129,4 @@ declare -p
 declare -p J
 declare -p RANDOM
 echo $(( RANDOM%75 ))
+echo $(( RANDOM%75 + 1))
