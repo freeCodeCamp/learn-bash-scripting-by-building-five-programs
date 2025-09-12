@@ -218,3 +218,4 @@ VAR="test?"
 [[ $VAR =~ \?$ ]]
 [[ test? =~ \?$ ]]
 [[ test? =~ \?$ ]]
+./fortune.sh
