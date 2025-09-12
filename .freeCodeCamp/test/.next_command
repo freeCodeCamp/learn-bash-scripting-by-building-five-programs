@@ -208,3 +208,5 @@ help [[
 [[ "hello world" =~ "lo wor" ]]
 [[ "hello world" =~ ^h ]]
 [[ "hello world" =~ ^h.+d$ ]]
+VAR=hello world
+VAR="hello world"
