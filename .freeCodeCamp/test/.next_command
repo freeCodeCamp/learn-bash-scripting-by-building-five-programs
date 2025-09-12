@@ -40,3 +40,4 @@ ls --color=auto -l
 --help echo
 echo --help
 man echo
+./questionnaire.sh
