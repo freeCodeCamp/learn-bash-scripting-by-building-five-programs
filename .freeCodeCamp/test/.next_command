@@ -71,3 +71,4 @@ echo $?
 [[ -n bad_command ]]
 __vsc_prompt_cmd_original
 bad_command
+ls --color=auto
