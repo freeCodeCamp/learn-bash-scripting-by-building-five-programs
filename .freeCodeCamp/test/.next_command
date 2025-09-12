@@ -219,3 +219,4 @@ VAR="test?"
 [[ test? =~ \?$ ]]
 [[ test? =~ \?$ ]]
 ./fortune.sh
+./fortune.sh
