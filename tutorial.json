@@ -1,6 +1,6 @@
 {
   "id": "freeCodeCamp/learn-bash-scripting-by-building-five-programs:v1.0.0",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "summary": {
     "title": "Learn Bash Scripting by Building Five Programs",
     "description": "> Welcome to the Bash Scripting lessons!"
@@ -23,8 +23,8 @@
       "directory": ".freeCodeCamp"
     },
     "repo": {
-      "uri": "https://github.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs",
-      "branch": "v2.0.0"
+      "uri": "https://github.com/harshsharma1506/learn-bash-scripting-by-building-five-programs",
+      "branch": "v2.0.1"
     },
     "continue": {
       "commands": [
@@ -442,7 +442,12 @@
             "Add `QUESTION1=\"What's your name?\"` at the bottom of your `questionnaire.sh` file"
           ]
         }
-      ]
+      ],
+      "setup": {
+        "commits": [
+          "875a8010b7b605141656bbcf0afdc0a101f79640"
+        ]
+      }
     },
     {
       "id": "180",
