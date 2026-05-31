@@ -1,5 +1,5 @@
 id: 'freeCodeCamp/learn-bash-scripting-by-building-five-programs:v1.0.0'
-version: '2.0.0'
+version: '2.0.1'
 config:
   setup:
     commands:
@@ -11,8 +11,8 @@ config:
       tap: --reporter=mocha-tap-reporter
     directory: .freeCodeCamp
   repo:
-    uri: https://github.com/freeCodeCamp/learn-bash-scripting-by-building-five-programs
-    branch: v2.0.0
+    uri: https://github.com/harshsharma1506/learn-bash-scripting-by-building-five-programs
+    branch: v2.0.1
   continue:
     commands:
       - './.freeCodeCamp/setup.sh'
