@@ -439,7 +439,8 @@
           },
           "content": "Bash has variables, functions, and other things you might be familiar with. You can create a variable with `VARIABLE_NAME=VALUE`. There cannot be any spaces around the equal (`=`) sign. If a variable has any spaces in it, place double quotes around it. Create a variable named `QUESTION1` and set it's value to `\"What's your name?\"`.",
           "hints": [
-            "Add `QUESTION1=\"What's your name?\"` at the bottom of your `questionnaire.sh` file"
+            "Add `QUESTION1=\"What's your name?\"` at the bottom of your `questionnaire.sh` file",
+            "Make sure you use exactly one pair of double quotes around the value, with no extra quotes: `QUESTION1=\"What's your name?\"`"
           ]
         }
       ]
