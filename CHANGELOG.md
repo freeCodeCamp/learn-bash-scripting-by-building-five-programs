@@ -29,3 +29,7 @@ Whenever a new version is created, add the new branch name and the changes here
 ## [v2.0.0]
 
 - Add Gitpod config
+
+## [v2.0.1]
+
+- Fix step `170.1` test description so a failed `QUESTION1` assignment hints about defining the variable, not echoing it ([freeCodeCamp/freeCodeCamp#67605](https://github.com/freeCodeCamp/freeCodeCamp/issues/67605))
