@@ -29,3 +29,7 @@ Whenever a new version is created, add the new branch name and the changes here
 ## [v2.0.0]
 
 - Add Gitpod config
+
+## [v2.0.1]
+
+- Updated the step 170 test description to match the lesson instructions. The previous description referenced echoing the variable before that action was introduced in the tutorial.
